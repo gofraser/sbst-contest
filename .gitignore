@@ -1,0 +1,6 @@
+target
+tooldir/*/temp
+tooldir/*/transcript*
+.classpath
+.project
+.settings
