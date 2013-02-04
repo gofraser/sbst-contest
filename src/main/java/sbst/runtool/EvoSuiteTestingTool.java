@@ -15,8 +15,14 @@ public class EvoSuiteTestingTool implements ITestingTool {
 	
 	@Override
 	public List<File> getExtraClassPath() {
-		// TODO export evosuite.jar?
-		return new ArrayList<File>();
+		File evoJar = new File("lib"+File.separator+"evosuite-0.1-SNAPSHOT-jar-minimal.jar");
+		if(!evoJar.exists()){
+			System.err.println("Wrong EvoSuite jar setting, jar is not at: "+evoJar.getAbsolutePath());
+			return new ArrayList<File>();
+		}
+		List<File> extra = new ArrayList<File>();
+		extra.add(evoJar);
+		return extra;
 	}
 
 	@Override
@@ -38,13 +44,19 @@ public class EvoSuiteTestingTool implements ITestingTool {
 			return;
 		}
 		
+		//OUTPUT_DIR  report_dir  test_dir
+		
 		List<String> commands = new ArrayList<String>();
 		commands.addAll(Arrays.asList(new String[] {
 		        "-generateSuite",
 		        "-class",
 		        cName,
 		        "-Dshow_progress=false", "-Dstopping_condition=MaxTime",
-		        "-sandbox", "-Dtest_comments=false", "-cp="+targetClassPath }));
+		        "-sandbox", "-Dtest_comments=false", 
+		        "-cp="+targetClassPath,
+		        "-Dtest_dir=temp/testcases"
+		         /* "-Dlogback.configurationFile=sbst_logback.xml"  NOTE: cannot be set for client, as not among parameters, but should be fine*/
+		        }));
 		String[] command = new String[commands.size()];
 		commands.toArray(command);
 		evosuite.parseCommandLine(command);
