@@ -53,7 +53,7 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        cName,
 		        "-Dshow_progress=false", 
 		        "-Dstopping_condition=MaxTime",
-		        "-sandbox", 
+		        //"-sandbox", 
 		        "-assertions",
 		        "-criterion","strongmutation",
 		        "-Danalysis_criteria=StrongMutation",
