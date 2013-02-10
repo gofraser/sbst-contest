@@ -72,8 +72,7 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        "-Dminimization_timeout=120",
 		        "-Dassertion_timeout=120",
 		        "-cp="+targetClassPath,
-		        "-Dtest_dir=temp/testcases",
-		        "-DOUTPUT_DIR=temp/data"
+		        "-Dtest_dir=temp/testcases"
 		         /* "-Dlogback.configurationFile=sbst_logback.xml"  NOTE: cannot be set for client, as not among parameters, but should be fine*/
 		        }));
 		String[] command = new String[commands.size()];
