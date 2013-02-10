@@ -29,6 +29,8 @@ public class EvoSuiteTestingTool implements ITestingTool {
 	public void initialize(File src, File bin, List<File> classPath) {
 		StringBuilder sb = new StringBuilder();
 		sb.append(src.getPath());
+		sb.append(File.pathSeparator);
+		sb.append(bin.getPath());
 		for(File dependency : classPath) {
 			sb.append(File.pathSeparator);
 			sb.append(dependency.getPath());
@@ -70,7 +72,8 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        "-Dminimization_timeout=120",
 		        "-Dassertion_timeout=120",
 		        "-cp="+targetClassPath,
-		        "-Dtest_dir=temp/testcases"
+		        "-Dtest_dir=temp/testcases",
+		        "-DOUTPUT_DIR=temp/data"
 		         /* "-Dlogback.configurationFile=sbst_logback.xml"  NOTE: cannot be set for client, as not among parameters, but should be fine*/
 		        }));
 		String[] command = new String[commands.size()];
