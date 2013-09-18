@@ -50,16 +50,11 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		
 		List<String> commands = new ArrayList<String>();
 		commands.addAll(Arrays.asList(new String[] {
-		        "-generateSuite",
 		        "-class",
 		        cName,
 		        "-Dshow_progress=false", 
 		        "-Dstopping_condition=MaxTime",
-		        "-sandbox", 
-		        "-Dsandbox_mode=IO",
-		        "-assertions",
 		        "-criterion","strongmutation",
-		        //"-Danalysis_criteria=StrongMutation",
 		        "-Dassertion_strategy=all",
 		        "-Dmax_mutants=-1",  
 		        "-Dstop_zero=false",
