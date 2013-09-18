@@ -52,9 +52,10 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		commands.addAll(Arrays.asList(new String[] {
 		        "-class",
 		        cName,
+		        "-Dreplace_calls=true",
 		        "-Dshow_progress=false", 
 		        "-Dstopping_condition=MaxTime",
-		        "-criterion","strongmutation",
+		        "-criterion","weakmutation",
 		        "-Dassertion_strategy=all",
 		        "-Dmax_mutants=-1",  
 		        "-Dstop_zero=false",
