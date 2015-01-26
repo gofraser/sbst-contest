@@ -11,8 +11,10 @@ public class Main {
 		RunTool runTool = new RunTool(tool, new InputStreamReader(System.in), new OutputStreamWriter(System.out));
 		try {
 			runTool.run();
+   		        System.exit(0);
 		} catch (IOException e) {			
 			e.printStackTrace();
+   		        System.exit(1);
 		}
 	}
 	
