@@ -28,8 +28,9 @@ public class EvoSuiteTestingTool implements ITestingTool {
 	@Override
 	public void initialize(File src, File bin, List<File> classPath) {
 		StringBuilder sb = new StringBuilder();
-		sb.append(src.getPath());
-		sb.append(File.pathSeparator);
+		// Including the source may include other dependency jars
+		// sb.append(src.getPath());
+		// sb.append(File.pathSeparator);
 		sb.append(bin.getPath());
 		for(File dependency : classPath) {
 			sb.append(File.pathSeparator);
@@ -56,12 +57,13 @@ public class EvoSuiteTestingTool implements ITestingTool {
 //		        "-Dreplace_calls=false",
 		        "-Dshow_progress=false", 
 		        "-Dstopping_condition=MaxTime",
-		        "-criterion","weakmutation",
+//		        "-criterion","weakmutation",
+		        "-criterion","archivebranch",
 		        "-Dassertion_strategy=all",
 		        "-Dmax_mutants=-1",  
 		        "-Dstop_zero=false",
 		        "-Dtest_comments=false", 
-		        "-mem", "1500",
+		        "-mem", "1200",
 		        "-Dsecondary_objectives=totallength",
 		        "-Dminimize=true",
 		        "-Dsearch_budget=180",
@@ -69,7 +71,8 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        "-Dminimization_timeout=120",
 		        "-Dassertion_timeout=120",
 		        "-projectCP="+targetClassPath,
-		        "-Dtest_dir=temp/testcases"
+		        "-Dtest_dir=temp/testcases",
+		        "-Dtest_scaffolding=false"
 		        // "-Dlogback.configurationFile=sbst_logback.xml"  NOTE: cannot be set for client, as not among parameters, but should be fine*/
 		        }));
 		String[] command = new String[commands.size()];
