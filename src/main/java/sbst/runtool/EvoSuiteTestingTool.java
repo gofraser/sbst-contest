@@ -56,9 +56,11 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        "-Duse_deprecated=true",
 //		        "-Dreplace_calls=false",
 		        "-Dshow_progress=false", 
-		        "-Dstopping_condition=MaxTime",
+//		        "-Dstopping_condition=MaxTime",
+		        "-Dstopping_condition=TimeDelta",
 //		        "-criterion","weakmutation",
-		        "-criterion","archivebranch",
+		        "-criterion","archivebranch:archiveline:archivemutation",
+		        "-Dcompositional_fitness=true",
 		        "-Dassertion_strategy=all",
 		        "-Dmax_mutants=-1",  
 		        "-Dstop_zero=false",
@@ -66,13 +68,15 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        "-mem", "1200",
 		        "-Dsecondary_objectives=totallength",
 		        "-Dminimize=true",
-		        "-Dsearch_budget=180",
-		        "-Dglobal_timeout=180", 
-		        "-Dminimization_timeout=120",
+		        "-Dsearch_budget=120",
+		        "-Dglobal_timeout=600", 
+		        "-Dminimization_timeout=240",
 		        "-Dassertion_timeout=120",
 		        "-projectCP="+targetClassPath,
 		        "-Dtest_dir=temp/testcases",
 		        "-Dtest_scaffolding=false"
+//		        "-Dbranch_statement=true"
+		        // "-Duse_separate_classloader=true"
 		        // "-Dlogback.configurationFile=sbst_logback.xml"  NOTE: cannot be set for client, as not among parameters, but should be fine*/
 		        }));
 		String[] command = new String[commands.size()];
