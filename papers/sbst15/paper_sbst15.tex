@@ -266,7 +266,8 @@ Support & None \\
 \begin{table*}[t]
   \centering
   \caption{\label{table:results}Detailed results of \EVOSUITE on the SBST benchmark classes.}
-  \scriptsize
+  %\scriptsize
+\resizebox{0.9\textwidth}{!}{  
   \begin{tabular}{l rrrrrr} \toprule
 Class &  JUnit Files &   Generation Time & Execution Time   & \% Line Coverage & \% Branch Coverage & \% Mutation Score \\  
 % Class & Generation Time & Execution Time  & Tests & Line Coverage & Branch Coverage & Mutation Score \\ 
@@ -279,6 +280,7 @@ Class &  JUnit Files &   Generation Time & Execution Time   & \% Line Coverage &
 Average & & 371.58 & 2.10 & 55.36 & 47.19 & 41.02\\
 \bottomrule
   \end{tabular}
+}
 \end{table*}
 
 %average per class generation time:                 371.581857 seconds
@@ -299,10 +301,36 @@ do so (with \EVOSUITE configured to 3 minutes per class).
 
 
 
-\subsection{Classes with Low Coverage}
+\subsection{Classes with No Coverage}
 
+Out of 63 CUTs, \EVOSUITE did not manage to obtain any coverage for 18 classes, i.e. 28\% 
+of the total.
+For 14 of them (the 7 in the twitter4j and the 7 in the hibernate projects), this is due
+to a mismatch in libraries on the classpath. 
+In particular, \EVOSUITE does bytecode instrumentation using the ASM library.
+However, the projects of the CUTs had their own (older) version of ASM.
+This leads to errors like: ``java.lang.IncompatibleClassChangeError: 
+class org.objectweb.asm.tree.ClassNode has interface org.objectweb.asm.ClassVisitor as super class''.
+Note: \EVOSUITE can handle its own dependencies as CUTs, i.e. by using customized classloaders, 
+but only during the search phase.
+In the generated JUnit files, those have dependencies to ASM, as we do bytecode instrumentation
+even there (e.g., to support environment testing based on mock objects [TODO]).
+So, \EVOSUITE does generate tests for those 14 classes, but then all those tests fails due to
+that thrown exception.
+An easy solution would be to ship \EVOSUITE with its own ASM version using a 
+different package name (e.g., by using the JarJar tool\footnote{https://code.google.com/p/jarjar/}).
 
+For the other 4 classes, \EVOSUITE failed to generate any test. These are
+\<CharMatcher>, \<CycleHandler>, \<WikipediaInfo> and \<Response>.
 
+TODO
+
+There are also cases of low coverage (e.g., less than 30\%).
+For example, if look at line coverage, then 
+we have \<Page> with 1.49\%, \<AbstractInstance> with 13.28\%, \<CategoryDescendantsIterator> with 8.24\%
+and \<PageQueryIterable> with 18.57\%.
+
+TODO
 
 %------------------------------------------------------------------------- 
 \section{Conclusions}
