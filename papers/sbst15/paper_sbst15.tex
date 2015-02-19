@@ -308,7 +308,7 @@ details we refer to~\cite{FrA13a}.
 
 \begin{table*}[t]
   \centering
-  \caption{\label{table:results}Detailed results of \EVOSUITE on the SBST benchmark classes.}
+  \caption{\label{table:results}Detailed results of \EVOSUITE on the SBST benchmark classes. Time is expressed in minutes.}
   %\scriptsize
 \resizebox{0.9\textwidth}{!}{  
   \begin{tabular}{l rrrrrr} \toprule
@@ -320,7 +320,7 @@ Class &  JUnit Files &   Generation Time & Execution Time   & \% Line Coverage &
 \midrule
 \input{results.tex}
 \midrule
-Average & & 371.58 & 2.10 & 55.36 & 47.19 & 41.02\\
+Average & & 6.19 & 0.03 & 55.36 & 47.19 & 41.02\\
 \bottomrule
   \end{tabular}
 }
@@ -357,7 +357,7 @@ class org.objectweb.asm.tree.ClassNode has interface org.objectweb.asm.ClassVisi
 Note: \EVOSUITE can handle its own dependencies as CUTs, i.e. by using customized classloaders, 
 but only during the search phase.
 In the generated JUnit files, those have dependencies to ASM, as we do bytecode instrumentation
-even there (e.g., to support environment testing based on mock objects [TODO]).
+even there (e.g., to support environment testing based on mock objects~\cite{arcuri2014automated}).
 So, \EVOSUITE does generate tests for those 14 classes, but then all those tests fails due to
 that thrown exception.
 An easy solution would be to ship \EVOSUITE with its own ASM version using a 
@@ -365,18 +365,22 @@ different package name (e.g., by using the JarJar tool\footnote{https://code.goo
 
 For the other 4 classes, \EVOSUITE failed to generate any test. These are
 \<CharMatcher>, \<CycleHandler>, \<WikipediaInfo> and \<Response>.
-
-TODO
-
-There are also cases of low coverage (e.g., less than 30\%).
+There are also a further 4 cases of low coverage (e.g., less than 30\%).
 For example, if look at line coverage, then 
 we have \<Page> with 1.49\%, \<AbstractInstance> with 13.28\%, \<CategoryDescendantsIterator> with 8.24\%
 and \<PageQueryIterable> with 18.57\%.
+To improve \EVOSUITE, it will be important to understand why that was the case. 
 
-TODO
 
 %------------------------------------------------------------------------- 
 \section{Conclusions}
+
+With an overall score of $190.6$, \EVOSUITE achieved the second highest score of all tools in
+the competition. The score calculated for best testing is $203.7$:  a very close
+call. 
+In particular, due to a configuration issue in the classpath of the target projects,
+\EVOSUITE could had been run only on 7 out of 9 of the projects used as benchmark.
+That is an easily fixed issue that would lead to even higher scores. 
 
 
 To learn more about \EVOSUITE, visit our Web site:
