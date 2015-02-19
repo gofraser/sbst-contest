@@ -229,7 +229,7 @@ Output&  JUnit test cases (version 3 or 4)\\
   \hline
   \multicolumn{2}{|l|}{Operation} \\
   \hline
-  Interaction &  Through the command line\\
+  Interaction &  Through the command line, and Eclipse plugin\\
   User guidance &  manual verification of assertions for functional faults\\
   Source of information &  http://www.evosuite.org \\
   Maturity&  Mature research prototype, under development\\
@@ -244,7 +244,7 @@ Support & None \\
 \hline
   \multicolumn{2}{|l|}{Does there exist empirical evidence about} \\
   \hline
-  Effectiveness and Scalability & See~\cite{GoA_TSE12,FrA12b}. \\
+  Effectiveness and Scalability & See~\cite{GoA_TSE12,fraser2014large}. \\
 %Completeness & \\
 %Effectiveness & \\
 %Efficiency & \\
@@ -257,6 +257,49 @@ Support & None \\
 \hline
 \end{tabular}\vspace{-1em}
 \end{table}
+
+
+\EVOSUITE~\cite{FrA11c,GoA_TSE12} automatically generates test suites
+for Java classes, targeting branch coverage and other coverage
+criteria (e.g., mutation testing~\cite{emse14_mutation}). \EVOSUITE
+works at the Java bytecode level, i.e., it does not require source
+code. It is fully automated and requires no manually written test
+drivers or parameterized unit tests.  For example, when \EVOSUITE is
+used from its Eclipse plugin, a user
+just needs to select a class, and tests are generated with a mouse-click.
+
+\EVOSUITE has been evaluated on millions of lines of Java code~\cite{fraser2014large}, both open-source
+code and close-source code provided by one of our industrial partners. 
+In the previous two editions
+of the unit testing tool
+competition, \EVOSUITE arrived first~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013}. 
+
+
+\EVOSUITE uses an evolutionary approach to derive these test suites: A
+genetic algorithm evolves candidate individuals (chromosomes) using
+operators inspired by natural evolution (e.g., selection, crossover
+and mutation), such that iteratively better solutions with respect to
+the optimization target (e.g., branch coverage) are produced.  For
+details on this test generation approach we refer to~\cite{GoA_TSE12}.
+To improve performance further, we are investigating several
+extensions to \EVOSUITE. 
+For example, \EVOSUITE can employ dynamic
+symbolic execution~\cite{evoISSRE113} 
+and memetic algorithms~\cite{fraser2014memetic}
+to handle the cases in which our genetic algorithm may struggle. 
+
+
+As the generated unit tests are meant for human consumption~\cite{fraser2013does}, \EVOSUITE
+applies various post-processing steps to improve readability (e.g.,
+minimising) and adds test assertions that capture the current
+behavior of the tested classes. To select the most effective
+assertions, \EVOSUITE uses mutation
+analysis~\cite{10.1109/TSE.2011.93}. 
+\EVOSUITE can also be used to automatically find faults in the CUTs~\cite{emse13_oracle}, e.g undeclared
+thrown exceptions and broken code contracts.
+ For more details on the tool and
+its abilities we refer to~\cite{FrA11c}, and for more implementation
+details we refer to~\cite{FrA13a}.
 
 
 
