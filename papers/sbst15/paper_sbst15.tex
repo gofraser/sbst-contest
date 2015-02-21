@@ -183,11 +183,11 @@ and University of Luxembourg}\\
 \begin{abstract}
   \EVOSUITE is a mature research prototype that automatically
   generates unit tests for Java code.  This paper summarizes the
-  results and experiences in participating at the third unit testing
-  competition held at SBST 2015. An unfortunate issue of conflicting
-  dependency versions in two out of the nine projects used in the
-  benchmark reduced \EVOSUITE's overall score to $190.6$, and thus the
-  second rank.
+  results and experiences of \EVOSUITE's participation at the third
+  unit testing competition at SBST 2015. An unfortunate issue of
+  conflicting dependency versions in two out of the nine benchmark
+  projects reduced \EVOSUITE's overall score to $190.6$, leading to
+  the overall second rank.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -202,8 +202,8 @@ and University of Luxembourg}\\
 This paper describes the results of applying the \EVOSUITE test
 generation tool~\cite{FrA11c} to the benchmark used in the tool
 competition at the International Workshop on Search-Based Software
-Testing (SBST) 2015.  Details on the competition and the benchmark can
-be found in~\cite{sbst2015}. In this competition, \EVOSUITE ranked
+Testing (SBST) 2015.  Details about the competition and the benchmark
+can be found in~\cite{sbst2015}. In this competition, \EVOSUITE ranked
 second with a score of $190.6$.
 
 %------------------------------------------------------------------------- 
@@ -299,24 +299,25 @@ post-processing steps to improve readability (e.g., minimising) and
 adds test assertions that capture the current behavior of the tested
 classes. To select the most effective assertions, \EVOSUITE uses
 mutation analysis~\cite{10.1109/TSE.2011.93}.  \EVOSUITE can also be
-used to automatically find faults in the CUTs~\cite{emse13_oracle},
-e.g., undeclared thrown exceptions and broken code contracts.  For
-more details on the tool and its abilities we refer to~\cite{FrA11c},
-and for more implementation details we refer to~\cite{FrA13a}.
+used to automatically find faults such as undeclared thrown exceptions
+and broken code contracts~\cite{emse13_oracle}.  For more details on
+the tool and its abilities we refer to~\cite{FrA11c}, and for more
+implementation details we refer to~\cite{FrA13a}.
 
 %------------------------------------------------------------------------- 
 \section{Competition Setup}
 
 We configured \EVOSUITE to use a dynamic timeout of maximum 10 minutes
-for the search, with an earlier stop if the fitness value did not
-increase for two minutes. The fitness function to drive the genetic
-algorithm was based on a combination of line coverage, branch
-coverage, and weak mutation testing. We enabled the post-processing
-step of test minimization, but to reduce the time spent we included
-all assertions rather than filtering them with mutation
-analysis~\cite{10.1109/TSE.2011.93}. In practice, this may not result
-in the most readable or maintainable test cases, but neither of these
-two attributes is measured by the SBST contest metric.
+per class for the search, with an earlier stop if the fitness value
+did not increase for two minutes. The fitness function to drive the
+genetic algorithm was based on a combination of line coverage, branch
+coverage, and weak mutation testing~\cite{emse14_mutation}. We enabled
+the post-processing step of test minimization, but to reduce the time
+spent we included all assertions rather than filtering them with
+mutation analysis~\cite{10.1109/TSE.2011.93}. In practice, this may
+not result in the most readable or maintainable test cases, but
+neither of these two attributes is measured by the SBST contest
+metric.
 
 %------------------------------------------------------------------------- 
 \section{Benchmark results}
@@ -366,54 +367,60 @@ do so.
 % CycleHandler, WikipediaInfo: Infinite loop in generic resolving
 % Response requires java.net.HttpURLConnection
 
-Out of 63 CUTs, \EVOSUITE did not manage to obtain any coverage for 18
-classes, i.e., 28\% of all classes.  For 14 of them (the 7 in the
-twitter4j and the 7 in the hibernate projects), this is due to a
-mismatch in libraries on the classpath.  In particular, \EVOSUITE does
-bytecode instrumentation using the ASM library.  However, the projects
-of the CUTs had their own (older) version of ASM.  This leads to
-errors like: ``java.lang.IncompatibleClassChangeError: class
+Out of 63 classes under test (CUTs), \EVOSUITE did not manage to
+obtain any coverage for 18, i.e., 28\% of all classes.  For 14 of them
+(seven in the twitter4j project and seven in the hibernate project),
+this is due to a mismatch in libraries on the classpath.  In
+particular, \EVOSUITE does bytecode instrumentation using the ASM
+library (currently using version 5.0.3).  However, the projects of the
+CUTs had their own (older) version of ASM; for example Twitter4J has
+an indirect dependency to ASM 3.2. 
+
+Because the API of ASM has changed over different versions, this leads
+to errors like: ``java.lang.IncompatibleClassChangeError: class
 org.objectweb.asm.tree.ClassNode has interface
 org.objectweb.asm.ClassVisitor as super class''.  Note: \EVOSUITE can
-handle its own dependencies as CUTs, i.e., by using customized
-classloaders, but only during the search phase.  In the generated
-JUnit files, those have dependencies to ASM, as we do bytecode
-instrumentation even there (e.g., to support environment testing based
-on mock objects~\cite{arcuri2014automated}).  So, \EVOSUITE does
-generate tests for those 14 classes, but then all those tests fails
-due to that thrown exception.  An easy solution would be to ship
+be applied to its own library dependencies through its use of
+customized classloaders. However, bytecode instrumentation is also
+performed in the generated JUnit files (e.g., to support environment
+testing based on mock objects~\cite{arcuri2014automated}), which leads
+to a runtime dependency to ASM. Consequently, \EVOSUITE generates
+tests for those 14 classes, but then all these tests fail due to the
+above mentioned exception.  An easy solution would be to ship
 \EVOSUITE with its own ASM version using a different package name
 (e.g., by using the JarJar
 tool\footnote{https://code.google.com/p/jarjar/}).
 %
 If we had handled this issue properly before the competition, this
-would have changed the result: Excluding classes from the twitter4j
+would have changed the outcome: Excluding classes from the twitter4j
 and hibernate, the overall score of \EVOSUITE would be 191.584,
-whereas GRT would have a score of 164.464. Consequently, this issue
-clearly is the main factor affecting \EVOSUITE's overall result.
+whereas the first ranked tool (GRT) would have a score of
+164.464. Consequently, this issue clearly is the main factor affecting
+\EVOSUITE's overall result.
 
 For the other four classes with 0\% coverage, \EVOSUITE failed to
-generate any tests. For \<CharMatcher>, the issue is an issue in how
-\EVOSUITE handled timeouts, which resulted in \EVOSUITE's master
-process killing the client process before tests were written to
-disk. For \<CycleHandler> and \<WikipediaInfo>, \EVOSUITE ran into an
-issue when trying to resolve the generic type parameters of some
-dependency classes. This issue could be avoided by omitting generic
-type parameters, as the Java compiler would only issue warnings about
-such missing parameters. However, as \EVOSUITE is aiming to produce
+generate any tests for other reasons. For \<CharMatcher>, the issue is
+an issue in how \EVOSUITE handled timeouts, which resulted in
+\EVOSUITE's master process killing the client process before tests
+were written to disk. For \<CycleHandler> and \<WikipediaInfo>,
+\EVOSUITE ran into an issue when trying to resolve the generic type
+parameters of some dependency classes; this also affects \<Page> with
+1.49\% coverage. This issue could be avoided by omitting generic type
+parameters, as the Java compiler would only issue warnings about such
+missing parameters. However, as \EVOSUITE is aiming to produce
 readable tests, we feel it is important to properly handle Java
 Generics. Finally, for \<Response> the constructor requires a
 parameter of type \<java.net.HttpURLConnection>, which is an abstract
 class without concrete subclasses. As \EVOSUITE does not produce stubs
 automatically, it therefore failed to instantiate \<Response> objects.
 
-There are also a further 4 cases of low coverage (e.g., less than
-30\%).  For example, if look at line coverage, then we have \<Page>
-with 1.49\%, \<AbstractInstance> with 13.28\%,
-\<CategoryDescendantsIterator> with 8.24\% and \<PageQueryIterable>
-with 18.57\%.  
+%There are also a further 4 cases of low coverage (e.g., less than
+%30\%).  For example, if look at line coverage, then we have \<Page>
+%with 1.49\%, \<AbstractInstance> with 13.28\%,
+%\<CategoryDescendantsIterator> with 8.24\% and \<PageQueryIterable>
+%with 18.57\%.  
 
-TODO: Will look into these four.
+%TODO: Will look into these four.
 
 %To improve \EVOSUITE, it will be important to
 %understand why that was the case.
