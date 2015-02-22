@@ -351,14 +351,16 @@ Average & & 6.19 & 0.03 & 55.36 & 47.19 & 41.02\\
 %average per class mutation coverage:               41.024248 %
 
 The results of \EVOSUITE on the benchmark classes are listed in
-Table~\ref{table:results}. On average, \EVOSUITE achieved TODO line
-coverage,TODO branch coverage\footnote{Using Cobertura's definition
+Table~\ref{table:results}. On average, \EVOSUITE achieved 55.36\% line
+coverage, 47.19\% branch coverage\footnote{Using Cobertura's definition
   of branch coverage, which only counts conditional statements, not
-  edges in the CFG.}, and TODO mutation score. On average, \EVOSUITE
-produced TODO tests per class, and it took an average of TODO per class to
-do so.
+  edges in the CFG.}, and 41.02\% mutation score. 
+%On average, \EVOSUITE
+%produced TODO tests per class, and it took an average of TODO per class to
+%do so.
 % (with \EVOSUITE configured to 3 minutes per class).
-
+On average, \EVOSUITE took 6 minutes and 11 seconds per class to generate test cases. 
+The generated test suites take on average 2.1 seconds to run per class. 
 
 
 \subsection{Issues Encountered}
@@ -399,7 +401,7 @@ whereas the first ranked tool (GRT) would have a score of
 \EVOSUITE's overall result.
 
 For the other four classes with 0\% coverage, \EVOSUITE failed to
-generate any tests for other reasons. For \<CharMatcher>, the issue is
+generate any tests for other reasons. For \<CharMatcher>, there was 
 an issue in how \EVOSUITE handled timeouts, which resulted in
 \EVOSUITE's master process killing the client process before tests
 were written to disk. For \<CycleHandler> and \<WikipediaInfo>,
