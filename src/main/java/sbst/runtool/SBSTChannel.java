@@ -52,6 +52,19 @@ public class SBSTChannel
 		}
 	}
 
+	public long longnumber() throws IOException
+	{
+		String line = input.readLine();
+		try
+		{
+			return Long.parseLong(line);
+		}
+		catch(NumberFormatException e)
+		{
+			throw new IOException("Not a valid longnumber: " + line);
+		}
+	}
+
 	public File directory_jarfile() throws IOException
 	{
 		String line = input.readLine();

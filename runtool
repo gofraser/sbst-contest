@@ -1,6 +1,6 @@
 #!/bin/bash
 
-EVO=lib/evosuite-master-0.1.1-SNAPSHOT-jar-minimal.jar
+EVO=lib/evosuite-master-1.0.3-SNAPSHOT.jar
 TOOL=lib/runtool-1.0.jar
 
-java -cp .:$EVO:$TOOL -Dlogback.configurationFile=/home/evosuite_3rd/sbst_logback.xml  -Duse_different_logback=sbst_logback.xml  sbst.runtool.Main  
+java -cp .:$EVO:$TOOL -Dlogback.configurationFile=/home/evosuite_4th/sbst_logback.xml  -Duse_different_logback=sbst_logback.xml  sbst.runtool.Main  

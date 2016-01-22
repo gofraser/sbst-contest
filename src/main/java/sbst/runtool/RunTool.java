@@ -46,8 +46,9 @@ public class RunTool
 		channel.emit("READY");
 		for(int i = 0; i < m; i++)
 		{
+			long timeBudget = channel.longnumber();
 			String cName = channel.className();
-			tool.run(cName);
+			tool.run(cName,timeBudget);
 			channel.emit("READY");	
 		}
 	}
