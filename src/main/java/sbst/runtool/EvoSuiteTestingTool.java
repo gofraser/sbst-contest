@@ -47,13 +47,54 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		
 		//OUTPUT_DIR  report_dir  test_dir
 
-        // TODO: What shall we use?
-		long searchTime   = timeBudget / 2;
-		long minTimeout   = timeBudget / 3;
-		long assTimeout   = timeBudget / 3;
-		long checkTimeout = timeBudget / 3;
+		final int PHASES = 6; //not including "search"
 
-		List<String> commands = new ArrayList<String>();
+		//the main phase is "search", which should take at least 50% of the budget
+		long halfTime = timeBudget / 2;
+        System.err.println("TimeBudget: "+timeBudget);
+
+		long initialization = halfTime / PHASES;
+		long minimization = (long) 1.4 * (halfTime   / PHASES);
+		long assertions = (long) 0.8 * (halfTime     / PHASES); // using all assertions, so less time for that?
+        long junit = halfTime          / PHASES;
+		long extra = halfTime          / PHASES;
+		long write = (long) 0.8 * (halfTime   / PHASES); // less time for that?
+
+
+        final int MAJOR_DELTA = 120;
+		final int MINOR_DELTA = 60;
+
+		if (halfTime > PHASES * MAJOR_DELTA) {
+			initialization = MAJOR_DELTA;
+			minimization = MAJOR_DELTA;
+			assertions = MAJOR_DELTA;
+			extra = MAJOR_DELTA;
+			junit = MAJOR_DELTA;
+			write = MAJOR_DELTA;
+		} else if (halfTime > PHASES * MINOR_DELTA) {
+			initialization = MINOR_DELTA;
+			minimization = MINOR_DELTA;
+			assertions = MINOR_DELTA;
+			extra = MINOR_DELTA;
+			junit = MINOR_DELTA;
+			write = MINOR_DELTA;
+		}
+
+		long search = timeBudget - (initialization + minimization + assertions
+				+ extra + junit + write);
+
+        extra += (int)Math.floor(timeBudget/10.0);
+
+        System.err.println("Search: "+search);
+        System.err.println("Init  : "+initialization);
+        System.err.println("Min   : "+minimization);
+        System.err.println("Ass   : "+assertions);
+        System.err.println("Extra : "+extra);
+        System.err.println("JUnit : "+junit);
+        System.err.println("Write : "+write);
+
+
+        List<String> commands = new ArrayList<String>();
 		commands.addAll(Arrays.asList(
 		        "-class",
 		        cName,
@@ -76,20 +117,24 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		        "-Dinline=false",
 //		        "-Dsandbox_mode=IO",
 		        "-Dcoverage=false",
-		        "-Dsearch_budget="+searchTime,
-		        "-Dglobal_timeout="+searchTime,
+		        "-Dsearch_budget="+search,
+		        "-Dglobal_timeout="+search,
 		        "-Dnew_statistics=false",
 		        "-Dstatistics_backend=NONE",
-		        "-Dminimization_timeout="+minTimeout,
-		        "-Dassertion_timeout="+assTimeout,
-		        "-Djunit_check_timeout="+checkTimeout,
-		        "-projectCP="+targetClassPath,
+		        "-Dminimization_timeout="+minimization,
+		        "-Dassertion_timeout="+assertions,
+				"-Dinitialization_timeout=" + initialization,
+				"-Djunit_check_timeout="+junit,
+				"-Dextra_timeout=" + (extra + (int)Math.floor(timeBudget/11.0)),
+				"-Dwrite_junit_timeout=" + write,
+				"-projectCP="+targetClassPath,
 		        "-Dtest_dir=temp/testcases",
 		        "-Dtest_scaffolding=false",
                 "-Dp_functional_mocking=0.8",
                 "-Dfunctional_mocking_percent=0.5",
                 "-Dp_reflection_on_private=0.5",
-                "-Dreflection_start_percent=0.8"
+                "-Dreflection_start_percent=0.8",
+                "-Dreuse_leftover_time=true"
 //		        "-Dbranch_statement=true"
 		        // "-Duse_separate_classloader=true"
 		        // "-Dlogback.configurationFile=sbst_logback.xml"  NOTE: cannot be set for client, as not among parameters, but should be fine*/
