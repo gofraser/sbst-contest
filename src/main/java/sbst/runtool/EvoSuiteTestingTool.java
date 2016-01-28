@@ -54,11 +54,11 @@ public class EvoSuiteTestingTool implements ITestingTool {
         System.err.println("TimeBudget: "+timeBudget);
 
 		long initialization = halfTime / PHASES;
-		long minimization = (long) 1.4 * (halfTime   / PHASES);
-		long assertions = (long) 0.8 * (halfTime     / PHASES); // using all assertions, so less time for that?
+		long minimization = (long) (1.4 * (halfTime   / PHASES));
+		long assertions = (long) (0.8 * (halfTime     / PHASES)); // using all assertions, so less time for that?
         long junit = halfTime          / PHASES;
 		long extra = halfTime          / PHASES;
-		long write = (long) 0.8 * (halfTime   / PHASES); // less time for that?
+		long write = (long) (0.8 * (halfTime   / PHASES)); // less time for that?
 
 
         final int MAJOR_DELTA = 120;
