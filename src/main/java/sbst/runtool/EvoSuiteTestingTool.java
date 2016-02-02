@@ -81,9 +81,12 @@ public class EvoSuiteTestingTool implements ITestingTool {
 		}
 
 		long search = timeBudget - (initialization + minimization + assertions
-				+ extra + junit + write);
+				 + junit + write);
 
-        extra += (int)Math.floor(timeBudget/10.0);
+        // extra += (int)Math.floor(timeBudget/10.0);
+		extra = timeBudget; // According to JP we have that much time
+		// Leaving the sum without extra intentionally less than timeBudget
+		// to avoid time penalties
 
         System.err.println("Search: "+search);
         System.err.println("Init  : "+initialization);
