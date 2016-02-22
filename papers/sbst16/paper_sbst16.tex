@@ -184,7 +184,8 @@ and University of Luxembourg}\\
   \EVOSUITE is a search-based tool that automatically
   generates unit tests for Java code.  This paper summarizes the
   results and experiences of \EVOSUITE's participation at the fourth
-  unit testing competition at SBST 2016. 
+  unit testing competition at SBST 2016, where \EVOSUITE achieved the
+  highest overall score. 
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -200,8 +201,9 @@ This paper describes the results of applying the \EVOSUITE test
 generation tool~\cite{FrA11c} to the benchmark used in the tool
 competition at the International Workshop on Search-Based Software
 Testing (SBST) 2016.  Details about the competition and the benchmark
-can be found in []. 
-In this competition, \EVOSUITE ranked [] with a score of [].
+can be found in [TODO]. 
+In this competition, \EVOSUITE achieved a 1126.7 overall score, which was the highest among
+the competing tools. 
 
 %------------------------------------------------------------------------- 
 \section{About \EVOSUITE}
@@ -274,7 +276,7 @@ code~\cite{fraser2014large}, both open-source code and close-source
 code provided by one of our industrial partners.  In the first two
 editions of the unit testing tool competition, \EVOSUITE ranked
 first~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013}, whereas it
-ranked second in the third one [].
+ranked second in the third one.
 
 
 \EVOSUITE uses an evolutionary approach to derive these test suites: A
@@ -321,7 +323,7 @@ analysis~\cite{10.1109/TSE.2011.93}. The use of all assertions has
 effects on readability and the chances of obtaining flaky
 tests. However, as readability is not measured by the SBST contest
 metric, and many of the improvements to \EVOSUITE since the last
-competition target flaky tests we deemed this not a problem.
+competition target flaky tests, we deemed this not a problem.
 
 In contrast to previous instances of the competition, the test
 generation tools this time received a time budget as input, and then
@@ -423,7 +425,7 @@ test takes a long time. However, this number is still lower than the
 number of erroneous runs compared to other tools, and in the remaining
 1617 runs of the competition \EVOSUITE terminated in time and produced
 at least two tests. In 13 of these, \EVOSUITE produced a test suite
-with a compile error.
+with a compilation error.
 
 %------------------------------------------------------------------------- 
 \section{Conclusions}
