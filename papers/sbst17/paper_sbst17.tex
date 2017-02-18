@@ -220,7 +220,7 @@ highest among the competing tools.
   \hline
  Input & Bytecode of the target class and dependencies \\
 \hline
-Output&  JUnit test cases (version 3 or 4)\\
+Output&  JUnit 4 test cases\\
  
   \hline
   \multicolumn{2}{|l|}{Operation} \\
@@ -256,29 +256,52 @@ Support & None \\
 \end{table}
 
 
-\EVOSUITE~\cite{FrA11c,GoA_TSE12} automatically generates test suites
-for Java classes, targeting branch coverage and other coverage
-criteria (e.g., mutation testing~\cite{emse14_mutation}). \EVOSUITE
-works at the Java bytecode level, i.e., it does not require source
-code. It is fully automated and requires no manually written test
-drivers or parameterized unit tests.  For example, when \EVOSUITE is
-used from its Eclipse and IntelliJ plugins, a user
-just needs to select a class, and tests are generated with a mouse-click.
+\EVOSUITE~\cite{FrA11c} is a search-based tool~\cite{GoA_TSE12} that
+uses a genetic algorithm to automatically generate test suites for
+Java classes. Given the name of a target class and the full Java
+classpath (i.e., where to find the compiled bytecode of the class
+under test and all its dependencies), \EVOSUITE automatically produces
+a set of JUnit test cases that maximise the achieved code
+coverage. \EVOSUITE can be used on the command line, or through
+plugins for popular development tools such as IntelliJ, Eclipse, or Maven~\cite{ICST16_Tool}.
 
-\EVOSUITE has been evaluated on millions of lines of Java
-code~\cite{fraser2014large}, both open-source code and close-source
-code provided by one of our industrial partners.  In the first two
-editions of the unit testing tool competition, \EVOSUITE ranked
-first~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013}, whereas it
-ranked second in the third one.
+The underlying genetic algorithm uses test suites as representation
+(chromosomes). Each test suite consists of a variable number of test
+cases, each of which is represented as a variable length sequence of
+Java statements (e.g., calls on the class under test). A population of
+randomly generated individuals is evolved using suitable search
+operators (e.g., selection, crossover and mutation), such that
+iteratively better solutions with respect to the optimisation target
+are produced. The optimisation target is to maximise code coverage. To
+achieve this, the fitness function uses standard heuristics such as
+the branch distance; see~\cite{GoA_TSE12} for more details. \EVOSUITE
+can be configured to optimise for multiple coverage criteria at the
+same time, and the default configuration combines branch coverage with
+mutation testing~\cite{emse14_mutation} and other basic
+criteria~\cite{rojas2015combining}. Once the search is completed,
+\EVOSUITE applies various optimisations to improve the readability of
+the generated tests. For example, tests are minimised, and a
+minimised set of effective test assertions is selected using mutation
+analysis~\cite{10.1109/TSE.2011.93}. For more details on the tool and
+its abilities we refer to~\cite{FrA11c,FrA13a}.
 
 
-\EVOSUITE uses an evolutionary approach to derive these test suites: A
-genetic algorithm evolves candidate individuals (chromosomes) using
-operators inspired by natural evolution (e.g., selection, crossover
-and mutation), such that iteratively better solutions with respect to
-the optimization target (e.g., branch coverage) are produced.  For
-details on this test generation approach we refer to~\cite{GoA_TSE12}.
+The effectiveness of \EVOSUITE has been evaluated on open source as
+well as industrial software in terms of code
+coverage~\cite{fraser2014large,emse_archive}, fault finding
+effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects
+on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study}.
+
+In the first two and the fourth editions of the unit testing tool
+competition, \EVOSUITE ranked
+first~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013,evosuiteAtSbst2016},
+whereas it ranked second in the third one.
+
+
+
+
+
+
 %To improve performance further, we are investigating several
 %extensions to \EVOSUITE. 
 %For example, \EVOSUITE can employ dynamic
@@ -287,51 +310,49 @@ details on this test generation approach we refer to~\cite{GoA_TSE12}.
 %to handle the cases in which our genetic algorithm may struggle. 
 
 
-As the generated unit tests are meant for human
-consumption~\cite{fraser2013does}, \EVOSUITE applies various
-post-processing steps to improve readability (e.g., minimising) and
-adds test assertions that capture the current behavior of the tested
-classes. To select the most effective assertions, \EVOSUITE uses
-mutation analysis~\cite{10.1109/TSE.2011.93}.  \EVOSUITE can also be
-used to automatically find faults such as undeclared thrown exceptions
-and broken code contracts~\cite{emse13_oracle}.  For more details on
-the tool and its abilities we refer to~\cite{FrA11c,FrA13a}.
-
 %------------------------------------------------------------------------- 
 \section{Competition Setup}
 
-\EVOSUITE can be configured to target different coverage criteria. The
-fitness function to drive the genetic algorithm was based on a
-combination of several criteria~\cite{rojas2015combining} (e.g., line
-coverage, branch coverage, branch coverage by direct method
-invocation, weak mutation testing, output coverage, exception
-coverage). \EVOSUITE now by default uses an archive of
-solutions~\cite{emse_archive}, which means that throughout the search,
-whenever a new coverage goal is satisfied, the corresponding test is
-stored in the archive, and this goal is no longer targeted by the
-fitness function. We enabled the post-processing step of test
-minimization, but to reduce the time spent we included all assertions
-rather than filtering them with mutation
-analysis~\cite{10.1109/TSE.2011.93}. The use of all assertions has
-effects on readability and the chances of obtaining flaky
-tests. However, as readability is not measured by the SBST contest
-metric, and many of the improvements to \EVOSUITE since the last
-competition target flaky tests, we deemed this not a problem.
+The configuration of \EVOSUITE for the competition is largely based on
+its default values, since these have been tuned
+extensively~\cite{arcuri2013parameter}. We used the default set of
+coverage criteria~\cite{rojas2015combining} (e.g., line coverage,
+branch coverage, branch coverage by direct method invocation, weak
+mutation testing, output coverage, exception coverage). The use of an
+archive of solutions~\cite{emse_archive}, which iteratively removes
+covered goals from the fitness function and stores the corresponding
+test cases is now enabled by default in \EVOSUITE.
 
-In contrast to previous instances of the competition, the test
-generation tools this time received a time budget as input, and then
-had to generate tests within that time. \EVOSUITE uses a combination
-of different timeouts for its individual phases (e.g., initialization,
+A new feature in \EVOSUITE is the use of Mockito mock
+classes~\cite{ICST_Mocking17}. After a certain percentage of the
+search budget has passed, \EVOSUITE starts considering the use of mock
+objects instead of real classes. Only branches that cannot be covered
+without mocks will result in tests with mock objects in the end. We
+further added frequency based weighting to constants for
+seeding~\cite{sakti2015instance}, and included extensions to support
+Java Enterprise Edition features~\cite{arcuri2016java}. Besides these
+changes, several bug fixes were applied since the last instance of the
+competition, in particular in relation to non-determinism and flaky
+tests~\cite{ase14_environment}.
+
+Like in previous instances of the competition, we enabled the
+post-processing step of test minimisation (but not for efficiency
+reasons, but because minimised tests are less likely to break). To
+reduce the overall time of test generation we included all assertions
+rather than filtering them with mutation
+analysis~\cite{10.1109/TSE.2011.93}, which is a computationally
+expensive process. The use of all assertions has a negative impact on
+readability, but this is not evaluated as part of the SBST contest.
+
+Like in the 2016 competition, tools were called with different time
+budgets. We used the same strategy as for the previous
+competition~\cite{evosuiteAtSbst2016} to distribute the overall time
+budget onto the different phases of \EVOSUITE (e.g., initialization,
 search, minimization, assertion generation, compilation check, removal
-of flaky tests), which created the challenge of distributing the
-overall budget onto these phases. We used a simple approach where 50\%
-of the time was allocated to the search, whereas the other half of the
-time was distributed equally to the remaining phases. If any of the
-phases used more time than allocated, which can for example happen if
-test executions take long or lead to timeouts, then phases for which
-there is no time left are skipped. For example, if there is no time
-left for minimization, then the raw test suite as generated by the
-search is returned.
+of flaky tests). That is, 50\% of the time was allocated to the
+search, and the rest was distributed equally to the remaining
+phases.
+
 
 %------------------------------------------------------------------------- 
 \section{Benchmark results}
