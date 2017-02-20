@@ -1,1 +1,11 @@
+syntax: glob
 target/*
+**/paper_*.aux
+**/paper_*.bbl
+**/paper_*.blg
+**/paper_*.log
+**/paper_*.out
+**/paper_*.pdf
+**/paper_*.synctex.gz
+**/.RData
+**/.Rhistory
