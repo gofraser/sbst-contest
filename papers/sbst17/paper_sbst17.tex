@@ -484,7 +484,19 @@ relevant statements of each test case, might be worth investigating
 to alleviate this issue.
 
 % Mocking
-\TODO{Add some stats on mocking}
+As mentioned in the previous section, \EVOSUITE now can use private
+API access and functional mocking in addition to environment
+mocking~\cite{ICST_Mocking17}. In the competition, a total of 20,921
+objects were mocked, 1,485 fields were set and 3,090 private methods
+were invoked using private API access, and environment classes were
+mocked 4,699 times, with \texttt{java.util.Random} and
+\texttt{java.io.File} being by far the most frequently mocked
+environment classes (resp. 1,286 and 1,121 times). Further
+investigation is needed to assess the impact of these mocking features
+on test generation effectiveness.
+
+
+
 
 % A few of these flaky tests were introduced by recent changes to
 % \EVOSUITE following experiments on
