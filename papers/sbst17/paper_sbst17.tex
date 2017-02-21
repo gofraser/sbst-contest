@@ -197,23 +197,6 @@
 The annual unit test generation competition aims to drive and evaluate
 progress on unit test generation tools. In the 5th instance of the
 competition at the International Workshop on Search-Based Software
-<<<<<<< working copy
-Testing (SBST) 2017, four tools competed on a set of open source Java
-classes. This paper describes the results of applying the \EVOSUITE
-test generation tool~\cite{FrA11c} in this competition. Details about
-the procedure of the competition, the technical framework, and the
-benchmark classes can be found in~\cite{sbst17competition}.  In this
-competition, \EVOSUITE achieved an overall score of 1457.3, which was
-the highest among the competing and baseline tools.
-||||||| base
-Testing (SBST) 2017, four tools competed on a set of open source Java
-classes. This paper describes the results of applying the \EVOSUITE
-test generation tool~\cite{FrA11c} in this competition. Details about
-the procedure of the competition, the technical framework, and the
-benchmark classes can be found in~\cite{sbst17competition}.  In this
-competition, \EVOSUITE achieved a 1457.3 overall score, which was the
-highest among the competing and baseline tools.
-=======
 Testing (SBST) 2017, two tools, \EVOSUITE and \JTEXPERT, competed on a
 set of 69 open-source Java classes. Two other tools, \RANDOOP and \TT,
 and existing open-source test suites were used as baseline. This paper
@@ -221,9 +204,8 @@ describes the results obtained by the \EVOSUITE test generation
 tool~\cite{FrA11c} in this competition. Details about the procedure of
 the competition, the technical framework, and the benchmark classes
 can be found in~\cite{sbst17competition}.  In this competition,
-\EVOSUITE achieved a 1457.3 overall score, which was the highest among
-the competing and baseline tools.
->>>>>>> merge rev
+\EVOSUITE achieved an overall score of 1457.3, which was the highest
+among the competing and baseline tools.
 
 %------------------------------------------------------------------------- 
 \section{About EvoSuite}
@@ -514,10 +496,9 @@ minimisation phase timed out and hence \EVOSUITE reverted the
 resulting test suite to the previous, unminimised one, which as
 mentioned before, is more likely to break. Techniques such as
 \textit{partial minimisation} to only select a few test cases to be
-minimised, rather than all test cases, or
-\textit{delta-debugging}~\cite{zellerdd}, which could isolate the
-relevant statements of each test case, might be worth investigating
-to alleviate this issue.
+minimised, rather than all test cases, or more efficient minimisation
+based on \textit{delta-debugging}~\cite{LOZCM07}, might be worth
+investigating to alleviate this issue.
 
 % Mocking
 As mentioned in the previous section, \EVOSUITE now uses private
@@ -529,10 +510,10 @@ were invoked using mocked access% , and environment classes were
 % mocked 4,699 times, with \texttt{java.util.Random} and
 % \texttt{java.io.File} being by far the most frequently mocked
 % environment classes (resp. 1,286 and 1,121 times)
-, adding up to represent only 1.09\% of the total number of lines of code
-in the \EVOSUITE-generated test suites (2,329,361 LOC). Further
-investigation is needed to assess the impact of these mocking features
-on test generation effectiveness for the benchmarks in the
+, adding up to represent only 1.09\% of the total number of lines of
+code in the \EVOSUITE-generated test suites (2,329,361 LOC). Further
+investigation would be needed to assess the impact of these mocking
+features on test generation effectiveness for the benchmarks in the
 competition.
 
 
