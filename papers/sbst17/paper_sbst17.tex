@@ -98,8 +98,11 @@
 	\marginparsep=5pt
 	\newcommand\remark[1]{%
 		\mymarginpar{\raggedright\hbadness=10000\tiny\it #1\par}}
+	% TODO marker
+	\newcommand{\TODO}[1]{\sethlcolor{yellow}\textbf{\textcolor{ScarletRed}{\hl{TODO: #1}}}\xspace}
 \else
 	\newcommand\remark[1]	{}
+	\newcommand{\TODO}[1]{}
 \fi
 
 \ifdraft
@@ -144,9 +147,6 @@
 
 \newcommand{\MUTEST}{{\sc $\mu$Test}\xspace}
 \newcommand{\CS}{{\sc SF100}\xspace}
-
-% TODO marker
-\newcommand{\TODO}[1]{\sethlcolor{yellow}\textbf{\textcolor{ScarletRed}{\hl{TODO: #1}}}\xspace}
 
 
 \DeclareMathSymbol{,}{\mathpunct}{letters}{"3B}
