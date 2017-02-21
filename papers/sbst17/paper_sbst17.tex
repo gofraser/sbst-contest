@@ -198,8 +198,8 @@ classes. This paper describes the results of applying the \EVOSUITE
 test generation tool~\cite{FrA11c} in this competition. Details about
 the procedure of the competition, the technical framework, and the
 benchmark classes can be found in~\cite{sbst17competition}.  In this
-competition, \EVOSUITE achieved a 1457.3 overall score, which was the
-highest among the competing and baseline tools.
+competition, \EVOSUITE achieved an overall score of 1457.3, which was
+the highest among the competing and baseline tools.
 
 %------------------------------------------------------------------------- 
 \section{About EvoSuite}
@@ -326,7 +326,7 @@ branch coverage, branch coverage by direct method invocation, weak
 mutation testing, output coverage, exception coverage). The use of an
 archive of solutions~\cite{emse_archive}, which iteratively removes
 covered goals from the fitness function and stores the corresponding
-test cases is now enabled by default in \EVOSUITE.
+test cases, is now enabled by default in \EVOSUITE.
 
 A new feature in \EVOSUITE is the use of Mockito mock
 classes~\cite{ICST_Mocking17}. After a certain percentage of the
@@ -430,11 +430,11 @@ file system, system calls like \texttt{System.in} and
 \subsection{Challenges}
 
 % Look at benchmarks that always failed
-\EVOSUITE failed to produce any test suite for benchmarks JXPATH-7 and
+\EVOSUITE failed to produce any test suites for benchmarks JXPATH-7 and
 OKHTTP-8, and also struggled often for benchmarks LA4J-3, LA4J-7,
 BCEL-9 (highlighted in Table~\ref{table:results}). All executions of
-\EVOSUITE for JXPATH-7 failed in the instrumentation phase as a result
-of exceeding Java's 64k limit on the size of methods. A viable fix
+\EVOSUITE for JXPATH-7 failed in the instrumentation phase, where
+Java's 64k limit on the size of methods was exceeded. A viable fix
 would be to stop instrumenting before the limit is reached, at the
 price of limited search guidance; a more effective solution would
 involve identifying parts of the code that are worth instrumenting. A
@@ -445,7 +445,7 @@ will require further investigation.
 
 % Look at benchmarks where coverage decreased with increased budget
 As expected, both branch coverage and mutation score generally
-increased with higher time budgets, although in some cases, specially
+increased with higher time budgets, although in some cases, especially
 with $budget=300s$, a decrease was observed for some
 benchmarks. Having run only three repetitions of the tool per time
 budget, it is fair to assume the decreases are due to bugs affecting
@@ -490,7 +490,7 @@ minimisation phase timed out and hence \EVOSUITE reverted the
 resulting test suite to the previous, unminimised one, which as
 mentioned before, is more likely to break. Techniques such as
 \textit{partial minimisation} to only select a few test cases to be
-minimised, rather than all test cases; or
+minimised, rather than all test cases, or
 \textit{delta-debugging}~\cite{zellerdd}, which could isolate the
 relevant statements of each test case, might be worth investigating
 to alleviate this issue.
