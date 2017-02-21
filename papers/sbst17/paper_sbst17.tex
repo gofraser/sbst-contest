@@ -443,8 +443,6 @@ missing dependency for OKHTTP-8 caused all executions---\emph{for all
 reasons (in some cases related to sandboxing, mocking and timeouts)
 will require further investigation.
 
-% LA4J-3, LA4J-7: Phase INITIALIZATION lasted too long, Phase SEARCH lasted too long, 9 seconds more than allowed.
- 
 % Look at benchmarks where coverage decreased with increased budget
 Although coverage generally increased with higher time budgets, there
 are instances where this expected behaviour was not observed,
@@ -455,7 +453,11 @@ runtime errors.\TODO{confirm this conjecture}\TODO{look into details}
 % Look at benchmarks with more flaky tests
 Flaky tests continue to be a challenge for test generation. Benchmarks
 FREEHEP-7 and JXPATH-10 were the ones with the highest number of flaky
-tests in one run (12 and 14, respectively).\TODO{look into details}
+tests in one run (12 and 14, respectively). In both cases, the
+minimisation phase timed out and hence \EVOSUITE reverted the
+resulting test suite to the previous, unminimised one, which as
+mentioned before, is more likely to break. Partial minimisation might
+be worth investigating to alleviate this issue.
 
 % Mocking
 \TODO{Add some stats on mocking}
