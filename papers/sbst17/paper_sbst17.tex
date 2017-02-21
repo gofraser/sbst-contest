@@ -199,7 +199,7 @@ test generation tool~\cite{FrA11c} in this competition. Details about
 the procedure of the competition, the technical framework, and the
 benchmark classes can be found in~\cite{sbst17competition}.  In this
 competition, \EVOSUITE achieved a 1457.3 overall score, which was the
-highest among the competing tools.
+highest among the competing and baseline tools.
 
 %------------------------------------------------------------------------- 
 \section{About EvoSuite}
@@ -386,16 +386,24 @@ phases.
 % }	
 % \end{table*}
 
-% overall results
+\subsection{Overall results}
+
 Table~\ref{table:results} lists the branch coverage and mutation
 analysis results achieved by \EVOSUITE on all benchmark classes in the
 contest. Coverage is generally in the expected range, with clear
-increases for higher time budgets as expected, except for
-$budget=300s$, where a decrease is observed, possibly due to crashes
-or \emph{out-of-memory} errors\TODO{confirm this conjecture}. With
-$budget=480s$, the average branch coverage achieved was \AvgCovG
-(slightly higher than last year's $65.6\%$) and the average mutation
-score was \AvgMutG (considerably higher than last year's $41.0\%$).
+overall increases for higher time budgets. With $budget=480s$, the
+average branch coverage achieved was \AvgCovG (slightly higher than
+last year's $65.6\%$) and the average mutation score was \AvgMutG
+(considerably higher than last year's $41.0\%$).
+
+This year, the contest also included manually written test suites as
+baseline. \EVOSUITE significantly outperformed this manual baseline as
+well, both in terms of branch coverage (avg. \AvgCovEvosuite vs
+\AvgCovManual, with Vargha-Delaney's $A_{12}=\EvoManCovA$ and
+$p\EvoManCovPV$) and mutation scores (avg. \AvgMutEvosuite vs
+\AvgMutManual, with $A_{12}=\EvoManMutA$ and
+$p\EvoManMutPV$).\TODO{Does showing A12 make sense if there's only one
+  manual test suite per benchmark?}
 
 % Coverage on several
 % of the benchmarks from Closure is low, which matches previous
@@ -410,13 +418,33 @@ score was \AvgMutG (considerably higher than last year's $41.0\%$).
 
 \EVOSUITE generated \FlakyEvosuite flaky tests per run on average,
 much lower than the number of flaky tests produced by the competing
-tools (\FlakyTthree by T3, \FlakyJtexpert by JTExpert, and
+and baseline tools (\FlakyTthree by T3, \FlakyJtexpert by JTExpert, and
 \FlakyRandoop by Randoop). We attribute these results---also
 consistent with previous years' results---to the way \EVOSUITE handles
 execution environments during test generation (e.g., controlling the
 static state of the class under test, mocking interactions with the
 file system, system calls like \texttt{System.in} and
 \texttt{System.currentTimeMillis}, etc.)~\cite{arcuri2014automated}.
+
+
+\subsection{Challenges}
+
+% Look at benchmarks that always failed
+\EVOSUITE failed to produce any test suite for benchmarks JXPATH-7 and
+OKHTTP-8, and also struggled often for benchmarks LA4J-3, LA4J-7,
+BCEL-9 (highlighted in Table~\ref{table:results}).\TODO{look into details}
+
+% Look at benchmarks where coverage decreased with increased budget
+Although coverage generally increased with higher time budgets, there
+are instances where this expected behaviour was not observed,
+specially for $budget=300s$, where the average across benchmarks
+decreased. This is possibly due to crashes or out-of-memory
+runtime errors.\TODO{confirm this conjecture}\TODO{look into details}
+
+% Look at benchmarks with more flaky tests
+Flaky tests continue to be a challenge for test generation. Benchmarks
+FREEHEP-7 and JXPATH-10 were the ones with the highest number of flaky
+tests in one run (12 and 14, respectively).\TODO{look into details}
 
 % A few of these flaky tests were introduced by recent changes to
 % \EVOSUITE following experiments on
@@ -486,7 +514,7 @@ Fund, Luxembourg (FNR/P10/03).
 %------------------------------------------------------------------------- 
 %\def\IEEEbibitemsep{5pt plus 1pt}
 %\def\IEEEbibitemsep{6pt}
-
+\clearpage
 \bibliographystyle{IEEEtranS}
 \bibliography{papers}
 \balance

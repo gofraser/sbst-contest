@@ -3,7 +3,8 @@
 #conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,
 #mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
 
-FILE <- "../data/single_transcript.csv";
+FILE <- "../data/single_transcript.csv"
+FILE.MANUAL <- "../data/single_manual_transcript.csv"
 
 mainTable <- function(){
 
@@ -83,7 +84,8 @@ MacroFile <- function(){
       #mean(score))
     }
   }
-
+  ## Coverage and mutation scores per time budget
+  printComment(macro.file, "Coverage and Mutation per time budget")
   i <- 1
   for(t in times){
     printComment(macro.file, concat(toupper(letters[i]),concat("=",t)))
@@ -95,12 +97,37 @@ MacroFile <- function(){
     printMacro(macro.file, concat("AvgMut",toupper(letters[i])), asPercent(score))
     i <- i+1
   }
-  printComment(macro.file, "Overall")
+  ## Flakiness per tool
+  printComment(macro.file, "EvoSuite vs Manual")
   for(t in tools){
     flaky <- mean(dt$brokenTests[dt$tool==t])
     printMacro(macro.file, concat("Flaky",toolname(t)), formatC(flaky,digits=1,format="f"))
   }
-    
+  ## EvoSuite vs Manual
+  printComment(macro.file, "EvoSuite vs Manual")
+  dt.man <- read.csv(FILE.MANUAL,sep=",",dec=".",header=T)
+  evo.cov <- c()
+  evo.mut <- c()
+
+  for(benchmark in benchmarks) {
+    evo.mask = dt$tool=="evosuite" & dt$benchmark==benchmark
+    evo.cov <- c(mean(dt$conditionsCoverageRatio[evo.mask]), evo.cov)
+    evo.mut <- c(mean(dt$mutantsKillRatio[evo.mask]), evo.mut)
+  }
+
+  man.cov <- dt.man$conditionsCoverageRatio
+  man.mut <- dt.man$mutantsKillRatio
+  printMacro(macro.file, "AvgCovEvosuite", asPercent(mean(evo.cov)))
+  printMacro(macro.file, "AvgMutEvosuite", asPercent(mean(evo.mut)))
+  printMacro(macro.file, "AvgCovManual", asPercent(mean(man.cov)))
+  printMacro(macro.file, "AvgMutManual", asPercent(mean(man.mut)))
+  covCmp <- measureA(evo.cov, man.cov)
+  mutCmp <- measureA(evo.mut, man.mut)
+  printMacro(macro.file, "EvoManCovA", covCmp$A)
+  printMacro(macro.file, "EvoManCovPV", pvalue(covCmp$pv))
+  printMacro(macro.file, "EvoManMutA", mutCmp$A)
+  printMacro(macro.file, "EvoManMutPV", pvalue(mutCmp$pv))
+
   sink()
 }
 
@@ -158,4 +185,50 @@ toolname <- function(x) {
   x <- str_replace(x,"3","three")
   s <- strsplit(x, " ")[[1]]
   return(paste(toupper(substring(s, 1, 1)), substring(s, 2), sep = "", collapse = " "))
+}
+
+measureA <- function(a, b) {
+  res <- list()
+  if(length(a)==0 & length(b)==0){
+    res$A <- 0.5
+    res$pv <- 1
+    return(res)
+  } else if(length(a)==0){
+    ## motivation is that we have no data for "a" but we do for "b".
+    ## maybe the process generating "a" always fail (eg out of memory)
+    res$A <- 0
+    res$pv <- .001
+    return(res)
+  } else if(length(b)==0){
+    res$A <- 1
+    res$pv <- .001
+    return(res)
+  }
+
+  r = rank(c(a,b))
+  r1 = sum(r[seq_along(a)])
+
+  m = length(a)
+  n = length(b)
+  A = (r1/m - (m+1)/2)/n
+
+
+  stat = FALSE
+  w = wilcox.test(b, a, exact=FALSE)
+  pv = w$p.value
+  if (!is.nan(pv) & pv <= 0.05)
+    stat = TRUE
+
+  A = floor(A*100)/100
+
+  res$A <- A
+  res$pv <- pv
+  return(res)
+}
+
+pvalue <- function(pv){
+  if (!is.nan(pv) & pv <= 0.001)
+    return("'<0.001'")
+  else
+    return(paste("{",formatC(value,digits=3,format="f"),"}",sep=""))
 }
