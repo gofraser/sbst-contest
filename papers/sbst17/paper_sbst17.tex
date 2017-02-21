@@ -476,8 +476,12 @@ FREEHEP-7 and JXPATH-10 were the ones with the highest number of flaky
 tests in one run (12 and 14, respectively). In both cases, the
 minimisation phase timed out and hence \EVOSUITE reverted the
 resulting test suite to the previous, unminimised one, which as
-mentioned before, is more likely to break. Partial minimisation might
-be worth investigating to alleviate this issue.
+mentioned before, is more likely to break. Techniques such as
+\textit{partial minimisation} to only select a few test cases to be
+minimised, rather than all test cases; or
+\textit{delta-debugging}~\cite{zellerdd}, which could isolate the
+relevant statements of each test case, might be worth investigating
+to alleviate this issue.
 
 % Mocking
 \TODO{Add some stats on mocking}
