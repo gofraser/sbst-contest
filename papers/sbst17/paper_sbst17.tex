@@ -432,8 +432,19 @@ file system, system calls like \texttt{System.in} and
 % Look at benchmarks that always failed
 \EVOSUITE failed to produce any test suite for benchmarks JXPATH-7 and
 OKHTTP-8, and also struggled often for benchmarks LA4J-3, LA4J-7,
-BCEL-9 (highlighted in Table~\ref{table:results}).\TODO{look into details}
+BCEL-9 (highlighted in Table~\ref{table:results}). All executions of
+\EVOSUITE for JXPATH-7 failed in the instrumentation phase as a result
+of exceeding Java's 64k limit on the size of methods. A trivial fix
+would be to stop instrumenting before the limit is reached, at the
+price of limited search guidance; a more effective solution would
+involve identifying parts of the code that are worth instrumenting. A
+missing dependency for OKHTTP-8 caused all executions---\emph{for all
+  tools}---to fail. For the other mentioned benchmarks, the failure
+reasons (in some cases related to sandboxing, mocking and timeouts)
+will require further investigation.
 
+% LA4J-3, LA4J-7: Phase INITIALIZATION lasted too long, Phase SEARCH lasted too long, 9 seconds more than allowed.
+ 
 % Look at benchmarks where coverage decreased with increased budget
 Although coverage generally increased with higher time budgets, there
 are instances where this expected behaviour was not observed,
