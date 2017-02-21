@@ -446,14 +446,15 @@ will require further investigation.
 % Look at benchmarks where coverage decreased with increased budget
 As expected, both branch coverage and mutation score generally
 increased with higher time budgets, although in some cases, specially
-at $budget=300s$, a decrease was observed for some benchmarks. Having
-run only three repetitions of the tool per time budget, it is fair to
-assume the decreases are due to bugs affecting executions with
-$budget=300s$ by chance. A preliminary investigation on the source of
-this loss of coverage revealed that out-of-memory errors (e.g., for
-OKHTTP-2 and RE2J-7), sandboxing problems (e.g., for LA4J-3 and
-LA4J-7), and mocking-related issues (e.g., for BCEL-1, BCEL-5, BCEL-7)
-are some of the problems in \EVOSUITE.
+with $budget=300s$, a decrease was observed for some
+benchmarks. Having run only three repetitions of the tool per time
+budget, it is fair to assume the decreases are due to bugs affecting
+executions by chance. A preliminary investigation on the source of
+this loss of coverage revealed that memory management (e.g.,
+out-of-memory errors for OKHTTP-2 and RE2J-7), sandboxing (e.g.,
+affecting all executions for LA4J-3 and LA4J-7), and mocking
+(affecting BCEL-1, BCEL-5 and BCEL-7, for example) are some of the
+aspects that require attention and debugging in \EVOSUITE.
 
 % Although coverage generally increased with higher time budgets, there
 % are instances where this expected behaviour was not observed,
