@@ -138,6 +138,10 @@
 \newcommand{\JodaTime}{Joda-Time\xspace}  % That's how they write themselves -- AZ
 
 \newcommand{\EVOSUITE}{{\sc EvoSuite}\xspace}
+\newcommand{\JTEXPERT}{{\sc jTExpert}\xspace}
+\newcommand{\RANDOOP}{{\sc Randoop}\xspace}
+\newcommand{\TT}{{\sc T3}\xspace}
+
 \newcommand{\MUTEST}{{\sc $\mu$Test}\xspace}
 \newcommand{\CS}{{\sc SF100}\xspace}
 
@@ -193,13 +197,15 @@
 The annual unit test generation competition aims to drive and evaluate
 progress on unit test generation tools. In the 5th instance of the
 competition at the International Workshop on Search-Based Software
-Testing (SBST) 2017, four tools competed on a set of open source Java
-classes. This paper describes the results of applying the \EVOSUITE
-test generation tool~\cite{FrA11c} in this competition. Details about
-the procedure of the competition, the technical framework, and the
-benchmark classes can be found in~\cite{sbst17competition}.  In this
-competition, \EVOSUITE achieved a 1457.3 overall score, which was the
-highest among the competing and baseline tools.
+Testing (SBST) 2017, two tools, \EVOSUITE and \JTEXPERT, competed on a
+set of 69 open-source Java classes. Two other tools, \RANDOOP and \TT,
+and existing open-source test suites were used as baseline. This paper
+describes the results obtained by the \EVOSUITE test generation
+tool~\cite{FrA11c} in this competition. Details about the procedure of
+the competition, the technical framework, and the benchmark classes
+can be found in~\cite{sbst17competition}.  In this competition,
+\EVOSUITE achieved a 1457.3 overall score, which was the highest among
+the competing and baseline tools.
 
 %------------------------------------------------------------------------- 
 \section{About EvoSuite}
@@ -208,7 +214,7 @@ highest among the competing and baseline tools.
 \begin{table}[!h]
 \renewcommand{\arraystretch}{1.3}
 \caption{Classification of the \EVOSUITE unit test generation
-  tool.}\label{tool-description}
+  tool}\label{tool-description}
 \resizebox{1.0\columnwidth}{!}{  
 \begin{tabular}{|l|p{5cm}|}
   \hline
@@ -231,7 +237,7 @@ Output&  JUnit 4 test cases\\
   \multicolumn{2}{|l|}{Operation} \\
   \hline
   Interaction &  Through the command line, and plugins for IntelliJ, Maven and Eclipse\\
-  User guidance &  manual verification of assertions for functional faults\\
+  User guidance &  Manual verification of assertions for functional faults\\
   Source of information &  http://www.evosuite.org \\
   Maturity&  Mature research prototype, under development\\
   Technology behind the tool & Search-based testing / whole test suite generation\\
@@ -245,7 +251,7 @@ Support & None \\
 \hline
   \multicolumn{2}{|l|}{Does there exist empirical evidence about} \\
   \hline
-  Effectiveness and Scalability & See~\cite{GoA_TSE12,fraser2014large}. \\
+  Effectiveness and Scalability & See~\cite{GoA_TSE12,fraser2014large} \\
 %Completeness & \\
 %Effectiveness & \\
 %Efficiency & \\
@@ -360,7 +366,7 @@ phases.
 
 
 %------------------------------------------------------------------------- 
-\section{Benchmark results}
+\section{Benchmark Results}
 
 \begin{table*}[t]
   \centering
@@ -386,7 +392,7 @@ phases.
 % }	
 % \end{table*}
 
-\subsection{Overall results}
+\subsection{Overall Results}
 
 Table~\ref{table:results} lists the branch coverage and mutation
 analysis results achieved by \EVOSUITE on all benchmark classes in the
@@ -418,8 +424,8 @@ $p\EvoManMutPV$).\TODO{Does showing A12 make sense if there's only one
 
 \EVOSUITE generated \FlakyEvosuite flaky tests per run on average,
 much lower than the number of flaky tests produced by the competing
-and baseline tools (\FlakyTthree by T3, \FlakyJtexpert by JTExpert, and
-\FlakyRandoop by Randoop). We attribute these results---also
+and baseline tools (\FlakyTthree by \TT, \FlakyJtexpert by \JTEXPERT,
+and \FlakyRandoop by \RANDOOP). We attribute these results---also
 consistent with previous years' results---to the way \EVOSUITE handles
 execution environments during test generation (e.g., controlling the
 static state of the class under test, mocking interactions with the
