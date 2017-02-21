@@ -184,7 +184,7 @@
 
 \begin{abstract}
   \EVOSUITE is a search-based tool that automatically generates unit
-  tests for Java code.  This paper summarizes the results and
+  tests for Java code.  This paper summarises the results and
   experiences of \EVOSUITE's participation at the fifth unit testing
   competition at SBST 2017, where \EVOSUITE achieved the highest
   overall score.
@@ -358,8 +358,8 @@ readability, but this is not evaluated as part of the SBST contest.
 Like in the 2016 competition, tools were called with different time
 budgets. We used the same strategy as for the previous
 competition~\cite{evosuiteAtSbst2016} to distribute the overall time
-budget onto the different phases of \EVOSUITE (e.g., initialization,
-search, minimization, assertion generation, compilation check, removal
+budget onto the different phases of \EVOSUITE (e.g., initialisation,
+search, minimisation, assertion generation, compilation check, removal
 of flaky tests). That is, 50\% of the time was allocated to the
 search, and the rest was distributed equally to the remaining
 phases.
@@ -472,7 +472,7 @@ aspects that require attention and debugging in \EVOSUITE.
 % LA4J-7 due to a \textit{state exception}. In order to evaluate a
 % fitness function, each test case evolved by the underline GA of
 % \EVOSUITE has to be executed. However, its execution could fail due to
-% several reasons: state exception (if a test case tries to re-initalize
+% several reasons: state exception (if a test case tries to re-initialise
 % EvoSuite's sanbox, LA4J-3 and LA4J-7), timeout (OKHTTP-2), etc. In
 % case of a timeout, \EVOSUITE logs the stacktrace of the thread in
 % which each test case is executed, which could cause an out-of-memory
