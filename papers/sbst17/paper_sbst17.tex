@@ -434,7 +434,7 @@ file system, system calls like \texttt{System.in} and
 OKHTTP-8, and also struggled often for benchmarks LA4J-3, LA4J-7,
 BCEL-9 (highlighted in Table~\ref{table:results}). All executions of
 \EVOSUITE for JXPATH-7 failed in the instrumentation phase as a result
-of exceeding Java's 64k limit on the size of methods. A trivial fix
+of exceeding Java's 64k limit on the size of methods. A viable fix
 would be to stop instrumenting before the limit is reached, at the
 price of limited search guidance; a more effective solution would
 involve identifying parts of the code that are worth instrumenting. A
