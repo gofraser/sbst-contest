@@ -447,8 +447,28 @@ will require further investigation.
 Although coverage generally increased with higher time budgets, there
 are instances where this expected behaviour was not observed,
 specially for $budget=300s$, where the average across benchmarks
-decreased. This is possibly due to crashes or out-of-memory
-runtime errors.\TODO{confirm this conjecture}\TODO{look into details}
+decreased. This is possibly due to crashes or out-of-memory runtime
+errors. For instance, \EVOSUITE failed to generate any test suite in
+one out of three runs of OKHTTP-2 and RE2J-7 due to an
+\textit{out-of-memory error}, and in all executions of LA4J-3 and
+LA4J-7 due to a \textit{state exception}. In order to evaluate a
+fitness function, each test case evolved by the underline GA of
+\EVOSUITE has to be executed. However, its execution could fail due to
+several reasons: state exception (if a test case tries to re-initalize
+EvoSuite's sanbox, LA4J-3 and LA4J-7), timeout (OKHTTP-2), etc. In
+case of a timeout, \EVOSUITE logs the stacktrace of the thread in
+which each test case is executed, which could cause an out-of-memory
+error if the stack trace message is to long. RE2J-7: \TODO{I do not
+understand how a java.lang.OutOfMemoryError could be throw by
+CBranchSuiteFitness.java:145}.
+%
+To avoid low coverage of final classes with private constructors (like
+the class under test of benchmark OKHTTP-7), \EVOSUITE uses reflection
+to call the default constructor of the class under test. However,
+\TODO{EvoSuite tries to access a field of the cut (which is public
+static final) by using an instance of cut. It's still not clear why}.
+For other benchmarks such for example BCEL-1, BCEL-5, BCEL-7,
+\EVOSUITE failed due to mocking related issues.
 
 % Look at benchmarks with more flaky tests
 Flaky tests continue to be a challenge for test generation. Benchmarks
