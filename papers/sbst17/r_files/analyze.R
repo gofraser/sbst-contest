@@ -3,6 +3,8 @@
 #conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,
 #mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
 
+library(stringr)
+
 FILE <- "../data/single_transcript.csv"
 FILE.MANUAL <- "../data/single_manual_transcript.csv"
 
@@ -110,11 +112,12 @@ MacroFile <- function(){
   evo.mut <- c()
 
   for(benchmark in benchmarks) {
-    evo.mask = dt$tool=="evosuite" & dt$benchmark==benchmark
-    evo.cov <- c(mean(dt$conditionsCoverageRatio[evo.mask]), evo.cov)
-    evo.mut <- c(mean(dt$mutantsKillRatio[evo.mask]), evo.mut)
+    if (dt.man[dt.man$benchmark==benchmark,"conditionsCoverageRatio"] > 0){
+      evo.mask = dt$tool=="evosuite" & dt$benchmark==benchmark
+      evo.cov <- c(mean(dt$conditionsCoverageRatio[evo.mask]), evo.cov)
+      evo.mut <- c(mean(dt$mutantsKillRatio[evo.mask]), evo.mut)
+    }
   }
-
   man.cov <- dt.man$conditionsCoverageRatio
   man.mut <- dt.man$mutantsKillRatio
   printMacro(macro.file, "AvgCovEvosuite", asPercent(mean(evo.cov)))
@@ -228,7 +231,7 @@ measureA <- function(a, b) {
 
 pvalue <- function(pv){
   if (!is.nan(pv) & pv <= 0.001)
-    return("'<0.001'")
+    return("<0.001")
   else
-    return(paste("{",formatC(value,digits=3,format="f"),"}",sep=""))
+    return(paste("{",formatC(pv,digits=3,format="f"),"}",sep=""))
 }

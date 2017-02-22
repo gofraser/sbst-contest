@@ -9,3 +9,4 @@ target/*
 **/paper_*.synctex.gz
 **/.RData
 **/.Rhistory
+**/5thresults/
