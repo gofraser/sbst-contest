@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,JXPATH-6,org.apache.commons.jxpath.JXPathContext,1,350,101220,4748,78,0,0,0,96,83,86.45833,46,43,93.478264,50,48,96.0,45,90.0,5,120,2
+ 
+ 
+ 
+

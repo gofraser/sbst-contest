@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.jxpath.ri.model.beans.PropertyIterator
+* Starting client
+* Connecting to master process on port 21727
+* Analyzing classpath: 
+  - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+  - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.jxpath.ri.model.beans.PropertyIterator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 154
+  - Branch 102
+  - Exception 0
+  - MutationFactory 412
+  - Output 29
+  - Method 7
+  - MethodNoException 7
+  - CBranchFitnessFactory 102
+* Using seed 1516819182170
+* Starting evolution
+[MASTER] 19:39:45.937 [logback-1] WARN  TestUsageChecker - class org.apache.commons.jxpath.ri.model.VariablePointer$1 looks like an anonymous class, ignoring it (although reflection says false) VariablePointer$1
+* Search finished after 72s and 211 generations, 103008 statements, best individual has fitness: 316.60805084233533
+* Minimizing test suite
+* Generated 23 tests with total length 246
+* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 19:41:29.382 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 6 seconds more than allowed.
+* Writing JUnit test case 'PropertyIterator_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

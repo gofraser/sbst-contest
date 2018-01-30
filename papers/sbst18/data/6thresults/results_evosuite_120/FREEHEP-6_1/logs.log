@@ -1,0 +1,116 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.SimplexBuilder
+* Starting client
+* Connecting to master process on port 14545
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.SimplexBuilder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 96
+  - Branch 55
+  - Exception 0
+  - MutationFactory 127
+  - Output 15
+  - Method 2
+  - MethodNoException 2
+  - CBranchFitnessFactory 55
+* Using seed 1516820247445
+* Starting evolution
+[MASTER] 19:58:25.943 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 71s and 23 generations, 31947 statements, best individual has fitness: 68.17857142857142
+* Minimizing test suite
+* Generated 8 tests with total length 115
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 19:58:58.794 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<4> but was:<3>
+[MASTER] 19:58:58.795 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimplexBuilder simplexBuilder0 = new SimplexBuilder();
+assertNotNull(simplexBuilder0);
+
+double double0 = 1.0;
+FCNBase fCNBase0 = mock(FCNBase.class, new ViolatedAssumptionAnswer());
+doReturn(double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
+MnFcn mnFcn0 = new MnFcn(fCNBase0, double0);
+assertNotNull(mnFcn0);
+
+MnUserTransformation mnUserTransformation0 = new MnUserTransformation();
+assertNotNull(mnUserTransformation0);
+
+MnStrategy mnStrategy0 = new MnStrategy();
+assertEquals(0.3, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(5, mnStrategy0.hessianNCycles());
+assertFalse(mnStrategy0.isLow());
+assertFalse(mnStrategy0.isHigh());
+assertEquals(2, mnStrategy0.hessianGradientNCycles());
+assertEquals(0.05, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(3, mnStrategy0.gradientNCycles());
+assertEquals(0.05, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(1, mnStrategy0.strategy());
+assertTrue(mnStrategy0.isMedium());
+assertEquals(0.3, mnStrategy0.hessianStepTolerance(), 0.01);
+assertNotNull(mnStrategy0);
+
+HessianGradientCalculator hessianGradientCalculator0 = new HessianGradientCalculator(mnFcn0, mnUserTransformation0, mnStrategy0);
+assertEquals(0.3, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(5, mnStrategy0.hessianNCycles());
+assertFalse(mnStrategy0.isLow());
+assertFalse(mnStrategy0.isHigh());
+assertEquals(2, mnStrategy0.hessianGradientNCycles());
+assertEquals(0.05, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(3, mnStrategy0.gradientNCycles());
+assertEquals(0.05, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(1, mnStrategy0.strategy());
+assertTrue(mnStrategy0.isMedium());
+assertEquals(0.3, mnStrategy0.hessianStepTolerance(), 0.01);
+assertNotNull(hessianGradientCalculator0);
+
+int int0 = 0;
+MnAlgebraicVector mnAlgebraicVector0 = new MnAlgebraicVector(int0);
+assertNotNull(mnAlgebraicVector0);
+
+MinimumParameters minimumParameters0 = new MinimumParameters(mnAlgebraicVector0, int0);
+assertNotNull(minimumParameters0);
+
+MinimumState minimumState0 = new MinimumState(minimumParameters0, double0, int0);
+assertNotNull(minimumState0);
+
+MinimumSeed minimumSeed0 = new MinimumSeed(minimumState0, mnUserTransformation0);
+assertNotNull(minimumSeed0);
+
+FunctionMinimum functionMinimum0 = simplexBuilder0.minimum(mnFcn0, hessianGradientCalculator0, minimumSeed0, mnStrategy0, int0, double0);
+assertEquals(0.3, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(5, mnStrategy0.hessianNCycles());
+assertFalse(mnStrategy0.isLow());
+assertFalse(mnStrategy0.isHigh());
+assertEquals(2, mnStrategy0.hessianGradientNCycles());
+assertEquals(0.05, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(3, mnStrategy0.gradientNCycles());
+assertEquals(0.05, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(1, mnStrategy0.strategy());
+assertTrue(mnStrategy0.isMedium());
+assertEquals(0.3, mnStrategy0.hessianStepTolerance(), 0.01);
+assertEquals(1.0, functionMinimum0.errorDef(), 0.01);
+assertEquals(0.0, functionMinimum0.fval(), 0.01);
+assertFalse(functionMinimum0.isValid());
+assertEquals(4, functionMinimum0.nfcn());
+assertEquals(0.0, functionMinimum0.edm(), 0.01);
+assertNotNull(functionMinimum0);
+
+
+* Writing JUnit test case 'SimplexBuilder_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

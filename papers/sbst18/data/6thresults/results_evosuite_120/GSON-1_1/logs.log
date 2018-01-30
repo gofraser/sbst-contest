@@ -1,0 +1,55 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+* Starting client
+* Connecting to master process on port 12791
+* Analyzing classpath: 
+  - /var/benchmarks/projects/gson/gson/target/classes
+  - /var/benchmarks/projects/gson/gson/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 117
+  - Branch 65
+  - Exception 0
+  - MutationFactory 115
+  - Output 6
+  - Method 10
+  - MethodNoException 10
+  - CBranchFitnessFactory 65
+* Using seed 1516823559350
+* Starting evolution
+[MASTER] 20:53:41.244 [logback-2] ERROR TestCluster - Failed to check cache for com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter<T> : Type points to itself
+[MASTER] 20:53:41.245 [logback-2] ERROR TestCluster - Failed to check cache for com.google.gson.internal.ObjectConstructor<T> : Type points to itself
+[MASTER] 20:53:48.673 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField canUseFunctionalMocks=true, canBeMocked: false
+[MASTER] 20:53:48.676 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 0, type java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<org.evosuite.runtime.mock.java.time.chrono.MockJapaneseDate>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:49.361 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 0, type java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:49.604 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 3, type java.util.HashMap<java.lang.reflect.Type, com.google.gson.InstanceCreator<org.evosuite.runtime.mock.java.time.chrono.MockJapaneseDate>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:50.350 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+[MASTER] 20:53:51.565 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 0, type java.util.HashMap<java.lang.reflect.Type, com.google.gson.InstanceCreator<com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:52.078 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 0, type java.util.HashMap<java.lang.reflect.Type, com.google.gson.InstanceCreator<org.evosuite.runtime.mock.java.time.chrono.MockThaiBuddhistDate>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:52.356 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 1, type java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<java.lang.String>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:52.511 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.google.gson.internal.ConstructorConstructor due to org.evosuite.ga.ConstructionFailedException: Error: VariableReference: Statement 1, type java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<java.lang.Integer>> is not assignable to java.util.Map<java.lang.reflect.Type, com.google.gson.InstanceCreator<?>>
+[MASTER] 20:53:58.257 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 5023ms
+* Search finished after 76s and 6 generations, 5031 statements, best individual has fitness: 401.2
+* Minimizing test suite
+* Generated 10 tests with total length 72
+* Resulting test suite's coverage: 58% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'ReflectiveTypeAdapterFactory_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

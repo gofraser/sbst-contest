@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.bcel.verifier.statics.Pass3aVerifier
+* Starting client
+* Connecting to master process on port 16580
+* Analyzing classpath: 
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.bcel.verifier.statics.Pass3aVerifier
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 512
+  - Branch 337
+  - Exception 0
+  - MutationFactory 917
+  - Output 7
+  - Method 35
+  - MethodNoException 35
+  - CBranchFitnessFactory 337
+* Using seed 1516818252769
+* Starting evolution
+[MASTER] 19:24:19.313 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.bcel.verifier.statics.Pass3aVerifier canUseFunctionalMocks=false, canBeMocked: false
+[MASTER] 19:24:28.834 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 71s and 131 generations, 49435 statements, best individual has fitness: 1772.2036401856008
+* Minimizing test suite
+* Generated 13 tests with total length 79
+* Resulting test suite's coverage: 42% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'Pass3aVerifier_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

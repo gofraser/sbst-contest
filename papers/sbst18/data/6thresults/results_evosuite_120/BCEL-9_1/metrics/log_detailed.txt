@@ -1,0 +1,123 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  BCEL-9
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/bcel-6.0-src/src/main/java
+>> /var/benchmarks/projects/bcel-6.0-src/target/classes
+>> 1
+>> /var/benchmarks/projects/bcel-6.0-src/target/classes
+>> 0
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+
+
+### COMPUTING METRICS ###: org.apache.bcel.classfile.StackMapEntry
+
+
+Starting class org.apache.bcel.classfile.StackMapEntry
+
+
+Ending class org.apache.bcel.classfile.StackMapEntry
+Creating directory results_evosuite_120/BCEL-9_1/temp/testcases/bin
+Creating dummy JUnit test file
+
+---Compilation---
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-9_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-9_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-9_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+
+
+---Timing Information---
+Running tests with the following classpath: 
+/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-9_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+
+---The tests are re-executed other four times to find the flaky ones---
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+
+=== Run Jacoco for Coverage ===
+Number of instrumented file = 431
+Running tests with the following classpath: 
+/home/evosuite_6th/results_evosuite_120/BCEL-9_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-9_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Number of file with coverage information = 431
+Extracted coverage data for the class org/apache/bcel/classfile/StackMapEntry
+
+=== Run PIT ===
+Generate mutations via PIT
+ Running tests against generated Mutants
+Running PITWrapper with the following data:
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-9_1/temp/testcases/bin
+> CUT = org.apache.bcel.classfile.StackMapEntry
+> Test cases = []
+Could not calculate mutation metrics!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at sbst.benchmark.pitest.PITWrapper.<init>(PITWrapper.java:63)
+	at sbst.benchmark.TestSuite.mutationAnalysis(TestSuite.java:506)
+	at sbst.benchmark.TestSuite.<init>(TestSuite.java:99)
+	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
+	at sbst.benchmark.RunTool.execute(RunTool.java:172)
+	at sbst.benchmark.RunTool.run(RunTool.java:95)
+	at sbst.benchmark.Main.main(Main.java:178)
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: BCEL-9
+	Class Under Test: org.apache.bcel.classfile.StackMapEntry
+	Run number: 1
+	Tool preparation time (ms): 350
+	Tool test cases generation time (ms): 44341
+	Test cases execution time (ms): 7
+	Test case number: 0
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 189
+	Lines covered: 0
+	Lines coverage ratio (%): 0.0
+	Conditions total: 196
+	Conditions covered: 0
+	Conditions coverage ratio (%): 0.0
+	Mutants total: 0
+	Mutants covered: 0
+	Mutants coverage ratio (%): 0.0
+	Mutants killed: 0
+	Mutants killed ratio (%): 0.0
+	Mutants alive: 0
+
+
+Class org.apache.bcel.classfile.StackMapEntry ended.
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 22052
+Killing master process 22052
+Executing command kill -9 22052
+Execution of command kill -9 22052 finished.
+Process was destroyed

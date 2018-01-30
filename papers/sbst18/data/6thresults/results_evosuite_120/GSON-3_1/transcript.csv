@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,GSON-3,com.google.gson.JsonPrimitive,1,349,92159,2734,84,0,0,0,82,79,96.34146,80,66,82.5,87,84,96.55172,73,83.90804,14,120,2
+ 
+ 
+ 
+

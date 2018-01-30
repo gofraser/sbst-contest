@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  FREEHEP-5
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: org.freehep.math.minuit.MnUserParameterState
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest.java
+Compiled 'org/freehep/math/minuit/MnUserParameterState_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: FREEHEP-5
+	Class Under Test: org.freehep.math.minuit.MnUserParameterState
+	Run number: 1
+	Tool preparation time (ms): 346
+	Tool test cases generation time (ms): 105737
+	Test cases execution time (ms): 2974
+	Test case number: 166
+	Uncompilable Test Classes: 0
+	Broken tests number: 1
+	Failing tests number: 0
+	Lines total: 262
+	Lines covered: 228
+	Lines coverage ratio (%): 87.0229
+	Conditions total: 110
+	Conditions covered: 76
+	Conditions coverage ratio (%): 69.09091
+	Mutants total: 135
+	Mutants covered: 114
+	Mutants coverage ratio (%): 84.44444
+	Mutants killed: 114
+	Mutants killed ratio (%): 84.44444
+	Mutants alive: 21

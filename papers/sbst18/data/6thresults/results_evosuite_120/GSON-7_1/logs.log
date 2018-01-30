@@ -1,0 +1,47 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.gson.GsonBuilder
+* Starting client
+* Connecting to master process on port 14299
+* Analyzing classpath: 
+  - /var/benchmarks/projects/gson/gson/target/classes
+  - /var/benchmarks/projects/gson/gson/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.gson.GsonBuilder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 94
+  - Branch 60
+  - Exception 0
+  - MutationFactory 95
+  - Output 51
+  - Method 25
+  - MethodNoException 25
+  - CBranchFitnessFactory 60
+* Using seed 1516822541260
+* Starting evolution
+[MASTER] 20:35:44.066 [logback-2] ERROR TestCluster - Failed to check cache for com.google.gson.Gson.FutureTypeAdapter<T> : Type points to itself
+[MASTER] 20:36:33.831 [logback-2] ERROR TestCluster - Failed to check cache for com.google.gson.TypeAdapter<T> : Type points to itself
+[MASTER] 20:36:40.149 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 20:36:45.398 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+* Search finished after 72s and 371 generations, 198727 statements, best individual has fitness: 41.142857141925816
+* Minimizing test suite
+* Generated 32 tests with total length 159
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'GsonBuilder_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

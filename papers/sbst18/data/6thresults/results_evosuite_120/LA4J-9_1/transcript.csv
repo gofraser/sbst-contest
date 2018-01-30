@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,LA4J-9,org.la4j.decomposition.SingularValueDecompositor,1,352,89872,2602,8,0,0,0,265,224,84.528305,175,149,85.14286,161,140,86.95652,48,29.813665,113,120,2
+ 
+ 
+ 
+

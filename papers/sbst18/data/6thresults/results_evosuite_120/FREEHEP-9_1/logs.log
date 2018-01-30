@@ -1,0 +1,44 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnMinos
+* Starting client
+* Connecting to master process on port 6006
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnMinos
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 109
+  - Branch 88
+  - Exception 0
+  - MutationFactory 461
+  - Output 120
+  - Method 21
+  - MethodNoException 21
+  - CBranchFitnessFactory 88
+* Using seed 1516820137920
+* Starting evolution
+[MASTER] 19:56:15.517 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 19:56:30.690 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.UnaryOperator<T> : Type points to itself
+* Search finished after 71s and 446 generations, 201837 statements, best individual has fitness: 302.42007992007996
+* Minimizing test suite
+* Generated 95 tests with total length 1189
+* Resulting test suite's coverage: 57% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 19:57:08.927 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
+* Compiling and checking tests
+[MASTER] 19:57:23.742 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 3 seconds more than allowed.
+* Writing JUnit test case 'MnMinos_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

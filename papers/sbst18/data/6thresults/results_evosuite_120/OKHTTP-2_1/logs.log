@@ -1,0 +1,59 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: okhttp3.internal.platform.AndroidPlatform
+* Starting client
+* Connecting to master process on port 21385
+* Analyzing classpath: 
+  - /var/benchmarks/projects/okhttp/okhttp/target/classes
+  - /var/benchmarks/projects/okhttp/okhttp/target/classes
+[MASTER] 19:19:38.881 [logback-1] WARN  CheapPurityAnalyzer - okio.Buffer was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 19:19:38.882 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: okio.Buffer
+[MASTER] 19:19:38.886 [logback-1] WARN  CheapPurityAnalyzer - android.util.Log was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 19:19:38.886 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: android.util.Log
+* Finished analyzing classpath
+* Generating tests for class okhttp3.internal.platform.AndroidPlatform
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 130
+  - Branch 45
+  - Exception 0
+  - MutationFactory 320
+  - Output 13
+  - Method 18
+  - MethodNoException 18
+  - CBranchFitnessFactory 45
+* Using seed 1516817976842
+* Starting evolution
+[MASTER] 19:19:56.870 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 19:20:14.672 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 19:20:14.823 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 19:20:15.061 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+[MASTER] 19:20:17.918 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.UnaryOperator<T> : Type points to itself
+* Search finished after 71s and 237 generations, 121882 statements, best individual has fitness: 204.06105006105005
+* Minimizing test suite
+* Generated 28 tests with total length 187
+* Resulting test suite's coverage: 69% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 19:20:54.771 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.OkHttpClient: okhttp3/internal/Internal
+[MASTER] 19:20:54.858 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
+[MASTER] 19:20:54.911 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.OkHttpClient: okhttp3/OkHttpClient$1
+[MASTER] 19:20:54.945 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
+[MASTER] 19:20:55.028 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.OkHttpClient: okio/BufferedSource
+[MASTER] 19:20:55.049 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: Could not initialize class okhttp3.internal.Util
+[MASTER] 19:20:55.057 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         resolve localhost: 1
+* Writing JUnit test case 'AndroidPlatform_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

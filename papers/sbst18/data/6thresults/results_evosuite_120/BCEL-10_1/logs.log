@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.bcel.verifier.structurals.Subroutines
+* Starting client
+* Connecting to master process on port 12678
+* Analyzing classpath: 
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.bcel.verifier.structurals.Subroutines
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 231
+  - Branch 143
+  - Exception 0
+  - MutationFactory 250
+  - Output 9
+  - Method 18
+  - MethodNoException 18
+  - CBranchFitnessFactory 143
+* Using seed 1516823869925
+* Starting evolution
+[MASTER] 20:58:50.105 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
+[MASTER] 20:59:00.068 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.generic.MethodGen due to org.evosuite.ga.ConstructionFailedException: Have no generator for class java.lang.reflect.Method canUseFunctionalMocks=true, canBeMocked: false
+* Search finished after 72s and 246 generations, 128973 statements, best individual has fitness: 515.0808080808081
+* Minimizing test suite
+* Generated 18 tests with total length 204
+* Resulting test suite's coverage: 48% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'Subroutines_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

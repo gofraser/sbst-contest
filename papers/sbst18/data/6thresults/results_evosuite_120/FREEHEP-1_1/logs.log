@@ -1,0 +1,46 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnPlot
+* Starting client
+* Connecting to master process on port 3145
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnPlot
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 203
+  - Branch 119
+  - Exception 0
+  - MutationFactory 493
+  - Output 6
+  - Method 6
+  - MethodNoException 6
+  - CBranchFitnessFactory 119
+* Using seed 1516820455381
+* Starting evolution
+[MASTER] 20:01:34.455 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.UnaryOperator<T> : Type points to itself
+[MASTER] 20:01:37.579 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 20:01:57.488 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 20:02:08.093 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 73s and 20 generations, 9327 statements, best individual has fitness: 47.04767964072521
+* Minimizing test suite
+* Generated 21 tests with total length 309
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+[MASTER] 20:02:29.689 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generating assertions
+[MASTER] 20:02:29.692 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 5 seconds more than allowed.
+* Compiling and checking tests
+* Writing JUnit test case 'MnPlot_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

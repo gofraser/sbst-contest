@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnUserParameterState
+* Starting client
+* Connecting to master process on port 7182
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnUserParameterState
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 261
+  - Branch 153
+  - Exception 0
+  - MutationFactory 398
+  - Output 139
+  - Method 57
+  - MethodNoException 57
+  - CBranchFitnessFactory 153
+* Using seed 1516820688321
+* Starting evolution
+[MASTER] 20:05:47.088 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 72s and 275 generations, 130699 statements, best individual has fitness: 197.47492537313434
+* Minimizing test suite
+* Generated 166 tests with total length 870
+* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 20:06:31.160 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 7 seconds more than allowed.
+* Writing JUnit test case 'MnUserParameterState_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

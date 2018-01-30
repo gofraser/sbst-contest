@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,IMAGE-4,org.apache.commons.imaging.formats.tiff.TiffField,1,348,107663,7,115,1,0,0,253,0,0.0,134,0,0.0,184,0,0.0,0,0.0,184,120,2
+ 
+ 
+ 
+

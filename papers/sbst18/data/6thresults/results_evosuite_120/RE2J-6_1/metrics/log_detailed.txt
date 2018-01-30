@@ -1,0 +1,426 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  RE2J-6
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/re2j/java
+>> /var/benchmarks/projects/re2j/target/classes
+>> 1
+>> /var/benchmarks/projects/re2j/target/classes
+>> 0
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+
+
+### COMPUTING METRICS ###: com.google.re2j.Machine
+
+
+Starting class com.google.re2j.Machine
+
+
+Ending class com.google.re2j.Machine
+Creating directory results_evosuite_120/RE2J-6_1/temp/testcases/bin
+Creating dummy JUnit test file
+
+---Compilation---
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases -cp /var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/RE2J-6_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/com/google/re2j/Machine_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/com/google/re2j/Machine_ESTest.java
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases -cp /var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/RE2J-6_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/com/google/re2j/Machine_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/com/google/re2j/Machine_ESTest.java
+
+Compiled 'com/google/re2j/Machine_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+Running tests with the following classpath: 
+/var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Machine_ESTest]
+Executions terminated
+
+---The tests are re-executed other four times to find the flaky ones---
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Machine_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Machine_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Machine_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Machine_ESTest]
+Executions terminated
+
+=== Run Jacoco for Coverage ===
+Number of instrumented file = 47
+Running tests with the following classpath: 
+/home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Machine_ESTest]
+Executions terminated
+Number of file with coverage information = 47
+Extracted coverage data for the class com/google/re2j/Machine
+
+=== Run PIT ===
+Generate mutations via PIT
+ Running tests against generated Mutants
+Running PITWrapper with the following data:
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/re2j/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/bin
+> CUT = com.google.re2j.Machine
+> Test cases = [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Matching Jacoco with PIT: find covered mutations
+Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.re2j.Machine_ESTest, com.google.re2j.Machine_ESTest_scaffolding]
+Skipped scaffolding test com.google.re2j.Machine_ESTest_scaffolding
+Executions terminated
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: RE2J-6
+	Class Under Test: com.google.re2j.Machine
+	Run number: 1
+	Tool preparation time (ms): 351
+	Tool test cases generation time (ms): 104599
+	Test cases execution time (ms): 2354
+	Test case number: 26
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 159
+	Lines covered: 141
+	Lines coverage ratio (%): 88.679245
+	Conditions total: 121
+	Conditions covered: 103
+	Conditions coverage ratio (%): 85.12397
+	Mutants total: 104
+	Mutants covered: 101
+	Mutants coverage ratio (%): 97.11539
+	Mutants killed: 71
+	Mutants killed ratio (%): 68.269226
+	Mutants alive: 33
+
+
+Class com.google.re2j.Machine ended.
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 13397
+Killing master process 13397
+Executing command kill -9 13397
+Execution of command kill -9 13397 finished.
+Process was destroyed

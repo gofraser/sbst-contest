@@ -1,0 +1,43 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.re2j.Parser
+* Starting client
+* Connecting to master process on port 21057
+* Analyzing classpath: 
+  - /var/benchmarks/projects/re2j/target/classes
+  - /var/benchmarks/projects/re2j/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.re2j.Parser
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 786
+  - Branch 668
+  - Exception 0
+  - MutationFactory 501
+  - Output 5
+  - Method 16
+  - MethodNoException 16
+  - CBranchFitnessFactory 668
+* Using seed 1516823961438
+* Starting evolution
+* Search finished after 72s and 46 generations, 23254 statements, best individual has fitness: 1809.733356567851
+* Minimizing test suite
+* Generated 51 tests with total length 826
+* Resulting test suite's coverage: 55% (average coverage for all fitness functions)
+[MASTER] 21:00:55.607 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generating assertions
+[MASTER] 21:00:55.609 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 4 seconds more than allowed.
+* Compiling and checking tests
+[MASTER] 21:01:08.718 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 1 seconds more than allowed.
+* Writing JUnit test case 'Parser_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

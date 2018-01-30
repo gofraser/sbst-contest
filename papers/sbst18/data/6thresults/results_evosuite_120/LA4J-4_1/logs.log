@@ -1,0 +1,170 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.la4j.matrix.dense.Basic1DMatrix
+* Starting client
+* Connecting to master process on port 15932
+* Analyzing classpath: 
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.la4j.matrix.dense.Basic1DMatrix
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 116
+  - Branch 81
+  - Exception 0
+  - MutationFactory 839
+  - Output 125
+  - Method 27
+  - MethodNoException 27
+  - CBranchFitnessFactory 81
+* Using seed 1516823443189
+* Starting evolution
+[MASTER] 20:50:48.521 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+[MASTER] 20:51:37.581 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 20:51:37.581 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+* Search finished after 73s and 42 generations, 19948 statements, best individual has fitness: 133.52083333333331
+* Minimizing test suite
+[MASTER] 20:52:10.818 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:10.818 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, org.la4j.matrix.dense.Basic1DMatrix:blankOfShape(II)Lorg/la4j/Matrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:10.888 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:10.888 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, org.la4j.matrix.dense.Basic1DMatrix:blankOfShape(II)Lorg/la4j/Matrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:10.906 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:10.906 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, org.la4j.matrix.dense.Basic1DMatrix:blankOfShape(II)Lorg/la4j/Matrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:10.914 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:10.914 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, org.la4j.matrix.dense.Basic1DMatrix:blankOfShape(II)Lorg/la4j/Matrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:10.918 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:10.918 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, org.la4j.matrix.dense.Basic1DMatrix:blankOfShape(II)Lorg/la4j/Matrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:13.919 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:13.920 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:13.923 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:13.924 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:13.927 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:13.927 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:13.930 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:13.930 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+[MASTER] 20:52:13.933 [logback-1] WARN  ExecutionTrace - Popping method zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix; because we were looking for <init>(II)V
+[MASTER] 20:52:13.933 [logback-1] WARN  ExecutionTrace - Current stack: [org.la4j.matrix.dense.Basic1DMatrix:zero(II)Lorg/la4j/matrix/dense/Basic1DMatrix;
+Branches: 
+True Distances: 
+False Distances: 
+, :
+Branches: 
+True Distances: 
+False Distances: 
+]
+* Generated 85 tests with total length 881
+[MASTER] 20:52:17.759 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 20:52:17.761 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 4 seconds more than allowed.
+* Compiling and checking tests
+[MASTER] 20:52:29.561 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$1
+[MASTER] 20:52:30.405 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$2
+[MASTER] 20:52:30.635 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$3
+[MASTER] 20:52:30.714 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction$1: org/la4j/iterator/JoinFunction$4
+[MASTER] 20:52:30.857 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$5
+* Writing JUnit test case 'Basic1DMatrix_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

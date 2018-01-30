@@ -1,0 +1,46 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.gson.internal.LinkedTreeMap
+* Starting client
+* Connecting to master process on port 17939
+* Analyzing classpath: 
+  - /var/benchmarks/projects/gson/gson/target/classes
+  - /var/benchmarks/projects/gson/gson/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.gson.internal.LinkedTreeMap
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 268
+  - Branch 214
+  - Exception 0
+  - MutationFactory 288
+  - Output 31
+  - Method 39
+  - MethodNoException 39
+  - CBranchFitnessFactory 214
+* Using seed 1516822994271
+* Starting evolution
+[MASTER] 20:43:17.082 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 20:43:17.082 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 20:43:17.130 [logback-2] ERROR TestCluster - Failed to check cache for java.util.stream.BaseStream<T, S> : Type points to itself
+[MASTER] 20:43:32.541 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 20:43:33.210 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.BiFunction<T, U, R> : Type points to itself
+[MASTER] 20:43:41.232 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.BiConsumer<T, U> : Type points to itself
+* Search finished after 72s and 0 generations, 2475 statements, best individual has fitness: 1931.5
+* Minimizing test suite
+* Generated 39 tests with total length 184
+* Resulting test suite's coverage: 58% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'LinkedTreeMap_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

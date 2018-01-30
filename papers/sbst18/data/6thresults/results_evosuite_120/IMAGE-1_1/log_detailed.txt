@@ -1,0 +1,56 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  IMAGE-1
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-generate-tests
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/commons-imaging/src/main/java
+>> /var/benchmarks/projects/commons-imaging/target/classes
+>> 1
+>> /var/benchmarks/projects/commons-imaging/target/classes
+>> 1
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+Deleting file or directory ./temp/testcases
+Creating directory ./temp/testcases
+
+
+### CLASS UNDER TEST ###: org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase
+>> org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase
+TimeBudget: 120
+Search: 70
+Init  : 10
+Min   : 14
+Ass   : 8
+Extra : 120
+JUnit : 10
+Write : 8
+
+
+ Executing with internal budget of 120 sec and external budget of 240 sec 
+expecting: READY
+<< READY
+
+
+ Execution finished with no timeout
+>> >>/home/evosuite_6th/./temp/testcases
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 5701
+Killing master process 5701
+Executing command kill -9 5701
+Execution of command kill -9 5701 finished.
+Process was destroyed

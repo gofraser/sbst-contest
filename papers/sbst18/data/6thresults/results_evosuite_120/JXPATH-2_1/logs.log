@@ -1,0 +1,824 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.jxpath.ri.compiler.Path
+* Starting client
+* Connecting to master process on port 13991
+* Analyzing classpath: 
+  - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+  - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.jxpath.ri.compiler.Path
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 111
+  - Branch 103
+  - Exception 0
+  - MutationFactory 203
+  - Output 42
+  - Method 10
+  - MethodNoException 10
+  - CBranchFitnessFactory 103
+* Using seed 1516818710967
+* Starting evolution
+[MASTER] 19:32:31.753 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 19:32:50.434 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.AncestorContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.AttributeContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.RootContext due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 19:32:53.611 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 71s and 148 generations, 126005 statements, best individual has fitness: 87.0
+* Minimizing test suite
+* Generated 50 tests with total length 580
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 19:33:20.824 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.JXPathContextFactory: org/apache/commons/jxpath/JXPathContextFactoryConfigurationError
+[MASTER] 19:33:20.832 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.ri.model.beans.CollectionPointer: org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator
+[MASTER] 19:33:25.071 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:33:25.073 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ int int0 = CoreOperation.UNION_PRECEDENCE;
+assertEquals(7, int0);
+
+Constant constant0 = new Constant(int0);
+assertNotNull(constant0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+
+CoreOperationLessThanOrEqual coreOperationLessThanOrEqual0 = new CoreOperationLessThanOrEqual(constant0, constant0);
+assertNotNull(coreOperationLessThanOrEqual0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+
+Expression[] expressionArray0 = new Expression[4];
+Step[] stepArray0 = new Step[1];
+NodeTypeTest nodeTypeTest0 = new NodeTypeTest(int0);
+assertNotNull(nodeTypeTest0);
+assertEquals(7, nodeTypeTest0.getNodeType());
+
+Step step0 = new Step(int0, nodeTypeTest0, expressionArray0);
+assertNotNull(step0);
+assertEquals(7, nodeTypeTest0.getNodeType());
+assertEquals(7, step0.getAxis());
+assertEquals(4, expressionArray0.length);
+
+stepArray0[0] = step0;
+ExpressionPath expressionPath0 = new ExpressionPath(coreOperationLessThanOrEqual0, expressionArray0, stepArray0);
+assertNotNull(expressionPath0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+EvalContext evalContext0 = null;
+EvalContext evalContext1 = expressionPath0.evalSteps(evalContext0);
+assertNotNull(evalContext1);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(0, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+JXPathContext jXPathContext0 = null;
+SelfContext selfContext0 = new SelfContext(evalContext1, nodeTypeTest0);
+assertNotNull(selfContext0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(7, nodeTypeTest0.getNodeType());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(0, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+Pointer pointer0 = selfContext0.getSingleNodePointer();
+assertNull(pointer0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(7, nodeTypeTest0.getNodeType());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(0, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+JXPathContextReferenceImpl jXPathContextReferenceImpl0 = new JXPathContextReferenceImpl(jXPathContext0, coreOperationLessThanOrEqual0, pointer0);
+assertTrue(JXPathContextReferenceImpl.USE_SOFT_CACHE);
+assertNotNull(jXPathContextReferenceImpl0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(7, nodeTypeTest0.getNodeType());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(0, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertFalse(jXPathContextReferenceImpl0.isLenient());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+EvalContext evalContext2 = jXPathContextReferenceImpl0.getAbsoluteRootContext();
+assertTrue(JXPathContextReferenceImpl.USE_SOFT_CACHE);
+assertNotNull(evalContext2);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(7, nodeTypeTest0.getNodeType());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(0, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertFalse(jXPathContextReferenceImpl0.isLenient());
+assertFalse(evalContext2.isChildOrderingRequired());
+assertEquals(0, evalContext2.getDocumentOrder());
+assertEquals(0, evalContext2.getPosition());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+Pointer pointer1 = expressionPath0.searchForPath(evalContext2);
+assertTrue(JXPathContextReferenceImpl.USE_SOFT_CACHE);
+assertNull(pointer1);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(7, nodeTypeTest0.getNodeType());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(0, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertFalse(jXPathContextReferenceImpl0.isLenient());
+assertFalse(evalContext2.isChildOrderingRequired());
+assertEquals(0, evalContext2.getDocumentOrder());
+assertEquals(0, evalContext2.getPosition());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+
+[MASTER] 19:33:25.285 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:33:25.287 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ int int0 = CoreOperation.AND_PRECEDENCE;
+assertEquals(1, int0);
+
+Constant constant0 = new Constant(int0);
+assertNotNull(constant0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+
+CoreOperationLessThanOrEqual coreOperationLessThanOrEqual0 = new CoreOperationLessThanOrEqual(constant0, constant0);
+assertNotNull(coreOperationLessThanOrEqual0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+
+Expression[] expressionArray0 = new Expression[4];
+expressionArray0[3] = (Expression) coreOperationLessThanOrEqual0;
+expressionArray0[1] = (Expression) constant0;
+expressionArray0[2] = (Expression) coreOperationLessThanOrEqual0;
+expressionArray0[0] = (Expression) coreOperationLessThanOrEqual0;
+Step[] stepArray0 = new Step[1];
+NodeTypeTest nodeTypeTest0 = new NodeTypeTest(int0);
+assertNotNull(nodeTypeTest0);
+assertEquals(1, nodeTypeTest0.getNodeType());
+
+Step step0 = new Step(int0, nodeTypeTest0, expressionArray0);
+assertNotNull(step0);
+assertEquals(1, nodeTypeTest0.getNodeType());
+assertEquals(1, step0.getAxis());
+assertEquals(4, expressionArray0.length);
+
+stepArray0[0] = step0;
+ExpressionPath expressionPath0 = new ExpressionPath(coreOperationLessThanOrEqual0, expressionArray0, stepArray0);
+assertNotNull(expressionPath0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+EvalContext evalContext0 = null;
+EvalContext evalContext1 = expressionPath0.evalSteps(evalContext0);
+assertNotNull(evalContext1);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(0, evalContext1.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+JXPathContext jXPathContext0 = null;
+SelfContext selfContext0 = new SelfContext(evalContext1, nodeTypeTest0);
+assertNotNull(selfContext0);
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(0, selfContext0.getDocumentOrder());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(1, nodeTypeTest0.getNodeType());
+assertEquals(0, evalContext1.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+Pointer pointer0 = selfContext0.getSingleNodePointer();
+assertNull(pointer0);
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(0, selfContext0.getDocumentOrder());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(1, nodeTypeTest0.getNodeType());
+assertEquals(0, evalContext1.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+JXPathContextReferenceImpl jXPathContextReferenceImpl0 = new JXPathContextReferenceImpl(jXPathContext0, coreOperationLessThanOrEqual0, pointer0);
+assertTrue(JXPathContextReferenceImpl.USE_SOFT_CACHE);
+assertNotNull(jXPathContextReferenceImpl0);
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(0, selfContext0.getDocumentOrder());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertFalse(jXPathContextReferenceImpl0.isLenient());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(1, nodeTypeTest0.getNodeType());
+assertEquals(0, evalContext1.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+EvalContext evalContext2 = jXPathContextReferenceImpl0.getAbsoluteRootContext();
+assertTrue(JXPathContextReferenceImpl.USE_SOFT_CACHE);
+assertNotNull(evalContext2);
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(0, selfContext0.getDocumentOrder());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertFalse(jXPathContextReferenceImpl0.isLenient());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertFalse(evalContext2.isChildOrderingRequired());
+assertEquals(0, evalContext2.getDocumentOrder());
+assertEquals(0, evalContext2.getPosition());
+assertEquals(1, nodeTypeTest0.getNodeType());
+assertEquals(0, evalContext1.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+BeanPointer beanPointer0 = (BeanPointer)expressionPath0.searchForPath(evalContext2);
+assertTrue(JXPathContextReferenceImpl.USE_SOFT_CACHE);
+assertEquals(Integer.MIN_VALUE, NodePointer.WHOLE_COLLECTION);
+assertNotNull(beanPointer0);
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(0, selfContext0.getDocumentOrder());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertFalse(jXPathContextReferenceImpl0.isLenient());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertFalse(evalContext2.isChildOrderingRequired());
+assertEquals(0, evalContext2.getDocumentOrder());
+assertEquals(0, evalContext2.getPosition());
+assertFalse(beanPointer0.isCollection());
+assertFalse(beanPointer0.isAttribute());
+assertFalse(beanPointer0.isDynamicPropertyDeclarationSupported());
+assertTrue(beanPointer0.isNode());
+assertNull(beanPointer0.getNamespaceURI());
+assertTrue(beanPointer0.isRoot());
+assertFalse(beanPointer0.isContainer());
+assertEquals(1, beanPointer0.getLength());
+assertEquals(0, beanPointer0.getIndex());
+assertEquals(1, nodeTypeTest0.getNodeType());
+assertEquals(0, evalContext1.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(4, expressionArray0.length);
+assertEquals(1, stepArray0.length);
+
+
+[MASTER] 19:33:27.475 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<1> but was:<0>
+[MASTER] 19:33:27.475 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Step[] stepArray0 = new Step[1];
+String string0 = "B!a65\\\\jDWz3DN]m\"Uf";
+ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest(string0);
+assertNotNull(processingInstructionTest0);
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", processingInstructionTest0.getTarget());
+
+Expression[] expressionArray0 = new Expression[1];
+QName qName0 = new QName(string0);
+assertNotNull(qName0);
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.getName());
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.toString());
+assertNull(qName0.getPrefix());
+
+VariableReference variableReference0 = new VariableReference(qName0);
+assertNotNull(variableReference0);
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.getName());
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.computeContextDependent());
+assertFalse(variableReference0.isContextDependent());
+
+ExpressionPath expressionPath0 = new ExpressionPath(variableReference0, expressionArray0, stepArray0);
+assertNotNull(expressionPath0);
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.getName());
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.computeContextDependent());
+assertFalse(variableReference0.isContextDependent());
+assertEquals(1, stepArray0.length);
+assertEquals(1, expressionArray0.length);
+
+EvalContext evalContext0 = null;
+BasicNodeSet basicNodeSet0 = new BasicNodeSet();
+assertNotNull(basicNodeSet0);
+
+NodeSetContext nodeSetContext0 = new NodeSetContext(evalContext0, basicNodeSet0);
+assertNotNull(nodeSetContext0);
+assertFalse(nodeSetContext0.isChildOrderingRequired());
+assertEquals(0, nodeSetContext0.getDocumentOrder());
+assertEquals(0, nodeSetContext0.getPosition());
+
+AttributeContext attributeContext0 = new AttributeContext(nodeSetContext0, processingInstructionTest0);
+assertNotNull(attributeContext0);
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", processingInstructionTest0.getTarget());
+assertFalse(nodeSetContext0.isChildOrderingRequired());
+assertEquals(0, nodeSetContext0.getDocumentOrder());
+assertEquals(0, nodeSetContext0.getPosition());
+assertFalse(attributeContext0.isChildOrderingRequired());
+assertEquals(0, attributeContext0.getDocumentOrder());
+assertEquals(0, attributeContext0.getPosition());
+
+int int0 = 12;
+EvalContext evalContext1 = expressionPath0.createContextForStep(attributeContext0, int0, processingInstructionTest0);
+assertNotNull(evalContext1);
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", processingInstructionTest0.getTarget());
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.getName());
+assertEquals("B!a65\\\\jDWz3DN]m\"Uf", qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.computeContextDependent());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(nodeSetContext0.isChildOrderingRequired());
+assertEquals(0, nodeSetContext0.getDocumentOrder());
+assertEquals(0, nodeSetContext0.getPosition());
+assertFalse(attributeContext0.isChildOrderingRequired());
+assertEquals(0, attributeContext0.getDocumentOrder());
+assertEquals(0, attributeContext0.getPosition());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertEquals(1, evalContext1.getPosition());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(1, stepArray0.length);
+assertEquals(1, expressionArray0.length);
+
+
+[MASTER] 19:33:29.509 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<1> but was:<0>
+[MASTER] 19:33:29.511 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Expression[] expressionArray0 = new Expression[1];
+String string0 = "8>gsHg{\\_581gV61x";
+QName qName0 = new QName(string0);
+assertNotNull(qName0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+
+VariableReference variableReference0 = new VariableReference(qName0);
+assertNotNull(variableReference0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+
+CoreOperationDivide coreOperationDivide0 = new CoreOperationDivide(variableReference0, variableReference0);
+assertNotNull(coreOperationDivide0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals("div", coreOperationDivide0.getSymbol());
+
+expressionArray0[0] = (Expression) coreOperationDivide0;
+CoreOperationUnion coreOperationUnion0 = new CoreOperationUnion(expressionArray0);
+assertNotNull(coreOperationUnion0);
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertEquals(1, expressionArray0.length);
+
+Step[] stepArray0 = new Step[8];
+int int0 = Integer.MIN_VALUE;
+NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
+assertNotNull(nodeNameTest0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("8>gsHg{\\_581gV61x", nodeNameTest0.toString());
+
+Step step0 = new Step(int0, nodeNameTest0, expressionArray0);
+assertNotNull(step0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("8>gsHg{\\_581gV61x", nodeNameTest0.toString());
+assertEquals(Integer.MIN_VALUE, step0.getAxis());
+assertEquals(1, expressionArray0.length);
+
+stepArray0[0] = step0;
+stepArray0[1] = stepArray0[0];
+stepArray0[2] = step0;
+stepArray0[3] = stepArray0[1];
+stepArray0[4] = stepArray0[1];
+stepArray0[5] = stepArray0[1];
+stepArray0[6] = step0;
+stepArray0[7] = stepArray0[3];
+ExpressionPath expressionPath0 = new ExpressionPath(coreOperationUnion0, expressionArray0, stepArray0);
+assertNotNull(expressionPath0);
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertEquals(1, expressionArray0.length);
+assertEquals(8, stepArray0.length);
+
+boolean boolean0 = expressionPath0.computeContextDependent();
+assertFalse(boolean0);
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertEquals(1, expressionArray0.length);
+assertEquals(8, stepArray0.length);
+
+EvalContext evalContext0 = null;
+DescendantContext descendantContext0 = new DescendantContext(evalContext0, boolean0, nodeNameTest0);
+assertNotNull(descendantContext0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertTrue(descendantContext0.isChildOrderingRequired());
+assertEquals(0, descendantContext0.getPosition());
+assertEquals(0, descendantContext0.getDocumentOrder());
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertFalse(nodeNameTest0.isWildcard());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("8>gsHg{\\_581gV61x", nodeNameTest0.toString());
+assertEquals(1, expressionArray0.length);
+assertEquals(8, stepArray0.length);
+
+ParentContext parentContext0 = new ParentContext(descendantContext0, nodeNameTest0);
+assertNotNull(parentContext0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertTrue(descendantContext0.isChildOrderingRequired());
+assertEquals(0, descendantContext0.getPosition());
+assertEquals(0, descendantContext0.getDocumentOrder());
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertEquals(1, parentContext0.getCurrentPosition());
+assertTrue(parentContext0.isChildOrderingRequired());
+assertEquals(0, parentContext0.getPosition());
+assertEquals((-1), parentContext0.getDocumentOrder());
+assertFalse(nodeNameTest0.isWildcard());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("8>gsHg{\\_581gV61x", nodeNameTest0.toString());
+assertEquals(1, expressionArray0.length);
+assertEquals(8, stepArray0.length);
+
+NodeSet nodeSet0 = null;
+NodeSetContext nodeSetContext0 = new NodeSetContext(parentContext0, nodeSet0);
+assertNotNull(nodeSetContext0);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertTrue(descendantContext0.isChildOrderingRequired());
+assertEquals(0, descendantContext0.getPosition());
+assertEquals(0, descendantContext0.getDocumentOrder());
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertEquals(1, parentContext0.getCurrentPosition());
+assertTrue(parentContext0.isChildOrderingRequired());
+assertEquals(0, parentContext0.getPosition());
+assertEquals((-1), parentContext0.getDocumentOrder());
+assertEquals(0, nodeSetContext0.getPosition());
+assertTrue(nodeSetContext0.isChildOrderingRequired());
+assertEquals(1, nodeSetContext0.getDocumentOrder());
+assertFalse(nodeNameTest0.isWildcard());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("8>gsHg{\\_581gV61x", nodeNameTest0.toString());
+assertEquals(1, expressionArray0.length);
+assertEquals(8, stepArray0.length);
+
+EvalContext evalContext1 = expressionPath0.buildContextChain(nodeSetContext0, int0, boolean0);
+assertSame(nodeSetContext0, evalContext1);
+assertSame(evalContext1, nodeSetContext0);
+assertNotNull(evalContext1);
+assertNull(qName0.getPrefix());
+assertEquals("8>gsHg{\\_581gV61x", qName0.getName());
+assertEquals("8>gsHg{\\_581gV61x", qName0.toString());
+assertTrue(descendantContext0.isChildOrderingRequired());
+assertEquals(0, descendantContext0.getPosition());
+assertEquals(0, descendantContext0.getDocumentOrder());
+assertEquals("|", coreOperationUnion0.getSymbol());
+assertEquals(1, parentContext0.getCurrentPosition());
+assertTrue(parentContext0.isChildOrderingRequired());
+assertEquals(0, parentContext0.getPosition());
+assertEquals((-1), parentContext0.getDocumentOrder());
+assertEquals(1, nodeSetContext0.getPosition());
+assertTrue(nodeSetContext0.isChildOrderingRequired());
+assertEquals(1, nodeSetContext0.getDocumentOrder());
+assertFalse(nodeNameTest0.isWildcard());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("8>gsHg{\\_581gV61x", nodeNameTest0.toString());
+assertEquals(1, evalContext1.getPosition());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(1, expressionArray0.length);
+assertEquals(8, stepArray0.length);
+
+
+[MASTER] 19:33:30.282 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<1> but was:<0>
+[MASTER] 19:33:30.283 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = false;
+Step[] stepArray0 = new Step[5];
+String string0 = "";
+QName qName0 = new QName(string0);
+assertNotNull(qName0);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+
+NodeNameTest nodeNameTest0 = new NodeNameTest(qName0);
+assertNotNull(nodeNameTest0);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("", nodeNameTest0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+
+int int0 = 1;
+LocationPath locationPath0 = new LocationPath(boolean0, stepArray0);
+assertNotNull(locationPath0);
+assertFalse(locationPath0.isAbsolute());
+assertEquals(5, stepArray0.length);
+
+EvalContext evalContext0 = null;
+PrecedingOrFollowingContext precedingOrFollowingContext0 = new PrecedingOrFollowingContext(evalContext0, nodeNameTest0, boolean0);
+assertNotNull(precedingOrFollowingContext0);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("", nodeNameTest0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertTrue(precedingOrFollowingContext0.isChildOrderingRequired());
+assertEquals(0, precedingOrFollowingContext0.getPosition());
+assertEquals(1, precedingOrFollowingContext0.getDocumentOrder());
+
+SelfContext selfContext0 = new SelfContext(precedingOrFollowingContext0, nodeNameTest0);
+assertNotNull(selfContext0);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("", nodeNameTest0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertTrue(precedingOrFollowingContext0.isChildOrderingRequired());
+assertEquals(0, precedingOrFollowingContext0.getPosition());
+assertEquals(1, precedingOrFollowingContext0.getDocumentOrder());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertEquals(0, selfContext0.getPosition());
+assertTrue(selfContext0.isChildOrderingRequired());
+
+ChildContext childContext0 = new ChildContext(selfContext0, nodeNameTest0, boolean0, boolean0);
+assertNotNull(childContext0);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("", nodeNameTest0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertTrue(precedingOrFollowingContext0.isChildOrderingRequired());
+assertEquals(0, precedingOrFollowingContext0.getPosition());
+assertEquals(1, precedingOrFollowingContext0.getDocumentOrder());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertEquals(0, selfContext0.getPosition());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(1, childContext0.getDocumentOrder());
+assertEquals(0, childContext0.getPosition());
+assertTrue(childContext0.isChildOrderingRequired());
+
+NamespaceContext namespaceContext0 = new NamespaceContext(childContext0, nodeNameTest0);
+assertNotNull(namespaceContext0);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("", nodeNameTest0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertTrue(precedingOrFollowingContext0.isChildOrderingRequired());
+assertEquals(0, precedingOrFollowingContext0.getPosition());
+assertEquals(1, precedingOrFollowingContext0.getDocumentOrder());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertEquals(0, selfContext0.getPosition());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(1, childContext0.getDocumentOrder());
+assertEquals(0, childContext0.getPosition());
+assertTrue(childContext0.isChildOrderingRequired());
+assertEquals(1, namespaceContext0.getDocumentOrder());
+assertEquals(0, namespaceContext0.getPosition());
+assertTrue(namespaceContext0.isChildOrderingRequired());
+
+EvalContext evalContext1 = locationPath0.createContextForStep(namespaceContext0, int0, nodeNameTest0);
+assertFalse(evalContext1.equals((Object)selfContext0));
+assertNotSame(selfContext0, evalContext1);
+assertNotSame(evalContext1, selfContext0);
+assertNotNull(evalContext1);
+assertEquals("", qName0.getName());
+assertEquals("", qName0.toString());
+assertNull(qName0.getPrefix());
+assertNull(nodeNameTest0.getNamespaceURI());
+assertEquals("", nodeNameTest0.toString());
+assertFalse(nodeNameTest0.isWildcard());
+assertFalse(locationPath0.isAbsolute());
+assertTrue(precedingOrFollowingContext0.isChildOrderingRequired());
+assertEquals(0, precedingOrFollowingContext0.getPosition());
+assertEquals(1, precedingOrFollowingContext0.getDocumentOrder());
+assertEquals(1, selfContext0.getDocumentOrder());
+assertEquals(0, selfContext0.getPosition());
+assertTrue(selfContext0.isChildOrderingRequired());
+assertEquals(1, childContext0.getDocumentOrder());
+assertEquals(0, childContext0.getPosition());
+assertTrue(childContext0.isChildOrderingRequired());
+assertEquals(1, namespaceContext0.getDocumentOrder());
+assertEquals(0, namespaceContext0.getPosition());
+assertTrue(namespaceContext0.isChildOrderingRequired());
+assertEquals(1, evalContext1.getDocumentOrder());
+assertEquals(1, evalContext1.getPosition());
+assertTrue(evalContext1.isChildOrderingRequired());
+assertEquals(5, stepArray0.length);
+
+
+[MASTER] 19:33:30.662 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<1> but was:<0>
+[MASTER] 19:33:30.663 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = false;
+Step[] stepArray0 = new Step[0];
+LocationPath locationPath0 = new LocationPath(boolean0, stepArray0);
+assertNotNull(locationPath0);
+assertFalse(locationPath0.isAbsolute());
+assertEquals(0, stepArray0.length);
+
+int int0 = 0;
+EvalContext evalContext0 = null;
+NodeTypeTest nodeTypeTest0 = new NodeTypeTest(int0);
+assertNotNull(nodeTypeTest0);
+assertEquals(0, nodeTypeTest0.getNodeType());
+
+SelfContext selfContext0 = new SelfContext(evalContext0, nodeTypeTest0);
+assertNotNull(selfContext0);
+assertEquals(0, nodeTypeTest0.getNodeType());
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getPosition());
+assertEquals(0, selfContext0.getDocumentOrder());
+
+EvalContext evalContext1 = locationPath0.evalSteps(selfContext0);
+assertSame(selfContext0, evalContext1);
+assertSame(evalContext1, selfContext0);
+assertNotNull(evalContext1);
+assertFalse(locationPath0.isAbsolute());
+assertEquals(0, nodeTypeTest0.getNodeType());
+assertFalse(selfContext0.isChildOrderingRequired());
+assertEquals(0, selfContext0.getDocumentOrder());
+assertEquals(1, selfContext0.getPosition());
+assertEquals(1, evalContext1.getPosition());
+assertFalse(evalContext1.isChildOrderingRequired());
+assertEquals(0, evalContext1.getDocumentOrder());
+assertEquals(0, stepArray0.length);
+
+
+[MASTER] 19:33:32.211 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test32 -> class java.lang.StackOverflowError: null
+[MASTER] 19:33:32.213 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = true;
+Step[] stepArray0 = new Step[3];
+int int0 = (-1101);
+String string0 = "], operation is not allowed for this type of node";
+ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest(string0);
+assertNotNull(processingInstructionTest0);
+assertEquals("], operation is not allowed for this type of node", processingInstructionTest0.getTarget());
+
+Expression[] expressionArray0 = new Expression[7];
+QName qName0 = new QName(string0);
+assertNotNull(qName0);
+assertEquals("], operation is not allowed for this type of node", qName0.getName());
+assertEquals("], operation is not allowed for this type of node", qName0.toString());
+assertNull(qName0.getPrefix());
+
+VariableReference variableReference0 = new VariableReference(qName0);
+assertNotNull(variableReference0);
+assertEquals("], operation is not allowed for this type of node", qName0.getName());
+assertEquals("], operation is not allowed for this type of node", qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+
+CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual(variableReference0, variableReference0);
+assertNotNull(coreOperationGreaterThanOrEqual0);
+assertEquals("], operation is not allowed for this type of node", qName0.getName());
+assertEquals("], operation is not allowed for this type of node", qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals(">=", coreOperationGreaterThanOrEqual0.getSymbol());
+
+expressionArray0[0] = (Expression) coreOperationGreaterThanOrEqual0;
+CoreOperationLessThan coreOperationLessThan0 = new CoreOperationLessThan(variableReference0, coreOperationGreaterThanOrEqual0);
+assertNotNull(coreOperationLessThan0);
+assertEquals("], operation is not allowed for this type of node", qName0.getName());
+assertEquals("], operation is not allowed for this type of node", qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals(">=", coreOperationGreaterThanOrEqual0.getSymbol());
+assertEquals("<", coreOperationLessThan0.getSymbol());
+
+expressionArray0[1] = (Expression) coreOperationLessThan0;
+CoreFunction coreFunction0 = new CoreFunction(int0, expressionArray0);
+assertNotNull(coreFunction0);
+assertEquals((-1101), coreFunction0.getFunctionCode());
+assertEquals(7, coreFunction0.getArgumentCount());
+assertEquals(7, expressionArray0.length);
+
+expressionArray0[2] = (Expression) coreFunction0;
+Step step0 = new Step(int0, processingInstructionTest0, expressionArray0);
+assertNotNull(step0);
+assertEquals("], operation is not allowed for this type of node", processingInstructionTest0.getTarget());
+assertEquals((-1101), step0.getAxis());
+assertEquals(7, expressionArray0.length);
+
+stepArray0[0] = step0;
+LocationPath locationPath0 = new LocationPath(boolean0, stepArray0);
+assertNotNull(locationPath0);
+assertTrue(locationPath0.isAbsolute());
+assertEquals(3, stepArray0.length);
+
+locationPath0.computeContextDependent();
+
+[MASTER] 19:33:32.213 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test30 -> class java.lang.StackOverflowError: null
+[MASTER] 19:33:32.214 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = false;
+Step[] stepArray0 = new Step[9];
+Expression[] expressionArray0 = new Expression[2];
+QName qName0 = null;
+VariableReference variableReference0 = new VariableReference(qName0);
+assertNotNull(variableReference0);
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+
+expressionArray0[0] = (Expression) variableReference0;
+CoreOperationAnd coreOperationAnd0 = new CoreOperationAnd(expressionArray0);
+assertNotNull(coreOperationAnd0);
+assertEquals("and", coreOperationAnd0.getSymbol());
+assertEquals(2, expressionArray0.length);
+
+expressionArray0[1] = (Expression) coreOperationAnd0;
+LocationPath locationPath0 = new LocationPath(boolean0, stepArray0);
+assertNotNull(locationPath0);
+assertFalse(locationPath0.isAbsolute());
+assertEquals(9, stepArray0.length);
+
+locationPath0.areBasicPredicates(expressionArray0);
+
+[MASTER] 19:33:32.216 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 4 seconds more than allowed.
+* Writing JUnit test case 'Path_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

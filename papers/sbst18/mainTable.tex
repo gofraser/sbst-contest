@@ -1,0 +1,191 @@
+\begin{tabular}{ l rrrrrrr rrrrrrrr}\toprule 
+ Benchmark &  \multicolumn{7}{c}{Branch Coverage} &  \multicolumn{7}{c}{Mutation Score}\\ 
+ & 10s & 30s & 60s & 120s & 240s & 300s & 480s & 10s & 30s & 60s & 120s & 240s & 300s & 480s \\ 
+\midrule 
+BCEL-1 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & mocking\\ 
+BCEL-10 & 63.9\% & 56.0\%\\ 
+BCEL-2 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{12}{l}{Failed to use Mockito on interface java.io.DataInput}\\ 
+BCEL-3 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{12}{l}{java.lang.ClassCastException: java.lang.Byte
+   cannot be cast to java.lang.Short at org.evosuite.testcase.statements.FunctionalMockStatement\$1.fixBoxing(FunctionalMockStatement.java:849)}\\ 
+BCEL-4 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Minimisation and junit check timeout; test
+   suite's coverage: resulting coverage 74\% } \\ 
+BCEL-5 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{no error, evosuite reported coverage 42\%}\\ 
+BCEL-6 & 72.2\% & 78.0\%\\ 
+BCEL-7 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray} \textcolor{black}{0.0}\%& \multicolumn{13}{l}{ERROR FunctionalMockStatement - IAE on public java.lang.String org.apache.bcel.classfile.ConstantPool.getConstantString(int,byte) throws org.apache.bcel.classfile.ClassFormatException> when called with [0, null}\\ 
+BCEL-8 & 95.8\% & 96.9\%\\ 
+BCEL-9 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{ERROR FunctionalMockStatement - Failed to use Mockito on interface java.io.DataInput: java.lang.Byte cannot be cast to java.lang.Short}\\ 
+FREEHEP-1 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Resulting test suite's coverage: 98\%;
+   minimisation timed out}\\ 
+FREEHEP-10 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                               \cellcolor{light-gray}
+                                                               \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Resulting test suite's coverage: 83\%;
+   JUNIT\_CHECK timed out}\\ 
+FREEHEP-2 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\%
+&  \multicolumn{13}{l}{Resulting test suite's coverage: 85\%; no error} \\ 
+FREEHEP-3 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\%
+ &  \multicolumn{13}{l}{Resulting test suite's coverage: 81\%; no
+   error, flaky tests}\\ 
+FREEHEP-4 & 60.3\% & 24.3\%\\ 
+FREEHEP-5 & 69.1\% & 84.4\%\\ 
+FREEHEP-6 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\%
+  &  \multicolumn{13}{l}{Resulting test suite's coverage: 87\%; no
+   error, flaky tests}\\
+FREEHEP-7 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray} \textcolor{black}{0.0}\%   &  \multicolumn{13}{l}{Resulting test suite's coverage: 81\%; no
+   error, flaky tests}\\ 
+FREEHEP-8 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{87\% coverage; Permissions denied during test execution:  java.lang.RuntimePermission: writeFileDescriptor: 7}\\ 
+FREEHEP-9 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\% 
+ & \multicolumn{13}{l}{57\% coverage; minimisation and junit\_check
+   time out}\\ 
+GSON-1 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+
+ & \multicolumn{13}{l}{test suite's coverage: 58\% .  Permissions denied during test execution:  java.lang.RuntimePermission: writeFileDescriptor: 1} \\ 
+GSON-10 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                            \cellcolor{light-gray}
+                                                            \textcolor{black}{0.0}\%
+ &  \multicolumn{13}{l}{java.lang.RuntimeException: not implemented:
+   class sun.reflect.generics.reflectiveObjects.TypeVariableImpl at com.googlecode.gentyref.GenericTypeReflector.isSuperType(GenericTypeReflector.java:218)} \\ 
+GSON-2 & 33.5\% & 31.1\%\\ 
+GSON-3 & 82.5\% & 83.9\%\\ 
+GSON-4 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{31\% coverage; no errors}\\ 
+GSON-5 & 33.3\% & 36.5\%\\ 
+GSON-6 & 90.7\% & 71.8\%\\ 
+GSON-7 & 81.6\% & 94.0\%\\ 
+GSON-8 & 90.7\% & 75.8\%\\ 
+GSON-9 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{java.lang.RuntimeException: not implemented: class sun.reflect.generics.reflectiveObjects.TypeVariableImpl}\\ 
+IMAGE-1 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                            \cellcolor{light-gray}
+                                                            \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{ERROR FunctionalMockStatement - Failed to use Mockito on class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory}\\ 
+IMAGE-2 & 85.0\% & 99.0\%\\ 
+IMAGE-3 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                            \cellcolor{light-gray}
+                                                            \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Multiple errors like: ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata}\\ 
+IMAGE-4 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                            \cellcolor{light-gray}
+                                                            \textcolor{black}{0.0}\% 
+& \multicolumn{13}{l}{coverage 76\%; JUNIT\_CHECK timed out; Permissions denied during test execution: java.lang.RuntimePermission: writeFileDescriptor: 3}
+  \\ 
+JXPATH-1 & 27.2\% & 25.4\%\\ 
+JXPATH-10 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                              \cellcolor{light-gray}
+                                                              \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{coverage 76\%; some errors (java.lang.ClassNotFoundException:
+   Class not found: org/jdom/Element: java.lang.NullPointerException:
+   Class not found org/jdom/Element); flaky tests}\\ 
+JXPATH-2 & 81.4\% & 70.5\%\\ 
+JXPATH-3 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                             \cellcolor{light-gray}
+                                                             \textcolor{black}{0.0}\% 
+ & \multicolumn{13}{l}{coverage 76\%; some errors (ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.JXPathContextFactory); flaky tests}\\ 
+JXPATH-4 & 81.4\% & 75.0\%\\ 
+JXPATH-5 & 92.0\% & 92.9\%\\ 
+JXPATH-6 & 93.5\% & 90.0\%\\ 
+JXPATH-7 & 10.9\% & 7.7\%\\ 
+JXPATH-8 & 53.3\% & 42.8\%\\ 
+JXPATH-9 & 56.1\% & 27.9\%\\ 
+LA4J-1 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{coverage 75\%, JUNIT\_CHECK timed out}\\ 
+LA4J-10 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                            \cellcolor{light-gray}
+                                                            \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Mocking problem: ERROR FunctionalMockStatement - Failed to use Mockito on class org.la4j.iterator.VectorIterator: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator\$MockitoMock}\\ 
+LA4J-2 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray} \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{same as above}\\ 
+LA4J-3 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Coverage 73\%, minimisation and junit check
+   timed out}\\ 
+LA4J-4 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Coverage 88\%; minimisation timeout, errors compiling and checking tests(ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction)}\\ 
+LA4J-5 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Coverage 55\%; search, minimisation and writing tests timed out}\\ 
+LA4J-6 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray} \textcolor{black}{0.0}\%
+ & \multicolumn{13}{l}{Mocking problem: ERROR FunctionalMockStatement - Failed to use Mockito on class org.la4j.iterator.VectorIterator: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator\$MockitoMock}\\ 
+LA4J-7 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                           \cellcolor{light-gray}
+                                                           \textcolor{black}{0.0}\% 
+& \multicolumn{13}{l}{Resulting test suite's coverage: 57\%; timeout when
+  writing tests}\\ 
+LA4J-8 & 75.0\% & 70.0\%\\ 
+LA4J-9 & 85.1\% & 29.8\%\\ 
+OKHTTP-1 & 7.7\% & 5.6\%\\ 
+OKHTTP-2 & 50.0\% & 50.0\%\\ 
+OKHTTP-3 & 75.8\% & 69.0\%\\ 
+OKHTTP-4 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                             \cellcolor{light-gray} \textcolor{black}{0.0}\%
+& \multicolumn{13}{l}{Coverage 62\%; Multiple errors (eg ERROR ConcreteClassAnalyzer - Problem for okhttp3.internal.http.HttpHeaders. Class not found: okhttp3.MultipartBody)}\\ 
+OKHTTP-5 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                             \cellcolor{light-gray} \textcolor{black}{0.0}\%
+& \multicolumn{13}{l}{Coverage 48\%; problem executing tests: java.security.SecurityPermission:  createAccessControlContext: 2 javax.security.auth.AuthPermission: getSubject: 21}\\ 
+OKHTTP-6 & 84.3\% & 86.4\%\\ 
+OKHTTP-7 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                             \cellcolor{light-gray} \textcolor{black}{0.0}\%
+&  \multicolumn{13}{l}{Coverage 40\%; error Compiling and checking tests}\\ 
+OKHTTP-8 & \cellcolor{light-gray} \textcolor{black}{0.0}\% &
+                                                             \cellcolor{light-gray} \textcolor{black}{0.0}\%
+& \multicolumn{13}{l}{Classpath problem? Caused by: java.lang.ClassNotFoundException: Class 'okio/Buffer.class' should be in target project, but could not be found!}\\ 
+RE2J-1 & 56.5\% & 39.4\%\\ 
+RE2J-2 & 92.9\% & 66.7\%\\ 
+RE2J-3 & 42.9\% & 39.7\%\\ 
+RE2J-4 & 92.7\% & 88.0\%\\ 
+RE2J-5 & 68.2\% & 41.7\%\\ 
+RE2J-6 & 85.1\% & 68.3\%\\ 
+RE2J-7 & 39.5\% & 35.2\%\\ 
+RE2J-8 & 91.8\% & 82.6\%\\ 
+\midrule 
+Average  &  32.9\% &  29.1\%\\ 
+\bottomrule 
+\end{tabular} 

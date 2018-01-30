@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  FREEHEP-4
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: org.freehep.math.minuit.MnAlgebraicSymMatrix
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/FREEHEP-4_1/temp/testcases/org/freehep/math/minuit/MnAlgebraicSymMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-4_1/temp/testcases/org/freehep/math/minuit/MnAlgebraicSymMatrix_ESTest.java
+Compiled 'org/freehep/math/minuit/MnAlgebraicSymMatrix_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: FREEHEP-4
+	Class Under Test: org.freehep.math.minuit.MnAlgebraicSymMatrix
+	Run number: 1
+	Tool preparation time (ms): 349
+	Tool test cases generation time (ms): 120066
+	Test cases execution time (ms): 1725
+	Test case number: 26
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 237
+	Lines covered: 138
+	Lines coverage ratio (%): 58.227848
+	Conditions total: 126
+	Conditions covered: 76
+	Conditions coverage ratio (%): 60.317463
+	Mutants total: 189
+	Mutants covered: 93
+	Mutants coverage ratio (%): 49.20635
+	Mutants killed: 46
+	Mutants killed ratio (%): 24.338623
+	Mutants alive: 143

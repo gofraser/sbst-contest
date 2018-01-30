@@ -1,0 +1,40 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.re2j.Utils
+* Starting client
+* Connecting to master process on port 9333
+* Analyzing classpath: 
+  - /var/benchmarks/projects/re2j/target/classes
+  - /var/benchmarks/projects/re2j/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.re2j.Utils
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 85
+  - Branch 105
+  - Exception 0
+  - MutationFactory 658
+  - Output 25
+  - Method 10
+  - MethodNoException 10
+  - CBranchFitnessFactory 105
+* Using seed 1516821551276
+* Starting evolution
+* Search finished after 71s and 303 generations, 166052 statements, best individual has fitness: 35.11303637396988
+* Minimizing test suite
+* Generated 54 tests with total length 187
+* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'Utils_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

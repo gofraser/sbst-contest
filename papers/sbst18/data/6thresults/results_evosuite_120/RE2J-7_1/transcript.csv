@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,RE2J-7,com.google.re2j.Regexp,1,348,117192,2080,45,0,0,0,164,86,52.439022,119,47,39.4958,108,50,46.296295,38,35.185184,70,120,2
+ 
+ 
+ 
+

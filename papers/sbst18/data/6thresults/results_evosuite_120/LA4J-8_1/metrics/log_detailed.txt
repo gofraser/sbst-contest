@@ -1,0 +1,431 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  LA4J-8
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/la4j-0.6.0/src/main/java
+>> /var/benchmarks/projects/la4j-0.6.0/target/classes
+>> 1
+>> /var/benchmarks/projects/la4j-0.6.0/target/classes
+>> 0
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+
+
+### COMPUTING METRICS ###: org.la4j.matrix.dense.Basic2DMatrix
+
+
+Starting class org.la4j.matrix.dense.Basic2DMatrix
+
+
+Ending class org.la4j.matrix.dense.Basic2DMatrix
+Creating directory results_evosuite_120/LA4J-8_1/temp/testcases/bin
+Creating dummy JUnit test file
+
+---Compilation---
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/LA4J-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/LA4J-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java
+
+Note: /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Compiled 'org/la4j/matrix/dense/Basic2DMatrix_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+Running tests with the following classpath: 
+/var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Executions terminated
+
+---The tests are re-executed other four times to find the flaky ones---
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Executions terminated
+
+=== Run Jacoco for Coverage ===
+Number of instrumented file = 208
+Running tests with the following classpath: 
+/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Executions terminated
+Number of file with coverage information = 208
+Extracted coverage data for the class org/la4j/matrix/dense/Basic2DMatrix
+
+=== Run PIT ===
+Generate mutations via PIT
+ Running tests against generated Mutants
+Running PITWrapper with the following data:
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/la4j-0.6.0/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin
+> CUT = org.la4j.matrix.dense.Basic2DMatrix
+> Test cases = [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Matching Jacoco with PIT: find covered mutations
+Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: LA4J-8
+	Class Under Test: org.la4j.matrix.dense.Basic2DMatrix
+	Run number: 1
+	Tool preparation time (ms): 351
+	Tool test cases generation time (ms): 115824
+	Test cases execution time (ms): 4685
+	Test case number: 82
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 105
+	Lines covered: 91
+	Lines coverage ratio (%): 86.666664
+	Conditions total: 68
+	Conditions covered: 51
+	Conditions coverage ratio (%): 75.0
+	Mutants total: 110
+	Mutants covered: 102
+	Mutants coverage ratio (%): 92.72727
+	Mutants killed: 77
+	Mutants killed ratio (%): 70.0
+	Mutants alive: 33
+
+
+Class org.la4j.matrix.dense.Basic2DMatrix ended.
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 4923
+Killing master process 4923
+Executing command kill -9 4923
+Execution of command kill -9 4923 finished.
+Process was destroyed

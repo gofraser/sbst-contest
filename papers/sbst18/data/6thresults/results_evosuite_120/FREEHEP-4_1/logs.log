@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnAlgebraicSymMatrix
+* Starting client
+* Connecting to master process on port 11851
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnAlgebraicSymMatrix
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 238
+  - Branch 133
+  - Exception 0
+  - MutationFactory 768
+  - Output 22
+  - Method 11
+  - MethodNoException 11
+  - CBranchFitnessFactory 133
+* Using seed 1516820567553
+* Starting evolution
+* Search finished after 77s and 14 generations, 3211 statements, best individual has fitness: 263.9143414341434
+[MASTER] 20:04:07.570 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 7 seconds more than allowed.
+* Minimizing test suite
+* Generated 26 tests with total length 237
+[MASTER] 20:04:22.270 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 62% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'MnAlgebraicSymMatrix_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

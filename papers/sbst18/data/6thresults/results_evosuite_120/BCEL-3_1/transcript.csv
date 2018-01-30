@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,BCEL-3,org.apache.bcel.generic.ConstantPoolGen,1,350,63352,7,0,0,0,0,280,0,0.0,140,0,0.0,0,0,0.0,0,0.0,0,120,0
+ 
+ 
+ 
+

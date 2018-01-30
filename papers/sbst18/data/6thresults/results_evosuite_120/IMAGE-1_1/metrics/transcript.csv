@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,IMAGE-1,org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase,1,350,46119,7,0,0,0,0,304,0,0.0,180,0,0.0,0,0,0.0,0,0.0,0,120,0
+ 
+ 
+ 
+

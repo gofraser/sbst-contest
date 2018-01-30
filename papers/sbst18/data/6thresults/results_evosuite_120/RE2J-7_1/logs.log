@@ -1,0 +1,43 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.re2j.Regexp
+* Starting client
+* Connecting to master process on port 3037
+* Analyzing classpath: 
+  - /var/benchmarks/projects/re2j/target/classes
+  - /var/benchmarks/projects/re2j/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.re2j.Regexp
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 164
+  - Branch 186
+  - Exception 0
+  - MutationFactory 254
+  - Output 8
+  - Method 7
+  - MethodNoException 7
+  - CBranchFitnessFactory 186
+* Using seed 1516821747126
+* Starting evolution
+* Search finished after 74s and 19 generations, 10188 statements, best individual has fitness: 458.79287658802184
+* Minimizing test suite
+* Generated 45 tests with total length 631
+* Resulting test suite's coverage: 73% (average coverage for all fitness functions)
+[MASTER] 20:24:02.070 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generating assertions
+[MASTER] 20:24:02.073 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 4 seconds more than allowed.
+* Compiling and checking tests
+[MASTER] 20:24:17.353 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
+* Writing JUnit test case 'Regexp_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

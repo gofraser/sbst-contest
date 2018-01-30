@@ -1,0 +1,18 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  RE2J-6
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-generate-tests
+
+
+### CLASS UNDER TEST ###: com.google.re2j.Machine
+
+
+ Executing with internal budget of 120 sec and external budget of 240 sec 
+
+
+ Execution finished with no timeout
+>> >>/home/evosuite_6th/./temp/testcases

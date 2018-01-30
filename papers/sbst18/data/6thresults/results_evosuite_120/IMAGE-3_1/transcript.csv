@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,IMAGE-3,org.apache.commons.imaging.formats.bmp.BmpImageParser,1,351,115952,8,54,1,0,0,380,0,0.0,193,0,0.0,120,0,0.0,0,0.0,120,120,2
+ 
+ 
+ 
+

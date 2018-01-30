@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,BCEL-9,org.apache.bcel.classfile.StackMapEntry,1,350,44341,7,0,0,0,0,189,0,0.0,196,0,0.0,0,0,0.0,0,0.0,0,120,0
+ 
+ 
+ 
+

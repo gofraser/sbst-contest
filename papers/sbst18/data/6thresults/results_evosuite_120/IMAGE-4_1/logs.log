@@ -1,0 +1,49 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.imaging.formats.tiff.TiffField
+* Starting client
+* Connecting to master process on port 16897
+* Analyzing classpath: 
+  - /var/benchmarks/projects/commons-imaging/target/classes
+  - /var/benchmarks/projects/commons-imaging/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.imaging.formats.tiff.TiffField
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 260
+  - Branch 155
+  - Exception 0
+  - MutationFactory 185
+  - Output 74
+  - Method 30
+  - MethodNoException 30
+  - CBranchFitnessFactory 155
+* Using seed 1516821638778
+* Starting evolution
+[MASTER] 20:20:44.276 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 20:21:20.430 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 20:21:20.430 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+[MASTER] 20:21:30.347 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.imaging.formats.tiff.TiffField$OversizeValueElement due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.imaging.formats.tiff.TiffDirectory due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.apache.commons.imaging.formats.tiff.TiffDirectory canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 20:21:47.035 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 72s and 223 generations, 169816 statements, best individual has fitness: 155.91239811371705
+* Minimizing test suite
+* Generated 115 tests with total length 848
+* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+[MASTER] 20:22:23.486 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 10 seconds more than allowed.
+* Writing JUnit test case 'TiffField_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

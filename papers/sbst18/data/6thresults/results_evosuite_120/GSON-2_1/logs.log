@@ -1,0 +1,46 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.gson.internal.LinkedHashTreeMap
+* Starting client
+* Connecting to master process on port 6421
+* Analyzing classpath: 
+  - /var/benchmarks/projects/gson/gson/target/classes
+  - /var/benchmarks/projects/gson/gson/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.gson.internal.LinkedHashTreeMap
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 379
+  - Branch 262
+  - Exception 0
+  - MutationFactory 592
+  - Output 34
+  - Method 47
+  - MethodNoException 47
+  - CBranchFitnessFactory 262
+* Using seed 1516823127086
+* Starting evolution
+[MASTER] 20:45:30.071 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 20:45:30.071 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 20:45:30.125 [logback-2] ERROR TestCluster - Failed to check cache for java.util.stream.BaseStream<T, S> : Type points to itself
+[MASTER] 20:45:43.196 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 20:45:53.230 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.BiConsumer<T, U> : Type points to itself
+[MASTER] 20:45:53.261 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.BiFunction<T, U, R> : Type points to itself
+* Search finished after 72s and 0 generations, 1700 statements, best individual has fitness: 2350.7916666666665
+* Minimizing test suite
+* Generated 41 tests with total length 207
+* Resulting test suite's coverage: 60% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'LinkedHashTreeMap_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

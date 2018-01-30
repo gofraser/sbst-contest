@@ -1,0 +1,41 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.la4j.decomposition.SingularValueDecompositor
+* Starting client
+* Connecting to master process on port 21107
+* Analyzing classpath: 
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.la4j.decomposition.SingularValueDecompositor
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 265
+  - Branch 182
+  - Exception 0
+  - MutationFactory 246
+  - Output 5
+  - Method 3
+  - MethodNoException 3
+  - CBranchFitnessFactory 182
+* Using seed 1516822450688
+* Starting evolution
+[MASTER] 20:34:20.407 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+* Search finished after 71s and 36 generations, 11289 statements, best individual has fitness: 104.84251372923428
+* Minimizing test suite
+* Generated 8 tests with total length 36
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'SingularValueDecompositor_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

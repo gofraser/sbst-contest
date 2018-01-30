@@ -1,0 +1,58 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.gson.internal.Excluder
+* Starting client
+* Connecting to master process on port 3952
+* Analyzing classpath: 
+  - /var/benchmarks/projects/gson/gson/target/classes
+  - /var/benchmarks/projects/gson/gson/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.gson.internal.Excluder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 100
+  - Branch 96
+  - Exception 0
+  - MutationFactory 180
+  - Output 18
+  - Method 10
+  - MethodNoException 10
+  - CBranchFitnessFactory 96
+* Using seed 1516817872300
+* Starting evolution
+* Computation finished
+[MASTER] 19:18:05.263 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: com.google.gson.internal.Excluder with seed 1516817872300. Configuration id : null
+java.lang.RuntimeException: not implemented: class sun.reflect.generics.reflectiveObjects.TypeVariableImpl
+	at com.googlecode.gentyref.GenericTypeReflector.isSuperType(GenericTypeReflector.java:218) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at com.googlecode.gentyref.GenericTypeReflector.contains(GenericTypeReflector.java:258) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at com.googlecode.gentyref.GenericTypeReflector.isSuperType(GenericTypeReflector.java:199) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.utils.generic.GenericClass.isGenericSuperTypeOf(GenericClass.java:1366) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.utils.generic.GenericClass.canBeInstantiatedTo(GenericClass.java:289) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.setup.TestCluster.cacheGenerators(TestCluster.java:420) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.setup.TestCluster.hasGenerator(TestCluster.java:1354) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.setup.TestCluster.getGenerators(TestCluster.java:814) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testcase.TestFactory.getPossibleCalls(TestFactory.java:1931) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testcase.TestFactory.changeRandomCall(TestFactory.java:1032) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testcase.TestChromosome.mutationChange(TestChromosome.java:517) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testcase.TestChromosome.mutate(TestChromosome.java:324) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testsuite.AbstractTestSuiteChromosome.mutate(AbstractTestSuiteChromosome.java:233) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testsuite.TestSuiteChromosome.mutate(TestSuiteChromosome.java:264) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.ga.metaheuristics.MonotonicGA.evolve(MonotonicGA.java:127) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.ga.metaheuristics.MonotonicGA.generateSolution(MonotonicGA.java:245) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.strategy.WholeTestSuiteStrategy.generateTests(WholeTestSuiteStrategy.java:113) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]

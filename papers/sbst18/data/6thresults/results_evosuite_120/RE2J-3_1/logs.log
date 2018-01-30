@@ -1,0 +1,40 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.re2j.Simplify
+* Starting client
+* Connecting to master process on port 12716
+* Analyzing classpath: 
+  - /var/benchmarks/projects/re2j/target/classes
+  - /var/benchmarks/projects/re2j/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.re2j.Simplify
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 64
+  - Branch 69
+  - Exception 0
+  - MutationFactory 148
+  - Output 2
+  - Method 1
+  - MethodNoException 1
+  - CBranchFitnessFactory 69
+* Using seed 1516821024555
+* Starting evolution
+* Search finished after 74s and 71 generations, 29845 statements, best individual has fitness: 309.8333333333333
+* Minimizing test suite
+* Generated 15 tests with total length 68
+* Resulting test suite's coverage: 66% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'Simplify_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

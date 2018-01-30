@@ -1,0 +1,45 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.bcel.generic.BranchInstruction
+* Starting client
+* Connecting to master process on port 19315
+* Analyzing classpath: 
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.bcel.generic.BranchInstruction
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 61
+  - Branch 36
+  - Exception 0
+  - MutationFactory 137
+  - Output 26
+  - Method 16
+  - MethodNoException 16
+  - CBranchFitnessFactory 36
+* Using seed 1516818857707
+* Starting evolution
+[MASTER] 19:34:22.937 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 71s and 441 generations, 161363 statements, best individual has fitness: 12.552631578947368
+* Minimizing test suite
+* Generated 47 tests with total length 242
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 13
+* Writing JUnit test case 'BranchInstruction_ESTest' to temp/testcases
+[MASTER] 19:35:53.881 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 8 seconds more than allowed.
+* Done!
+
+* Computation finished

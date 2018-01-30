@@ -1,0 +1,46 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.la4j.matrix.sparse.CRSMatrix
+* Starting client
+* Connecting to master process on port 11305
+* Analyzing classpath: 
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.la4j.matrix.sparse.CRSMatrix
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 411
+  - Branch 309
+  - Exception 0
+  - MutationFactory 817
+  - Output 318
+  - Method 41
+  - MethodNoException 41
+  - CBranchFitnessFactory 309
+* Using seed 1516822867495
+* Starting evolution
+[MASTER] 20:41:15.689 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+[MASTER] 20:42:34.919 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 12871ms
+* Search finished after 84s and 25 generations, 13581 statements, best individual has fitness: 2349.579418327183
+[MASTER] 20:42:35.156 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 14 seconds more than allowed.
+* Minimizing test suite
+* Generated 103 tests with total length 979
+[MASTER] 20:42:45.539 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 73% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 20:42:59.060 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
+* Writing JUnit test case 'CRSMatrix_ESTest' to temp/testcases
+[MASTER] 20:43:10.464 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 3 seconds more than allowed.
+* Done!
+
+* Computation finished

@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  GSON-5
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: com.google.gson.internal.LinkedTreeMap
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/GSON-5_1/temp/testcases/com/google/gson/internal/LinkedTreeMap_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-5_1/temp/testcases/com/google/gson/internal/LinkedTreeMap_ESTest.java
+Compiled 'com/google/gson/internal/LinkedTreeMap_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: GSON-5
+	Class Under Test: com.google.gson.internal.LinkedTreeMap
+	Run number: 1
+	Tool preparation time (ms): 351
+	Tool test cases generation time (ms): 86923
+	Test cases execution time (ms): 2525
+	Test case number: 39
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 190
+	Lines covered: 89
+	Lines coverage ratio (%): 46.842106
+	Conditions total: 150
+	Conditions covered: 50
+	Conditions coverage ratio (%): 33.333336
+	Mutants total: 115
+	Mutants covered: 57
+	Mutants coverage ratio (%): 49.565216
+	Mutants killed: 42
+	Mutants killed ratio (%): 36.52174
+	Mutants alive: 73

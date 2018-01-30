@@ -1,0 +1,56 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  GSON-7
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-generate-tests
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/gson/gson/src
+>> /var/benchmarks/projects/gson/gson/target/classes
+>> 1
+>> /var/benchmarks/projects/gson/gson/target/classes
+>> 1
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+Deleting file or directory ./temp/testcases
+Creating directory ./temp/testcases
+
+
+### CLASS UNDER TEST ###: com.google.gson.GsonBuilder
+>> com.google.gson.GsonBuilder
+TimeBudget: 120
+Search: 70
+Init  : 10
+Min   : 14
+Ass   : 8
+Extra : 120
+JUnit : 10
+Write : 8
+
+
+ Executing with internal budget of 120 sec and external budget of 240 sec 
+expecting: READY
+<< READY
+
+
+ Execution finished with no timeout
+>> >>/home/evosuite_6th/./temp/testcases
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 9849
+Killing master process 9849
+Executing command kill -9 9849
+Execution of command kill -9 9849 finished.
+Process was destroyed

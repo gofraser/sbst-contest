@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  JXPATH-9
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: org.apache.commons.jxpath.ri.model.beans.PropertyIterator
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest.java
+Compiled 'org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: JXPATH-9
+	Class Under Test: org.apache.commons.jxpath.ri.model.beans.PropertyIterator
+	Run number: 1
+	Tool preparation time (ms): 348
+	Tool test cases generation time (ms): 111879
+	Test cases execution time (ms): 3020
+	Test case number: 23
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 154
+	Lines covered: 94
+	Lines coverage ratio (%): 61.03896
+	Conditions total: 98
+	Conditions covered: 55
+	Conditions coverage ratio (%): 56.122444
+	Mutants total: 122
+	Mutants covered: 72
+	Mutants coverage ratio (%): 59.016396
+	Mutants killed: 34
+	Mutants killed ratio (%): 27.868853
+	Mutants alive: 88

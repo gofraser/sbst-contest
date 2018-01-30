@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  JXPATH-8
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: org.apache.commons.jxpath.util.ValueUtils
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest.java
+Compiled 'org/apache/commons/jxpath/util/ValueUtils_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: JXPATH-8
+	Class Under Test: org.apache.commons.jxpath.util.ValueUtils
+	Run number: 1
+	Tool preparation time (ms): 351
+	Tool test cases generation time (ms): 84880
+	Test cases execution time (ms): 2751
+	Test case number: 51
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 246
+	Lines covered: 124
+	Lines coverage ratio (%): 50.4065
+	Conditions total: 150
+	Conditions covered: 80
+	Conditions coverage ratio (%): 53.333336
+	Mutants total: 152
+	Mutants covered: 83
+	Mutants coverage ratio (%): 54.605263
+	Mutants killed: 65
+	Mutants killed ratio (%): 42.763157
+	Mutants alive: 87

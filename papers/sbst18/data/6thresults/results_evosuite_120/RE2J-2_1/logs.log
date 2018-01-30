@@ -1,0 +1,43 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.re2j.CharClass
+* Starting client
+* Connecting to master process on port 16156
+* Analyzing classpath: 
+  - /var/benchmarks/projects/re2j/target/classes
+  - /var/benchmarks/projects/re2j/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.re2j.CharClass
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 176
+  - Branch 115
+  - Exception 0
+  - MutationFactory 574
+  - Output 35
+  - Method 18
+  - MethodNoException 18
+  - CBranchFitnessFactory 115
+* Using seed 1516821224680
+* Starting evolution
+[MASTER] 20:15:19.343 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 21092ms
+* Search finished after 93s and 0 generations, 2768 statements, best individual has fitness: 709.6564125302107
+[MASTER] 20:15:19.386 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 22 seconds more than allowed.
+* Skipping minimization because not enough time is left
+* Generated 37 tests with total length 626
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 20:15:34.557 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
+* Writing JUnit test case 'CharClass_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

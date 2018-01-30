@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.imaging.common.RationalNumber
+* Starting client
+* Connecting to master process on port 6142
+* Analyzing classpath: 
+  - /var/benchmarks/projects/commons-imaging/target/classes
+  - /var/benchmarks/projects/commons-imaging/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.imaging.common.RationalNumber
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 82
+  - Branch 69
+  - Exception 0
+  - MutationFactory 432
+  - Output 75
+  - Method 11
+  - MethodNoException 11
+  - CBranchFitnessFactory 69
+* Using seed 1516821344307
+* Starting evolution
+* Search finished after 71s and 39 generations, 31103 statements, best individual has fitness: 64.39047617773092
+* Minimizing test suite
+* Generated 18 tests with total length 290
+* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
+[MASTER] 20:17:18.526 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generating assertions
+[MASTER] 20:17:18.529 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 6 seconds more than allowed.
+* Compiling and checking tests
+* Writing JUnit test case 'RationalNumber_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

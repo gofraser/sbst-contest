@@ -1,0 +1,46 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.bcel.verifier.structurals.LocalVariables
+* Starting client
+* Connecting to master process on port 3119
+* Analyzing classpath: 
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+  - /var/benchmarks/projects/bcel-6.0-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.bcel.verifier.structurals.LocalVariables
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 62
+  - Branch 58
+  - Exception 0
+  - MutationFactory 163
+  - Output 21
+  - Method 11
+  - MethodNoException 11
+  - CBranchFitnessFactory 58
+* Using seed 1516818433789
+* Starting evolution
+[MASTER] 19:27:22.727 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 74s and 15 generations, 7502 statements, best individual has fitness: 97.00641025641025
+* Minimizing test suite
+* Generated 24 tests with total length 270
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+[MASTER] 19:28:48.381 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generating assertions
+[MASTER] 19:28:48.383 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 2 seconds more than allowed.
+* Compiling and checking tests
+[MASTER] 19:29:02.378 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.bcel.generic.MethodGen: org/apache/bcel/generic/MethodGen$1
+[MASTER] 19:29:02.929 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.bcel.classfile.JavaClass: org/apache/bcel/classfile/JavaClass$1
+[MASTER] 19:29:02.998 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.bcel.classfile.Field: org/apache/bcel/classfile/Field$1
+* Writing JUnit test case 'LocalVariables_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

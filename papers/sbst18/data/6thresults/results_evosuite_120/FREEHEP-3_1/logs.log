@@ -1,0 +1,272 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnFunctionCross
+* Starting client
+* Connecting to master process on port 20081
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnFunctionCross
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 219
+  - Branch 161
+  - Exception 0
+  - MutationFactory 108
+  - Output 2
+  - Method 2
+  - MethodNoException 2
+  - CBranchFitnessFactory 161
+* Using seed 1516820886628
+* Starting evolution
+* Search finished after 71s and 166 generations, 135732 statements, best individual has fitness: 247.7716666550489
+* Minimizing test suite
+* Generated 17 tests with total length 196
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 20:09:29.689 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: ArrayIndexOutOfBoundsException
+[MASTER] 20:09:29.690 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ double double0 = 10.000000000000002;
+FCNBase fCNBase0 = mock(FCNBase.class, new ViolatedAssumptionAnswer());
+doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
+MnUserParameterState mnUserParameterState0 = new MnUserParameterState();
+assertNotNull(mnUserParameterState0);
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+assertEquals(0, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertFalse(mnUserParameterState0.isValid());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertFalse(mnUserParameterState0.hasCovariance());
+
+String string0 = "-PLyufMT_ZW<;Z+;+y";
+mnUserParameterState0.add(string0, double0, double0);
+assertTrue(mnUserParameterState0.isValid());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertFalse(mnUserParameterState0.hasCovariance());
+
+int int0 = 0;
+MnStrategy mnStrategy0 = new MnStrategy(int0);
+assertNotNull(mnStrategy0);
+assertFalse(mnStrategy0.isMedium());
+assertEquals(0.1, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(1, mnStrategy0.hessianGradientNCycles());
+assertEquals(0.5, mnStrategy0.hessianStepTolerance(), 0.01);
+assertEquals(0.5, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(0, mnStrategy0.strategy());
+assertFalse(mnStrategy0.isHigh());
+assertEquals(0.1, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(2, mnStrategy0.gradientNCycles());
+assertEquals(3, mnStrategy0.hessianNCycles());
+assertTrue(mnStrategy0.isLow());
+
+MnFunctionCross mnFunctionCross0 = new MnFunctionCross(fCNBase0, mnUserParameterState0, double0, mnStrategy0, int0);
+assertNotNull(mnFunctionCross0);
+assertTrue(mnUserParameterState0.isValid());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertFalse(mnUserParameterState0.hasCovariance());
+assertFalse(mnStrategy0.isMedium());
+assertEquals(0.1, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(1, mnStrategy0.hessianGradientNCycles());
+assertEquals(0.5, mnStrategy0.hessianStepTolerance(), 0.01);
+assertEquals(0.5, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(0, mnStrategy0.strategy());
+assertFalse(mnStrategy0.isHigh());
+assertEquals(0.1, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(2, mnStrategy0.gradientNCycles());
+assertEquals(3, mnStrategy0.hessianNCycles());
+assertTrue(mnStrategy0.isLow());
+
+int[] intArray0 = new int[1];
+mnUserParameterState0.setUpperLimit(string0, double0);
+assertTrue(mnUserParameterState0.isValid());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertFalse(mnUserParameterState0.hasCovariance());
+
+double[] doubleArray0 = new double[8];
+double[] doubleArray1 = new double[4];
+assertFalse(doubleArray1.equals((Object)doubleArray0));
+
+doubleArray1[0] = double0;
+mnFunctionCross0.cross(intArray0, doubleArray0, doubleArray1, doubleArray1[3], intArray0[0]);
+
+[MASTER] 20:09:29.883 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: ArrayIndexOutOfBoundsException
+[MASTER] 20:09:29.885 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ double double0 = 10.000000000000002;
+FCNBase fCNBase0 = mock(FCNBase.class, new ViolatedAssumptionAnswer());
+doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
+MnUserParameterState mnUserParameterState0 = new MnUserParameterState();
+assertNotNull(mnUserParameterState0);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.isValid());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(0, mnUserParameterState0.variableParameters());
+assertFalse(mnUserParameterState0.hasCovariance());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+
+String string0 = "-PLyufMT_ZW<;Z+;+y";
+mnUserParameterState0.add(string0, double0, double0);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertTrue(mnUserParameterState0.isValid());
+assertFalse(mnUserParameterState0.hasCovariance());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+
+int int0 = 0;
+MnStrategy mnStrategy0 = new MnStrategy(int0);
+assertNotNull(mnStrategy0);
+assertEquals(0.1, mnStrategy0.gradientTolerance(), 0.01);
+assertFalse(mnStrategy0.isHigh());
+assertEquals(0, mnStrategy0.strategy());
+assertEquals(0.1, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(0.5, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(3, mnStrategy0.hessianNCycles());
+assertFalse(mnStrategy0.isMedium());
+assertEquals(1, mnStrategy0.hessianGradientNCycles());
+assertEquals(2, mnStrategy0.gradientNCycles());
+assertEquals(0.5, mnStrategy0.hessianStepTolerance(), 0.01);
+assertTrue(mnStrategy0.isLow());
+
+MnFunctionCross mnFunctionCross0 = new MnFunctionCross(fCNBase0, mnUserParameterState0, double0, mnStrategy0, int0);
+assertNotNull(mnFunctionCross0);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertTrue(mnUserParameterState0.isValid());
+assertFalse(mnUserParameterState0.hasCovariance());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+assertEquals(0.1, mnStrategy0.gradientTolerance(), 0.01);
+assertFalse(mnStrategy0.isHigh());
+assertEquals(0, mnStrategy0.strategy());
+assertEquals(0.1, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(0.5, mnStrategy0.gradientStepTolerance(), 0.01);
+assertEquals(3, mnStrategy0.hessianNCycles());
+assertFalse(mnStrategy0.isMedium());
+assertEquals(1, mnStrategy0.hessianGradientNCycles());
+assertEquals(2, mnStrategy0.gradientNCycles());
+assertEquals(0.5, mnStrategy0.hessianStepTolerance(), 0.01);
+assertTrue(mnStrategy0.isLow());
+
+int[] intArray0 = new int[1];
+mnUserParameterState0.setUpperLimit(string0, double0);
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertTrue(mnUserParameterState0.isValid());
+assertFalse(mnUserParameterState0.hasCovariance());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+
+int int1 = (-1230);
+double[] doubleArray0 = new double[8];
+double[] doubleArray1 = new double[6];
+assertFalse(doubleArray1.equals((Object)doubleArray0));
+
+doubleArray1[0] = (double) int1;
+mnFunctionCross0.cross(intArray0, doubleArray0, doubleArray1, intArray0[0], int0);
+
+[MASTER] 20:09:30.068 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: ArrayIndexOutOfBoundsException
+[MASTER] 20:09:30.070 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ double double0 = 10.000000000000002;
+FCNBase fCNBase0 = mock(FCNBase.class, new ViolatedAssumptionAnswer());
+doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
+MnUserParameterState mnUserParameterState0 = new MnUserParameterState();
+assertNotNull(mnUserParameterState0);
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasCovariance());
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertFalse(mnUserParameterState0.isValid());
+assertEquals(0, mnUserParameterState0.variableParameters());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+
+String string0 = "";
+mnUserParameterState0.add(string0, double0, double0);
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasCovariance());
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertTrue(mnUserParameterState0.isValid());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+
+int int0 = 0;
+MnStrategy mnStrategy0 = new MnStrategy(int0);
+assertNotNull(mnStrategy0);
+assertFalse(mnStrategy0.isMedium());
+assertEquals(0.5, mnStrategy0.hessianStepTolerance(), 0.01);
+assertTrue(mnStrategy0.isLow());
+assertEquals(0.5, mnStrategy0.gradientStepTolerance(), 0.01);
+assertFalse(mnStrategy0.isHigh());
+assertEquals(0.1, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(0, mnStrategy0.strategy());
+assertEquals(2, mnStrategy0.gradientNCycles());
+assertEquals(3, mnStrategy0.hessianNCycles());
+assertEquals(0.1, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(1, mnStrategy0.hessianGradientNCycles());
+
+MnFunctionCross mnFunctionCross0 = new MnFunctionCross(fCNBase0, mnUserParameterState0, double0, mnStrategy0, int0);
+assertNotNull(mnFunctionCross0);
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasCovariance());
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertTrue(mnUserParameterState0.isValid());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+assertFalse(mnStrategy0.isMedium());
+assertEquals(0.5, mnStrategy0.hessianStepTolerance(), 0.01);
+assertTrue(mnStrategy0.isLow());
+assertEquals(0.5, mnStrategy0.gradientStepTolerance(), 0.01);
+assertFalse(mnStrategy0.isHigh());
+assertEquals(0.1, mnStrategy0.gradientTolerance(), 0.01);
+assertEquals(0, mnStrategy0.strategy());
+assertEquals(2, mnStrategy0.gradientNCycles());
+assertEquals(3, mnStrategy0.hessianNCycles());
+assertEquals(0.1, mnStrategy0.hessianG2Tolerance(), 0.01);
+assertEquals(1, mnStrategy0.hessianGradientNCycles());
+
+int[] intArray0 = new int[8];
+double[] doubleArray0 = new double[8];
+doubleArray0[1] = double0;
+mnUserParameterState0.setLowerLimit(string0, (double) int0);
+assertEquals(0.0, mnUserParameterState0.fval(), 0.01);
+assertFalse(mnUserParameterState0.hasCovariance());
+assertFalse(mnUserParameterState0.hasGlobalCC());
+assertTrue(mnUserParameterState0.isValid());
+assertEquals(0, mnUserParameterState0.nfcn());
+assertEquals(1, mnUserParameterState0.variableParameters());
+assertEquals(0.0, mnUserParameterState0.edm(), 0.01);
+
+mnFunctionCross0.cross(intArray0, doubleArray0, doubleArray0, double0, int0);
+
+* Writing JUnit test case 'MnFunctionCross_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

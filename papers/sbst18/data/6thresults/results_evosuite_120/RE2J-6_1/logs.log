@@ -1,0 +1,42 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.re2j.Machine
+* Starting client
+* Connecting to master process on port 16326
+* Analyzing classpath: 
+  - /var/benchmarks/projects/re2j/target/classes
+  - /var/benchmarks/projects/re2j/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.re2j.Machine
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 195
+  - Branch 168
+  - Exception 0
+  - MutationFactory 538
+  - Output 5
+  - Method 7
+  - MethodNoException 7
+  - CBranchFitnessFactory 168
+* Using seed 1516821865029
+* Starting evolution
+[MASTER] 20:25:25.446 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 71s and 61 generations, 34588 statements, best individual has fitness: 162.79629629629633
+* Minimizing test suite
+* Generated 26 tests with total length 161
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 20:25:59.254 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 6 seconds more than allowed.
+* Compiling and checking tests
+* Writing JUnit test case 'Machine_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

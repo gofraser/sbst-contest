@@ -1,0 +1,45 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: com.google.gson.internal.bind.JsonTreeReader
+* Starting client
+* Connecting to master process on port 11063
+* Analyzing classpath: 
+  - /var/benchmarks/projects/gson/gson/target/classes
+  - /var/benchmarks/projects/gson/gson/target/classes
+* Finished analyzing classpath
+* Generating tests for class com.google.gson.internal.bind.JsonTreeReader
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 165
+  - Branch 99
+  - Exception 0
+  - MutationFactory 413
+  - Output 27
+  - Method 19
+  - MethodNoException 19
+  - CBranchFitnessFactory 99
+* Using seed 1516822080140
+* Starting evolution
+[MASTER] 20:28:02.761 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 20:28:02.761 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 20:28:57.418 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 71s and 266 generations, 44689 statements, best individual has fitness: 92.94633273703042
+* Minimizing test suite
+* Generated 76 tests with total length 343
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 20:29:21.132 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeWriter: com/google/gson/internal/bind/JsonTreeWriter$1
+[MASTER] 20:29:29.946 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
+* Writing JUnit test case 'JsonTreeReader_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

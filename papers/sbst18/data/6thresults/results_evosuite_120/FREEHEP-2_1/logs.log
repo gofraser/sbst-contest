@@ -1,0 +1,40 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnLineSearch
+* Starting client
+* Connecting to master process on port 20679
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnLineSearch
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 104
+  - Branch 95
+  - Exception 0
+  - MutationFactory 132
+  - Output 2
+  - Method 1
+  - MethodNoException 1
+  - CBranchFitnessFactory 95
+* Using seed 1516820794763
+* Starting evolution
+* Search finished after 71s and 26 generations, 21806 statements, best individual has fitness: 99.45
+* Minimizing test suite
+* Generated 11 tests with total length 98
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'MnLineSearch_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

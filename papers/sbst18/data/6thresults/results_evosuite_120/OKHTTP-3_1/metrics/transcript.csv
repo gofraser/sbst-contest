@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,OKHTTP-3,okhttp3.ConnectionSpec,1,352,86663,2949,51,0,0,0,82,68,82.92683,66,50,75.757576,71,63,88.73239,49,69.014084,22,120,2
+ 
+ 
+ 
+

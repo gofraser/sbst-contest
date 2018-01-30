@@ -1,0 +1,200 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  FREEHEP-9
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/freehep/math/freehep-jminuit/src/main/java
+>> /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+>> 1
+>> /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+>> 0
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+
+
+### COMPUTING METRICS ###: org.freehep.math.minuit.MnMinos
+
+
+Starting class org.freehep.math.minuit.MnMinos
+
+
+Ending class org.freehep.math.minuit.MnMinos
+Creating directory results_evosuite_120/FREEHEP-9_1/temp/testcases/bin
+Creating dummy JUnit test file
+
+---Compilation---
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-9_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-9_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java
+
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:142: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn(doubleArray0[3], (double)int0, (double)int1, (double)int1, doubleArray0[3]).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:343: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn((double)int0, doubleArray0[3], doubleArray0[3], doubleArray0[5], (double)int0).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:475: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn(doubleArray0[3], (double)int0, doubleArray0[3], doubleArray0[5], (double)int2).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:612: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn(doubleArray0[3], (double)int1, (double)int1, doubleArray0[5], (double)int2).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:751: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn((double)int1, doubleArray0[2], doubleArray0[3], doubleArray0[5], (double)int1).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:1232: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:1545: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn((double)int0, (double)int0, (double)int0, (double)int0, (double)int1).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:5168: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn((double)int0, (double)int1, (double)int1, (double)int1, (double)int1).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:5907: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn(doubleArray0[2], (double)int1, doubleArray0[2], doubleArray0[2], (double)int1).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:6546: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn((double)int1, (double)int1, (double)int1, doubleArray0[5], (double)int1).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java:6740: error: method doReturn in class Mockito cannot be applied to given types;
+      doReturn(doubleArray0[3], doubleArray0[2], doubleArray0[3], doubleArray0[5], (double)int0).when(fCNBase0).valueOf(any(double[].class));
+      ^
+  required: Object
+  found: double,double,double,double,double
+  reason: actual and formal argument lists differ in length
+11 errors
+Failed to compile 'org/freehep/math/minuit/MnMinos_ESTest.java'!
+shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
+	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
+	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
+	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
+	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
+	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
+	at sbst.benchmark.RunTool.execute(RunTool.java:172)
+	at sbst.benchmark.RunTool.run(RunTool.java:95)
+	at sbst.benchmark.Main.main(Main.java:178)
+Compiling with scaffolding tests
+
+---Timing Information---
+Running tests with the following classpath: 
+/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+
+---The tests are re-executed other four times to find the flaky ones---
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+
+=== Run Jacoco for Coverage ===
+Number of instrumented file = 84
+Running tests with the following classpath: 
+/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Executions terminated
+Number of file with coverage information = 84
+Extracted coverage data for the class org/freehep/math/minuit/MnMinos
+
+=== Run PIT ===
+Generate mutations via PIT
+ Running tests against generated Mutants
+Running PITWrapper with the following data:
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/bin
+> CUT = org.freehep.math.minuit.MnMinos
+> Test cases = [org.freehep.math.minuit.MnMinos_ESTest, org.freehep.math.minuit.MnMinos_ESTest_scaffolding]
+Matching Jacoco with PIT: find covered mutations
+Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: FREEHEP-9
+	Class Under Test: org.freehep.math.minuit.MnMinos
+	Run number: 1
+	Tool preparation time (ms): 349
+	Tool test cases generation time (ms): 108821
+	Test cases execution time (ms): 7
+	Test case number: 95
+	Uncompilable Test Classes: 1
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 111
+	Lines covered: 0
+	Lines coverage ratio (%): 0.0
+	Conditions total: 74
+	Conditions covered: 0
+	Conditions coverage ratio (%): 0.0
+	Mutants total: 78
+	Mutants covered: 0
+	Mutants coverage ratio (%): 0.0
+	Mutants killed: 0
+	Mutants killed ratio (%): 0.0
+	Mutants alive: 78
+
+
+Class org.freehep.math.minuit.MnMinos ended.
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 4156
+Killing master process 4156
+Executing command kill -9 4156
+Execution of command kill -9 4156 finished.
+Process was destroyed

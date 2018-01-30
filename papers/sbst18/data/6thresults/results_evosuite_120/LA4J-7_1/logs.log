@@ -1,0 +1,46 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.la4j.matrix.sparse.CCSMatrix
+* Starting client
+* Connecting to master process on port 12619
+* Analyzing classpath: 
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+  - /var/benchmarks/projects/la4j-0.6.0/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.la4j.matrix.sparse.CCSMatrix
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 411
+  - Branch 309
+  - Exception 0
+  - MutationFactory 817
+  - Output 318
+  - Method 41
+  - MethodNoException 41
+  - CBranchFitnessFactory 309
+* Using seed 1516822173366
+* Starting evolution
+[MASTER] 20:29:40.279 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+[MASTER] 20:29:50.936 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
+[MASTER] 20:30:58.875 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 10032ms
+* Search finished after 82s and 21 generations, 13300 statements, best individual has fitness: 2614.9820565874925
+[MASTER] 20:30:58.928 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 12 seconds more than allowed.
+* Minimizing test suite
+* Generated 104 tests with total length 1245
+[MASTER] 20:31:11.369 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 57% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'CCSMatrix_ESTest' to temp/testcases
+[MASTER] 20:31:37.991 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 5 seconds more than allowed.
+* Done!
+
+* Computation finished

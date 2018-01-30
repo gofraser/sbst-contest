@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  JXPATH-7
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/JXPATH-7_1/temp/testcases/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-7_1/temp/testcases/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager_ESTest.java
+Compiled 'org/apache/commons/jxpath/ri/parser/XPathParserTokenManager_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: JXPATH-7
+	Class Under Test: org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
+	Run number: 1
+	Tool preparation time (ms): 350
+	Tool test cases generation time (ms): 91988
+	Test cases execution time (ms): 1672
+	Test case number: 30
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 1029
+	Lines covered: 232
+	Lines coverage ratio (%): 22.546162
+	Conditions total: 872
+	Conditions covered: 95
+	Conditions coverage ratio (%): 10.894495
+	Mutants total: 352
+	Mutants covered: 50
+	Mutants coverage ratio (%): 14.204545
+	Mutants killed: 27
+	Mutants killed ratio (%): 7.6704545
+	Mutants alive: 325

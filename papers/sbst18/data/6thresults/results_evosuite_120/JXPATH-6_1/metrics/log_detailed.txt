@@ -1,0 +1,269 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  JXPATH-6
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+Creating directory ./temp
+Creating directory ./temp/data
+Creating directory ./temp/testcases
+Executing /home/evosuite_6th/./runtool
+>> BENCHMARK
+>> /var/benchmarks/projects/commons-jxpath-1.3-src/src/java
+>> /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+>> 1
+>> /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+>> 0
+expecting CLASSPATH or READY
+<< CLASSPATH
+expecting number
+<< 1
+expecting directory or jar file
+<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< READY
+>> 120
+
+
+### COMPUTING METRICS ###: org.apache.commons.jxpath.JXPathContext
+
+
+Starting class org.apache.commons.jxpath.JXPathContext
+
+
+Ending class org.apache.commons.jxpath.JXPathContext
+Creating directory results_evosuite_120/JXPATH-6_1/temp/testcases/bin
+Creating dummy JUnit test file
+
+---Compilation---
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-6_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/org/apache/commons/jxpath/JXPathContext_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/org/apache/commons/jxpath/JXPathContext_ESTest.java
+
+===
+javac command line:
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-6_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/org/apache/commons/jxpath/JXPathContext_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/org/apache/commons/jxpath/JXPathContext_ESTest.java
+
+Note: /home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/org/apache/commons/jxpath/JXPathContext_ESTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Compiled 'org/apache/commons/jxpath/JXPathContext_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+Running tests with the following classpath: 
+/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.JXPathContext_ESTest]
+Executions terminated
+
+---The tests are re-executed other four times to find the flaky ones---
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.JXPathContext_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.JXPathContext_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.JXPathContext_ESTest]
+Executions terminated
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.JXPathContext_ESTest]
+Executions terminated
+
+=== Run Jacoco for Coverage ===
+Number of instrumented file = 180
+Running tests with the following classpath: 
+/home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.JXPathContext_ESTest]
+Executions terminated
+Number of file with coverage information = 180
+Extracted coverage data for the class org/apache/commons/jxpath/JXPathContext
+
+=== Run PIT ===
+Generate mutations via PIT
+ Running tests against generated Mutants
+Running PITWrapper with the following data:
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-6_1/temp/testcases/bin
+> CUT = org.apache.commons.jxpath.JXPathContext
+> Test cases = [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Matching Jacoco with PIT: find covered mutations
+Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.JXPathContext_ESTest, org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.JXPathContext_ESTest_scaffolding
+Executions terminated
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: JXPATH-6
+	Class Under Test: org.apache.commons.jxpath.JXPathContext
+	Run number: 1
+	Tool preparation time (ms): 350
+	Tool test cases generation time (ms): 101220
+	Test cases execution time (ms): 4748
+	Test case number: 78
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 96
+	Lines covered: 83
+	Lines coverage ratio (%): 86.45833
+	Conditions total: 46
+	Conditions covered: 43
+	Conditions coverage ratio (%): 93.478264
+	Mutants total: 50
+	Mutants covered: 48
+	Mutants coverage ratio (%): 96.0
+	Mutants killed: 45
+	Mutants killed ratio (%): 90.0
+	Mutants alive: 5
+
+
+Class org.apache.commons.jxpath.JXPathContext ended.
+Stopping process...
+Tool subprocess is an instance of java.lang.UNIXProcess
+Tool subprocess Id is 30511
+Killing master process 30511
+Executing command kill -9 30511
+Execution of command kill -9 30511 finished.
+Process was destroyed

@@ -1,0 +1,50 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnPrint
+* Starting client
+* Connecting to master process on port 17255
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnPrint
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 210
+  - Branch 83
+  - Exception 0
+  - MutationFactory 271
+  - Output 30
+  - Method 20
+  - MethodNoException 20
+  - CBranchFitnessFactory 83
+* Using seed 1516820021712
+* Starting evolution
+[MASTER] 19:54:17.454 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 19:54:21.100 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 19:54:32.190 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.FunctionMinimum due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.FunctionMinimum due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.MinimumSeed due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.MinimumState due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 19:54:39.405 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 74s and 127 generations, 69714 statements, best individual has fitness: 62.898255812074886
+* Minimizing test suite
+* Generated 68 tests with total length 994
+[MASTER] 19:55:15.851 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 19:55:15.854 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
+* Compiling and checking tests
+[MASTER] 19:55:31.108 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 7
+* Writing JUnit test case 'MnPrint_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

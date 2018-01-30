@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  GSON-4
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: com.google.gson.stream.JsonReader
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java
+Failed to compile 'com/google/gson/stream/JsonReader_ESTest.java'!
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: GSON-4
+	Class Under Test: com.google.gson.stream.JsonReader
+	Run number: 1
+	Tool preparation time (ms): 350
+	Tool test cases generation time (ms): 121225
+	Test cases execution time (ms): 7
+	Test case number: 59
+	Uncompilable Test Classes: 1
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 656
+	Lines covered: 0
+	Lines coverage ratio (%): 0.0
+	Conditions total: 468
+	Conditions covered: 0
+	Conditions coverage ratio (%): 0.0
+	Mutants total: 161
+	Mutants covered: 0
+	Mutants coverage ratio (%): 0.0
+	Mutants killed: 0
+	Mutants killed ratio (%): 0.0
+	Mutants alive: 161

@@ -1,0 +1,44 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.freehep.math.minuit.MnUserTransformation
+* Starting client
+* Connecting to master process on port 21972
+* Analyzing classpath: 
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+  - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.freehep.math.minuit.MnUserTransformation
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 171
+  - Branch 109
+  - Exception 0
+  - MutationFactory 468
+  - Output 90
+  - Method 43
+  - MethodNoException 43
+  - CBranchFitnessFactory 109
+* Using seed 1516819489368
+* Starting evolution
+[MASTER] 19:45:47.642 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 19:45:48.655 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+[MASTER] 19:45:50.604 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 71s and 255 generations, 129203 statements, best individual has fitness: 36.516393441225965
+* Minimizing test suite
+* Generated 127 tests with total length 685
+* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 19:46:28.040 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 1 seconds more than allowed.
+* Writing JUnit test case 'MnUserTransformation_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

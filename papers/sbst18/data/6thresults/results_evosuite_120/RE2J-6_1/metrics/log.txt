@@ -1,0 +1,50 @@
+
+>>> TOOL NAME:  evosuite
+
+>>> BENCHMARK:  RE2J-6
+
+>>> RUN NUMBER: 1
+
+>>> MODE: --only-compute-metrics
+
+
+### COMPUTING METRICS ###: com.google.re2j.Machine
+
+---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/com/google/re2j/Machine_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/RE2J-6_1/temp/testcases/com/google/re2j/Machine_ESTest.java
+Compiled 'com/google/re2j/Machine_ESTest.java'
+Compiling with scaffolding tests
+
+---Timing Information---
+
+---The tests are re-executed other four times to find the flaky ones---
+
+=== Run Jacoco for Coverage ===
+
+=== Run PIT ===
+
+>>> RESULTS:
+	Tool name: evosuite
+	Benchmark: RE2J-6
+	Class Under Test: com.google.re2j.Machine
+	Run number: 1
+	Tool preparation time (ms): 351
+	Tool test cases generation time (ms): 104599
+	Test cases execution time (ms): 2354
+	Test case number: 26
+	Uncompilable Test Classes: 0
+	Broken tests number: 0
+	Failing tests number: 0
+	Lines total: 159
+	Lines covered: 141
+	Lines coverage ratio (%): 88.679245
+	Conditions total: 121
+	Conditions covered: 103
+	Conditions coverage ratio (%): 85.12397
+	Mutants total: 104
+	Mutants covered: 101
+	Mutants coverage ratio (%): 97.11539
+	Mutants killed: 71
+	Mutants killed ratio (%): 68.269226
+	Mutants alive: 33

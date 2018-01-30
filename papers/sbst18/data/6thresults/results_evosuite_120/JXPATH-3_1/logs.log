@@ -1,0 +1,84 @@
+* EvoSuite 1.0.6-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare
+* Starting client
+* Connecting to master process on port 3099
+* Analyzing classpath: 
+  - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+  - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.jxpath.ri.compiler.CoreOperationCompare
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Total number of test goals: 
+  - Line 62
+  - Branch 68
+  - Exception 0
+  - MutationFactory 103
+  - Output 15
+  - Method 7
+  - MethodNoException 7
+  - CBranchFitnessFactory 68
+* Using seed 1516818957241
+* Starting evolution
+[MASTER] 19:35:59.873 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 19:36:01.988 [logback-1] WARN  TestUsageChecker - class org.apache.commons.jxpath.ri.model.VariablePointer$1 looks like an anonymous class, ignoring it (although reflection says false) VariablePointer$1
+[MASTER] 19:36:03.197 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.NamespaceContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.InitialContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.ChildContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.compiler.NodeNameTest due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 19:36:03.361 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.JXPathContextReferenceImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.InitialContext due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 19:36:04.066 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.NamespaceResolver due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.JXPathContextReferenceImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.RootContext due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 19:36:05.006 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.NamespaceResolver due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.JXPathContextReferenceImpl due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.RootContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.model.VariablePointer due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 19:36:36.072 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 75s and 198 generations, 110336 statements, best individual has fitness: 287.56666666666666
+* Minimizing test suite
+* Generated 28 tests with total length 213
+* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 19:37:21.195 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.JXPathContextFactory: org/apache/commons/jxpath/JXPathContextFactoryConfigurationError
+[MASTER] 19:37:21.213 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.ri.model.beans.CollectionPointer: org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator
+[MASTER] 19:37:27.825 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test21 -> class java.lang.StackOverflowError: null
+[MASTER] 19:37:27.827 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EvalContext evalContext0 = null;
+Expression[] expressionArray0 = new Expression[6];
+CoreOperationOr coreOperationOr0 = new CoreOperationOr(expressionArray0);
+assertEquals(6, expressionArray0.length);
+assertNotNull(coreOperationOr0);
+assertEquals("or", coreOperationOr0.getSymbol());
+
+String string0 = "PZ8hjp/TZ;g9^L";
+Constant constant0 = new Constant(string0);
+assertNotNull(constant0);
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+
+CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual(coreOperationOr0, constant0);
+assertEquals(6, expressionArray0.length);
+assertNotNull(coreOperationGreaterThanOrEqual0);
+assertEquals("or", coreOperationOr0.getSymbol());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals(">=", coreOperationGreaterThanOrEqual0.getSymbol());
+
+expressionArray0[0] = (Expression) coreOperationGreaterThanOrEqual0;
+CoreOperationNotEqual coreOperationNotEqual0 = new CoreOperationNotEqual(coreOperationGreaterThanOrEqual0, expressionArray0[1]);
+assertEquals(6, expressionArray0.length);
+assertNotNull(coreOperationNotEqual0);
+assertEquals("or", coreOperationOr0.getSymbol());
+assertFalse(constant0.computeContextDependent());
+assertFalse(constant0.isContextDependent());
+assertEquals(">=", coreOperationGreaterThanOrEqual0.getSymbol());
+assertEquals("!=", coreOperationNotEqual0.getSymbol());
+
+coreOperationNotEqual0.equal(evalContext0, constant0, coreOperationGreaterThanOrEqual0);
+
+* Writing JUnit test case 'CoreOperationCompare_ESTest' to temp/testcases
+* Done!
+
+* Computation finished

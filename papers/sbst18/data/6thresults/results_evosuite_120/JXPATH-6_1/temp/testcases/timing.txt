@@ -1,0 +1,2 @@
+genTime=101220
+prepTime=350

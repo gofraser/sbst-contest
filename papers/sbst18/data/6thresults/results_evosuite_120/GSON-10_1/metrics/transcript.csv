@@ -1,0 +1,6 @@
+tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
+evosuite,GSON-10,com.google.gson.internal.Excluder,1,353,14871,8,0,0,0,0,89,0,0.0,82,0,0.0,0,0,0.0,0,0.0,0,120,0
+ 
+ 
+ 
+
