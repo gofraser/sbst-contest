@@ -29,10 +29,10 @@ Compiling with scaffolding tests
 	Benchmark: JXPATH-8
 	Class Under Test: org.apache.commons.jxpath.util.ValueUtils
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 84880
-	Test cases execution time (ms): 2751
-	Test case number: 51
+	Tool preparation time (ms): 361
+	Tool test cases generation time (ms): 88258
+	Test cases execution time (ms): 3972
+	Test case number: 50
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
@@ -40,11 +40,11 @@ Compiling with scaffolding tests
 	Lines covered: 124
 	Lines coverage ratio (%): 50.4065
 	Conditions total: 150
-	Conditions covered: 80
-	Conditions coverage ratio (%): 53.333336
+	Conditions covered: 79
+	Conditions coverage ratio (%): 52.666664
 	Mutants total: 152
-	Mutants covered: 83
-	Mutants coverage ratio (%): 54.605263
+	Mutants covered: 81
+	Mutants coverage ratio (%): 53.289474
 	Mutants killed: 65
 	Mutants killed ratio (%): 42.763157
 	Mutants alive: 87

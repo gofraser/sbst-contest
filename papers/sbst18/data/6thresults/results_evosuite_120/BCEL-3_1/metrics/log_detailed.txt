@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,12 +40,12 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-3_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-3_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
 Executions terminated
 
@@ -62,7 +62,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 431
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
 Executions terminated
 Number of file with coverage information = 431
@@ -72,13 +72,13 @@ Extracted coverage data for the class org/apache/bcel/generic/ConstantPoolGen
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-3_1/temp/testcases/bin
 > CUT = org.apache.bcel.generic.ConstantPoolGen
 > Test cases = []
 Could not calculate mutation metrics!
 java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
 	at sbst.benchmark.pitest.PITWrapper.<init>(PITWrapper.java:63)
 	at sbst.benchmark.TestSuite.mutationAnalysis(TestSuite.java:506)
 	at sbst.benchmark.TestSuite.<init>(TestSuite.java:99)
@@ -92,8 +92,8 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	Benchmark: BCEL-3
 	Class Under Test: org.apache.bcel.generic.ConstantPoolGen
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 63352
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 42619
 	Test cases execution time (ms): 7
 	Test case number: 0
 	Uncompilable Test Classes: 0
@@ -116,8 +116,8 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 Class org.apache.bcel.generic.ConstantPoolGen ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 18018
-Killing master process 18018
-Executing command kill -9 18018
-Execution of command kill -9 18018 finished.
+Tool subprocess Id is 21040
+Killing master process 21040
+Executing command kill -9 21040
+Execution of command kill -9 21040 finished.
 Process was destroyed

@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.la4j.vector.sparse.CompressedVector
 * Starting client
-* Connecting to master process on port 14332
+* Connecting to master process on port 21560
 * Analyzing classpath: 
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
@@ -26,25 +26,23 @@
   - Method 27
   - MethodNoException 27
   - CBranchFitnessFactory 170
-* Using seed 1516823651761
+* Using seed 1517347718128
 * Starting evolution
-[MASTER] 20:54:14.880 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
-[MASTER] 20:54:14.880 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
-[MASTER] 20:54:16.618 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
-[MASTER] 20:54:17.701 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
-[MASTER] 20:54:18.260 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 20:54:50.650 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
-[MASTER] 20:54:52.324 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
-[MASTER] 20:54:53.412 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 20:54:54.516 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: No generators of type java.util.Set<java.util.Map.Entry<java.lang.Integer, java.lang.Integer>>
-[MASTER] 20:55:11.524 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
-* Search finished after 72s and 95 generations, 57991 statements, best individual has fitness: 206.45991889151742
+[MASTER] 22:28:41.254 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 22:28:41.254 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 22:28:47.183 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
+[MASTER] 22:28:48.783 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 22:29:22.954 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+* Search finished after 74s and 15 generations, 11052 statements, best individual has fitness: 450.50174791436467
 * Minimizing test suite
-* Generated 91 tests with total length 447
-* Resulting test suite's coverage: 75% (average coverage for all fitness functions)
+* Generated 74 tests with total length 888
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+[MASTER] 22:30:12.552 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Generating assertions
+[MASTER] 22:30:12.555 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
 * Compiling and checking tests
-[MASTER] 20:55:59.499 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 8 seconds more than allowed.
+[MASTER] 22:30:27.428 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.matrix.SparseMatrix$2: org/la4j/iterator/CursorToColumnMajorMatrixIterator
+[MASTER] 22:30:27.430 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.matrix.SparseMatrix$1: org/la4j/iterator/CursorToRowMajorMatrixIterator
 * Writing JUnit test case 'CompressedVector_ESTest' to temp/testcases
 * Done!
 

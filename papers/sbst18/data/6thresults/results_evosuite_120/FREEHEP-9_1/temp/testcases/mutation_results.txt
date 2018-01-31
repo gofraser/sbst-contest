@@ -1,5 +1,5 @@
 N. of generated mutants 78
-N. of covered mutants 0
+N. of covered mutants 2
 N. of killed mutants 0
 
 

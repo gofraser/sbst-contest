@@ -26,8 +26,8 @@ Could not calculate mutation metrics!
 	Benchmark: LA4J-2
 	Class Under Test: org.la4j.decomposition.EigenDecompositor
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 44485
+	Tool preparation time (ms): 368
+	Tool test cases generation time (ms): 57133
 	Test cases execution time (ms): 7
 	Test case number: 0
 	Uncompilable Test Classes: 0

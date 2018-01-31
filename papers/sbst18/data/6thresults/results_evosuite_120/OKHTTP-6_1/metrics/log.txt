@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: OKHTTP-6
 	Class Under Test: okhttp3.CacheControl
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 94356
-	Test cases execution time (ms): 2792
-	Test case number: 40
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 86951
+	Test cases execution time (ms): 4253
+	Test case number: 41
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 128
-	Lines covered: 115
-	Lines coverage ratio (%): 89.84375
+	Lines covered: 112
+	Lines coverage ratio (%): 87.5
 	Conditions total: 70
-	Conditions covered: 59
-	Conditions coverage ratio (%): 84.28571
+	Conditions covered: 54
+	Conditions coverage ratio (%): 77.14286
 	Mutants total: 59
 	Mutants covered: 57
 	Mutants coverage ratio (%): 96.61017
-	Mutants killed: 51
-	Mutants killed ratio (%): 86.440674
-	Mutants alive: 8
+	Mutants killed: 45
+	Mutants killed ratio (%): 76.27119
+	Mutants alive: 14

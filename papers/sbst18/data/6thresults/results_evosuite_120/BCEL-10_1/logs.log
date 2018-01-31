@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.bcel.verifier.structurals.Subroutines
 * Starting client
-* Connecting to master process on port 12678
+* Connecting to master process on port 5498
 * Analyzing classpath: 
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
@@ -26,14 +26,15 @@
   - Method 18
   - MethodNoException 18
   - CBranchFitnessFactory 143
-* Using seed 1516823869925
+* Using seed 1517347945724
 * Starting evolution
-[MASTER] 20:58:50.105 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
-[MASTER] 20:59:00.068 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.generic.MethodGen due to org.evosuite.ga.ConstructionFailedException: Have no generator for class java.lang.reflect.Method canUseFunctionalMocks=true, canBeMocked: false
-* Search finished after 72s and 246 generations, 128973 statements, best individual has fitness: 515.0808080808081
+[MASTER] 22:33:15.546 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 22:33:25.946 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
+[MASTER] 22:33:29.304 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+* Search finished after 71s and 222 generations, 110371 statements, best individual has fitness: 523.4484323432343
 * Minimizing test suite
-* Generated 18 tests with total length 204
-* Resulting test suite's coverage: 48% (average coverage for all fitness functions)
+* Generated 14 tests with total length 156
+* Resulting test suite's coverage: 47% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
 * Writing JUnit test case 'Subroutines_ESTest' to temp/testcases

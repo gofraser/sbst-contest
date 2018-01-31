@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.la4j.decomposition.SingularValueDecompositor
 * Starting client
-* Connecting to master process on port 21107
+* Connecting to master process on port 5988
 * Analyzing classpath: 
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
@@ -26,15 +26,47 @@
   - Method 3
   - MethodNoException 3
   - CBranchFitnessFactory 182
-* Using seed 1516822450688
+* Using seed 1517346558973
 * Starting evolution
-[MASTER] 20:34:20.407 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
-* Search finished after 71s and 36 generations, 11289 statements, best individual has fitness: 104.84251372923428
+[MASTER] 22:09:28.247 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+[MASTER] 22:09:29.230 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
+* Search finished after 72s and 24 generations, 13146 statements, best individual has fitness: 32.49999993492827
 * Minimizing test suite
-* Generated 8 tests with total length 36
-* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generated 10 tests with total length 80
+* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
 * Generating assertions
+[MASTER] 22:10:52.459 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
 * Compiling and checking tests
+[MASTER] 22:11:01.154 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Java heap space
+[MASTER] 22:11:01.155 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ int int0 = 279;
+int int1 = 2141993996;
+SparseMatrix sparseMatrix0 = SparseMatrix.zero(int0, int1, int0);
+assertEquals(0.0, sparseMatrix0.min(), 0.01);
+assertEquals(0, sparseMatrix0.cardinality());
+assertEquals(279, sparseMatrix0.rows());
+assertTrue(sparseMatrix0.isRowMajor());
+assertEquals(0.0, sparseMatrix0.density(), 0.01);
+assertEquals(2141993996, sparseMatrix0.columns());
+assertEquals(0.0, sparseMatrix0.max(), 0.01);
+assertFalse(int0 == int1);
+assertFalse(int1 == int0);
+assertNotNull(sparseMatrix0);
+
+SingularValueDecompositor singularValueDecompositor0 = new SingularValueDecompositor(sparseMatrix0);
+assertEquals(0.0, sparseMatrix0.min(), 0.01);
+assertEquals(0, sparseMatrix0.cardinality());
+assertEquals(279, sparseMatrix0.rows());
+assertTrue(sparseMatrix0.isRowMajor());
+assertEquals(0.0, sparseMatrix0.density(), 0.01);
+assertEquals(2141993996, sparseMatrix0.columns());
+assertEquals(0.0, sparseMatrix0.max(), 0.01);
+assertFalse(int0 == int1);
+assertFalse(int1 == int0);
+assertNotNull(singularValueDecompositor0);
+
+singularValueDecompositor0.decompose();
+
 * Writing JUnit test case 'SingularValueDecompositor_ESTest' to temp/testcases
 * Done!
 

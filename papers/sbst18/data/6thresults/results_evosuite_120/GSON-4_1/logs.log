@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.gson.stream.JsonReader
 * Starting client
-* Connecting to master process on port 14554
+* Connecting to master process on port 6659
 * Analyzing classpath: 
   - /var/benchmarks/projects/gson/gson/target/classes
   - /var/benchmarks/projects/gson/gson/target/classes
@@ -26,14 +26,14 @@
   - Method 21
   - MethodNoException 21
   - CBranchFitnessFactory 667
-* Using seed 1516822745561
+* Using seed 1517346801954
 * Starting evolution
-[MASTER] 20:40:59.982 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 38322ms
-* Search finished after 111s and 5 generations, 2500 statements, best individual has fitness: 5379.017679475814
-[MASTER] 20:41:00.031 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 41 seconds more than allowed.
+[MASTER] 22:15:15.957 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 38974ms
+* Search finished after 111s and 13 generations, 5651 statements, best individual has fitness: 4930.796036557042
+[MASTER] 22:15:16.006 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 40 seconds more than allowed.
 * Skipping minimization because not enough time is left
-* Generated 60 tests with total length 662
-* Resulting test suite's coverage: 31% (average coverage for all fitness functions)
+* Generated 81 tests with total length 927
+* Resulting test suite's coverage: 26% (average coverage for all fitness functions)
 * Generating assertions
 * Skipping assertion generation because not enough time is left
 * Compiling and checking tests

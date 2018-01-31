@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: OKHTTP-2
 	Class Under Test: okhttp3.internal.platform.AndroidPlatform
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 83463
-	Test cases execution time (ms): 3074
-	Test case number: 28
+	Tool preparation time (ms): 357
+	Tool test cases generation time (ms): 83346
+	Test cases execution time (ms): 4652
+	Test case number: 27
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 88
-	Lines covered: 35
-	Lines coverage ratio (%): 39.772728
+	Lines covered: 33
+	Lines coverage ratio (%): 37.5
 	Conditions total: 30
 	Conditions covered: 15
 	Conditions coverage ratio (%): 50.0
 	Mutants total: 34
-	Mutants covered: 20
-	Mutants coverage ratio (%): 58.823532
-	Mutants killed: 17
-	Mutants killed ratio (%): 50.0
-	Mutants alive: 17
+	Mutants covered: 19
+	Mutants coverage ratio (%): 55.88235
+	Mutants killed: 15
+	Mutants killed ratio (%): 44.11765
+	Mutants alive: 19

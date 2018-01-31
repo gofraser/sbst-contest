@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 Deleting file or directory ./temp/testcases
@@ -49,8 +49,8 @@ expecting: READY
 >> >>/home/evosuite_6th/./temp/testcases
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 6990
-Killing master process 6990
-Executing command kill -9 6990
-Execution of command kill -9 6990 finished.
+Tool subprocess Id is 4637
+Killing master process 4637
+Executing command kill -9 4637
+Execution of command kill -9 4637 finished.
 Process was destroyed

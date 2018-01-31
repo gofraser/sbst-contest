@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,14 +40,14 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/GSON-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/GSON-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/GSON-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/GSON-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest.java
 
 Note: /home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/com/google/gson/internal/bind/JsonTreeReader_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
@@ -56,7 +56,7 @@ Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.internal.bind.JsonTreeReader_ESTest]
 Executions terminated
 
@@ -73,7 +73,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 174
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.internal.bind.JsonTreeReader_ESTest]
 Executions terminated
 Number of file with coverage information = 174
@@ -83,56 +83,11 @@ Extracted coverage data for the class com/google/gson/internal/bind/JsonTreeRead
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/gson/gson/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/gson/gson/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-8_1/temp/testcases/bin
 > CUT = com.google.gson.internal.bind.JsonTreeReader
 > Test cases = [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
-Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
-Executions terminated
 Running the tests: [com.google.gson.internal.bind.JsonTreeReader_ESTest, com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding]
 Skipped scaffolding test com.google.gson.internal.bind.JsonTreeReader_ESTest_scaffolding
 Executions terminated
@@ -436,32 +391,32 @@ Executions terminated
 	Benchmark: GSON-8
 	Class Under Test: com.google.gson.internal.bind.JsonTreeReader
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 92514
-	Test cases execution time (ms): 3355
-	Test case number: 76
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 90522
+	Test cases execution time (ms): 4615
+	Test case number: 69
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 165
-	Lines covered: 152
-	Lines coverage ratio (%): 92.121216
+	Lines covered: 136
+	Lines coverage ratio (%): 82.42424
 	Conditions total: 86
-	Conditions covered: 78
-	Conditions coverage ratio (%): 90.69768
+	Conditions covered: 74
+	Conditions coverage ratio (%): 86.04651
 	Mutants total: 124
-	Mutants covered: 114
-	Mutants coverage ratio (%): 91.935486
-	Mutants killed: 94
-	Mutants killed ratio (%): 75.80645
-	Mutants alive: 30
+	Mutants covered: 99
+	Mutants coverage ratio (%): 79.838715
+	Mutants killed: 87
+	Mutants killed ratio (%): 70.161285
+	Mutants alive: 37
 
 
 Class com.google.gson.internal.bind.JsonTreeReader ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 27875
-Killing master process 27875
-Executing command kill -9 27875
-Execution of command kill -9 27875 finished.
+Tool subprocess Id is 21946
+Killing master process 21946
+Executing command kill -9 21946
+Execution of command kill -9 21946 finished.
 Process was destroyed

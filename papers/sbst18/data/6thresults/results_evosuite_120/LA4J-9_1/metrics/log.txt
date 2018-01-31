@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: LA4J-9
 	Class Under Test: org.la4j.decomposition.SingularValueDecompositor
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 89872
-	Test cases execution time (ms): 2602
-	Test case number: 8
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 111409
+	Test cases execution time (ms): 2626
+	Test case number: 9
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 265
-	Lines covered: 224
-	Lines coverage ratio (%): 84.528305
+	Lines covered: 265
+	Lines coverage ratio (%): 100.0
 	Conditions total: 175
-	Conditions covered: 149
-	Conditions coverage ratio (%): 85.14286
+	Conditions covered: 165
+	Conditions coverage ratio (%): 94.28571
 	Mutants total: 161
-	Mutants covered: 140
-	Mutants coverage ratio (%): 86.95652
-	Mutants killed: 48
-	Mutants killed ratio (%): 29.813665
-	Mutants alive: 113
+	Mutants covered: 161
+	Mutants coverage ratio (%): 100.0
+	Mutants killed: 49
+	Mutants killed ratio (%): 30.434782
+	Mutants alive: 112

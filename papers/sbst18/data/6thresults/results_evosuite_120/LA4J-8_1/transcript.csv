@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,LA4J-8,org.la4j.matrix.dense.Basic2DMatrix,1,351,115824,4685,82,0,0,0,105,91,86.666664,68,51,75.0,110,102,92.72727,77,70.0,33,120,2
+evosuite,LA4J-8,org.la4j.matrix.dense.Basic2DMatrix,1,365,119611,8054,66,0,1,0,105,93,88.57143,68,52,76.47059,110,106,96.36363,103,93.63636,7,120,2
  
  
  

@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.imaging.common.RationalNumber
 * Starting client
-* Connecting to master process on port 6142
+* Connecting to master process on port 20008
 * Analyzing classpath: 
   - /var/benchmarks/projects/commons-imaging/target/classes
   - /var/benchmarks/projects/commons-imaging/target/classes
@@ -26,16 +26,17 @@
   - Method 11
   - MethodNoException 11
   - CBranchFitnessFactory 69
-* Using seed 1516821344307
+* Using seed 1517345414846
 * Starting evolution
-* Search finished after 71s and 39 generations, 31103 statements, best individual has fitness: 64.39047617773092
+* Search finished after 72s and 43 generations, 34714 statements, best individual has fitness: 57.319047603600914
 * Minimizing test suite
-* Generated 18 tests with total length 290
-* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
-[MASTER] 20:17:18.526 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generated 18 tests with total length 258
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+[MASTER] 21:51:49.031 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Generating assertions
-[MASTER] 20:17:18.529 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 6 seconds more than allowed.
+[MASTER] 21:51:49.033 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 6 seconds more than allowed.
 * Compiling and checking tests
+[MASTER] 21:52:03.708 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
 * Writing JUnit test case 'RationalNumber_ESTest' to temp/testcases
 * Done!
 

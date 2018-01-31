@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,21 +40,23 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-10_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-10_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-10_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-10_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest.java
 
+Note: /home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/org/apache/bcel/verifier/structurals/Subroutines_ESTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
 Compiled 'org/apache/bcel/verifier/structurals/Subroutines_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.structurals.Subroutines_ESTest]
 Executions terminated
 
@@ -71,7 +73,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 431
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.structurals.Subroutines_ESTest]
 Executions terminated
 Number of file with coverage information = 431
@@ -81,11 +83,14 @@ Extracted coverage data for the class org/apache/bcel/verifier/structurals/Subro
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-10_1/temp/testcases/bin
 > CUT = org.apache.bcel.verifier.structurals.Subroutines
 > Test cases = [org.apache.bcel.verifier.structurals.Subroutines_ESTest, org.apache.bcel.verifier.structurals.Subroutines_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.apache.bcel.verifier.structurals.Subroutines_ESTest, org.apache.bcel.verifier.structurals.Subroutines_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.structurals.Subroutines_ESTest_scaffolding
+Executions terminated
 Running the tests: [org.apache.bcel.verifier.structurals.Subroutines_ESTest, org.apache.bcel.verifier.structurals.Subroutines_ESTest_scaffolding]
 Skipped scaffolding test org.apache.bcel.verifier.structurals.Subroutines_ESTest_scaffolding
 Executions terminated
@@ -263,10 +268,10 @@ Executions terminated
 	Benchmark: BCEL-10
 	Class Under Test: org.apache.bcel.verifier.structurals.Subroutines
 	Run number: 1
-	Tool preparation time (ms): 347
-	Tool test cases generation time (ms): 90826
-	Test cases execution time (ms): 4389
-	Test case number: 18
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 88565
+	Test cases execution time (ms): 6008
+	Test case number: 14
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
@@ -274,11 +279,11 @@ Executions terminated
 	Lines covered: 82
 	Lines coverage ratio (%): 68.90756
 	Conditions total: 72
-	Conditions covered: 46
-	Conditions coverage ratio (%): 63.88889
+	Conditions covered: 45
+	Conditions coverage ratio (%): 62.5
 	Mutants total: 75
-	Mutants covered: 57
-	Mutants coverage ratio (%): 76.0
+	Mutants covered: 58
+	Mutants coverage ratio (%): 77.33333
 	Mutants killed: 42
 	Mutants killed ratio (%): 56.0
 	Mutants alive: 33
@@ -287,8 +292,8 @@ Executions terminated
 Class org.apache.bcel.verifier.structurals.Subroutines ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 14298
-Killing master process 14298
-Executing command kill -9 14298
-Execution of command kill -9 14298 finished.
+Tool subprocess Id is 18216
+Killing master process 18216
+Executing command kill -9 18216
+Execution of command kill -9 18216 finished.
 Process was destroyed

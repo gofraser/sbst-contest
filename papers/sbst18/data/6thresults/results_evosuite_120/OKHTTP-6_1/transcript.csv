@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,OKHTTP-6,okhttp3.CacheControl,1,349,94356,2792,40,0,0,0,128,115,89.84375,70,59,84.28571,59,57,96.61017,51,86.440674,8,120,2
+evosuite,OKHTTP-6,okhttp3.CacheControl,1,360,86951,4253,41,0,0,0,128,112,87.5,70,54,77.14286,59,57,96.61017,45,76.27119,14,120,2
  
  
  

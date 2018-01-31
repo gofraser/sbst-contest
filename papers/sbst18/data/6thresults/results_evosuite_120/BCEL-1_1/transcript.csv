@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,BCEL-1,org.apache.bcel.classfile.Utility,1,351,52323,7,0,0,0,0,501,0,0.0,344,0,0.0,0,0,0.0,0,0.0,0,120,0
+evosuite,BCEL-1,org.apache.bcel.classfile.Utility,1,356,117016,5727,139,0,0,0,501,274,54.690617,344,188,54.651165,165,105,63.636364,79,47.878788,86,120,2
  
  
  

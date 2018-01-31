@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.re2j.Compiler
 * Starting client
-* Connecting to master process on port 20301
+* Connecting to master process on port 11999
 * Analyzing classpath: 
   - /var/benchmarks/projects/re2j/target/classes
   - /var/benchmarks/projects/re2j/target/classes
@@ -26,14 +26,18 @@
   - Method 1
   - MethodNoException 1
   - CBranchFitnessFactory 115
-* Using seed 1516821455430
+* Using seed 1517345528671
 * Starting evolution
-* Search finished after 76s and 74 generations, 35836 statements, best individual has fitness: 586.5654743953253
+[MASTER] 21:53:33.374 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 9074ms
+* Search finished after 83s and 14 generations, 11137 statements, best individual has fitness: 567.2305555555556
+[MASTER] 21:53:33.395 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 12 seconds more than allowed.
 * Minimizing test suite
-* Generated 25 tests with total length 130
+* Generated 21 tests with total length 296
+[MASTER] 21:53:43.125 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Resulting test suite's coverage: 67% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
+[MASTER] 21:53:58.337 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
 * Writing JUnit test case 'Compiler_ESTest' to temp/testcases
 * Done!
 

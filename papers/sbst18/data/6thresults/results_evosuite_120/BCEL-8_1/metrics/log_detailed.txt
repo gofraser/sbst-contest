@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,14 +40,14 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest.java
 
 Note: /home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/org/apache/bcel/generic/BranchInstruction_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
@@ -56,7 +56,7 @@ Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.BranchInstruction_ESTest]
 Executions terminated
 
@@ -73,7 +73,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 431
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.BranchInstruction_ESTest]
 Executions terminated
 Number of file with coverage information = 431
@@ -83,7 +83,7 @@ Extracted coverage data for the class org/apache/bcel/generic/BranchInstruction
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-8_1/temp/testcases/bin
 > CUT = org.apache.bcel.generic.BranchInstruction
 > Test cases = [org.apache.bcel.generic.BranchInstruction_ESTest, org.apache.bcel.generic.BranchInstruction_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
@@ -190,10 +190,10 @@ Executions terminated
 	Benchmark: BCEL-8
 	Class Under Test: org.apache.bcel.generic.BranchInstruction
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 98834
-	Test cases execution time (ms): 4024
-	Test case number: 47
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 100775
+	Test cases execution time (ms): 6409
+	Test case number: 46
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
@@ -206,16 +206,16 @@ Executions terminated
 	Mutants total: 32
 	Mutants covered: 32
 	Mutants coverage ratio (%): 100.0
-	Mutants killed: 31
-	Mutants killed ratio (%): 96.875
-	Mutants alive: 1
+	Mutants killed: 29
+	Mutants killed ratio (%): 90.625
+	Mutants alive: 3
 
 
 Class org.apache.bcel.generic.BranchInstruction ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 24088
-Killing master process 24088
-Executing command kill -9 24088
-Execution of command kill -9 24088 finished.
+Tool subprocess Id is 32259
+Killing master process 32259
+Executing command kill -9 32259
+Execution of command kill -9 32259 finished.
 Process was destroyed

@@ -29,19 +29,19 @@ Compiling with scaffolding tests
 	Benchmark: OKHTTP-1
 	Class Under Test: okhttp3.Cookie
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 82569
-	Test cases execution time (ms): 1959
-	Test case number: 32
+	Tool preparation time (ms): 357
+	Tool test cases generation time (ms): 82465
+	Test cases execution time (ms): 1918
+	Test case number: 29
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 236
-	Lines covered: 37
-	Lines coverage ratio (%): 15.677966
+	Lines covered: 36
+	Lines coverage ratio (%): 15.254237
 	Conditions total: 208
-	Conditions covered: 16
-	Conditions coverage ratio (%): 7.692308
+	Conditions covered: 15
+	Conditions coverage ratio (%): 7.2115383
 	Mutants total: 108
 	Mutants covered: 15
 	Mutants coverage ratio (%): 13.888889

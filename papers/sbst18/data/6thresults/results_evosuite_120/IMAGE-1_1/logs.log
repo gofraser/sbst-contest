@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase
 * Starting client
-* Connecting to master process on port 16323
+* Connecting to master process on port 11300
 * Analyzing classpath: 
   - /var/benchmarks/projects/commons-imaging/target/classes
   - /var/benchmarks/projects/commons-imaging/target/classes
@@ -26,14 +26,15 @@
   - Method 6
   - MethodNoException 6
   - CBranchFitnessFactory 206
-* Using seed 1516820977753
+* Using seed 1517345028514
 * Starting evolution
-[MASTER] 20:10:21.940 [logback-2] ERROR FunctionalMockStatement - Failed to use Mockito on class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638
-* Computation finished
-[MASTER] 20:10:21.946 [logback-2] ERROR TestCaseExecutor - ExecutionException (this is likely a serious error in the framework)
-java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.get(FutureTask.java:206) [na:1.8.0_121]
+[MASTER] 21:44:36.106 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
+[MASTER] 21:44:36.962 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 21:44:40.658 [logback-2] ERROR FunctionalMockStatement - Failed to use Mockito on class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050
+[MASTER] 21:44:40.664 [logback-2] ERROR TestCaseExecutor - ExecutionException (this is likely a serious error in the framework)
+java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206) [na:1.8.0_161]
 	at org.evosuite.testcase.execution.TimeoutHandler.executeWithTimeout(TimeoutHandler.java:107) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TimeoutHandler.execute(TimeoutHandler.java:96) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -50,12 +51,12 @@ java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.Evosuit
 	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+Caused by: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:748) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:607) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -63,10 +64,10 @@ Caused by: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAcces
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	... 4 common frames omitted
-Caused by: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638
-	at org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638.<clinit>(Unknown Source) ~[na:na]
-	at sun.reflect.GeneratedSerializationConstructorAccessor52.newInstance(Unknown Source) ~[na:na]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
+Caused by: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050
+	at org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050.<clinit>(Unknown Source) ~[na:na]
+	at sun.reflect.GeneratedSerializationConstructorAccessor216.newInstance(Unknown Source) ~[na:na]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_161]
 	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.shaded.org.mockito.internal.creation.instance.ObjenesisInstantiator.newInstance(ObjenesisInstantiator.java:18) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -77,22 +78,23 @@ Caused by: java.lang.IllegalAccessError: tried to access class org.apache.common
 	at org.evosuite.shaded.org.mockito.Mockito.mock(Mockito.java:1821) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:622) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	... 9 common frames omitted
-[MASTER] 20:10:21.947 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase with seed 1516820977753. Configuration id : null
-org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638
+* Computation finished
+[MASTER] 21:44:40.665 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase with seed 1517345028514. Configuration id : null
+org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:748) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:607) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638
-	at org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$537159638.<clinit>(Unknown Source) ~[na:na]
-	at sun.reflect.GeneratedSerializationConstructorAccessor52.newInstance(Unknown Source) ~[na:na]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+Caused by: java.lang.IllegalAccessError: tried to access class org.apache.commons.imaging.formats.tiff.write.TiffOutputItem from class org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050
+	at org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory$MockitoMock$174941050.<clinit>(Unknown Source) ~[na:na]
+	at sun.reflect.GeneratedSerializationConstructorAccessor216.newInstance(Unknown Source) ~[na:na]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_161]
 	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.shaded.org.mockito.internal.creation.instance.ObjenesisInstantiator.newInstance(ObjenesisInstantiator.java:18) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]

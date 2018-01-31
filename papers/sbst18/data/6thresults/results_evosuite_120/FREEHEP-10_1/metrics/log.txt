@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/FREEHEP-10_1/temp/testcases/org/freehep/math/minuit/MnUserTransformation_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-10_1/temp/testcases/org/freehep/math/minuit/MnUserTransformation_ESTest.java
-Failed to compile 'org/freehep/math/minuit/MnUserTransformation_ESTest.java'!
+Compiled 'org/freehep/math/minuit/MnUserTransformation_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: FREEHEP-10
 	Class Under Test: org.freehep.math.minuit.MnUserTransformation
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 101470
-	Test cases execution time (ms): 7
-	Test case number: 127
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 362
+	Tool test cases generation time (ms): 97229
+	Test cases execution time (ms): 4351
+	Test case number: 123
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 169
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 169
+	Lines coverage ratio (%): 100.0
 	Conditions total: 72
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 69
+	Conditions coverage ratio (%): 95.83333
 	Mutants total: 112
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 112
+	Mutants covered: 112
+	Mutants coverage ratio (%): 100.0
+	Mutants killed: 78
+	Mutants killed ratio (%): 69.64286
+	Mutants alive: 34

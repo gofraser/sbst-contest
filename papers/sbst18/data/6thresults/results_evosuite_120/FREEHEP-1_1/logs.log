@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.freehep.math.minuit.MnPlot
 * Starting client
-* Connecting to master process on port 3145
+* Connecting to master process on port 7506
 * Analyzing classpath: 
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
@@ -26,20 +26,21 @@
   - Method 6
   - MethodNoException 6
   - CBranchFitnessFactory 119
-* Using seed 1516820455381
+* Using seed 1517344492838
 * Starting evolution
-[MASTER] 20:01:34.455 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.UnaryOperator<T> : Type points to itself
-[MASTER] 20:01:37.579 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 20:01:57.488 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
-[MASTER] 20:02:08.093 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
-* Search finished after 73s and 20 generations, 9327 statements, best individual has fitness: 47.04767964072521
+[MASTER] 21:35:09.203 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 21:35:31.768 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 21:35:39.520 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 21:35:48.373 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 72s and 19 generations, 10461 statements, best individual has fitness: 43.26666661799621
 * Minimizing test suite
-* Generated 21 tests with total length 309
+* Generated 23 tests with total length 403
 * Resulting test suite's coverage: 98% (average coverage for all fitness functions)
-[MASTER] 20:02:29.689 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+[MASTER] 21:36:27.070 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Generating assertions
-[MASTER] 20:02:29.692 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 5 seconds more than allowed.
+[MASTER] 21:36:27.073 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 5 seconds more than allowed.
 * Compiling and checking tests
+[MASTER] 21:36:41.220 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 1 seconds more than allowed.
 * Writing JUnit test case 'MnPlot_ESTest' to temp/testcases
 * Done!
 

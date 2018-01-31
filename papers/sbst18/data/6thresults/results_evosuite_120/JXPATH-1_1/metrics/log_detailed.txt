@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,14 +40,14 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-1_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-1_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-1_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-1_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest.java
 
 Note: /home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/org/apache/commons/jxpath/util/BasicTypeConverter_ESTest.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
@@ -56,7 +56,7 @@ Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.util.BasicTypeConverter_ESTest]
 Executions terminated
 
@@ -73,7 +73,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 180
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.util.BasicTypeConverter_ESTest]
 Executions terminated
 Number of file with coverage information = 180
@@ -83,7 +83,7 @@ Extracted coverage data for the class org/apache/commons/jxpath/util/BasicTypeCo
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-1_1/temp/testcases/bin
 > CUT = org.apache.commons.jxpath.util.BasicTypeConverter
 > Test cases = [org.apache.commons.jxpath.util.BasicTypeConverter_ESTest, org.apache.commons.jxpath.util.BasicTypeConverter_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
@@ -217,19 +217,19 @@ Executions terminated
 	Benchmark: JXPATH-1
 	Class Under Test: org.apache.commons.jxpath.util.BasicTypeConverter
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 83304
-	Test cases execution time (ms): 2395
+	Tool preparation time (ms): 361
+	Tool test cases generation time (ms): 83726
+	Test cases execution time (ms): 4085
 	Test case number: 35
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 233
-	Lines covered: 63
-	Lines coverage ratio (%): 27.038628
+	Lines covered: 64
+	Lines coverage ratio (%): 27.467812
 	Conditions total: 298
-	Conditions covered: 81
-	Conditions coverage ratio (%): 27.181208
+	Conditions covered: 82
+	Conditions coverage ratio (%): 27.516779
 	Mutants total: 122
 	Mutants covered: 41
 	Mutants coverage ratio (%): 33.606556
@@ -241,8 +241,8 @@ Executions terminated
 Class org.apache.commons.jxpath.util.BasicTypeConverter ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 20142
-Killing master process 20142
-Executing command kill -9 20142
-Execution of command kill -9 20142 finished.
+Tool subprocess Id is 18366
+Killing master process 18366
+Executing command kill -9 18366
+Execution of command kill -9 18366 finished.
 Process was destroyed

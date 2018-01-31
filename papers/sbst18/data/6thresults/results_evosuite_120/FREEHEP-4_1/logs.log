@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.freehep.math.minuit.MnAlgebraicSymMatrix
 * Starting client
-* Connecting to master process on port 11851
+* Connecting to master process on port 17559
 * Analyzing classpath: 
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
@@ -26,16 +26,17 @@
   - Method 11
   - MethodNoException 11
   - CBranchFitnessFactory 133
-* Using seed 1516820567553
+* Using seed 1517344606981
 * Starting evolution
-* Search finished after 77s and 14 generations, 3211 statements, best individual has fitness: 263.9143414341434
-[MASTER] 20:04:07.570 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 7 seconds more than allowed.
+* Search finished after 75s and 6 generations, 1762 statements, best individual has fitness: 348.91514378195
 * Minimizing test suite
-* Generated 26 tests with total length 237
-[MASTER] 20:04:22.270 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
-* Resulting test suite's coverage: 62% (average coverage for all fitness functions)
+* Generated 23 tests with total length 168
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
+[MASTER] 21:38:22.425 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Generating assertions
+[MASTER] 21:38:22.428 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
 * Compiling and checking tests
+[MASTER] 21:38:37.794 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
 * Writing JUnit test case 'MnAlgebraicSymMatrix_ESTest' to temp/testcases
 * Done!
 

@@ -11,6 +11,10 @@
 ### COMPUTING METRICS ###: org.la4j.linear.GaussianSolver
 
 ---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/LA4J-10_1/temp/testcases/org/la4j/linear/GaussianSolver_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-10_1/temp/testcases/org/la4j/linear/GaussianSolver_ESTest.java
+Compiled 'org/la4j/linear/GaussianSolver_ESTest.java'
+Compiling with scaffolding tests
 
 ---Timing Information---
 
@@ -19,29 +23,28 @@
 === Run Jacoco for Coverage ===
 
 === Run PIT ===
-Could not calculate mutation metrics!
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: LA4J-10
 	Class Under Test: org.la4j.linear.GaussianSolver
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 41318
-	Test cases execution time (ms): 7
-	Test case number: 0
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 90035
+	Test cases execution time (ms): 6631
+	Test case number: 15
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 37
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 33
+	Lines coverage ratio (%): 89.189186
 	Conditions total: 22
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
-	Mutants total: 0
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 0
+	Conditions covered: 19
+	Conditions coverage ratio (%): 86.36364
+	Mutants total: 53
+	Mutants covered: 51
+	Mutants coverage ratio (%): 96.22642
+	Mutants killed: 36
+	Mutants killed ratio (%): 67.92453
+	Mutants alive: 17

@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.bcel.generic.BranchInstruction
 * Starting client
-* Connecting to master process on port 19315
+* Connecting to master process on port 5607
 * Analyzing classpath: 
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
@@ -26,20 +26,22 @@
   - Method 16
   - MethodNoException 16
   - CBranchFitnessFactory 36
-* Using seed 1516818857707
+* Using seed 1517342754793
 * Starting evolution
-[MASTER] 19:34:22.937 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-* Search finished after 71s and 441 generations, 161363 statements, best individual has fitness: 12.552631578947368
+[MASTER] 21:07:04.383 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 74s and 421 generations, 142862 statements, best individual has fitness: 15.052631578947368
 * Minimizing test suite
-* Generated 47 tests with total length 242
-* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generated 46 tests with total length 267
+* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
+[MASTER] 21:07:18.799 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.bcel.classfile.JavaClass: org/apache/bcel/classfile/JavaClass$1
+[MASTER] 21:07:18.851 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.bcel.classfile.Field: org/apache/bcel/classfile/Field$1
 * Permissions denied during test execution: 
   - java.lang.RuntimePermission: 
-         writeFileDescriptor: 13
+         writeFileDescriptor: 9
+[MASTER] 21:07:32.878 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 8 seconds more than allowed.
 * Writing JUnit test case 'BranchInstruction_ESTest' to temp/testcases
-[MASTER] 19:35:53.881 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 8 seconds more than allowed.
 * Done!
 
 * Computation finished

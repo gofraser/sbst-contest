@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java
-Failed to compile 'com/google/gson/stream/JsonReader_ESTest.java'!
+Compiled 'com/google/gson/stream/JsonReader_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: GSON-4
 	Class Under Test: com.google.gson.stream.JsonReader
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 121225
-	Test cases execution time (ms): 7
-	Test case number: 59
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 366
+	Tool test cases generation time (ms): 120894
+	Test cases execution time (ms): 7819
+	Test case number: 80
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 656
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 228
+	Lines coverage ratio (%): 34.756096
 	Conditions total: 468
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 147
+	Conditions coverage ratio (%): 31.410255
 	Mutants total: 161
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 161
+	Mutants covered: 63
+	Mutants coverage ratio (%): 39.130436
+	Mutants killed: 39
+	Mutants killed ratio (%): 24.223602
+	Mutants alive: 122

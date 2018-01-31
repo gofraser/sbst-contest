@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.re2j.CharClass
 * Starting client
-* Connecting to master process on port 16156
+* Connecting to master process on port 19732
 * Analyzing classpath: 
   - /var/benchmarks/projects/re2j/target/classes
   - /var/benchmarks/projects/re2j/target/classes
@@ -26,17 +26,17 @@
   - Method 18
   - MethodNoException 18
   - CBranchFitnessFactory 115
-* Using seed 1516821224680
+* Using seed 1517345300484
 * Starting evolution
-[MASTER] 20:15:19.343 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 21092ms
-* Search finished after 93s and 0 generations, 2768 statements, best individual has fitness: 709.6564125302107
-[MASTER] 20:15:19.386 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 22 seconds more than allowed.
-* Skipping minimization because not enough time is left
-* Generated 37 tests with total length 626
-* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+[MASTER] 21:49:47.711 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 8293ms
+* Search finished after 85s and 0 generations, 3371 statements, best individual has fitness: 693.9601376925227
+[MASTER] 21:49:47.751 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 14 seconds more than allowed.
+* Minimizing test suite
+* Generated 36 tests with total length 592
+[MASTER] 21:49:54.678 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 20:15:34.557 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
 * Writing JUnit test case 'CharClass_ESTest' to temp/testcases
 * Done!
 

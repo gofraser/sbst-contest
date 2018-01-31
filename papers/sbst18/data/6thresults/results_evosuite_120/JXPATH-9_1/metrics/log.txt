@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: JXPATH-9
 	Class Under Test: org.apache.commons.jxpath.ri.model.beans.PropertyIterator
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 111879
-	Test cases execution time (ms): 3020
-	Test case number: 23
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 111134
+	Test cases execution time (ms): 5495
+	Test case number: 24
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 154
-	Lines covered: 94
-	Lines coverage ratio (%): 61.03896
+	Lines covered: 110
+	Lines coverage ratio (%): 71.42857
 	Conditions total: 98
-	Conditions covered: 55
-	Conditions coverage ratio (%): 56.122444
+	Conditions covered: 67
+	Conditions coverage ratio (%): 68.36735
 	Mutants total: 122
-	Mutants covered: 72
-	Mutants coverage ratio (%): 59.016396
+	Mutants covered: 82
+	Mutants coverage ratio (%): 67.21311
 	Mutants killed: 34
 	Mutants killed ratio (%): 27.868853
 	Mutants alive: 88

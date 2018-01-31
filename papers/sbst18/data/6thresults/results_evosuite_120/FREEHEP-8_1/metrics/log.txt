@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/FREEHEP-8_1/temp/testcases/org/freehep/math/minuit/MnPrint_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-8_1/temp/testcases/org/freehep/math/minuit/MnPrint_ESTest.java
-Failed to compile 'org/freehep/math/minuit/MnPrint_ESTest.java'!
+Compiled 'org/freehep/math/minuit/MnPrint_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: FREEHEP-8
 	Class Under Test: org.freehep.math.minuit.MnPrint
 	Run number: 1
-	Tool preparation time (ms): 346
-	Tool test cases generation time (ms): 115503
-	Test cases execution time (ms): 7
-	Test case number: 65
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 114811
+	Test cases execution time (ms): 6017
+	Test case number: 64
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 210
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 196
+	Lines coverage ratio (%): 93.333336
 	Conditions total: 72
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 67
+	Conditions coverage ratio (%): 93.05556
 	Mutants total: 170
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 170
+	Mutants covered: 162
+	Mutants coverage ratio (%): 95.29412
+	Mutants killed: 127
+	Mutants killed ratio (%): 74.70588
+	Mutants alive: 43

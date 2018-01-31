@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.re2j.Simplify
 * Starting client
-* Connecting to master process on port 12716
+* Connecting to master process on port 16592
 * Analyzing classpath: 
   - /var/benchmarks/projects/re2j/target/classes
   - /var/benchmarks/projects/re2j/target/classes
@@ -26,12 +26,15 @@
   - Method 1
   - MethodNoException 1
   - CBranchFitnessFactory 69
-* Using seed 1516821024555
+* Using seed 1517345083317
 * Starting evolution
-* Search finished after 74s and 71 generations, 29845 statements, best individual has fitness: 309.8333333333333
+[MASTER] 21:46:04.145 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 6035ms
+* Search finished after 79s and 16 generations, 9932 statements, best individual has fitness: 317.72058823529414
+[MASTER] 21:46:04.158 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 8 seconds more than allowed.
 * Minimizing test suite
-* Generated 15 tests with total length 68
-* Resulting test suite's coverage: 66% (average coverage for all fitness functions)
+* Generated 15 tests with total length 299
+[MASTER] 21:46:17.752 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
 * Writing JUnit test case 'Simplify_ESTest' to temp/testcases

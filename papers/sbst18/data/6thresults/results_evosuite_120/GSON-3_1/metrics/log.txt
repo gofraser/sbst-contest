@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: GSON-3
 	Class Under Test: com.google.gson.JsonPrimitive
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 92159
-	Test cases execution time (ms): 2734
-	Test case number: 84
+	Tool preparation time (ms): 366
+	Tool test cases generation time (ms): 93840
+	Test cases execution time (ms): 2699
+	Test case number: 83
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 82
-	Lines covered: 79
-	Lines coverage ratio (%): 96.34146
+	Lines covered: 76
+	Lines coverage ratio (%): 92.68293
 	Conditions total: 80
-	Conditions covered: 66
-	Conditions coverage ratio (%): 82.5
+	Conditions covered: 62
+	Conditions coverage ratio (%): 77.5
 	Mutants total: 87
-	Mutants covered: 84
-	Mutants coverage ratio (%): 96.55172
-	Mutants killed: 73
-	Mutants killed ratio (%): 83.90804
-	Mutants alive: 14
+	Mutants covered: 80
+	Mutants coverage ratio (%): 91.954025
+	Mutants killed: 71
+	Mutants killed ratio (%): 81.60919
+	Mutants alive: 16

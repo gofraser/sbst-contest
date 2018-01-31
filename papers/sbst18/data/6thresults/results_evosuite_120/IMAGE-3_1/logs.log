@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.imaging.formats.bmp.BmpImageParser
 * Starting client
-* Connecting to master process on port 10256
+* Connecting to master process on port 4878
 * Analyzing classpath: 
   - /var/benchmarks/projects/commons-imaging/target/classes
   - /var/benchmarks/projects/commons-imaging/target/classes
@@ -26,57 +26,59 @@
   - Method 15
   - MethodNoException 15
   - CBranchFitnessFactory 237
-* Using seed 1516821108044
+* Using seed 1517345185969
 * Starting evolution
-[MASTER] 20:12:01.861 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 20:12:29.728 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
-[MASTER] 20:12:52.500 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
-[MASTER] 20:12:55.144 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: No generators of type java.util.Set<java.util.Map.Entry<java.lang.String, java.lang.Object>>
-* Search finished after 73s and 44 generations, 18328 statements, best individual has fitness: 1101.4235792389156
+[MASTER] 21:46:35.430 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 21:47:07.904 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
+[MASTER] 21:47:08.854 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+[MASTER] 21:47:09.550 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 21:47:12.292 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 21:47:49.638 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 5099ms
+* Search finished after 77s and 88 generations, 49597 statements, best individual has fitness: 1528.4895833333333
 * Minimizing test suite
-* Generated 54 tests with total length 757
-[MASTER] 20:13:23.139 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
-* Resulting test suite's coverage: 49% (average coverage for all fitness functions)
+[MASTER] 21:48:00.417 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generated 48 tests with total length 760
+* Resulting test suite's coverage: 71% (average coverage for all fitness functions)
 * Generating assertions
-[MASTER] 20:13:23.142 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 1 seconds more than allowed.
 * Compiling and checking tests
-[MASTER] 20:13:34.764 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoBytes: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldType
-[MASTER] 20:13:34.910 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.pnm.PamFileInfo: org/apache/commons/imaging/formats/pnm/PamFileInfo$TupleReader
-[MASTER] 20:13:34.930 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoUndefineds: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeByte
-[MASTER] 20:13:34.963 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoShort: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeShort
-[MASTER] 20:13:34.977 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoRational: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeRational
-[MASTER] 20:13:35.146 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.pnm.PamFileInfo: org/apache/commons/imaging/formats/pnm/PamFileInfo$GrayscaleTupleReader
-[MASTER] 20:13:35.186 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeAscii
-[MASTER] 20:13:35.193 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSShort
-[MASTER] 20:13:35.217 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeShort: org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
-[MASTER] 20:13:35.262 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffElement: org/apache/commons/imaging/formats/tiff/TiffElement$1
-[MASTER] 20:13:35.283 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSRationals
-[MASTER] 20:13:35.441 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.pnm.PamFileInfo: org/apache/commons/imaging/formats/pnm/PamFileInfo$ColorTupleReader
-[MASTER] 20:13:35.479 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeLong
-[MASTER] 20:13:35.486 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSBytes
-[MASTER] 20:13:35.572 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSLongs
-[MASTER] 20:13:35.573 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeRational: org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
-[MASTER] 20:13:35.688 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeAscii: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeFloat
-[MASTER] 20:13:35.717 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType: Could not initialize class org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
-[MASTER] 20:13:35.724 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSByte
-[MASTER] 20:13:35.803 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSShorts
-[MASTER] 20:13:35.910 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeAscii: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeDouble
-[MASTER] 20:13:35.951 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSLong
-[MASTER] 20:13:36.050 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoRationals
-[MASTER] 20:13:36.196 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoLongs
-[MASTER] 20:13:36.272 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoXpString
-[MASTER] 20:13:36.411 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoFloats
-[MASTER] 20:13:36.486 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoGpsText
-[MASTER] 20:13:36.645 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoDouble
-[MASTER] 20:13:36.724 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoDoubles
-[MASTER] 20:13:36.854 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoGpsText: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoGpsText$TextEncoding
-[MASTER] 20:13:36.876 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSRational
-[MASTER] 20:13:36.949 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoByte
-[MASTER] 20:13:37.097 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoFloat
-[MASTER] 20:13:37.171 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoAscii
+[MASTER] 21:48:07.907 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.pnm.PamFileInfo: org/apache/commons/imaging/formats/pnm/PamFileInfo$TupleReader
+[MASTER] 21:48:07.921 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoUndefineds: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldType
+[MASTER] 21:48:07.958 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSShort
+[MASTER] 21:48:07.990 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoBytes: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeByte
+[MASTER] 21:48:08.042 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffElement: org/apache/commons/imaging/formats/tiff/TiffElement$1
+[MASTER] 21:48:08.064 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoShort: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeShort
+[MASTER] 21:48:08.068 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSRationals
+[MASTER] 21:48:08.074 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoRational: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeRational
+[MASTER] 21:48:08.194 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.pnm.PamFileInfo: org/apache/commons/imaging/formats/pnm/PamFileInfo$GrayscaleTupleReader
+[MASTER] 21:48:08.234 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeAscii
+[MASTER] 21:48:08.243 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSBytes
+[MASTER] 21:48:08.271 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeShort: org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
+[MASTER] 21:48:08.341 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSLongs
+[MASTER] 21:48:08.589 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.pnm.PamFileInfo: org/apache/commons/imaging/formats/pnm/PamFileInfo$ColorTupleReader
+[MASTER] 21:48:08.630 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeLong
+[MASTER] 21:48:08.640 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSByte
+[MASTER] 21:48:08.731 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSShorts
+[MASTER] 21:48:08.732 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeRational: org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
+[MASTER] 21:48:08.918 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeAscii: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeFloat
+[MASTER] 21:48:08.949 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType: Could not initialize class org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
+[MASTER] 21:48:08.960 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSLong
+[MASTER] 21:48:09.051 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoRationals
+[MASTER] 21:48:09.192 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeAscii: org/apache/commons/imaging/formats/tiff/fieldtypes/FieldTypeDouble
+[MASTER] 21:48:09.229 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoLongs
+[MASTER] 21:48:09.306 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoXpString
+[MASTER] 21:48:09.450 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoFloats
+[MASTER] 21:48:09.528 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoGpsText
+[MASTER] 21:48:09.666 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoDouble
+[MASTER] 21:48:09.741 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoDoubles
+[MASTER] 21:48:09.893 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.taginfos.TagInfoGpsText: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoGpsText$TextEncoding
+[MASTER] 21:48:09.916 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoSRational
+[MASTER] 21:48:09.988 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoByte
+[MASTER] 21:48:10.184 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffDirectory: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoFloat
+[MASTER] 21:48:10.262 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.imaging.formats.tiff.TiffImageMetadata: org/apache/commons/imaging/formats/tiff/taginfos/TagInfoAscii
 * Permissions denied during test execution: 
   - java.lang.RuntimePermission: 
-         writeFileDescriptor: 37
+         writeFileDescriptor: 2
+[MASTER] 21:48:15.220 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
 * Writing JUnit test case 'BmpImageParser_ESTest' to temp/testcases
 * Done!
 

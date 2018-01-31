@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,14 +40,14 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-9_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-9_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-9_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-9_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest.java
 
 Note: /home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/org/apache/commons/jxpath/ri/model/beans/PropertyIterator_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
@@ -56,7 +56,7 @@ Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest]
 Executions terminated
 
@@ -73,7 +73,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 180
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest]
 Executions terminated
 Number of file with coverage information = 180
@@ -83,11 +83,41 @@ Extracted coverage data for the class org/apache/commons/jxpath/ri/model/beans/P
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-9_1/temp/testcases/bin
 > CUT = org.apache.commons.jxpath.ri.model.beans.PropertyIterator
 > Test cases = [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
+Executions terminated
 Running the tests: [org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest, org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding]
 Skipped scaffolding test org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest_scaffolding
 Executions terminated
@@ -310,22 +340,22 @@ Executions terminated
 	Benchmark: JXPATH-9
 	Class Under Test: org.apache.commons.jxpath.ri.model.beans.PropertyIterator
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 111879
-	Test cases execution time (ms): 3020
-	Test case number: 23
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 111134
+	Test cases execution time (ms): 5495
+	Test case number: 24
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 154
-	Lines covered: 94
-	Lines coverage ratio (%): 61.03896
+	Lines covered: 110
+	Lines coverage ratio (%): 71.42857
 	Conditions total: 98
-	Conditions covered: 55
-	Conditions coverage ratio (%): 56.122444
+	Conditions covered: 67
+	Conditions coverage ratio (%): 68.36735
 	Mutants total: 122
-	Mutants covered: 72
-	Mutants coverage ratio (%): 59.016396
+	Mutants covered: 82
+	Mutants coverage ratio (%): 67.21311
 	Mutants killed: 34
 	Mutants killed ratio (%): 27.868853
 	Mutants alive: 88
@@ -334,8 +364,8 @@ Executions terminated
 Class org.apache.commons.jxpath.ri.model.beans.PropertyIterator ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 22158
-Killing master process 22158
-Executing command kill -9 22158
-Execution of command kill -9 22158 finished.
+Tool subprocess Id is 29974
+Killing master process 29974
+Executing command kill -9 29974
+Execution of command kill -9 29974 finished.
 Process was destroyed

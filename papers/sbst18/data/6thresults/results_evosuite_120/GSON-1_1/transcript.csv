@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,GSON-1,com.google.gson.internal.bind.ReflectiveTypeAdapterFactory,1,347,91708,7,10,1,0,0,63,0,0.0,36,0,0.0,36,0,0.0,0,0.0,36,120,2
+evosuite,GSON-1,com.google.gson.internal.bind.ReflectiveTypeAdapterFactory,1,360,83172,5722,11,0,0,0,63,51,80.952385,36,23,63.88889,36,28,77.77778,15,41.666664,21,120,2
  
  
  

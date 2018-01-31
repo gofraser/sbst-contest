@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.freehep.math.minuit.MnLineSearch
 * Starting client
-* Connecting to master process on port 20679
+* Connecting to master process on port 14316
 * Analyzing classpath: 
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
@@ -26,12 +26,12 @@
   - Method 1
   - MethodNoException 1
   - CBranchFitnessFactory 95
-* Using seed 1516820794763
+* Using seed 1517344834449
 * Starting evolution
-* Search finished after 71s and 26 generations, 21806 statements, best individual has fitness: 99.45
+* Search finished after 72s and 36 generations, 36572 statements, best individual has fitness: 103.5846153846154
 * Minimizing test suite
-* Generated 11 tests with total length 98
-* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generated 12 tests with total length 110
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
 * Writing JUnit test case 'MnLineSearch_ESTest' to temp/testcases

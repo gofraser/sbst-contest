@@ -1,10 +1,14 @@
 N. of generated mutants 243
-N. of covered mutants 0
-N. of killed mutants 0
+N. of covered mutants 8
+N. of killed mutants 2
 
 
  --- Tests killing mutants --- 
- 
+ Mutant: 0	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=org.apache.bcel.verifier.structurals.InstConstraintVisitor, method=visitIINC, methodDesc=(Lorg/apache/bcel/generic/IINC;)V], indexes=[24], mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator], filename=InstConstraintVisitor.java, block=347, lineNumber=1722, description=changed conditional boundary, testsInOrder=[]]
+Mutant: 1	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=org.apache.bcel.verifier.structurals.InstConstraintVisitor, method=visitMULTIANEWARRAY, methodDesc=(Lorg/apache/bcel/generic/MULTIANEWARRAY;)V], indexes=[14], mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator], filename=InstConstraintVisitor.java, block=556, lineNumber=2622, description=changed conditional boundary, testsInOrder=[]]
+
 
  --- Mutants details--- 
- 
+ Mutant: 0, killed by tests [(org.apache.bcel.verifier.structurals.InstConstraintVisitor_ESTest),test153)]
+Mutant: 1, killed by tests [(org.apache.bcel.verifier.structurals.InstConstraintVisitor_ESTest),test142)]
+

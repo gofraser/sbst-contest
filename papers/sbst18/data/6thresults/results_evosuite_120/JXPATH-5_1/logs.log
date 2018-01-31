@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.jxpath.ri.compiler.Step
 * Starting client
-* Connecting to master process on port 20866
+* Connecting to master process on port 19826
 * Analyzing classpath: 
   - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
   - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
@@ -26,101 +26,111 @@
   - Method 7
   - MethodNoException 7
   - CBranchFitnessFactory 68
-* Using seed 1516818551939
+* Using seed 1517342355346
 * Starting evolution
-[MASTER] 19:30:11.854 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
-* Search finished after 71s and 107 generations, 69001 statements, best individual has fitness: 15.64285714285714
+[MASTER] 20:59:26.233 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.AttributeContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.PredicateContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.ParentContext due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.commons.jxpath.ri.axes.RootContext due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 21:00:22.827 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 72s and 110 generations, 72429 statements, best individual has fitness: 29.625
 * Minimizing test suite
-* Generated 38 tests with total length 194
-* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generated 36 tests with total length 209
+* Resulting test suite's coverage: 94% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 19:30:32.021 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.JXPathContextFactory: org/apache/commons/jxpath/JXPathContextFactoryConfigurationError
-[MASTER] 19:30:32.028 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.ri.model.beans.CollectionPointer: org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator
-[MASTER] 19:30:36.938 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
-[MASTER] 19:30:36.940 [logback-1] WARN  JUnitAnalyzer - Failing test:
- int int0 = 4;
-NodeTypeTest nodeTypeTest0 = new NodeTypeTest(int0);
-assertEquals(4, nodeTypeTest0.getNodeType());
-assertNotNull(nodeTypeTest0);
-
-String string0 = nodeTypeTest0.toString();
-assertEquals(4, nodeTypeTest0.getNodeType());
-assertEquals("processing-instruction()", string0);
-assertNotNull(string0);
-
-Expression[] expressionArray0 = new Expression[3];
-QName qName0 = new QName(string0);
-assertEquals(4, nodeTypeTest0.getNodeType());
-assertEquals("processing-instruction()", qName0.toString());
-assertNull(qName0.getPrefix());
-assertEquals("processing-instruction()", qName0.getName());
-assertNotNull(qName0);
-
-ExtensionFunction extensionFunction0 = new ExtensionFunction(qName0, expressionArray0);
-assertEquals(4, nodeTypeTest0.getNodeType());
-assertEquals("processing-instruction()", qName0.toString());
-assertNull(qName0.getPrefix());
-assertEquals("processing-instruction()", qName0.getName());
-assertTrue(extensionFunction0.computeContextDependent());
-assertNotNull(extensionFunction0);
-assertEquals(3, expressionArray0.length);
-
-expressionArray0[2] = (Expression) extensionFunction0;
-Step step0 = new Step(int0, nodeTypeTest0, expressionArray0);
-assertEquals(4, nodeTypeTest0.getNodeType());
-assertEquals(4, step0.getAxis());
-assertNotNull(step0);
-assertEquals(3, expressionArray0.length);
-
-step0.toString();
-
-[MASTER] 19:30:37.954 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test14 -> class java.lang.StackOverflowError: null
-[MASTER] 19:30:37.955 [logback-1] WARN  JUnitAnalyzer - Failing test:
- int int0 = 2;
-String string0 = Step.axisToString(int0);
-assertEquals("child", string0);
-assertNotNull(string0);
-
+[MASTER] 21:00:37.099 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.JXPathContextFactory: org/apache/commons/jxpath/JXPathContextFactoryConfigurationError
+[MASTER] 21:00:37.119 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.jxpath.ri.model.beans.CollectionPointer: org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator
+[MASTER] 21:00:40.919 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 21:00:40.921 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ int int0 = 1383;
+String string0 = null;
 ProcessingInstructionTest processingInstructionTest0 = new ProcessingInstructionTest(string0);
-assertEquals("child", processingInstructionTest0.getTarget());
 assertNotNull(processingInstructionTest0);
+assertNull(processingInstructionTest0.getTarget());
 
-Expression[] expressionArray0 = new Expression[4];
-Constant constant0 = new Constant(string0);
-assertFalse(constant0.isContextDependent());
-assertFalse(constant0.computeContextDependent());
-assertNotNull(constant0);
+Expression[] expressionArray0 = new Expression[9];
+QName qName0 = new QName(string0, string0);
+assertNotNull(qName0);
+assertNull(qName0.getName());
+assertNull(qName0.toString());
+assertNull(qName0.getPrefix());
 
-expressionArray0[0] = (Expression) constant0;
-CoreOperationLessThan coreOperationLessThan0 = new CoreOperationLessThan(expressionArray0[0], constant0);
-assertFalse(constant0.isContextDependent());
-assertFalse(constant0.computeContextDependent());
-assertEquals("<", coreOperationLessThan0.getSymbol());
-assertNotNull(coreOperationLessThan0);
-assertEquals(4, expressionArray0.length);
+VariableReference variableReference0 = new VariableReference(qName0);
+assertNotNull(variableReference0);
+assertNull(qName0.getName());
+assertNull(qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
 
-expressionArray0[1] = (Expression) coreOperationLessThan0;
-CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual(expressionArray0[1], coreOperationLessThan0);
-assertFalse(constant0.isContextDependent());
-assertFalse(constant0.computeContextDependent());
-assertEquals("<", coreOperationLessThan0.getSymbol());
-assertEquals(">=", coreOperationGreaterThanOrEqual0.getSymbol());
+CoreOperationLessThanOrEqual coreOperationLessThanOrEqual0 = new CoreOperationLessThanOrEqual(variableReference0, variableReference0);
+assertNotNull(coreOperationLessThanOrEqual0);
+assertNull(qName0.getName());
+assertNull(qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+
+expressionArray0[0] = (Expression) coreOperationLessThanOrEqual0;
+CoreOperationGreaterThanOrEqual coreOperationGreaterThanOrEqual0 = new CoreOperationGreaterThanOrEqual(coreOperationLessThanOrEqual0, variableReference0);
 assertNotNull(coreOperationGreaterThanOrEqual0);
-assertEquals(4, expressionArray0.length);
+assertNull(qName0.getName());
+assertNull(qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals("<=", coreOperationLessThanOrEqual0.getSymbol());
+assertEquals(">=", coreOperationGreaterThanOrEqual0.getSymbol());
 
-expressionArray0[2] = (Expression) coreOperationGreaterThanOrEqual0;
-CoreOperationUnion coreOperationUnion0 = new CoreOperationUnion(expressionArray0);
-assertEquals("|", coreOperationUnion0.getSymbol());
-assertNotNull(coreOperationUnion0);
-assertEquals(4, expressionArray0.length);
+expressionArray0[1] = (Expression) coreOperationGreaterThanOrEqual0;
+CoreOperationEqual coreOperationEqual0 = new CoreOperationEqual(expressionArray0[0], expressionArray0[1]);
+assertEquals(9, expressionArray0.length);
+assertNotNull(coreOperationEqual0);
+assertEquals("=", coreOperationEqual0.getSymbol());
 
-expressionArray0[3] = (Expression) coreOperationUnion0;
+expressionArray0[2] = (Expression) coreOperationEqual0;
+CoreFunction coreFunction0 = new CoreFunction(int0, expressionArray0);
+assertEquals(9, expressionArray0.length);
+assertNotNull(coreFunction0);
+assertEquals(1383, coreFunction0.getFunctionCode());
+assertEquals(9, coreFunction0.getArgumentCount());
+
+expressionArray0[3] = (Expression) coreOperationGreaterThanOrEqual0;
+expressionArray0[4] = (Expression) variableReference0;
+CoreOperationDivide coreOperationDivide0 = new CoreOperationDivide(variableReference0, variableReference0);
+assertNotNull(coreOperationDivide0);
+assertNull(qName0.getName());
+assertNull(qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals("div", coreOperationDivide0.getSymbol());
+
+expressionArray0[5] = (Expression) coreOperationDivide0;
+CoreOperationMod coreOperationMod0 = new CoreOperationMod(variableReference0, coreOperationDivide0);
+assertNotNull(coreOperationMod0);
+assertEquals("mod", coreOperationMod0.getSymbol());
+assertNull(qName0.getName());
+assertNull(qName0.toString());
+assertNull(qName0.getPrefix());
+assertFalse(variableReference0.isContextDependent());
+assertFalse(variableReference0.computeContextDependent());
+assertEquals("div", coreOperationDivide0.getSymbol());
+
+expressionArray0[6] = (Expression) coreOperationMod0;
+CoreOperationEqual coreOperationEqual1 = new CoreOperationEqual(coreFunction0, expressionArray0[2]);
+assertFalse(coreOperationEqual1.equals((Object)coreOperationEqual0));
+assertEquals(9, expressionArray0.length);
+assertNotNull(coreOperationEqual1);
+assertEquals("=", coreOperationEqual1.getSymbol());
+assertEquals(1383, coreFunction0.getFunctionCode());
+assertEquals(9, coreFunction0.getArgumentCount());
+
+expressionArray0[7] = (Expression) coreOperationEqual1;
 Step step0 = new Step(int0, processingInstructionTest0, expressionArray0);
-assertEquals("child", processingInstructionTest0.getTarget());
-assertEquals(2, step0.getAxis());
+assertEquals(9, expressionArray0.length);
 assertNotNull(step0);
-assertEquals(4, expressionArray0.length);
+assertNull(processingInstructionTest0.getTarget());
+assertEquals(1383, step0.getAxis());
 
 step0.isContextDependent();
 

@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.jxpath.ri.model.beans.PropertyIterator
 * Starting client
-* Connecting to master process on port 21727
+* Connecting to master process on port 7718
 * Analyzing classpath: 
   - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
   - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
@@ -26,16 +26,18 @@
   - Method 7
   - MethodNoException 7
   - CBranchFitnessFactory 102
-* Using seed 1516819182170
+* Using seed 1517343165460
 * Starting evolution
-[MASTER] 19:39:45.937 [logback-1] WARN  TestUsageChecker - class org.apache.commons.jxpath.ri.model.VariablePointer$1 looks like an anonymous class, ignoring it (although reflection says false) VariablePointer$1
-* Search finished after 72s and 211 generations, 103008 statements, best individual has fitness: 316.60805084233533
+[MASTER] 21:12:48.803 [logback-1] WARN  TestUsageChecker - class org.apache.commons.jxpath.ri.model.VariablePointer$1 looks like an anonymous class, ignoring it (although reflection says false) VariablePointer$1
+[MASTER] 21:13:26.530 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 21:13:30.095 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+* Search finished after 73s and 480 generations, 173451 statements, best individual has fitness: 222.64174356665916
 * Minimizing test suite
-* Generated 23 tests with total length 246
-* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generated 24 tests with total length 212
+* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 19:41:29.382 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 6 seconds more than allowed.
+[MASTER] 21:14:32.026 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 3 seconds more than allowed.
 * Writing JUnit test case 'PropertyIterator_ESTest' to temp/testcases
 * Done!
 

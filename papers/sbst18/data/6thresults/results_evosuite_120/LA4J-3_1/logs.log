@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.la4j.matrix.sparse.CRSMatrix
 * Starting client
-* Connecting to master process on port 11305
+* Connecting to master process on port 19202
 * Analyzing classpath: 
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
@@ -26,21 +26,21 @@
   - Method 41
   - MethodNoException 41
   - CBranchFitnessFactory 309
-* Using seed 1516822867495
+* Using seed 1517346923593
 * Starting evolution
-[MASTER] 20:41:15.689 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
-[MASTER] 20:42:34.919 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 12871ms
-* Search finished after 84s and 25 generations, 13581 statements, best individual has fitness: 2349.579418327183
-[MASTER] 20:42:35.156 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 14 seconds more than allowed.
+[MASTER] 22:15:28.888 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+[MASTER] 22:16:50.114 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 11991ms
+* Search finished after 84s and 12 generations, 5667 statements, best individual has fitness: 1396.3264857523825
+[MASTER] 22:16:50.181 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 13 seconds more than allowed.
 * Minimizing test suite
-* Generated 103 tests with total length 979
-[MASTER] 20:42:45.539 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
-* Resulting test suite's coverage: 73% (average coverage for all fitness functions)
+* Generated 96 tests with total length 916
+[MASTER] 22:17:04.530 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
 * Generating assertions
+* Skipping assertion generation because not enough time is left
 * Compiling and checking tests
-[MASTER] 20:42:59.060 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
 * Writing JUnit test case 'CRSMatrix_ESTest' to temp/testcases
-[MASTER] 20:43:10.464 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 3 seconds more than allowed.
+[MASTER] 22:17:27.485 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 6 seconds more than allowed.
 * Done!
 
 * Computation finished

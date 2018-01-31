@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: GSON-2
 	Class Under Test: com.google.gson.internal.LinkedHashTreeMap
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 94027
-	Test cases execution time (ms): 2589
-	Test case number: 41
+	Tool preparation time (ms): 367
+	Tool test cases generation time (ms): 90872
+	Test cases execution time (ms): 3722
+	Test case number: 45
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 234
-	Lines covered: 117
-	Lines coverage ratio (%): 50.0
+	Lines covered: 118
+	Lines coverage ratio (%): 50.427353
 	Conditions total: 170
 	Conditions covered: 57
 	Conditions coverage ratio (%): 33.52941
 	Mutants total: 164
-	Mutants covered: 91
-	Mutants coverage ratio (%): 55.487804
-	Mutants killed: 51
-	Mutants killed ratio (%): 31.09756
-	Mutants alive: 113
+	Mutants covered: 94
+	Mutants coverage ratio (%): 57.317074
+	Mutants killed: 57
+	Mutants killed ratio (%): 34.756096
+	Mutants alive: 107

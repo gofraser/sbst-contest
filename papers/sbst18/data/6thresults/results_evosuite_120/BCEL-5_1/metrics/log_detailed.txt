@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,134 +40,134 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-5_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-5_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-5_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-5_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java
 
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:46: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:47: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, string0, string0, string1).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String,String,String
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:134: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:135: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, string1).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:258: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:259: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, string1, string0).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String,String
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:400: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:401: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, string0, string0, string1).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String,String,String
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:509: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:510: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, string0, string1).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String,String
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:634: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:635: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, string0, string0, string0, (String) null).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String,String,String,String
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:715: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(verificationResult0, verificationResult1).when(verifier0).doPass2();
-      ^
-  required: Object
-  found: VerificationResult,VerificationResult
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java:716: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(string0, (String) null).when(verifier0).getClassName();
-      ^
-  required: Object
-  found: String,String
-  reason: actual and formal argument lists differ in length
-14 errors
-Failed to compile 'org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java'!
-shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
-	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
-	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
-	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
-	at sbst.benchmark.RunTool.execute(RunTool.java:172)
-	at sbst.benchmark.RunTool.run(RunTool.java:95)
-	at sbst.benchmark.Main.main(Main.java:178)
+Compiled 'org/apache/bcel/verifier/statics/Pass3aVerifier_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest]
 Executions terminated
+Failure: [test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest): expected:<1> but was:<2>]
+Failing Tests: test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest.test03(Pass3aVerifier_ESTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 
 ---The tests are re-executed other four times to find the flaky ones---
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest]
+Failure: [test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest): expected:<1> but was:<2>]
+Failing Tests: test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest.test03(Pass3aVerifier_ESTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Failure: [test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest): expected:<1> but was:<2>]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest]
+Failing Tests: test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest.test03(Pass3aVerifier_ESTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest]
+Failure: [test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest): expected:<1> but was:<2>]
+Failing Tests: test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest.test03(Pass3aVerifier_ESTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
+Failure: [test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest): expected:<1> but was:<2>]
+Failing Tests: test03(org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest)
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest.test03(Pass3aVerifier_ESTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 431
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/bin
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest]
 Executions terminated
 Number of file with coverage information = 431
 Extracted coverage data for the class org/apache/bcel/verifier/statics/Pass3aVerifier
@@ -176,43 +176,175 @@ Extracted coverage data for the class org/apache/bcel/verifier/statics/Pass3aVer
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-5_1/temp/testcases/bin
 > CUT = org.apache.bcel.verifier.statics.Pass3aVerifier
 > Test cases = [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest, org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.verifier.statics.Pass3aVerifier_ESTest_scaffolding
+Executions terminated
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: BCEL-5
 	Class Under Test: org.apache.bcel.verifier.statics.Pass3aVerifier
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 92507
-	Test cases execution time (ms): 8
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 110616
+	Test cases execution time (ms): 5873
 	Test case number: 13
-	Uncompilable Test Classes: 1
-	Broken tests number: 0
+	Uncompilable Test Classes: 0
+	Broken tests number: 1
 	Failing tests number: 0
 	Lines total: 120
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 66
+	Lines coverage ratio (%): 55.0
 	Conditions total: 72
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 27
+	Conditions coverage ratio (%): 37.5
 	Mutants total: 69
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 69
+	Mutants covered: 44
+	Mutants coverage ratio (%): 63.76812
+	Mutants killed: 44
+	Mutants killed ratio (%): 63.76812
+	Mutants alive: 25
 
 
 Class org.apache.bcel.verifier.statics.Pass3aVerifier ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 24726
-Killing master process 24726
-Executing command kill -9 24726
-Execution of command kill -9 24726 finished.
+Tool subprocess Id is 15966
+Killing master process 15966
+Executing command kill -9 15966
+Execution of command kill -9 15966 finished.
 Process was destroyed

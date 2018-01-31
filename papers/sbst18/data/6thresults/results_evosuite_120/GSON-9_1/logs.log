@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.gson.reflect.TypeToken
 * Starting client
-* Connecting to master process on port 7428
+* Connecting to master process on port 4954
 * Analyzing classpath: 
   - /var/benchmarks/projects/gson/gson/target/classes
   - /var/benchmarks/projects/gson/gson/target/classes
@@ -26,10 +26,10 @@
   - Method 15
   - MethodNoException 15
   - CBranchFitnessFactory 72
-* Using seed 1516822301791
+* Using seed 1517346388148
 * Starting evolution
 * Computation finished
-[MASTER] 20:31:47.264 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: com.google.gson.reflect.TypeToken with seed 1516822301791. Configuration id : null
+[MASTER] 22:06:32.754 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: com.google.gson.reflect.TypeToken with seed 1517346388148. Configuration id : null
 java.lang.RuntimeException: not implemented: class sun.reflect.generics.reflectiveObjects.TypeVariableImpl
 	at com.googlecode.gentyref.GenericTypeReflector.isSuperType(GenericTypeReflector.java:218) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at com.googlecode.gentyref.GenericTypeReflector.contains(GenericTypeReflector.java:258) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -51,8 +51,8 @@ java.lang.RuntimeException: not implemented: class sun.reflect.generics.reflecti
 	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]

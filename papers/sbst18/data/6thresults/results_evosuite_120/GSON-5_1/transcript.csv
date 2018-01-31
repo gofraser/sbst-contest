@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,GSON-5,com.google.gson.internal.LinkedTreeMap,1,351,86923,2525,39,0,0,0,190,89,46.842106,150,50,33.333336,115,57,49.565216,42,36.52174,73,120,2
+evosuite,GSON-5,com.google.gson.internal.LinkedTreeMap,1,367,89946,3671,41,0,0,0,190,87,45.789474,150,44,29.333332,115,49,42.608696,40,34.782608,75,120,2
  
  
  

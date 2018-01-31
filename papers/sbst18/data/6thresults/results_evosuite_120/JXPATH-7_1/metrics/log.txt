@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: JXPATH-7
 	Class Under Test: org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 91988
-	Test cases execution time (ms): 1672
-	Test case number: 30
+	Tool preparation time (ms): 362
+	Tool test cases generation time (ms): 128586
+	Test cases execution time (ms): 6682
+	Test case number: 81
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 1029
-	Lines covered: 232
-	Lines coverage ratio (%): 22.546162
+	Lines covered: 407
+	Lines coverage ratio (%): 39.552963
 	Conditions total: 872
-	Conditions covered: 95
-	Conditions coverage ratio (%): 10.894495
+	Conditions covered: 214
+	Conditions coverage ratio (%): 24.541285
 	Mutants total: 352
-	Mutants covered: 50
-	Mutants coverage ratio (%): 14.204545
-	Mutants killed: 27
-	Mutants killed ratio (%): 7.6704545
-	Mutants alive: 325
+	Mutants covered: 121
+	Mutants coverage ratio (%): 34.375
+	Mutants killed: 38
+	Mutants killed ratio (%): 10.795455
+	Mutants alive: 314

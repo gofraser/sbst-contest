@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,14 +40,14 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/LA4J-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/LA4J-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/LA4J-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/LA4J-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java
 
 Note: /home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/org/la4j/matrix/dense/Basic2DMatrix_ESTest.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
@@ -56,24 +56,109 @@ Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
 Executions terminated
+Failure: [test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest): 2583]
+Failing Tests: test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest)
+java.lang.ArrayIndexOutOfBoundsException: 2583
+	at org.la4j.matrix.dense.Basic2DMatrix.get(Basic2DMatrix.java:243)
+	at org.la4j.matrix.dense.Basic2DMatrix.block(Basic2DMatrix.java:163)
+	at org.la4j.matrix.DenseMatrix.block(DenseMatrix.java:113)
+	at org.la4j.matrix.dense.Basic2DMatrix_ESTest.test63(Basic2DMatrix_ESTest.java:2265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 
 ---The tests are re-executed other four times to find the flaky ones---
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Failure: [test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest): 2583]
+Failing Tests: test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest)
+java.lang.ArrayIndexOutOfBoundsException: 2583
+	at org.la4j.matrix.dense.Basic2DMatrix.get(Basic2DMatrix.java:243)
+	at org.la4j.matrix.dense.Basic2DMatrix.block(Basic2DMatrix.java:163)
+	at org.la4j.matrix.DenseMatrix.block(DenseMatrix.java:113)
+	at org.la4j.matrix.dense.Basic2DMatrix_ESTest.test63(Basic2DMatrix_ESTest.java:2265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Failure: [test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest): 2583]
+Failing Tests: test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest)
+java.lang.ArrayIndexOutOfBoundsException: 2583
+	at org.la4j.matrix.dense.Basic2DMatrix.get(Basic2DMatrix.java:243)
+	at org.la4j.matrix.dense.Basic2DMatrix.block(Basic2DMatrix.java:163)
+	at org.la4j.matrix.DenseMatrix.block(DenseMatrix.java:113)
+	at org.la4j.matrix.dense.Basic2DMatrix_ESTest.test63(Basic2DMatrix_ESTest.java:2265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
+Failure: [test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest): 2583]
+Failing Tests: test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest)
+java.lang.ArrayIndexOutOfBoundsException: 2583
+	at org.la4j.matrix.dense.Basic2DMatrix.get(Basic2DMatrix.java:243)
+	at org.la4j.matrix.dense.Basic2DMatrix.block(Basic2DMatrix.java:163)
+	at org.la4j.matrix.DenseMatrix.block(DenseMatrix.java:113)
+	at org.la4j.matrix.dense.Basic2DMatrix_ESTest.test63(Basic2DMatrix_ESTest.java:2265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
+Failure: [test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest): 2583]
+Failing Tests: test63(org.la4j.matrix.dense.Basic2DMatrix_ESTest)
+java.lang.ArrayIndexOutOfBoundsException: 2583
+	at org.la4j.matrix.dense.Basic2DMatrix.get(Basic2DMatrix.java:243)
+	at org.la4j.matrix.dense.Basic2DMatrix.block(Basic2DMatrix.java:163)
+	at org.la4j.matrix.DenseMatrix.block(DenseMatrix.java:113)
+	at org.la4j.matrix.dense.Basic2DMatrix_ESTest.test63(Basic2DMatrix_ESTest.java:2265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 208
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.dense.Basic2DMatrix_ESTest]
 Executions terminated
 Number of file with coverage information = 208
@@ -83,11 +168,23 @@ Extracted coverage data for the class org/la4j/matrix/dense/Basic2DMatrix
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/la4j-0.6.0/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/la4j-0.6.0/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-8_1/temp/testcases/bin
 > CUT = org.la4j.matrix.dense.Basic2DMatrix
 > Test cases = [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
+Executions terminated
 Running the tests: [org.la4j.matrix.dense.Basic2DMatrix_ESTest, org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding]
 Skipped scaffolding test org.la4j.matrix.dense.Basic2DMatrix_ESTest_scaffolding
 Executions terminated
@@ -400,32 +497,32 @@ Executions terminated
 	Benchmark: LA4J-8
 	Class Under Test: org.la4j.matrix.dense.Basic2DMatrix
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 115824
-	Test cases execution time (ms): 4685
-	Test case number: 82
+	Tool preparation time (ms): 365
+	Tool test cases generation time (ms): 119611
+	Test cases execution time (ms): 8054
+	Test case number: 66
 	Uncompilable Test Classes: 0
-	Broken tests number: 0
+	Broken tests number: 1
 	Failing tests number: 0
 	Lines total: 105
-	Lines covered: 91
-	Lines coverage ratio (%): 86.666664
+	Lines covered: 93
+	Lines coverage ratio (%): 88.57143
 	Conditions total: 68
-	Conditions covered: 51
-	Conditions coverage ratio (%): 75.0
+	Conditions covered: 52
+	Conditions coverage ratio (%): 76.47059
 	Mutants total: 110
-	Mutants covered: 102
-	Mutants coverage ratio (%): 92.72727
-	Mutants killed: 77
-	Mutants killed ratio (%): 70.0
-	Mutants alive: 33
+	Mutants covered: 106
+	Mutants coverage ratio (%): 96.36363
+	Mutants killed: 103
+	Mutants killed ratio (%): 93.63636
+	Mutants alive: 7
 
 
 Class org.la4j.matrix.dense.Basic2DMatrix ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 4923
-Killing master process 4923
-Executing command kill -9 4923
-Execution of command kill -9 4923 finished.
+Tool subprocess Id is 21460
+Killing master process 21460
+Executing command kill -9 21460
+Execution of command kill -9 21460 finished.
 Process was destroyed

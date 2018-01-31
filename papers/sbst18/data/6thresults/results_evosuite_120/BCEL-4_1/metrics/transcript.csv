@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,BCEL-4,org.apache.bcel.generic.InstructionList,1,356,114321,8,150,1,0,0,431,0,0.0,219,0,0.0,118,0,0.0,0,0.0,118,120,2
+evosuite,BCEL-4,org.apache.bcel.generic.InstructionList,1,359,114001,7827,154,0,0,0,431,387,89.79118,219,177,80.82192,118,104,88.1356,95,80.50848,23,120,2
  
  
  

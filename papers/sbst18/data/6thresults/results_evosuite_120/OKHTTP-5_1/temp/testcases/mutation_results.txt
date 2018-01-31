@@ -1,10 +1,26 @@
 N. of generated mutants 200
-N. of covered mutants 0
-N. of killed mutants 0
+N. of covered mutants 15
+N. of killed mutants 8
 
 
  --- Tests killing mutants --- 
- 
+ Mutant: 0	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=nextAT, methodDesc=()Ljava/lang/String;], indexes=[8], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=DistinguishedNameParser.java, block=1, lineNumber=50, description=negated conditional, testsInOrder=[]]
+Mutant: 1	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=findMostSpecific, methodDesc=(Ljava/lang/String;)Ljava/lang/String;], indexes=[40], mutator=org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator], filename=DistinguishedNameParser.java, block=121, lineNumber=358, description=mutated return of Object value for okhttp3/internal/tls/DistinguishedNameParser::findMostSpecific to ( if (x != null) null else throw new RuntimeException ), testsInOrder=[]]
+Mutant: 2	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=nextAT, methodDesc=()Ljava/lang/String;], indexes=[34], mutator=org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator], filename=DistinguishedNameParser.java, block=5, lineNumber=53, description=mutated return of Object value for okhttp3/internal/tls/DistinguishedNameParser::nextAT to ( if (x != null) null else throw new RuntimeException ), testsInOrder=[]]
+Mutant: 3	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=hexAV, methodDesc=()Ljava/lang/String;], indexes=[6], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=DistinguishedNameParser.java, block=43, lineNumber=137, description=Replaced integer addition with subtraction, testsInOrder=[]]
+Mutant: 4	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=nextAT, methodDesc=()Ljava/lang/String;], indexes=[8], mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator], filename=DistinguishedNameParser.java, block=1, lineNumber=50, description=changed conditional boundary, testsInOrder=[]]
+Mutant: 5	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=getByte, methodDesc=(I)I], indexes=[8], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=DistinguishedNameParser.java, block=97, lineNumber=311, description=negated conditional, testsInOrder=[]]
+Mutant: 6	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=nextAT, methodDesc=()Ljava/lang/String;], indexes=[30], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=DistinguishedNameParser.java, block=4, lineNumber=52, description=negated conditional, testsInOrder=[]]
+Mutant: 7	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz=okhttp3.internal.tls.DistinguishedNameParser, method=hexAV, methodDesc=()Ljava/lang/String;], indexes=[9], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=DistinguishedNameParser.java, block=43, lineNumber=137, description=negated conditional, testsInOrder=[]]
+
 
  --- Mutants details--- 
- 
+ Mutant: 0, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test5)]
+Mutant: 1, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test5)]
+Mutant: 2, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test5)]
+Mutant: 3, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test3)]
+Mutant: 4, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test5)]
+Mutant: 5, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test1)]
+Mutant: 6, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test5)]
+Mutant: 7, killed by tests [(okhttp3.internal.tls.DistinguishedNameParser_ESTest),test3)]
+

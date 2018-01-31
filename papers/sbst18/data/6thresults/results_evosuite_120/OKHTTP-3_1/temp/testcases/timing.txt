@@ -1,2 +1,2 @@
-genTime=86663
-prepTime=352
+genTime=85287
+prepTime=356

@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: okhttp3.ConnectionSpec
 * Starting client
-* Connecting to master process on port 3554
+* Connecting to master process on port 17521
 * Analyzing classpath: 
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
@@ -26,17 +26,17 @@
   - Method 20
   - MethodNoException 20
   - CBranchFitnessFactory 94
-* Using seed 1516818061017
+* Using seed 1517341845567
 * Starting evolution
-* Search finished after 71s and 177 generations, 135757 statements, best individual has fitness: 118.35000000000001
+* Search finished after 71s and 181 generations, 150147 statements, best individual has fitness: 138.34731934731934
 * Minimizing test suite
-* Generated 51 tests with total length 214
-* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generated 50 tests with total length 220
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 19:22:22.022 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
-[MASTER] 19:22:22.026 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
-[MASTER] 19:22:22.033 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
+[MASTER] 20:52:05.228 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
+[MASTER] 20:52:05.232 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
+[MASTER] 20:52:05.239 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
 * Writing JUnit test case 'ConnectionSpec_ESTest' to temp/testcases
 * Done!
 

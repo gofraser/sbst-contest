@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/OKHTTP-4_1/temp/testcases/okhttp3/internal/http/HttpHeaders_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/OKHTTP-4_1/temp/testcases/okhttp3/internal/http/HttpHeaders_ESTest.java
-Failed to compile 'okhttp3/internal/http/HttpHeaders_ESTest.java'!
+Compiled 'okhttp3/internal/http/HttpHeaders_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: OKHTTP-4
 	Class Under Test: okhttp3.internal.http.HttpHeaders
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 103664
-	Test cases execution time (ms): 7
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 92505
+	Test cases execution time (ms): 4798
 	Test case number: 36
-	Uncompilable Test Classes: 1
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 83
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 54
+	Lines coverage ratio (%): 65.06024
 	Conditions total: 62
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 36
+	Conditions coverage ratio (%): 58.064514
 	Mutants total: 71
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 71
+	Mutants covered: 45
+	Mutants coverage ratio (%): 63.380283
+	Mutants killed: 38
+	Mutants killed ratio (%): 53.521126
+	Mutants alive: 33

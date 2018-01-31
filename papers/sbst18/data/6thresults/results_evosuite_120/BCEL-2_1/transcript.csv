@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,BCEL-2,org.apache.bcel.verifier.structurals.InstConstraintVisitor,1,347,113338,7,190,1,0,0,1076,0,0.0,776,0,0.0,243,0,0.0,0,0.0,243,120,2
+evosuite,BCEL-2,org.apache.bcel.verifier.structurals.InstConstraintVisitor,1,360,113344,11294,206,0,0,0,1076,59,5.4832716,776,9,1.1597937,243,8,3.292181,2,0.82304525,241,120,2
  
  
  

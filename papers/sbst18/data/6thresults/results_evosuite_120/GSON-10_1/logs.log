@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.gson.internal.Excluder
 * Starting client
-* Connecting to master process on port 3952
+* Connecting to master process on port 20890
 * Analyzing classpath: 
   - /var/benchmarks/projects/gson/gson/target/classes
   - /var/benchmarks/projects/gson/gson/target/classes
@@ -26,33 +26,435 @@
   - Method 10
   - MethodNoException 10
   - CBranchFitnessFactory 96
-* Using seed 1516817872300
+* Using seed 1517341582136
 * Starting evolution
+[MASTER] 20:47:08.759 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 20:47:08.759 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
+[MASTER] 20:47:26.181 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
+* Search finished after 71s and 198 generations, 157426 statements, best individual has fitness: 212.16666666666669
+* Minimizing test suite
+* Generated 15 tests with total length 119
+* Resulting test suite's coverage: 60% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+[MASTER] 20:47:46.517 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 20:47:46.521 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Gson gson0 = new Gson();
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertNotNull(gson0);
+
+Excluder excluder0 = gson0.excluder();
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertNotNull(excluder0);
+
+Excluder excluder1 = excluder0.clone();
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder1.equals((Object)excluder0));
+assertNotNull(excluder1);
+
+EvoSuiteFile evoSuiteFile0 = null;
+String string0 = "|pfy[BWP[L1rQM";
+boolean boolean0 = FileSystemHandling.appendLineToFile(evoSuiteFile0, string0);
+assertFalse(boolean0);
+
+Writer writer0 = mock(Writer.class, new ViolatedAssumptionAnswer());
+JsonWriter jsonWriter0 = gson0.newJsonWriter(writer0);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(jsonWriter0.isLenient());
+assertFalse(jsonWriter0.isHtmlSafe());
+assertFalse(jsonWriter0.getSerializeNulls());
+assertNotNull(jsonWriter0);
+
+boolean boolean1 = true;
+ExclusionStrategy exclusionStrategy0 = mock(ExclusionStrategy.class, new ViolatedAssumptionAnswer());
+doReturn(boolean1, boolean1).when(exclusionStrategy0).shouldSkipClass(any(java.lang.Class.class));
+boolean boolean2 = true;
+Excluder excluder2 = excluder0.withExclusionStrategy(exclusionStrategy0, boolean2, boolean2);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder2, excluder1);
+assertNotSame(excluder2, excluder0);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(boolean1 == boolean0);
+assertFalse(boolean2 == boolean0);
+assertFalse(excluder2.equals((Object)excluder1));
+assertFalse(excluder2.equals((Object)excluder0));
+assertNotNull(excluder2);
+
+Excluder excluder3 = excluder2.excludeFieldsWithoutExposeAnnotation();
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder2, excluder3);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertNotSame(excluder3, excluder0);
+assertNotSame(excluder3, excluder2);
+assertNotSame(excluder3, excluder1);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(boolean1 == boolean0);
+assertFalse(boolean2 == boolean0);
+assertFalse(excluder2.equals((Object)excluder1));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder3.equals((Object)excluder0));
+assertFalse(excluder3.equals((Object)excluder2));
+assertFalse(excluder3.equals((Object)excluder1));
+assertNotNull(excluder3);
+
+double double0 = 1565.348;
+PrivateAccess.setVariable((Class<Excluder>) Excluder.class, excluder1.DEFAULT, "version", (Object) double0);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder3);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder3));
+
+Since since0 = mock(Since.class, new ViolatedAssumptionAnswer());
+doReturn(double0).when(since0).value();
+Until until0 = mock(Until.class, new ViolatedAssumptionAnswer());
+Object object0 = PrivateAccess.callMethod((Class<Excluder>) Excluder.class, excluder1, "isValidVersion", (Object) since0, (Class<?>) Since.class, (Object) until0, (Class<?>) Until.class);
+assertEquals(false, object0);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder3);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertTrue(object0.equals((Object)boolean0));
+assertFalse(object0.equals((Object)boolean1));
+assertFalse(object0.equals((Object)boolean2));
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder3));
+assertNotNull(object0);
+
+Class<Object> class0 = Object.class;
+boolean boolean3 = true;
+boolean boolean4 = excluder3.excludeClass(class0, boolean3);
+assertFalse(boolean4);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder2, excluder3);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertNotSame(excluder3, excluder0);
+assertNotSame(excluder3, excluder2);
+assertNotSame(excluder3, excluder1);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(boolean3 == boolean0);
+assertFalse(boolean4 == boolean1);
+assertFalse(boolean4 == boolean2);
+assertFalse(boolean4 == boolean3);
+assertTrue(boolean4 == boolean0);
+assertFalse(boolean1 == boolean0);
+assertFalse(boolean2 == boolean0);
+assertFalse(excluder2.equals((Object)excluder3));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder0));
+assertFalse(excluder3.equals((Object)excluder2));
+assertFalse(excluder3.equals((Object)excluder1));
+
+Class<Object> class1 = Object.class;
+boolean boolean5 = true;
+boolean boolean6 = excluder2.excludeClass(class1, boolean5);
+assertFalse(boolean6);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder0, excluder3);
+assertSame(class1, class0);
+assertNotSame(excluder2, excluder3);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(boolean5 == boolean4);
+assertFalse(boolean5 == boolean0);
+assertFalse(boolean6 == boolean3);
+assertTrue(boolean6 == boolean4);
+assertTrue(boolean6 == boolean0);
+assertFalse(boolean6 == boolean1);
+assertFalse(boolean6 == boolean5);
+assertFalse(boolean6 == boolean2);
+assertFalse(boolean1 == boolean0);
+assertFalse(boolean1 == boolean4);
+assertFalse(boolean2 == boolean4);
+assertFalse(boolean2 == boolean0);
+assertFalse(excluder2.equals((Object)excluder3));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder1));
+
+Object object1 = PrivateAccess.callMethod((Class<Excluder>) Excluder.class, excluder1, "isStatic", (Object) class1, (Class<?>) Class.class);
+assertEquals(false, object1);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder3);
+assertSame(class1, class0);
+assertFalse(gson0.serializeNulls());
+assertTrue(gson0.htmlSafe());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder3));
+assertTrue(object1.equals((Object)boolean4));
+assertTrue(object1.equals((Object)boolean0));
+assertFalse(object1.equals((Object)boolean1));
+assertTrue(object1.equals((Object)object0));
+assertTrue(object1.equals((Object)boolean6));
+assertFalse(object1.equals((Object)boolean2));
+assertFalse(object1.equals((Object)boolean5));
+assertFalse(object1.equals((Object)boolean3));
+assertNotNull(object1);
+
+
+[MASTER] 20:47:48.405 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 20:47:48.409 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Gson gson0 = new Gson();
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertNotNull(gson0);
+
+Excluder excluder0 = gson0.excluder();
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertNotNull(excluder0);
+
+double double0 = 0.0;
+Excluder excluder1 = excluder0.withVersion(double0);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertFalse(excluder1.equals((Object)excluder0));
+assertNotNull(excluder1);
+
+int[] intArray0 = new int[5];
+Excluder excluder2 = excluder1.withModifiers(intArray0);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder1));
+assertArrayEquals(new int[] {0, 0, 0, 0, 0}, intArray0);
+assertNotNull(excluder2);
+assertEquals(5, intArray0.length);
+
+boolean boolean0 = true;
+int int0 = 1056;
+Integer integer0 = new Integer(int0);
+assertEquals(1056, (int)integer0);
+assertTrue(integer0.equals((Object)int0));
+assertNotNull(integer0);
+
+String string0 = gson0.toJson((Object) integer0);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertTrue(integer0.equals((Object)int0));
+assertNotNull(string0);
+
+ExclusionStrategy exclusionStrategy0 = mock(ExclusionStrategy.class, new ViolatedAssumptionAnswer());
+doReturn(boolean0).when(exclusionStrategy0).shouldSkipClass(any(java.lang.Class.class));
+boolean boolean1 = true;
+Excluder excluder3 = excluder2.withExclusionStrategy(exclusionStrategy0, boolean1, boolean0);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder3);
+assertNotSame(excluder2, excluder3);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertNotSame(excluder3, excluder0);
+assertNotSame(excluder3, excluder1);
+assertNotSame(excluder3, excluder2);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder0));
+assertFalse(excluder3.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder2));
+assertArrayEquals(new int[] {0, 0, 0, 0, 0}, intArray0);
+assertNotNull(excluder3);
+assertEquals(5, intArray0.length);
+
+Excluder excluder4 = excluder3.disableInnerClassSerialization();
+assertNotSame(excluder0, excluder4);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder3);
+assertNotSame(excluder1, excluder4);
+assertNotSame(excluder2, excluder3);
+assertNotSame(excluder2, excluder4);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertNotSame(excluder3, excluder0);
+assertNotSame(excluder3, excluder1);
+assertNotSame(excluder3, excluder4);
+assertNotSame(excluder3, excluder2);
+assertNotSame(excluder4, excluder3);
+assertNotSame(excluder4, excluder2);
+assertNotSame(excluder4, excluder1);
+assertNotSame(excluder4, excluder0);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder1.equals((Object)excluder3));
+assertFalse(excluder2.equals((Object)excluder3));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder0));
+assertFalse(excluder3.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder2));
+assertFalse(excluder4.equals((Object)excluder3));
+assertFalse(excluder4.equals((Object)excluder2));
+assertFalse(excluder4.equals((Object)excluder1));
+assertFalse(excluder4.equals((Object)excluder0));
+assertArrayEquals(new int[] {0, 0, 0, 0, 0}, intArray0);
+assertNotNull(excluder4);
+assertEquals(5, intArray0.length);
+
+Class<Object> class0 = Object.class;
+boolean boolean2 = excluder4.excludeClass(class0, boolean0);
+assertFalse(boolean2);
+assertNotSame(excluder0, excluder4);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder3);
+assertNotSame(excluder1, excluder4);
+assertNotSame(excluder2, excluder3);
+assertNotSame(excluder2, excluder4);
+assertNotSame(excluder2, excluder0);
+assertNotSame(excluder2, excluder1);
+assertNotSame(excluder3, excluder0);
+assertNotSame(excluder3, excluder1);
+assertNotSame(excluder3, excluder4);
+assertNotSame(excluder3, excluder2);
+assertNotSame(excluder4, excluder3);
+assertNotSame(excluder4, excluder2);
+assertNotSame(excluder4, excluder1);
+assertNotSame(excluder4, excluder0);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertFalse(excluder0.equals((Object)excluder4));
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder1.equals((Object)excluder3));
+assertFalse(excluder1.equals((Object)excluder4));
+assertFalse(excluder2.equals((Object)excluder3));
+assertFalse(excluder2.equals((Object)excluder4));
+assertFalse(excluder2.equals((Object)excluder0));
+assertFalse(excluder2.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder0));
+assertFalse(excluder3.equals((Object)excluder1));
+assertFalse(excluder3.equals((Object)excluder4));
+assertFalse(excluder3.equals((Object)excluder2));
+assertFalse(excluder4.equals((Object)excluder3));
+assertFalse(excluder4.equals((Object)excluder2));
+assertFalse(excluder4.equals((Object)excluder1));
+assertFalse(excluder4.equals((Object)excluder0));
+assertFalse(boolean2 == boolean0);
+assertFalse(boolean2 == boolean1);
+assertArrayEquals(new int[] {0, 0, 0, 0, 0}, intArray0);
+assertEquals(5, intArray0.length);
+
+Since since0 = mock(Since.class, new ViolatedAssumptionAnswer());
+doReturn(0.0).when(since0).value();
+Until until0 = mock(Until.class, new ViolatedAssumptionAnswer());
+doReturn(0.0).when(until0).value();
+Object object0 = PrivateAccess.callMethod((Class<Excluder>) Excluder.class, excluder1, "isValidVersion", (Object) since0, (Class<?>) Since.class, (Object) until0, (Class<?>) Until.class);
+assertEquals(false, object0);
+assertNotSame(excluder0, excluder4);
+assertNotSame(excluder0, excluder2);
+assertNotSame(excluder0, excluder3);
+assertNotSame(excluder0, excluder1);
+assertNotSame(excluder1, excluder0);
+assertNotSame(excluder1, excluder2);
+assertNotSame(excluder1, excluder3);
+assertNotSame(excluder1, excluder4);
+assertTrue(gson0.htmlSafe());
+assertFalse(gson0.serializeNulls());
+assertFalse(excluder0.equals((Object)excluder4));
+assertFalse(excluder0.equals((Object)excluder2));
+assertFalse(excluder0.equals((Object)excluder3));
+assertFalse(excluder0.equals((Object)excluder1));
+assertFalse(object0.equals((Object)boolean1));
+assertTrue(object0.equals((Object)boolean2));
+assertFalse(object0.equals((Object)boolean0));
+assertFalse(excluder1.equals((Object)excluder0));
+assertFalse(excluder1.equals((Object)excluder2));
+assertFalse(excluder1.equals((Object)excluder3));
+assertFalse(excluder1.equals((Object)excluder4));
+assertNotNull(object0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 8
+* Writing JUnit test case 'Excluder_ESTest' to temp/testcases
+* Done!
+
 * Computation finished
-[MASTER] 19:18:05.263 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: com.google.gson.internal.Excluder with seed 1516817872300. Configuration id : null
-java.lang.RuntimeException: not implemented: class sun.reflect.generics.reflectiveObjects.TypeVariableImpl
-	at com.googlecode.gentyref.GenericTypeReflector.isSuperType(GenericTypeReflector.java:218) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at com.googlecode.gentyref.GenericTypeReflector.contains(GenericTypeReflector.java:258) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at com.googlecode.gentyref.GenericTypeReflector.isSuperType(GenericTypeReflector.java:199) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.utils.generic.GenericClass.isGenericSuperTypeOf(GenericClass.java:1366) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.utils.generic.GenericClass.canBeInstantiatedTo(GenericClass.java:289) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.setup.TestCluster.cacheGenerators(TestCluster.java:420) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.setup.TestCluster.hasGenerator(TestCluster.java:1354) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.setup.TestCluster.getGenerators(TestCluster.java:814) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.TestFactory.getPossibleCalls(TestFactory.java:1931) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.TestFactory.changeRandomCall(TestFactory.java:1032) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.TestChromosome.mutationChange(TestChromosome.java:517) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.TestChromosome.mutate(TestChromosome.java:324) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testsuite.AbstractTestSuiteChromosome.mutate(AbstractTestSuiteChromosome.java:233) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testsuite.TestSuiteChromosome.mutate(TestSuiteChromosome.java:264) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.ga.metaheuristics.MonotonicGA.evolve(MonotonicGA.java:127) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.ga.metaheuristics.MonotonicGA.generateSolution(MonotonicGA.java:245) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.strategy.WholeTestSuiteStrategy.generateTests(WholeTestSuiteStrategy.java:113) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]

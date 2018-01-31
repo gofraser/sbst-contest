@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,21 +40,21 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases -cp /var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/RE2J-5_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases -cp /var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/RE2J-5_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/com/google/re2j/Compiler_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/com/google/re2j/Compiler_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases -cp /var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/RE2J-5_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/com/google/re2j/Compiler_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/com/google/re2j/Compiler_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases -cp /var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/RE2J-5_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/com/google/re2j/Compiler_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/com/google/re2j/Compiler_ESTest.java
 
 Compiled 'com/google/re2j/Compiler_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/re2j/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Compiler_ESTest]
 Executions terminated
 
@@ -71,7 +71,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 47
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.re2j.Compiler_ESTest]
 Executions terminated
 Number of file with coverage information = 47
@@ -81,26 +81,11 @@ Extracted coverage data for the class com/google/re2j/Compiler
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/re2j/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/re2j/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/RE2J-5_1/temp/testcases/bin
 > CUT = com.google.re2j.Compiler
 > Test cases = [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
-Running the tests: [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
-Skipped scaffolding test com.google.re2j.Compiler_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
-Skipped scaffolding test com.google.re2j.Compiler_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
-Skipped scaffolding test com.google.re2j.Compiler_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
-Skipped scaffolding test com.google.re2j.Compiler_ESTest_scaffolding
-Executions terminated
-Running the tests: [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
-Skipped scaffolding test com.google.re2j.Compiler_ESTest_scaffolding
-Executions terminated
 Running the tests: [com.google.re2j.Compiler_ESTest, com.google.re2j.Compiler_ESTest_scaffolding]
 Skipped scaffolding test com.google.re2j.Compiler_ESTest_scaffolding
 Executions terminated
@@ -317,32 +302,32 @@ Executions terminated
 	Benchmark: RE2J-5
 	Class Under Test: com.google.re2j.Compiler
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 95139
-	Test cases execution time (ms): 1901
-	Test case number: 25
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 116095
+	Test cases execution time (ms): 1975
+	Test case number: 21
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 117
-	Lines covered: 83
-	Lines coverage ratio (%): 70.94017
+	Lines covered: 77
+	Lines coverage ratio (%): 65.811966
 	Conditions total: 85
-	Conditions covered: 58
-	Conditions coverage ratio (%): 68.2353
+	Conditions covered: 49
+	Conditions coverage ratio (%): 57.64706
 	Mutants total: 103
-	Mutants covered: 75
-	Mutants coverage ratio (%): 72.81553
-	Mutants killed: 43
-	Mutants killed ratio (%): 41.747574
-	Mutants alive: 60
+	Mutants covered: 70
+	Mutants coverage ratio (%): 67.96116
+	Mutants killed: 30
+	Mutants killed ratio (%): 29.126215
+	Mutants alive: 73
 
 
 Class com.google.re2j.Compiler ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 2592
-Killing master process 2592
-Executing command kill -9 2592
-Execution of command kill -9 2592 finished.
+Tool subprocess Id is 5474
+Killing master process 5474
+Executing command kill -9 5474
+Execution of command kill -9 5474 finished.
 Process was destroyed

@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,GSON-4,com.google.gson.stream.JsonReader,1,350,121225,7,59,1,0,0,656,0,0.0,468,0,0.0,161,0,0.0,0,0.0,161,120,2
+evosuite,GSON-4,com.google.gson.stream.JsonReader,1,366,120894,7819,80,0,0,0,656,228,34.756096,468,147,31.410255,161,63,39.130436,39,24.223602,122,120,2
  
  
  

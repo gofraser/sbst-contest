@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
 * Starting client
-* Connecting to master process on port 17008
+* Connecting to master process on port 7915
 * Analyzing classpath: 
 * Instrumentation exceeds Java's 64K limit per method in target class
 * Attempting re-instrumentation without mutation
@@ -26,15 +26,19 @@
   - Method 8
   - MethodNoException 8
   - CBranchFitnessFactory 1388
-* Using seed 1516819396680
+* Using seed 1517343381324
 * Starting evolution
-* Search finished after 71s and 33 generations, 14320 statements, best individual has fitness: 2747.4004217048514
+[MASTER] 21:17:49.921 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 12644ms
+* Search finished after 83s and 74 generations, 30774 statements, best individual has fitness: 2820.877154634916
+[MASTER] 21:17:49.991 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 13 seconds more than allowed.
 * Minimizing test suite
-* Generated 30 tests with total length 204
-* Resulting test suite's coverage: 59% (average coverage for all fitness functions)
+* Generated 86 tests with total length 1231
+[MASTER] 21:17:57.753 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 68% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
 * Writing JUnit test case 'XPathParserTokenManager_ESTest' to temp/testcases
+[MASTER] 21:18:25.570 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 5 seconds more than allowed.
 * Done!
 
 * Computation finished

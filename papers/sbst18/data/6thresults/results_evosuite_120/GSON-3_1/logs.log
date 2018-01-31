@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: com.google.gson.JsonPrimitive
 * Starting client
-* Connecting to master process on port 7260
+* Connecting to master process on port 7903
 * Analyzing classpath: 
   - /var/benchmarks/projects/gson/gson/target/classes
   - /var/benchmarks/projects/gson/gson/target/classes
@@ -26,19 +26,19 @@
   - Method 25
   - MethodNoException 25
   - CBranchFitnessFactory 91
-* Using seed 1516823350317
+* Using seed 1517347425203
 * Starting evolution
-* Search finished after 71s and 292 generations, 88765 statements, best individual has fitness: 50.214285714285715
+* Search finished after 71s and 292 generations, 107558 statements, best individual has fitness: 82.88333333333334
 * Minimizing test suite
-* Generated 84 tests with total length 359
-* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generated 83 tests with total length 339
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 20:50:30.826 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeWriter: com/google/gson/internal/bind/JsonTreeWriter$1
-[MASTER] 20:50:30.845 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeReader: com/google/gson/internal/JsonReaderInternalAccess
-[MASTER] 20:50:30.867 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.stream.JsonReader: com/google/gson/stream/JsonReader$1
-[MASTER] 20:50:30.998 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeReader: com/google/gson/internal/bind/JsonTreeReader$1
-[MASTER] 20:50:39.968 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
+[MASTER] 22:25:07.565 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeWriter: com/google/gson/internal/bind/JsonTreeWriter$1
+[MASTER] 22:25:07.584 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeReader: com/google/gson/internal/JsonReaderInternalAccess
+[MASTER] 22:25:07.606 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.stream.JsonReader: com/google/gson/stream/JsonReader$1
+[MASTER] 22:25:07.738 [logback-2] ERROR ClassStateSupport - Could not initialize com.google.gson.internal.bind.JsonTreeReader: com/google/gson/internal/bind/JsonTreeReader$1
+[MASTER] 22:25:16.499 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
 * Writing JUnit test case 'JsonPrimitive_ESTest' to temp/testcases
 * Done!
 

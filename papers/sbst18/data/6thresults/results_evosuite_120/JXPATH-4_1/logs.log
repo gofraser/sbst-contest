@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.commons.jxpath.util.MethodLookupUtils
 * Starting client
-* Connecting to master process on port 17871
+* Connecting to master process on port 21450
 * Analyzing classpath: 
   - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
   - /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes
@@ -26,14 +26,15 @@
   - Method 4
   - MethodNoException 4
   - CBranchFitnessFactory 103
-* Using seed 1516818345976
+* Using seed 1517342136159
 * Starting evolution
-[MASTER] 19:25:52.537 [logback-2] ERROR TestCluster - Failed to check cache for java.lang.reflect.Constructor<T> : Type points to itself
-* Search finished after 71s and 178 generations, 103276 statements, best individual has fitness: 91.44736841794823
+[MASTER] 20:55:42.499 [logback-2] ERROR TestCluster - Failed to check cache for java.lang.reflect.Constructor<T> : Type points to itself
+* Search finished after 71s and 125 generations, 99766 statements, best individual has fitness: 116.41428570612342
 * Minimizing test suite
-* Generated 19 tests with total length 106
-* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generated 21 tests with total length 107
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
 * Generating assertions
+[MASTER] 20:57:07.612 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 4 seconds more than allowed.
 * Compiling and checking tests
 * Writing JUnit test case 'MethodLookupUtils_ESTest' to temp/testcases
 * Done!

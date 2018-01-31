@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.la4j.matrix.dense.Basic2DMatrix
 * Starting client
-* Connecting to master process on port 5181
+* Connecting to master process on port 10958
 * Analyzing classpath: 
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
@@ -26,22 +26,18 @@
   - Method 27
   - MethodNoException 27
   - CBranchFitnessFactory 80
-* Using seed 1516822629029
+* Using seed 1517346681599
 * Starting evolution
-[MASTER] 20:37:19.976 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
-* Search finished after 74s and 27 generations, 14520 statements, best individual has fitness: 224.99732238695205
+[MASTER] 22:11:26.978 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+* Search finished after 74s and 15 generations, 8834 statements, best individual has fitness: 222.90894967199426
 * Minimizing test suite
-* Generated 82 tests with total length 925
-* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
-[MASTER] 20:38:43.234 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Generated 67 tests with total length 723
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+[MASTER] 22:12:55.863 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Generating assertions
-[MASTER] 20:38:43.237 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
+[MASTER] 22:12:55.867 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
 * Compiling and checking tests
-[MASTER] 20:38:56.257 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$1
-[MASTER] 20:38:56.464 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$2
-[MASTER] 20:38:56.657 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$3
-[MASTER] 20:38:56.733 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction$1: org/la4j/iterator/JoinFunction$4
-[MASTER] 20:38:56.846 [logback-2] ERROR ClassStateSupport - Could not initialize org.la4j.iterator.JoinFunction: org/la4j/iterator/JoinFunction$5
+[MASTER] 22:13:11.374 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
 * Writing JUnit test case 'Basic2DMatrix_ESTest' to temp/testcases
 * Done!
 

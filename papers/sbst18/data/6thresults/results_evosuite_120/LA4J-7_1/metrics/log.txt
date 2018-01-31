@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/LA4J-7_1/temp/testcases/org/la4j/matrix/sparse/CCSMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-7_1/temp/testcases/org/la4j/matrix/sparse/CCSMatrix_ESTest.java
-Failed to compile 'org/la4j/matrix/sparse/CCSMatrix_ESTest.java'!
+Compiled 'org/la4j/matrix/sparse/CCSMatrix_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: LA4J-7
 	Class Under Test: org.la4j.matrix.sparse.CCSMatrix
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 127721
-	Test cases execution time (ms): 6
-	Test case number: 102
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 362
+	Tool test cases generation time (ms): 130334
+	Test cases execution time (ms): 7049
+	Test case number: 89
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 339
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 252
+	Lines coverage ratio (%): 74.33628
 	Conditions total: 210
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 135
+	Conditions coverage ratio (%): 64.28571
 	Mutants total: 197
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 197
+	Mutants covered: 146
+	Mutants coverage ratio (%): 74.11168
+	Mutants killed: 80
+	Mutants killed ratio (%): 40.609135
+	Mutants alive: 117

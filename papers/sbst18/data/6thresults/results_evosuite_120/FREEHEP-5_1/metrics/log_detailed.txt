@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,118 +40,38 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-5_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-5_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-5_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-5_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/org/freehep/math/minuit/MnUserParameterState_ESTest.java
 
 Compiled 'org/freehep/math/minuit/MnUserParameterState_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnUserParameterState_ESTest]
 Executions terminated
-Failure: [test127(org.freehep.math.minuit.MnUserParameterState_ESTest): null]
-Failing Tests: test127(org.freehep.math.minuit.MnUserParameterState_ESTest)
-java.lang.AssertionError
-	at org.freehep.math.minuit.MnCovarianceSqueeze.squeeze(MnCovarianceSqueeze.java:14)
-	at org.freehep.math.minuit.MnUserParameterState.fix(MnUserParameterState.java:352)
-	at org.freehep.math.minuit.MnUserParameterState_ESTest.test127(MnUserParameterState_ESTest.java:4938)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
-
 
 ---The tests are re-executed other four times to find the flaky ones---
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnUserParameterState_ESTest]
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnUserParameterState_ESTest]
-Failure: [test127(org.freehep.math.minuit.MnUserParameterState_ESTest): null]
-Failing Tests: test127(org.freehep.math.minuit.MnUserParameterState_ESTest)
-java.lang.AssertionError
-	at org.freehep.math.minuit.MnCovarianceSqueeze.squeeze(MnCovarianceSqueeze.java:14)
-	at org.freehep.math.minuit.MnUserParameterState.fix(MnUserParameterState.java:352)
-	at org.freehep.math.minuit.MnUserParameterState_ESTest.test127(MnUserParameterState_ESTest.java:4938)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
-
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnUserParameterState_ESTest]
-Failure: [test127(org.freehep.math.minuit.MnUserParameterState_ESTest): null]
-Failing Tests: test127(org.freehep.math.minuit.MnUserParameterState_ESTest)
-java.lang.AssertionError
-	at org.freehep.math.minuit.MnCovarianceSqueeze.squeeze(MnCovarianceSqueeze.java:14)
-	at org.freehep.math.minuit.MnUserParameterState.fix(MnUserParameterState.java:352)
-	at org.freehep.math.minuit.MnUserParameterState_ESTest.test127(MnUserParameterState_ESTest.java:4938)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
-
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnUserParameterState_ESTest]
-Failure: [test127(org.freehep.math.minuit.MnUserParameterState_ESTest): null]
-Failing Tests: test127(org.freehep.math.minuit.MnUserParameterState_ESTest)
-java.lang.AssertionError
-	at org.freehep.math.minuit.MnCovarianceSqueeze.squeeze(MnCovarianceSqueeze.java:14)
-	at org.freehep.math.minuit.MnUserParameterState.fix(MnUserParameterState.java:352)
-	at org.freehep.math.minuit.MnUserParameterState_ESTest.test127(MnUserParameterState_ESTest.java:4938)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
-
 Executions terminated
-Failure: [test127(org.freehep.math.minuit.MnUserParameterState_ESTest): null]
-Failing Tests: test127(org.freehep.math.minuit.MnUserParameterState_ESTest)
-java.lang.AssertionError
-	at org.freehep.math.minuit.MnCovarianceSqueeze.squeeze(MnCovarianceSqueeze.java:14)
-	at org.freehep.math.minuit.MnUserParameterState.fix(MnUserParameterState.java:352)
-	at org.freehep.math.minuit.MnUserParameterState_ESTest.test127(MnUserParameterState_ESTest.java:4938)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
-
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 84
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnUserParameterState_ESTest]
 Executions terminated
 Number of file with coverage information = 84
@@ -161,11 +81,20 @@ Extracted coverage data for the class org/freehep/math/minuit/MnUserParameterSta
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-5_1/temp/testcases/bin
 > CUT = org.freehep.math.minuit.MnUserParameterState
 > Test cases = [org.freehep.math.minuit.MnUserParameterState_ESTest, org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.freehep.math.minuit.MnUserParameterState_ESTest, org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnUserParameterState_ESTest, org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnUserParameterState_ESTest, org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding
+Executions terminated
 Running the tests: [org.freehep.math.minuit.MnUserParameterState_ESTest, org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding]
 Skipped scaffolding test org.freehep.math.minuit.MnUserParameterState_ESTest_scaffolding
 Executions terminated
@@ -514,32 +443,32 @@ Executions terminated
 	Benchmark: FREEHEP-5
 	Class Under Test: org.freehep.math.minuit.MnUserParameterState
 	Run number: 1
-	Tool preparation time (ms): 346
-	Tool test cases generation time (ms): 105737
-	Test cases execution time (ms): 2974
-	Test case number: 166
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 105867
+	Test cases execution time (ms): 4807
+	Test case number: 161
 	Uncompilable Test Classes: 0
-	Broken tests number: 1
+	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 262
-	Lines covered: 228
-	Lines coverage ratio (%): 87.0229
+	Lines covered: 231
+	Lines coverage ratio (%): 88.16794
 	Conditions total: 110
-	Conditions covered: 76
-	Conditions coverage ratio (%): 69.09091
+	Conditions covered: 78
+	Conditions coverage ratio (%): 70.90909
 	Mutants total: 135
-	Mutants covered: 114
-	Mutants coverage ratio (%): 84.44444
-	Mutants killed: 114
-	Mutants killed ratio (%): 84.44444
-	Mutants alive: 21
+	Mutants covered: 117
+	Mutants coverage ratio (%): 86.666664
+	Mutants killed: 73
+	Mutants killed ratio (%): 54.074074
+	Mutants alive: 62
 
 
 Class org.freehep.math.minuit.MnUserParameterState ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 16000
-Killing master process 16000
-Executing command kill -9 16000
-Execution of command kill -9 16000 finished.
+Tool subprocess Id is 14419
+Killing master process 14419
+Executing command kill -9 14419
+Execution of command kill -9 14419 finished.
 Process was destroyed

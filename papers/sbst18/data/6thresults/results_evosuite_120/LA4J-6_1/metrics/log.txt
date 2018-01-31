@@ -26,8 +26,8 @@ Could not calculate mutation metrics!
 	Benchmark: LA4J-6
 	Class Under Test: org.la4j.linear.ForwardBackSubstitutionSolver
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 47850
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 71347
 	Test cases execution time (ms): 7
 	Test case number: 0
 	Uncompilable Test Classes: 0

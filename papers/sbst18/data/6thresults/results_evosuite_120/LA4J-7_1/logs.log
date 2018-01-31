@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.la4j.matrix.sparse.CCSMatrix
 * Starting client
-* Connecting to master process on port 12619
+* Connecting to master process on port 20373
 * Analyzing classpath: 
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
@@ -26,21 +26,22 @@
   - Method 41
   - MethodNoException 41
   - CBranchFitnessFactory 309
-* Using seed 1516822173366
+* Using seed 1517346257087
 * Starting evolution
-[MASTER] 20:29:40.279 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
-[MASTER] 20:29:50.936 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
-[MASTER] 20:30:58.875 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 10032ms
-* Search finished after 82s and 21 generations, 13300 statements, best individual has fitness: 2614.9820565874925
-[MASTER] 20:30:58.928 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 12 seconds more than allowed.
+[MASTER] 22:04:27.279 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
+[MASTER] 22:05:41.321 [logback-1] WARN  TimeController - Operation 'update from archive' took too long: 9450ms
+* Search finished after 81s and 11 generations, 7713 statements, best individual has fitness: 2936.7042260747085
+[MASTER] 22:05:41.389 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 10 seconds more than allowed.
 * Minimizing test suite
-* Generated 104 tests with total length 1245
-[MASTER] 20:31:11.369 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
-* Resulting test suite's coverage: 57% (average coverage for all fitness functions)
+* Generated 90 tests with total length 1174
+[MASTER] 22:05:56.645 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 61% (average coverage for all fitness functions)
 * Generating assertions
+* Skipping assertion generation because not enough time is left
 * Compiling and checking tests
+[MASTER] 22:06:08.949 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
 * Writing JUnit test case 'CCSMatrix_ESTest' to temp/testcases
-[MASTER] 20:31:37.991 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 5 seconds more than allowed.
+[MASTER] 22:06:24.233 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 7 seconds more than allowed.
 * Done!
 
 * Computation finished

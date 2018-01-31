@@ -13,10 +13,10 @@ Mutant: 5	 ---> MutationDetails [id=MutationIdentifier [location=Location [clazz
 
 
  --- Mutants details--- 
- Mutant: 0, killed by tests [(okhttp3.Cookie_ESTest),test01), (okhttp3.Cookie_ESTest),test23), (okhttp3.Cookie_ESTest),test22)]
-Mutant: 1, killed by tests [(okhttp3.Cookie_ESTest),test18)]
-Mutant: 2, killed by tests [(okhttp3.Cookie_ESTest),test24)]
-Mutant: 3, killed by tests [(okhttp3.Cookie_ESTest),test18)]
-Mutant: 4, killed by tests [(okhttp3.Cookie_ESTest),test20), (okhttp3.Cookie_ESTest),test19)]
-Mutant: 5, killed by tests [(okhttp3.Cookie_ESTest),test01), (okhttp3.Cookie_ESTest),test23)]
+ Mutant: 0, killed by tests [(okhttp3.Cookie_ESTest),test01), (okhttp3.Cookie_ESTest),test20), (okhttp3.Cookie_ESTest),test19)]
+Mutant: 1, killed by tests [(okhttp3.Cookie_ESTest),test16)]
+Mutant: 2, killed by tests [(okhttp3.Cookie_ESTest),test21)]
+Mutant: 3, killed by tests [(okhttp3.Cookie_ESTest),test16)]
+Mutant: 4, killed by tests [(okhttp3.Cookie_ESTest),test17)]
+Mutant: 5, killed by tests [(okhttp3.Cookie_ESTest),test20)]
 

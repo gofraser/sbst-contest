@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.freehep.math.minuit.MnMinos
 * Starting client
-* Connecting to master process on port 6006
+* Connecting to master process on port 3292
 * Analyzing classpath: 
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
@@ -26,18 +26,18 @@
   - Method 21
   - MethodNoException 21
   - CBranchFitnessFactory 88
-* Using seed 1516820137920
+* Using seed 1517344198468
 * Starting evolution
-[MASTER] 19:56:15.517 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 19:56:30.690 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.UnaryOperator<T> : Type points to itself
-* Search finished after 71s and 446 generations, 201837 statements, best individual has fitness: 302.42007992007996
+[MASTER] 21:30:35.991 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 21:31:09.676 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 71s and 443 generations, 176664 statements, best individual has fitness: 647.4996141230947
 * Minimizing test suite
-* Generated 95 tests with total length 1189
-* Resulting test suite's coverage: 57% (average coverage for all fitness functions)
+* Generated 75 tests with total length 763
+* Resulting test suite's coverage: 36% (average coverage for all fitness functions)
 * Generating assertions
-[MASTER] 19:57:08.927 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
 * Compiling and checking tests
-[MASTER] 19:57:23.742 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 3 seconds more than allowed.
+[MASTER] 21:31:20.718 [logback-2] ERROR ClassStateSupport - Could not initialize org.freehep.math.minuit.ModularFunctionMinimizer: org/freehep/math/minuit/MnFcn
+[MASTER] 21:31:20.811 [logback-2] ERROR ClassStateSupport - Could not initialize org.freehep.math.minuit.ModularFunctionMinimizer: org/freehep/math/minuit/MnUserFcn
 * Writing JUnit test case 'MnMinos_ESTest' to temp/testcases
 * Done!
 

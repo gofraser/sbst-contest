@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.bcel.verifier.structurals.InstConstraintVisitor
 * Starting client
-* Connecting to master process on port 21958
+* Connecting to master process on port 6244
 * Analyzing classpath: 
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
@@ -26,17 +26,19 @@
   - Method 169
   - MethodNoException 169
   - CBranchFitnessFactory 816
-* Using seed 1516819728598
+* Using seed 1517343810795
 * Starting evolution
-[MASTER] 19:48:55.332 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 19:49:34.473 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.classfile.Field due to org.evosuite.ga.ConstructionFailedException: Have no generator for class java.lang.reflect.Method canUseFunctionalMocks=true, canBeMocked: false
-* Search finished after 71s and 169 generations, 43805 statements, best individual has fitness: 5249.171944570649
+[MASTER] 21:23:37.511 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 71s and 228 generations, 52265 statements, best individual has fitness: 5086.50458987063
 * Minimizing test suite
-* Generated 190 tests with total length 717
-* Resulting test suite's coverage: 21% (average coverage for all fitness functions)
+* Generated 206 tests with total length 938
+* Resulting test suite's coverage: 34% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 19:50:38.059 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 10 seconds more than allowed.
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+[MASTER] 21:25:20.143 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 8 seconds more than allowed.
 * Writing JUnit test case 'InstConstraintVisitor_ESTest' to temp/testcases
 * Done!
 

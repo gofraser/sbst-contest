@@ -26,8 +26,8 @@ Could not calculate mutation metrics!
 	Benchmark: IMAGE-1
 	Class Under Test: org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 46119
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 54089
 	Test cases execution time (ms): 7
 	Test case number: 0
 	Uncompilable Test Classes: 0

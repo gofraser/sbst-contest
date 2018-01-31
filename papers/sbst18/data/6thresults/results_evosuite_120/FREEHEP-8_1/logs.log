@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.freehep.math.minuit.MnPrint
 * Starting client
-* Connecting to master process on port 17255
+* Connecting to master process on port 12784
 * Analyzing classpath: 
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
   - /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes
@@ -26,24 +26,22 @@
   - Method 20
   - MethodNoException 20
   - CBranchFitnessFactory 83
-* Using seed 1516820021712
+* Using seed 1517344082930
 * Starting evolution
-[MASTER] 19:54:17.454 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
-[MASTER] 19:54:21.100 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 19:54:32.190 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.FunctionMinimum due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.FunctionMinimum due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.MinimumSeed due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.MinimumState due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-[MASTER] 19:54:39.405 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Iterator<E> : Type points to itself
-* Search finished after 74s and 127 generations, 69714 statements, best individual has fitness: 62.898255812074886
+[MASTER] 21:28:41.473 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 21:28:57.508 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.freehep.math.minuit.ContoursError due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.freehep.math.minuit.ContoursError canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 21:29:11.059 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.freehep.math.minuit.ContoursError canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 73s and 77 generations, 35142 statements, best individual has fitness: 43.885714285714286
 * Minimizing test suite
-* Generated 68 tests with total length 994
-[MASTER] 19:55:15.851 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
-* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generated 64 tests with total length 993
+[MASTER] 21:29:37.177 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
 * Generating assertions
-[MASTER] 19:55:15.854 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
+[MASTER] 21:29:37.180 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 4 seconds more than allowed.
 * Compiling and checking tests
-[MASTER] 19:55:31.108 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
 * Permissions denied during test execution: 
   - java.lang.RuntimePermission: 
-         writeFileDescriptor: 7
+         writeFileDescriptor: 5
 * Writing JUnit test case 'MnPrint_ESTest' to temp/testcases
 * Done!
 

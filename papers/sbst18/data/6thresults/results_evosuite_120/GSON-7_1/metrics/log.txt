@@ -11,10 +11,6 @@
 ### COMPUTING METRICS ###: com.google.gson.GsonBuilder
 
 ---Compilation---
-Compiling with scaffolding tests
->>  /home/evosuite_6th/results_evosuite_120/GSON-7_1/temp/testcases/com/google/gson/GsonBuilder_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-7_1/temp/testcases/com/google/gson/GsonBuilder_ESTest.java
-Compiled 'com/google/gson/GsonBuilder_ESTest.java'
-Compiling with scaffolding tests
 
 ---Timing Information---
 
@@ -23,28 +19,29 @@ Compiling with scaffolding tests
 === Run Jacoco for Coverage ===
 
 === Run PIT ===
+Could not calculate mutation metrics!
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: GSON-7
 	Class Under Test: com.google.gson.GsonBuilder
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 87052
-	Test cases execution time (ms): 3758
-	Test case number: 32
+	Tool preparation time (ms): 366
+	Tool test cases generation time (ms): 9722
+	Test cases execution time (ms): 7
+	Test case number: 0
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 94
-	Lines covered: 92
-	Lines coverage ratio (%): 97.87234
+	Lines covered: 0
+	Lines coverage ratio (%): 0.0
 	Conditions total: 38
-	Conditions covered: 31
-	Conditions coverage ratio (%): 81.57895
-	Mutants total: 50
-	Mutants covered: 50
-	Mutants coverage ratio (%): 100.0
-	Mutants killed: 47
-	Mutants killed ratio (%): 94.0
-	Mutants alive: 3
+	Conditions covered: 0
+	Conditions coverage ratio (%): 0.0
+	Mutants total: 0
+	Mutants covered: 0
+	Mutants coverage ratio (%): 0.0
+	Mutants killed: 0
+	Mutants killed ratio (%): 0.0
+	Mutants alive: 0

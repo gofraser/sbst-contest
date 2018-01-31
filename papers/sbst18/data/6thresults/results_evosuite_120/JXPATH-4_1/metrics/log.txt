@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: JXPATH-4
 	Class Under Test: org.apache.commons.jxpath.util.MethodLookupUtils
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 87095
-	Test cases execution time (ms): 2289
-	Test case number: 19
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 97869
+	Test cases execution time (ms): 3523
+	Test case number: 21
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 139
-	Lines covered: 121
-	Lines coverage ratio (%): 87.05036
+	Lines covered: 115
+	Lines coverage ratio (%): 82.73382
 	Conditions total: 102
-	Conditions covered: 83
-	Conditions coverage ratio (%): 81.37254
+	Conditions covered: 80
+	Conditions coverage ratio (%): 78.43137
 	Mutants total: 92
-	Mutants covered: 85
-	Mutants coverage ratio (%): 92.391304
-	Mutants killed: 69
-	Mutants killed ratio (%): 75.0
-	Mutants alive: 23
+	Mutants covered: 82
+	Mutants coverage ratio (%): 89.13044
+	Mutants killed: 67
+	Mutants killed ratio (%): 72.82609
+	Mutants alive: 25

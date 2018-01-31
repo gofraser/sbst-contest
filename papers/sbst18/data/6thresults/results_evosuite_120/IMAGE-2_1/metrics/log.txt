@@ -29,19 +29,19 @@ Compiling with scaffolding tests
 	Benchmark: IMAGE-2
 	Class Under Test: org.apache.commons.imaging.common.RationalNumber
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 110441
-	Test cases execution time (ms): 1602
+	Tool preparation time (ms): 357
+	Tool test cases generation time (ms): 113116
+	Test cases execution time (ms): 1605
 	Test case number: 18
 	Uncompilable Test Classes: 0
 	Broken tests number: 1
 	Failing tests number: 0
 	Lines total: 76
-	Lines covered: 71
-	Lines coverage ratio (%): 93.42105
+	Lines covered: 72
+	Lines coverage ratio (%): 94.73685
 	Conditions total: 60
-	Conditions covered: 51
-	Conditions coverage ratio (%): 85.0
+	Conditions covered: 53
+	Conditions coverage ratio (%): 88.333336
 	Mutants total: 96
 	Mutants covered: 95
 	Mutants coverage ratio (%): 98.95833

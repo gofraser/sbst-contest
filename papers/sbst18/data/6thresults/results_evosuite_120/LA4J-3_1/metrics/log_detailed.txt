@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,106 +40,41 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/LA4J-3_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/LA4J-3_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/LA4J-3_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases -cp /var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/LA4J-3_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java
 
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:136: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, int0).when(matrix0).rows();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:140: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int2, int0).when(matrix1).rows();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:210: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int1, int4).when(matrix0).rows();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:389: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(matrixFunction0).evaluate(anyInt() , anyInt() , anyDouble());
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:606: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double1, double1, double2, double3, (double)int2).when(vectorAccumulator0).accumulate();
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:1961: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0).when(matrix0).columns();
-      ^
-  required: Object
-  found: int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:1962: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0).when(matrix0).rows();
-      ^
-  required: Object
-  found: int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:1964: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0).when(matrix1).columns();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java:1965: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0).when(matrix1).rows();
-      ^
-  required: Object
-  found: int,int,int
-  reason: actual and formal argument lists differ in length
 Note: /home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/org/la4j/matrix/sparse/CRSMatrix_ESTest.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-9 errors
-Failed to compile 'org/la4j/matrix/sparse/CRSMatrix_ESTest.java'!
-shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
-	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
-	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
-	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
-	at sbst.benchmark.RunTool.execute(RunTool.java:172)
-	at sbst.benchmark.RunTool.run(RunTool.java:95)
-	at sbst.benchmark.Main.main(Main.java:178)
+Compiled 'org/la4j/matrix/sparse/CRSMatrix_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/var/benchmarks/projects/la4j-0.6.0/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.sparse.CRSMatrix_ESTest]
 Executions terminated
 
 ---The tests are re-executed other four times to find the flaky ones---
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.sparse.CRSMatrix_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.sparse.CRSMatrix_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.sparse.CRSMatrix_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.sparse.CRSMatrix_ESTest]
 Executions terminated
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 208
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/bin
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.la4j.matrix.sparse.CRSMatrix_ESTest]
 Executions terminated
 Number of file with coverage information = 208
 Extracted coverage data for the class org/la4j/matrix/sparse/CRSMatrix
@@ -148,43 +83,419 @@ Extracted coverage data for the class org/la4j/matrix/sparse/CRSMatrix
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/la4j-0.6.0/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/la4j-0.6.0/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/LA4J-3_1/temp/testcases/bin
 > CUT = org.la4j.matrix.sparse.CRSMatrix
 > Test cases = [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
+Skipped scaffolding test org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.la4j.matrix.sparse.CRSMatrix_ESTest, org.la4j.matrix.sparse.CRSMatrix_ESTest_scaffolding]
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: LA4J-3
 	Class Under Test: org.la4j.matrix.sparse.CRSMatrix
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 126072
-	Test cases execution time (ms): 7
-	Test case number: 102
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 368
+	Tool test cases generation time (ms): 127009
+	Test cases execution time (ms): 8122
+	Test case number: 96
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 339
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 271
+	Lines coverage ratio (%): 79.941
 	Conditions total: 210
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 141
+	Conditions coverage ratio (%): 67.14285
 	Mutants total: 197
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 197
+	Mutants covered: 164
+	Mutants coverage ratio (%): 83.248726
+	Mutants killed: 74
+	Mutants killed ratio (%): 37.563454
+	Mutants alive: 123
 
 
 Class org.la4j.matrix.sparse.CRSMatrix ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 15571
-Killing master process 15571
-Executing command kill -9 15571
-Execution of command kill -9 15571 finished.
+Tool subprocess Id is 19253
+Killing master process 19253
+Executing command kill -9 19253
+Execution of command kill -9 19253 finished.
 Process was destroyed

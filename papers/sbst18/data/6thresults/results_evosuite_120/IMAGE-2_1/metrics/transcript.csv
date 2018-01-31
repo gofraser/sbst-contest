@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,IMAGE-2,org.apache.commons.imaging.common.RationalNumber,1,349,110441,1602,18,0,1,0,76,71,93.42105,60,51,85.0,96,95,98.95833,95,98.95833,1,120,2
+evosuite,IMAGE-2,org.apache.commons.imaging.common.RationalNumber,1,357,113116,1605,18,0,1,0,76,72,94.73685,60,53,88.333336,96,95,98.95833,95,98.95833,1,120,2
  
  
  

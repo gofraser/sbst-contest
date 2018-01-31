@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,128 +40,184 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-3_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-3_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-3_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases -cp /var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/FREEHEP-3_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java
 
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:30: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:328: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:416: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double1).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:527: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double1, double0, double0, double1).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:592: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double1, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:679: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:881: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:942: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:1034: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:1126: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:1229: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:1315: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/org/freehep/math/minuit/MnFunctionCross_ESTest.java:1405: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(double0, double0, double0, double0, double0).when(fCNBase0).valueOf(any(double[].class));
-      ^
-  required: Object
-  found: double,double,double,double,double
-  reason: actual and formal argument lists differ in length
-13 errors
-Failed to compile 'org/freehep/math/minuit/MnFunctionCross_ESTest.java'!
-shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
-	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
-	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
-	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
-	at sbst.benchmark.RunTool.execute(RunTool.java:172)
-	at sbst.benchmark.RunTool.run(RunTool.java:95)
-	at sbst.benchmark.Main.main(Main.java:178)
+Compiled 'org/freehep/math/minuit/MnFunctionCross_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnFunctionCross_ESTest]
 Executions terminated
+Failure: [test03(org.freehep.math.minuit.MnFunctionCross_ESTest): null, test04(org.freehep.math.minuit.MnFunctionCross_ESTest): null]
+Failing Tests: test03(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test03(MnFunctionCross_ESTest.java:301)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+Failing Tests: test04(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test04(MnFunctionCross_ESTest.java:389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 
 ---The tests are re-executed other four times to find the flaky ones---
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnFunctionCross_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnFunctionCross_ESTest]
+Failure: [test03(org.freehep.math.minuit.MnFunctionCross_ESTest): null, test04(org.freehep.math.minuit.MnFunctionCross_ESTest): null]
+Failing Tests: test03(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test03(MnFunctionCross_ESTest.java:301)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+Failing Tests: test04(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test04(MnFunctionCross_ESTest.java:389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnFunctionCross_ESTest]
+Failure: [test03(org.freehep.math.minuit.MnFunctionCross_ESTest): null, test04(org.freehep.math.minuit.MnFunctionCross_ESTest): null]
+Failing Tests: test03(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test03(MnFunctionCross_ESTest.java:301)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+Failing Tests: test04(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test04(MnFunctionCross_ESTest.java:389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnFunctionCross_ESTest]
+Failure: [test03(org.freehep.math.minuit.MnFunctionCross_ESTest): null, test04(org.freehep.math.minuit.MnFunctionCross_ESTest): null]
+Failing Tests: test03(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test03(MnFunctionCross_ESTest.java:301)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+Failing Tests: test04(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test04(MnFunctionCross_ESTest.java:389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 Executions terminated
+Failure: [test03(org.freehep.math.minuit.MnFunctionCross_ESTest): null, test04(org.freehep.math.minuit.MnFunctionCross_ESTest): null]
+Failing Tests: test03(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test03(MnFunctionCross_ESTest.java:301)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+Failing Tests: test04(org.freehep.math.minuit.MnFunctionCross_ESTest)
+java.lang.AssertionError
+	at org.freehep.math.minuit.MnUserParameterState.<init>(MnUserParameterState.java:153)
+	at org.freehep.math.minuit.MnFunctionCross_ESTest.test04(MnFunctionCross_ESTest.java:389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 84
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/bin
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.freehep.math.minuit.MnFunctionCross_ESTest]
 Executions terminated
 Number of file with coverage information = 84
 Extracted coverage data for the class org/freehep/math/minuit/MnFunctionCross
@@ -170,43 +226,289 @@ Extracted coverage data for the class org/freehep/math/minuit/MnFunctionCross
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/freehep/math/freehep-jminuit/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/FREEHEP-3_1/temp/testcases/bin
 > CUT = org.freehep.math.minuit.MnFunctionCross
 > Test cases = [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.freehep.math.minuit.MnFunctionCross_ESTest, org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding]
+Skipped scaffolding test org.freehep.math.minuit.MnFunctionCross_ESTest_scaffolding
+Executions terminated
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: FREEHEP-3
 	Class Under Test: org.freehep.math.minuit.MnFunctionCross
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 90400
-	Test cases execution time (ms): 7
-	Test case number: 17
-	Uncompilable Test Classes: 1
-	Broken tests number: 0
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 98606
+	Test cases execution time (ms): 4924
+	Test case number: 18
+	Uncompilable Test Classes: 0
+	Broken tests number: 2
 	Failing tests number: 0
 	Lines total: 220
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 140
+	Lines coverage ratio (%): 63.636364
 	Conditions total: 160
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 89
+	Conditions coverage ratio (%): 55.624996
 	Mutants total: 132
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 132
+	Mutants covered: 82
+	Mutants coverage ratio (%): 62.121212
+	Mutants killed: 82
+	Mutants killed ratio (%): 62.121212
+	Mutants alive: 50
 
 
 Class org.freehep.math.minuit.MnFunctionCross ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 15699
-Killing master process 15699
-Executing command kill -9 15699
-Execution of command kill -9 15699 finished.
+Tool subprocess Id is 32052
+Killing master process 32052
+Executing command kill -9 32052
+Execution of command kill -9 32052 finished.
 Process was destroyed

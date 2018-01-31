@@ -1,12 +1,12 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: okhttp3.HttpUrl
 * Starting client
-* Connecting to master process on port 3449
+* Connecting to master process on port 8934
 * Analyzing classpath: 
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
-[MASTER] 19:18:10.665 [logback-1] WARN  CheapPurityAnalyzer - okio.Buffer was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 19:18:10.666 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: okio.Buffer
+[MASTER] 20:47:55.380 [logback-1] WARN  CheapPurityAnalyzer - okio.Buffer was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 20:47:55.381 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: okio.Buffer
 * Finished analyzing classpath
 * Generating tests for class okhttp3.HttpUrl
 * Test criteria:
@@ -20,11 +20,11 @@
   - Context Branch Coverage
 * Setting up search algorithm for whole suite generation
 * Computation finished
-[MASTER] 19:18:10.937 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: okhttp3.HttpUrl with seed 1516817887882. Configuration id : null
+[MASTER] 20:47:55.649 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: okhttp3.HttpUrl with seed 1517341672523. Configuration id : null
 java.lang.NoClassDefFoundError: okio/Buffer
-	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_121]
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_121]
-	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_121]
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_161]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_161]
 	at org.evosuite.coverage.io.output.OutputCoverageFactory.getCoverageGoals(OutputCoverageFactory.java:85) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.coverage.io.output.OutputCoverageSuiteFitness.determineCoverageGoals(OutputCoverageSuiteFitness.java:77) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.coverage.io.output.OutputCoverageSuiteFitness.<init>(OutputCoverageSuiteFitness.java:68) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -34,11 +34,11 @@ java.lang.NoClassDefFoundError: okio/Buffer
 	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
 Caused by: java.lang.ClassNotFoundException: Class 'okio/Buffer.class' should be in target project, but could not be found!
 	at org.evosuite.instrumentation.InstrumentingClassLoader.instrumentClass(InstrumentingClassLoader.java:201) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.instrumentation.InstrumentingClassLoader.loadClass(InstrumentingClassLoader.java:168) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]

@@ -26,9 +26,9 @@ Could not calculate mutation metrics!
 	Benchmark: GSON-9
 	Class Under Test: com.google.gson.reflect.TypeToken
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 7384
-	Test cases execution time (ms): 8
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 6531
+	Test cases execution time (ms): 6
 	Test case number: 0
 	Uncompilable Test Classes: 0
 	Broken tests number: 0

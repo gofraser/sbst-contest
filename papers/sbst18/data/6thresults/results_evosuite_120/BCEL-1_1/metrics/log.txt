@@ -11,6 +11,10 @@
 ### COMPUTING METRICS ###: org.apache.bcel.classfile.Utility
 
 ---Compilation---
+Compiling with scaffolding tests
+>>  /home/evosuite_6th/results_evosuite_120/BCEL-1_1/temp/testcases/org/apache/bcel/classfile/Utility_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-1_1/temp/testcases/org/apache/bcel/classfile/Utility_ESTest.java
+Compiled 'org/apache/bcel/classfile/Utility_ESTest.java'
+Compiling with scaffolding tests
 
 ---Timing Information---
 
@@ -19,29 +23,28 @@
 === Run Jacoco for Coverage ===
 
 === Run PIT ===
-Could not calculate mutation metrics!
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: BCEL-1
 	Class Under Test: org.apache.bcel.classfile.Utility
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 52323
-	Test cases execution time (ms): 7
-	Test case number: 0
+	Tool preparation time (ms): 356
+	Tool test cases generation time (ms): 117016
+	Test cases execution time (ms): 5727
+	Test case number: 139
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 501
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 274
+	Lines coverage ratio (%): 54.690617
 	Conditions total: 344
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
-	Mutants total: 0
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 0
+	Conditions covered: 188
+	Conditions coverage ratio (%): 54.651165
+	Mutants total: 165
+	Mutants covered: 105
+	Mutants coverage ratio (%): 63.636364
+	Mutants killed: 79
+	Mutants killed ratio (%): 47.878788
+	Mutants alive: 86

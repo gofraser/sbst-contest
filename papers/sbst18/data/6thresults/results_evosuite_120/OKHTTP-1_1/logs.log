@@ -1,12 +1,12 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: okhttp3.Cookie
 * Starting client
-* Connecting to master process on port 21142
+* Connecting to master process on port 6576
 * Analyzing classpath: 
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
-[MASTER] 19:18:15.901 [logback-1] WARN  CheapPurityAnalyzer - okio.Buffer was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
-[MASTER] 19:18:15.901 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: okio.Buffer
+[MASTER] 20:48:00.772 [logback-1] WARN  CheapPurityAnalyzer - okio.Buffer was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 20:48:00.772 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: okio.Buffer
 * Finished analyzing classpath
 * Generating tests for class okhttp3.Cookie
 * Test criteria:
@@ -28,21 +28,20 @@
   - Method 28
   - MethodNoException 28
   - CBranchFitnessFactory 244
-* Using seed 1516817893561
+* Using seed 1517341678308
 * Starting evolution
-[MASTER] 19:18:51.593 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.HttpUrl: okio/Buffer
-[MASTER] 19:18:53.183 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
-* Search finished after 72s and 625 generations, 97266 statements, best individual has fitness: 1908.362634333386
+[MASTER] 20:48:35.995 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.HttpUrl: okio/Buffer
+[MASTER] 20:48:38.213 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
+* Search finished after 72s and 587 generations, 76921 statements, best individual has fitness: 1913.3959940532047
 * Minimizing test suite
-* Generated 32 tests with total length 104
+* Generated 29 tests with total length 99
 * Resulting test suite's coverage: 29% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 19:19:30.815 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
-[MASTER] 19:19:30.819 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody$1: okio/BufferedSource
-[MASTER] 19:19:30.833 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
-[MASTER] 19:19:30.840 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
-[MASTER] 19:19:30.857 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.HttpUrl
+[MASTER] 20:49:15.618 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
+[MASTER] 20:49:15.634 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
+[MASTER] 20:49:15.640 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
+[MASTER] 20:49:15.655 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.HttpUrl
 * Writing JUnit test case 'Cookie_ESTest' to temp/testcases
 * Done!
 

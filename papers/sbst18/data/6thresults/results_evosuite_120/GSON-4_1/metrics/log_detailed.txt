@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,112 +40,43 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/GSON-4_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/GSON-4_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/GSON-4_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases -cp /var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/GSON-4_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java
 
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1043: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1071: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1104: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1127: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1139: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1150: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1159: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1174: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1225: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java:1242: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(reader0).read(any(char[].class) , anyInt() , anyInt());
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
 Note: /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
-10 errors
-Failed to compile 'com/google/gson/stream/JsonReader_ESTest.java'!
-shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
-	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
-	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
-	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
-	at sbst.benchmark.RunTool.execute(RunTool.java:172)
-	at sbst.benchmark.RunTool.run(RunTool.java:95)
-	at sbst.benchmark.Main.main(Main.java:178)
+Note: /home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/com/google/gson/stream/JsonReader_ESTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Compiled 'com/google/gson/stream/JsonReader_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/var/benchmarks/projects/gson/gson/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.stream.JsonReader_ESTest]
 Executions terminated
 
 ---The tests are re-executed other four times to find the flaky ones---
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.stream.JsonReader_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.stream.JsonReader_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.stream.JsonReader_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.stream.JsonReader_ESTest]
 Executions terminated
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 174
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/bin
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, com.google.gson.stream.JsonReader_ESTest]
 Executions terminated
 Number of file with coverage information = 174
 Extracted coverage data for the class com/google/gson/stream/JsonReader
@@ -154,43 +85,232 @@ Extracted coverage data for the class com/google/gson/stream/JsonReader
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/gson/gson/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/gson/gson/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/GSON-4_1/temp/testcases/bin
 > CUT = com.google.gson.stream.JsonReader
 > Test cases = [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
+Running the tests: [com.google.gson.stream.JsonReader_ESTest, com.google.gson.stream.JsonReader_ESTest_scaffolding]
+Skipped scaffolding test com.google.gson.stream.JsonReader_ESTest_scaffolding
+Executions terminated
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: GSON-4
 	Class Under Test: com.google.gson.stream.JsonReader
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 121225
-	Test cases execution time (ms): 7
-	Test case number: 59
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 366
+	Tool test cases generation time (ms): 120894
+	Test cases execution time (ms): 7819
+	Test case number: 80
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 656
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 228
+	Lines coverage ratio (%): 34.756096
 	Conditions total: 468
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 147
+	Conditions coverage ratio (%): 31.410255
 	Mutants total: 161
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 161
+	Mutants covered: 63
+	Mutants coverage ratio (%): 39.130436
+	Mutants killed: 39
+	Mutants killed ratio (%): 24.223602
+	Mutants alive: 122
 
 
 Class com.google.gson.stream.JsonReader ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 16315
-Killing master process 16315
-Executing command kill -9 16315
-Execution of command kill -9 16315 finished.
+Tool subprocess Id is 1936
+Killing master process 1936
+Executing command kill -9 1936
+Execution of command kill -9 1936 finished.
 Process was destroyed

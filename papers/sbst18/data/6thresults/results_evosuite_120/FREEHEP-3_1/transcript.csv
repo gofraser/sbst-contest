@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,FREEHEP-3,org.freehep.math.minuit.MnFunctionCross,1,350,90400,7,17,1,0,0,220,0,0.0,160,0,0.0,132,0,0.0,0,0.0,132,120,2
+evosuite,FREEHEP-3,org.freehep.math.minuit.MnFunctionCross,1,359,98606,4924,18,0,2,0,220,140,63.636364,160,89,55.624996,132,82,62.121212,82,62.121212,50,120,2
  
  
  

@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,RE2J-3,com.google.re2j.Simplify,1,350,82759,1691,15,0,0,0,64,23,35.9375,56,24,42.857143,58,27,46.551723,23,39.655174,35,120,2
+evosuite,RE2J-3,com.google.re2j.Simplify,1,360,101903,1587,15,0,0,0,64,30,46.875,56,28,50.0,58,35,60.344826,22,37.931034,36,120,2
  
  
  

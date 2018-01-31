@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,346 +40,1071 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-10_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-10_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-10_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-10_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java
 
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:423: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(propertyPointer0.WHOLE_COLLECTION, propertyPointer0.UNSPECIFIED_PROPERTY, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:425: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:639: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(beanPropertyPointer0.WHOLE_COLLECTION, beanPointer0.WHOLE_COLLECTION, beanPropertyPointer0.UNSPECIFIED_PROPERTY, beanPropertyPointer0.UNSPECIFIED_PROPERTY, beanPropertyPointer0.UNSPECIFIED_PROPERTY).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:640: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:779: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nullPointer0.WHOLE_COLLECTION, propertyPointer0.WHOLE_COLLECTION).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:780: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:904: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(beanPointer0.WHOLE_COLLECTION, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:905: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray1, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1025: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1026: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1411: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, propertyPointer0.UNSPECIFIED_PROPERTY, int1, int1, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1412: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodeNameTest0, nodeNameTest0).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: NodeNameTest,NodeNameTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1413: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1634: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodePointer0.WHOLE_COLLECTION, nodePointer0.WHOLE_COLLECTION).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1635: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1789: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, int1).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1790: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:1944: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:2164: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:2313: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nullPointer0.WHOLE_COLLECTION, propertyPointer0.UNSPECIFIED_PROPERTY, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:2315: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:2740: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3068: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nullPointer0.WHOLE_COLLECTION, propertyPointer0.UNSPECIFIED_PROPERTY, propertyPointer0.WHOLE_COLLECTION, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3070: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3423: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3580: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3679: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3723: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3724: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodeNameTest0, (NodeTest) null).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: NodeNameTest,NodeTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3909: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nullPointer0.WHOLE_COLLECTION, propertyPointer0.UNSPECIFIED_PROPERTY, int0, int0, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3910: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodeNameTest0, nodeNameTest0).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: NodeNameTest,NodeNameTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:3911: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4138: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(propertyPointer0.UNSPECIFIED_PROPERTY, propertyPointer0.UNSPECIFIED_PROPERTY, propertyPointer0.UNSPECIFIED_PROPERTY, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4140: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4303: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, int0, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4304: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodeNameTest0, (NodeTest) null).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: NodeNameTest,NodeTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4338: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(int0, int0, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4339: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodeNameTest0, nodeNameTest0).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: NodeNameTest,NodeNameTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4340: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4505: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(0, 0, 0, 0, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4506: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) null, (Object) null, (Object) null, (Object) null, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4661: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(propertyPointer0.UNSPECIFIED_PROPERTY, propertyPointer0.UNSPECIFIED_PROPERTY, int0, int0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4662: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nodeNameTest0, nodeNameTest0).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: NodeNameTest,NodeNameTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4663: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4847: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(variablePointer0.WHOLE_COLLECTION, collectionPointer0.WHOLE_COLLECTION).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4848: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(processingInstructionTest0, processingInstructionTest0).when(step0).getNodeTest();
-      ^
-  required: Object
-  found: ProcessingInstructionTest,ProcessingInstructionTest
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4940: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn(nullPointer0.WHOLE_COLLECTION, propertyPointer0.UNSPECIFIED_PROPERTY, propertyPointer0.UNSPECIFIED_PROPERTY, propertyPointer0.UNSPECIFIED_PROPERTY, 0).when(step0).getAxis();
-      ^
-  required: Object
-  found: int,int,int,int,int
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:4941: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray0, (Object) expressionArray1, (Object) null).when(step0).getPredicates();
-      ^
-  required: Object
-  found: Object,Object,Object,Object,Object
-  reason: actual and formal argument lists differ in length
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java:5163: error: method doReturn in class Mockito cannot be applied to given types;
-      doReturn((String) null, (String) null).when(nodePointer0).toString();
-      ^
-  required: Object
-  found: String,String
-  reason: actual and formal argument lists differ in length
 Note: /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
-49 errors
-Failed to compile 'org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java'!
-shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
-	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
-	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
-	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
-	at sbst.benchmark.RunTool.execute(RunTool.java:172)
-	at sbst.benchmark.RunTool.run(RunTool.java:95)
-	at sbst.benchmark.Main.main(Main.java:178)
+Note: /home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Compiled 'org/apache/commons/jxpath/ri/axes/SimplePathInterpreter_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest]
 Executions terminated
+Failure: [test12(org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest): null]
+Failing Tests: test12(org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest)
+java.lang.StackOverflowError
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:40)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+	at org.apache.commons.jxpath.ri.compiler.CoreOperationAdd.computeValue(CoreOperationAdd.java:41)
+
 
 ---The tests are re-executed other four times to find the flaky ones---
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest]
 Executions terminated
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 180
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/bin
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest]
 Executions terminated
 Number of file with coverage information = 180
 Extracted coverage data for the class org/apache/commons/jxpath/ri/axes/SimplePathInterpreter
@@ -388,43 +1113,343 @@ Extracted coverage data for the class org/apache/commons/jxpath/ri/axes/SimplePa
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-10_1/temp/testcases/bin
 > CUT = org.apache.commons.jxpath.ri.axes.SimplePathInterpreter
 > Test cases = [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest, org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding]
+Skipped scaffolding test org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest_scaffolding
+Executions terminated
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: JXPATH-10
 	Class Under Test: org.apache.commons.jxpath.ri.axes.SimplePathInterpreter
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 106044
-	Test cases execution time (ms): 7
-	Test case number: 48
-	Uncompilable Test Classes: 1
-	Broken tests number: 0
+	Tool preparation time (ms): 361
+	Tool test cases generation time (ms): 109032
+	Test cases execution time (ms): 7327
+	Test case number: 50
+	Uncompilable Test Classes: 0
+	Broken tests number: 1
 	Failing tests number: 0
 	Lines total: 271
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 134
+	Lines coverage ratio (%): 49.446495
 	Conditions total: 184
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 75
+	Conditions coverage ratio (%): 40.760868
 	Mutants total: 197
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 197
+	Mutants covered: 100
+	Mutants coverage ratio (%): 50.76142
+	Mutants killed: 66
+	Mutants killed ratio (%): 33.502537
+	Mutants alive: 131
 
 
 Class org.apache.commons.jxpath.ri.axes.SimplePathInterpreter ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 4284
-Killing master process 4284
-Executing command kill -9 4284
-Execution of command kill -9 4284 finished.
+Tool subprocess Id is 18392
+Killing master process 18392
+Executing command kill -9 18392
+Execution of command kill -9 18392 finished.
 Process was destroyed

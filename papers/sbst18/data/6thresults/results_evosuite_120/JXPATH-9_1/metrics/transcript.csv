@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,JXPATH-9,org.apache.commons.jxpath.ri.model.beans.PropertyIterator,1,348,111879,3020,23,0,0,0,154,94,61.03896,98,55,56.122444,122,72,59.016396,34,27.868853,88,120,2
+evosuite,JXPATH-9,org.apache.commons.jxpath.ri.model.beans.PropertyIterator,1,359,111134,5495,24,0,0,0,154,110,71.42857,98,67,68.36735,122,82,67.21311,34,27.868853,88,120,2
  
  
  

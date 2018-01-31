@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: FREEHEP-4
 	Class Under Test: org.freehep.math.minuit.MnAlgebraicSymMatrix
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 120066
-	Test cases execution time (ms): 1725
-	Test case number: 26
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 120149
+	Test cases execution time (ms): 1703
+	Test case number: 23
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 237
-	Lines covered: 138
-	Lines coverage ratio (%): 58.227848
+	Lines covered: 115
+	Lines coverage ratio (%): 48.523205
 	Conditions total: 126
-	Conditions covered: 76
-	Conditions coverage ratio (%): 60.317463
+	Conditions covered: 59
+	Conditions coverage ratio (%): 46.825397
 	Mutants total: 189
-	Mutants covered: 93
-	Mutants coverage ratio (%): 49.20635
-	Mutants killed: 46
-	Mutants killed ratio (%): 24.338623
-	Mutants alive: 143
+	Mutants covered: 80
+	Mutants coverage ratio (%): 42.32804
+	Mutants killed: 42
+	Mutants killed ratio (%): 22.222223
+	Mutants alive: 147

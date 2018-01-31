@@ -26,8 +26,8 @@ Could not calculate mutation metrics!
 	Benchmark: OKHTTP-8
 	Class Under Test: okhttp3.HttpUrl
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 4977
+	Tool preparation time (ms): 357
+	Tool test cases generation time (ms): 5057
 	Test cases execution time (ms): 7
 	Test case number: 0
 	Uncompilable Test Classes: 0

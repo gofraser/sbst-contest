@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: okhttp3.internal.http.HttpHeaders
 * Starting client
-* Connecting to master process on port 3051
+* Connecting to master process on port 5921
 * Analyzing classpath: 
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
@@ -26,20 +26,20 @@
   - Method 14
   - MethodNoException 14
   - CBranchFitnessFactory 78
-* Using seed 1516818148390
+* Using seed 1517341931587
 * Starting evolution
-[MASTER] 19:22:30.709 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.Response: okio/BufferedSource
-[MASTER] 19:22:30.744 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.HttpUrl: okio/Buffer
-[MASTER] 19:22:33.854 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-[MASTER] 19:23:05.689 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
-[MASTER] 19:23:07.858 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 19:23:26.856 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.RequestBody: okio/BufferedSink
-[MASTER] 19:23:26.818 [logback-2] ERROR ConcreteClassAnalyzer - Problem for okhttp3.internal.http.HttpHeaders. Class not found: okhttp3.MultipartBody
+[MASTER] 20:52:13.880 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.Response: okio/BufferedSource
+[MASTER] 20:52:13.936 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.HttpUrl: okio/Buffer
+[MASTER] 20:52:16.830 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 20:52:49.760 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
+[MASTER] 20:52:52.201 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Set<E> : Type points to itself
+[MASTER] 20:52:58.379 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 20:53:10.197 [logback-2] ERROR ConcreteClassAnalyzer - Problem for okhttp3.internal.http.HttpHeaders. Class not found: okhttp3.MultipartBody
 java.lang.ClassNotFoundException: Class not found: okio/Buffer: java.lang.NullPointerException: Class not found okio/Buffer
 	at org.evosuite.instrumentation.InstrumentingClassLoader.instrumentClass(InstrumentingClassLoader.java:201) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.instrumentation.InstrumentingClassLoader.loadClass(InstrumentingClassLoader.java:168) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_121]
-	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_121]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_161]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_161]
 	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClassesImpl(ConcreteClassAnalyzer.java:126) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClasses(ConcreteClassAnalyzer.java:61) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.setup.TestClusterGenerator.addDependency(TestClusterGenerator.java:876) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -59,7 +59,7 @@ java.lang.ClassNotFoundException: Class not found: okio/Buffer: java.lang.NullPo
 	at org.evosuite.testcase.TestFactory.satisfyParameters(TestFactory.java:2365) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.TestFactory.addMethod(TestFactory.java:550) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.TestFactory.insertRandomCall(TestFactory.java:2217) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.mutation.RandomInsertion.insertStatement(RandomInsertion.java:83) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.testcase.mutation.RandomInsertion.insertStatement(RandomInsertion.java:136) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.TestFactory.insertRandomStatement(TestFactory.java:2308) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.factories.RandomLengthTestFactory.getRandomTestCase(RandomLengthTestFactory.java:69) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.factories.RandomLengthTestFactory.getChromosome(RandomLengthTestFactory.java:89) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -68,17 +68,17 @@ java.lang.ClassNotFoundException: Class not found: okio/Buffer: java.lang.NullPo
 	at org.evosuite.coverage.archive.ArchiveTestChromosomeFactory.getChromosome(ArchiveTestChromosomeFactory.java:35) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testsuite.AbstractTestSuiteChromosome.mutate(AbstractTestSuiteChromosome.java:244) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testsuite.TestSuiteChromosome.mutate(TestSuiteChromosome.java:264) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.ga.metaheuristics.MonotonicGA.evolve(MonotonicGA.java:125) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at org.evosuite.ga.metaheuristics.MonotonicGA.evolve(MonotonicGA.java:127) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.ga.metaheuristics.MonotonicGA.generateSolution(MonotonicGA.java:245) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.strategy.WholeTestSuiteStrategy.generateTests(WholeTestSuiteStrategy.java:113) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
 Caused by: java.lang.RuntimeException: Class not found: okio/Buffer: java.lang.NullPointerException: Class not found okio/Buffer
 	at org.evosuite.runtime.util.ComputeClassWriter.getCommonSuperClass(ComputeClassWriter.java:52) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.shaded.org.objectweb.asm.ClassWriter.a(Unknown Source) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -105,20 +105,19 @@ Caused by: java.lang.NullPointerException: Class not found okio/Buffer
 	at org.evosuite.runtime.util.ComputeClassWriter.typeInfo(ComputeClassWriter.java:186) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.runtime.util.ComputeClassWriter.getCommonSuperClass(ComputeClassWriter.java:49) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	... 61 common frames omitted
-[MASTER] 19:23:26.818 [logback-2] ERROR ConcreteClassAnalyzer - Removing class from inheritance tree
-* Search finished after 72s and 243 generations, 108796 statements, best individual has fitness: 318.65665828187696
+[MASTER] 20:53:10.197 [logback-2] ERROR ConcreteClassAnalyzer - Removing class from inheritance tree
+[MASTER] 20:53:10.331 [logback-1] WARN  FunctionalMockStatement - Failed to check if can mock class okhttp3.RequestBody: okio/BufferedSink
+* Search finished after 72s and 268 generations, 103173 statements, best individual has fitness: 282.81361568503286
 * Minimizing test suite
-* Generated 36 tests with total length 155
-* Resulting test suite's coverage: 62% (average coverage for all fitness functions)
+* Generated 36 tests with total length 184
+* Resulting test suite's coverage: 65% (average coverage for all fitness functions)
 * Generating assertions
-[MASTER] 19:23:58.408 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 1 seconds more than allowed.
 * Compiling and checking tests
-[MASTER] 19:24:02.660 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.Response: okio/BufferedSource
-[MASTER] 19:24:02.681 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
-[MASTER] 19:24:02.695 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.HttpUrl
-[MASTER] 19:24:02.791 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
-[MASTER] 19:24:02.864 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody$1: okio/BufferedSource
-[MASTER] 19:24:02.902 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
+[MASTER] 20:53:35.196 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
+[MASTER] 20:53:35.198 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.Response: okio/BufferedSource
+[MASTER] 20:53:35.208 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
+[MASTER] 20:53:35.214 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
+[MASTER] 20:53:35.223 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.HttpUrl
 * Writing JUnit test case 'HttpHeaders_ESTest' to temp/testcases
 * Done!
 

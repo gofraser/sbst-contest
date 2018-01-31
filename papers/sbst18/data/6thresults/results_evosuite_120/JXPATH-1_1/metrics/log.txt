@@ -29,19 +29,19 @@ Compiling with scaffolding tests
 	Benchmark: JXPATH-1
 	Class Under Test: org.apache.commons.jxpath.util.BasicTypeConverter
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 83304
-	Test cases execution time (ms): 2395
+	Tool preparation time (ms): 361
+	Tool test cases generation time (ms): 83726
+	Test cases execution time (ms): 4085
 	Test case number: 35
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 233
-	Lines covered: 63
-	Lines coverage ratio (%): 27.038628
+	Lines covered: 64
+	Lines coverage ratio (%): 27.467812
 	Conditions total: 298
-	Conditions covered: 81
-	Conditions coverage ratio (%): 27.181208
+	Conditions covered: 82
+	Conditions coverage ratio (%): 27.516779
 	Mutants total: 122
 	Mutants covered: 41
 	Mutants coverage ratio (%): 33.606556

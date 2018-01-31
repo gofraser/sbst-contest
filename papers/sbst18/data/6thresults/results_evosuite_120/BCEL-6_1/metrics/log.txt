@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: BCEL-6
 	Class Under Test: org.apache.bcel.verifier.structurals.LocalVariables
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 117450
-	Test cases execution time (ms): 3767
-	Test case number: 24
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 119867
+	Test cases execution time (ms): 3555
+	Test case number: 20
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 62
-	Lines covered: 49
-	Lines coverage ratio (%): 79.03226
+	Lines covered: 47
+	Lines coverage ratio (%): 75.80645
 	Conditions total: 54
-	Conditions covered: 39
-	Conditions coverage ratio (%): 72.22222
+	Conditions covered: 32
+	Conditions coverage ratio (%): 59.25926
 	Mutants total: 50
-	Mutants covered: 47
-	Mutants coverage ratio (%): 94.0
-	Mutants killed: 39
-	Mutants killed ratio (%): 78.0
-	Mutants alive: 11
+	Mutants covered: 46
+	Mutants coverage ratio (%): 92.0
+	Mutants killed: 38
+	Mutants killed ratio (%): 76.0
+	Mutants alive: 12

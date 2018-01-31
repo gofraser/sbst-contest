@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/FREEHEP-9_1/temp/testcases/org/freehep/math/minuit/MnMinos_ESTest.java
-Failed to compile 'org/freehep/math/minuit/MnMinos_ESTest.java'!
+Compiled 'org/freehep/math/minuit/MnMinos_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: FREEHEP-9
 	Class Under Test: org.freehep.math.minuit.MnMinos
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 108821
-	Test cases execution time (ms): 7
-	Test case number: 95
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 361
+	Tool test cases generation time (ms): 91414
+	Test cases execution time (ms): 4194
+	Test case number: 75
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 111
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 22
+	Lines coverage ratio (%): 19.81982
 	Conditions total: 74
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 22
+	Conditions coverage ratio (%): 29.72973
 	Mutants total: 78
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
+	Mutants covered: 2
+	Mutants coverage ratio (%): 2.5641026
 	Mutants killed: 0
 	Mutants killed ratio (%): 0.0
 	Mutants alive: 78

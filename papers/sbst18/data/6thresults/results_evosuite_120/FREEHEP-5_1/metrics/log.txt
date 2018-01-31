@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: FREEHEP-5
 	Class Under Test: org.freehep.math.minuit.MnUserParameterState
 	Run number: 1
-	Tool preparation time (ms): 346
-	Tool test cases generation time (ms): 105737
-	Test cases execution time (ms): 2974
-	Test case number: 166
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 105867
+	Test cases execution time (ms): 4807
+	Test case number: 161
 	Uncompilable Test Classes: 0
-	Broken tests number: 1
+	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 262
-	Lines covered: 228
-	Lines coverage ratio (%): 87.0229
+	Lines covered: 231
+	Lines coverage ratio (%): 88.16794
 	Conditions total: 110
-	Conditions covered: 76
-	Conditions coverage ratio (%): 69.09091
+	Conditions covered: 78
+	Conditions coverage ratio (%): 70.90909
 	Mutants total: 135
-	Mutants covered: 114
-	Mutants coverage ratio (%): 84.44444
-	Mutants killed: 114
-	Mutants killed ratio (%): 84.44444
-	Mutants alive: 21
+	Mutants covered: 117
+	Mutants coverage ratio (%): 86.666664
+	Mutants killed: 73
+	Mutants killed ratio (%): 54.074074
+	Mutants alive: 62

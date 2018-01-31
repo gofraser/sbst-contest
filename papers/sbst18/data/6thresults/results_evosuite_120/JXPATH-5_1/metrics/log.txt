@@ -29,10 +29,10 @@ Compiling with scaffolding tests
 	Benchmark: JXPATH-5
 	Class Under Test: org.apache.commons.jxpath.ri.compiler.Step
 	Run number: 1
-	Tool preparation time (ms): 353
-	Tool test cases generation time (ms): 88899
-	Test cases execution time (ms): 2813
-	Test case number: 36
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 90567
+	Test cases execution time (ms): 4821
+	Test case number: 35
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
@@ -40,8 +40,8 @@ Compiling with scaffolding tests
 	Lines covered: 51
 	Lines coverage ratio (%): 94.44444
 	Conditions total: 50
-	Conditions covered: 46
-	Conditions coverage ratio (%): 92.0
+	Conditions covered: 45
+	Conditions coverage ratio (%): 90.0
 	Mutants total: 42
 	Mutants covered: 41
 	Mutants coverage ratio (%): 97.61904

@@ -29,10 +29,10 @@ Compiling with scaffolding tests
 	Benchmark: BCEL-8
 	Class Under Test: org.apache.bcel.generic.BranchInstruction
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 98834
-	Test cases execution time (ms): 4024
-	Test case number: 47
+	Tool preparation time (ms): 358
+	Tool test cases generation time (ms): 100775
+	Test cases execution time (ms): 6409
+	Test case number: 46
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
@@ -45,6 +45,6 @@ Compiling with scaffolding tests
 	Mutants total: 32
 	Mutants covered: 32
 	Mutants coverage ratio (%): 100.0
-	Mutants killed: 31
-	Mutants killed ratio (%): 96.875
-	Mutants alive: 1
+	Mutants killed: 29
+	Mutants killed ratio (%): 90.625
+	Mutants alive: 3

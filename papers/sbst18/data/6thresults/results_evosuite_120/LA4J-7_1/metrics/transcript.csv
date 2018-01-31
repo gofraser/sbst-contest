@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,LA4J-7,org.la4j.matrix.sparse.CCSMatrix,1,352,127721,6,102,1,0,0,339,0,0.0,210,0,0.0,197,0,0.0,0,0.0,197,120,2
+evosuite,LA4J-7,org.la4j.matrix.sparse.CCSMatrix,1,362,130334,7049,89,0,0,0,339,252,74.33628,210,135,64.28571,197,146,74.11168,80,40.609135,117,120,2
  
  
  

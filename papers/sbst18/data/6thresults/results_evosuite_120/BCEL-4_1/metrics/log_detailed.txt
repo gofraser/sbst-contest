@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,69 +40,43 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-4_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-4_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/BCEL-4_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases -cp /var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/BCEL-4_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java
 
-/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java:2464: error: cannot find symbol
-      URI uRI0 = MockURI.aFileURI;
-                        ^
-  symbol:   variable aFileURI
-  location: class MockURI
-/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java:18023: error: cannot find symbol
-      URI uRI0 = MockURI.aFileURI;
-                        ^
-  symbol:   variable aFileURI
-  location: class MockURI
-/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java:18207: error: cannot find symbol
-      URI uRI0 = MockURI.aFileURI;
-                        ^
-  symbol:   variable aFileURI
-  location: class MockURI
 Note: /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 Note: /home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/org/apache/bcel/generic/InstructionList_ESTest.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-3 errors
-Failed to compile 'org/apache/bcel/generic/InstructionList_ESTest.java'!
-shaded.org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
-	at shaded.org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:377)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:160)
-	at shaded.org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:147)
-	at sbst.benchmark.TestSuite.compile(TestSuite.java:273)
-	at sbst.benchmark.TestSuite.<init>(TestSuite.java:94)
-	at sbst.benchmark.TranscriptWriter.endClass(TranscriptWriter.java:157)
-	at sbst.benchmark.RunTool.execute(RunTool.java:172)
-	at sbst.benchmark.RunTool.run(RunTool.java:95)
-	at sbst.benchmark.Main.main(Main.java:178)
+Compiled 'org/apache/bcel/generic/InstructionList_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/var/benchmarks/projects/bcel-6.0-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.InstructionList_ESTest]
 Executions terminated
 
 ---The tests are re-executed other four times to find the flaky ones---
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.InstructionList_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.InstructionList_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.InstructionList_ESTest]
 Executions terminated
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.InstructionList_ESTest]
 Executions terminated
 
 === Run Jacoco for Coverage ===
 Number of instrumented file = 431
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/bin
-Running the tests: [SBSTDummyForCoverageAndMutationCalculation]
+/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/bin
+Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.bcel.generic.InstructionList_ESTest]
 Executions terminated
 Number of file with coverage information = 431
 Extracted coverage data for the class org/apache/bcel/generic/InstructionList
@@ -111,43 +85,355 @@ Extracted coverage data for the class org/apache/bcel/generic/InstructionList
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/bcel-6.0-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/BCEL-4_1/temp/testcases/bin
 > CUT = org.apache.bcel.generic.InstructionList
 > Test cases = [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
+Running the tests: [org.apache.bcel.generic.InstructionList_ESTest, org.apache.bcel.generic.InstructionList_ESTest_scaffolding]
+Skipped scaffolding test org.apache.bcel.generic.InstructionList_ESTest_scaffolding
+Executions terminated
 
 >>> RESULTS:
 	Tool name: evosuite
 	Benchmark: BCEL-4
 	Class Under Test: org.apache.bcel.generic.InstructionList
 	Run number: 1
-	Tool preparation time (ms): 356
-	Tool test cases generation time (ms): 114321
-	Test cases execution time (ms): 8
-	Test case number: 150
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 114001
+	Test cases execution time (ms): 7827
+	Test case number: 154
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 431
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 387
+	Lines coverage ratio (%): 89.79118
 	Conditions total: 219
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 177
+	Conditions coverage ratio (%): 80.82192
 	Mutants total: 118
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 118
+	Mutants covered: 104
+	Mutants coverage ratio (%): 88.1356
+	Mutants killed: 95
+	Mutants killed ratio (%): 80.50848
+	Mutants alive: 23
 
 
 Class org.apache.bcel.generic.InstructionList ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 3417
-Killing master process 3417
-Executing command kill -9 3417
-Execution of command kill -9 3417 finished.
+Tool subprocess Id is 6285
+Killing master process 6285
+Executing command kill -9 6285
+Execution of command kill -9 6285 finished.
 Process was destroyed

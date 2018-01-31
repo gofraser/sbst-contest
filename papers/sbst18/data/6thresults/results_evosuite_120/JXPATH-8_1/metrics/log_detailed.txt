@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,14 +40,14 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-8_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/JXPATH-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases -cp /var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/JXPATH-8_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest.java
 
 Note: /home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/org/apache/commons/jxpath/util/ValueUtils_ESTest.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
@@ -58,7 +58,7 @@ Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.util.ValueUtils_ESTest]
 Executions terminated
 
@@ -75,7 +75,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 180
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.jxpath.util.ValueUtils_ESTest]
 Executions terminated
 Number of file with coverage information = 180
@@ -85,17 +85,11 @@ Extracted coverage data for the class org/apache/commons/jxpath/util/ValueUtils
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-jxpath-1.3-src/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/JXPATH-8_1/temp/testcases/bin
 > CUT = org.apache.commons.jxpath.util.ValueUtils
 > Test cases = [org.apache.commons.jxpath.util.ValueUtils_ESTest, org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
 Run tests against the covered mutations (i.e., mutants infecting on covered lines according to Jacoco)
-Running the tests: [org.apache.commons.jxpath.util.ValueUtils_ESTest, org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding]
-Skipped scaffolding test org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding
-Executions terminated
-Running the tests: [org.apache.commons.jxpath.util.ValueUtils_ESTest, org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding]
-Skipped scaffolding test org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding
-Executions terminated
 Running the tests: [org.apache.commons.jxpath.util.ValueUtils_ESTest, org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding]
 Skipped scaffolding test org.apache.commons.jxpath.util.ValueUtils_ESTest_scaffolding
 Executions terminated
@@ -345,10 +339,10 @@ Executions terminated
 	Benchmark: JXPATH-8
 	Class Under Test: org.apache.commons.jxpath.util.ValueUtils
 	Run number: 1
-	Tool preparation time (ms): 351
-	Tool test cases generation time (ms): 84880
-	Test cases execution time (ms): 2751
-	Test case number: 51
+	Tool preparation time (ms): 361
+	Tool test cases generation time (ms): 88258
+	Test cases execution time (ms): 3972
+	Test case number: 50
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
@@ -356,11 +350,11 @@ Executions terminated
 	Lines covered: 124
 	Lines coverage ratio (%): 50.4065
 	Conditions total: 150
-	Conditions covered: 80
-	Conditions coverage ratio (%): 53.333336
+	Conditions covered: 79
+	Conditions coverage ratio (%): 52.666664
 	Mutants total: 152
-	Mutants covered: 83
-	Mutants coverage ratio (%): 54.605263
+	Mutants covered: 81
+	Mutants coverage ratio (%): 53.289474
 	Mutants killed: 65
 	Mutants killed ratio (%): 42.763157
 	Mutants alive: 87
@@ -369,8 +363,8 @@ Executions terminated
 Class org.apache.commons.jxpath.util.ValueUtils ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 18124
-Killing master process 18124
-Executing command kill -9 18124
-Execution of command kill -9 18124 finished.
+Tool subprocess Id is 21146
+Killing master process 21146
+Executing command kill -9 21146
+Execution of command kill -9 21146 finished.
 Process was destroyed

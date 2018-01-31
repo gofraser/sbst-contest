@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,27 +40,27 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases -cp /var/benchmarks/projects/commons-imaging/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/IMAGE-2_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases -cp /var/benchmarks/projects/commons-imaging/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/IMAGE-2_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/org/apache/commons/imaging/common/RationalNumber_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/org/apache/commons/imaging/common/RationalNumber_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases -cp /var/benchmarks/projects/commons-imaging/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/IMAGE-2_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/org/apache/commons/imaging/common/RationalNumber_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/org/apache/commons/imaging/common/RationalNumber_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases -cp /var/benchmarks/projects/commons-imaging/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/IMAGE-2_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/org/apache/commons/imaging/common/RationalNumber_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/org/apache/commons/imaging/common/RationalNumber_ESTest.java
 
 Compiled 'org/apache/commons/imaging/common/RationalNumber_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/commons-imaging/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/commons-imaging/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.imaging.common.RationalNumber_ESTest]
 Executions terminated
-Failure: [test17(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
-Failing Tests: test17(org.apache.commons.imaging.common.RationalNumber_ESTest)
+Failure: [test13(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
+Failing Tests: test13(org.apache.commons.imaging.common.RationalNumber_ESTest)
 java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
-	at org.apache.commons.imaging.common.RationalNumber_ESTest.test17(RationalNumber_ESTest.java:7476)
+	at org.apache.commons.imaging.common.RationalNumber_ESTest.test13(RationalNumber_ESTest.java:6518)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,10 +76,10 @@ java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.imaging.common.RationalNumber_ESTest]
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.imaging.common.RationalNumber_ESTest]
-Failure: [test17(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
-Failing Tests: test17(org.apache.commons.imaging.common.RationalNumber_ESTest)
+Failure: [test13(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
+Failing Tests: test13(org.apache.commons.imaging.common.RationalNumber_ESTest)
 java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
-	at org.apache.commons.imaging.common.RationalNumber_ESTest.test17(RationalNumber_ESTest.java:7476)
+	at org.apache.commons.imaging.common.RationalNumber_ESTest.test13(RationalNumber_ESTest.java:6518)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,10 +92,10 @@ java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
 
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.imaging.common.RationalNumber_ESTest]
-Failure: [test17(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
-Failing Tests: test17(org.apache.commons.imaging.common.RationalNumber_ESTest)
+Failure: [test13(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
+Failing Tests: test13(org.apache.commons.imaging.common.RationalNumber_ESTest)
 java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
-	at org.apache.commons.imaging.common.RationalNumber_ESTest.test17(RationalNumber_ESTest.java:7476)
+	at org.apache.commons.imaging.common.RationalNumber_ESTest.test13(RationalNumber_ESTest.java:6518)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,10 +108,10 @@ java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
 
 Executions terminated
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.imaging.common.RationalNumber_ESTest]
-Failure: [test17(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
-Failing Tests: test17(org.apache.commons.imaging.common.RationalNumber_ESTest)
+Failure: [test13(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
+Failing Tests: test13(org.apache.commons.imaging.common.RationalNumber_ESTest)
 java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
-	at org.apache.commons.imaging.common.RationalNumber_ESTest.test17(RationalNumber_ESTest.java:7476)
+	at org.apache.commons.imaging.common.RationalNumber_ESTest.test13(RationalNumber_ESTest.java:6518)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,10 +123,10 @@ java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
 	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
 
 Executions terminated
-Failure: [test17(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
-Failing Tests: test17(org.apache.commons.imaging.common.RationalNumber_ESTest)
+Failure: [test13(org.apache.commons.imaging.common.RationalNumber_ESTest): org.junit.Assert.assertNotEquals(FFF)V]
+Failing Tests: test13(org.apache.commons.imaging.common.RationalNumber_ESTest)
 java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
-	at org.apache.commons.imaging.common.RationalNumber_ESTest.test17(RationalNumber_ESTest.java:7476)
+	at org.apache.commons.imaging.common.RationalNumber_ESTest.test13(RationalNumber_ESTest.java:6518)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,7 +141,7 @@ java.lang.NoSuchMethodError: org.junit.Assert.assertNotEquals(FFF)V
 === Run Jacoco for Coverage ===
 Number of instrumented file = 427
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, org.apache.commons.imaging.common.RationalNumber_ESTest]
 Executions terminated
 Number of file with coverage information = 427
@@ -151,7 +151,7 @@ Extracted coverage data for the class org/apache/commons/imaging/common/Rational
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-imaging/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/commons-imaging/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/IMAGE-2_1/temp/testcases/bin
 > CUT = org.apache.commons.imaging.common.RationalNumber
 > Test cases = [org.apache.commons.imaging.common.RationalNumber_ESTest, org.apache.commons.imaging.common.RationalNumber_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
@@ -447,19 +447,19 @@ Executions terminated
 	Benchmark: IMAGE-2
 	Class Under Test: org.apache.commons.imaging.common.RationalNumber
 	Run number: 1
-	Tool preparation time (ms): 349
-	Tool test cases generation time (ms): 110441
-	Test cases execution time (ms): 1602
+	Tool preparation time (ms): 357
+	Tool test cases generation time (ms): 113116
+	Test cases execution time (ms): 1605
 	Test case number: 18
 	Uncompilable Test Classes: 0
 	Broken tests number: 1
 	Failing tests number: 0
 	Lines total: 76
-	Lines covered: 71
-	Lines coverage ratio (%): 93.42105
+	Lines covered: 72
+	Lines coverage ratio (%): 94.73685
 	Conditions total: 60
-	Conditions covered: 51
-	Conditions coverage ratio (%): 85.0
+	Conditions covered: 53
+	Conditions coverage ratio (%): 88.333336
 	Mutants total: 96
 	Mutants covered: 95
 	Mutants coverage ratio (%): 98.95833
@@ -471,8 +471,8 @@ Executions terminated
 Class org.apache.commons.imaging.common.RationalNumber ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 3765
-Killing master process 3765
-Executing command kill -9 3765
-Execution of command kill -9 3765 finished.
+Tool subprocess Id is 2080
+Killing master process 2080
+Executing command kill -9 2080
+Execution of command kill -9 2080 finished.
 Process was destroyed

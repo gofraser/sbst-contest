@@ -26,8 +26,8 @@ Could not calculate mutation metrics!
 	Benchmark: BCEL-3
 	Class Under Test: org.apache.bcel.generic.ConstantPoolGen
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 63352
+	Tool preparation time (ms): 360
+	Tool test cases generation time (ms): 42619
 	Test cases execution time (ms): 7
 	Test case number: 0
 	Uncompilable Test Classes: 0

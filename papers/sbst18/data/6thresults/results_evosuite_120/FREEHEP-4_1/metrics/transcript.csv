@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,FREEHEP-4,org.freehep.math.minuit.MnAlgebraicSymMatrix,1,349,120066,1725,26,0,0,0,237,138,58.227848,126,76,60.317463,189,93,49.20635,46,24.338623,143,120,2
+evosuite,FREEHEP-4,org.freehep.math.minuit.MnAlgebraicSymMatrix,1,359,120149,1703,23,0,0,0,237,115,48.523205,126,59,46.825397,189,80,42.32804,42,22.222223,147,120,2
  
  
  

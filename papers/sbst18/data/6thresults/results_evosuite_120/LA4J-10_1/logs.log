@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.la4j.linear.GaussianSolver
 * Starting client
-* Connecting to master process on port 6385
+* Connecting to master process on port 11074
 * Analyzing classpath: 
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
   - /var/benchmarks/projects/la4j-0.6.0/target/classes
@@ -26,82 +26,16 @@
   - Method 3
   - MethodNoException 3
   - CBranchFitnessFactory 23
-* Using seed 1516818815673
+* Using seed 1517342664022
 * Starting evolution
-[MASTER] 19:33:39.466 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
-[MASTER] 19:33:46.233 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.MatrixOperation<R> : Type points to itself
-[MASTER] 19:34:15.065 [logback-2] ERROR FunctionalMockStatement - Failed to use Mockito on class org.la4j.iterator.VectorIterator: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator$MockitoMock$741296601
-[MASTER] 19:34:15.071 [logback-2] ERROR TestCaseExecutor - ExecutionException (this is likely a serious error in the framework)
-java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator$MockitoMock$741296601
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.get(FutureTask.java:206) [na:1.8.0_121]
-	at org.evosuite.testcase.execution.TimeoutHandler.executeWithTimeout(TimeoutHandler.java:107) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TimeoutHandler.execute(TimeoutHandler.java:96) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:277) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:264) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testsuite.TestSuiteFitnessFunction.runTest(TestSuiteFitnessFunction.java:63) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.TestChromosome.executeForFitnessFunction(TestChromosome.java:682) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testsuite.TestSuiteFitnessFunction.runTestSuite(TestSuiteFitnessFunction.java:97) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.coverage.line.LineCoverageSuiteFitness.getFitness(LineCoverageSuiteFitness.java:154) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.coverage.line.LineCoverageSuiteFitness.getFitness(LineCoverageSuiteFitness.java:45) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.ga.metaheuristics.MonotonicGA.evolve(MonotonicGA.java:139) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.ga.metaheuristics.MonotonicGA.generateSolution(MonotonicGA.java:245) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.strategy.WholeTestSuiteStrategy.generateTests(WholeTestSuiteStrategy.java:113) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator$MockitoMock$741296601
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:748) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:607) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	... 4 common frames omitted
-Caused by: java.lang.IllegalAccessError: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator$MockitoMock$741296601
-	at org.la4j.iterator.VectorIterator$MockitoMock$741296601.<clinit>(Unknown Source) ~[na:na]
-	at sun.reflect.GeneratedSerializationConstructorAccessor531.newInstance(Unknown Source) ~[na:na]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
-	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.creation.instance.ObjenesisInstantiator.newInstance(ObjenesisInstantiator.java:18) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.creation.bytebuddy.SubclassByteBuddyMockMaker.createMock(SubclassByteBuddyMockMaker.java:47) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker.createMock(ByteBuddyMockMaker.java:25) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.util.MockUtil.createMock(MockUtil.java:35) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.MockitoCore.mock(MockitoCore.java:65) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.Mockito.mock(Mockito.java:1821) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:622) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	... 9 common frames omitted
-[MASTER] 19:34:15.071 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.la4j.linear.GaussianSolver with seed 1516818815673. Configuration id : null
-org.evosuite.testcase.execution.EvosuiteError: java.lang.IllegalAccessError: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator$MockitoMock$741296601
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:748) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:607) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.lang.IllegalAccessError: tried to access class org.la4j.iterator.CursorIterator from class org.la4j.iterator.VectorIterator$MockitoMock$741296601
-	at org.la4j.iterator.VectorIterator$MockitoMock$741296601.<clinit>(Unknown Source) ~[na:na]
-	at sun.reflect.GeneratedSerializationConstructorAccessor531.newInstance(Unknown Source) ~[na:na]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
-	at org.evosuite.shaded.org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.creation.instance.ObjenesisInstantiator.newInstance(ObjenesisInstantiator.java:18) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.creation.bytebuddy.SubclassByteBuddyMockMaker.createMock(SubclassByteBuddyMockMaker.java:47) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker.createMock(ByteBuddyMockMaker.java:25) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.util.MockUtil.createMock(MockUtil.java:35) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.internal.MockitoCore.mock(MockitoCore.java:65) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.shaded.org.mockito.Mockito.mock(Mockito.java:1821) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:622) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	... 9 common frames omitted
+[MASTER] 21:04:27.890 [logback-2] ERROR TestCluster - Failed to check cache for org.la4j.operation.VectorOperation<R> : Type points to itself
+* Search finished after 72s and 86 generations, 24482 statements, best individual has fitness: 39.861111111111114
+* Minimizing test suite
+* Generated 15 tests with total length 88
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
+* Generating assertions
+* Compiling and checking tests
+* Writing JUnit test case 'GaussianSolver_ESTest' to temp/testcases
+* Done!
+
 * Computation finished

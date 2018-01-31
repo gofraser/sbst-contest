@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: OKHTTP-3
 	Class Under Test: okhttp3.ConnectionSpec
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 86663
-	Test cases execution time (ms): 2949
-	Test case number: 51
+	Tool preparation time (ms): 356
+	Tool test cases generation time (ms): 85287
+	Test cases execution time (ms): 4546
+	Test case number: 50
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 82
-	Lines covered: 68
-	Lines coverage ratio (%): 82.92683
+	Lines covered: 67
+	Lines coverage ratio (%): 81.70731
 	Conditions total: 66
-	Conditions covered: 50
-	Conditions coverage ratio (%): 75.757576
+	Conditions covered: 49
+	Conditions coverage ratio (%): 74.242424
 	Mutants total: 71
-	Mutants covered: 63
-	Mutants coverage ratio (%): 88.73239
-	Mutants killed: 49
-	Mutants killed ratio (%): 69.014084
-	Mutants alive: 22
+	Mutants covered: 62
+	Mutants coverage ratio (%): 87.323944
+	Mutants killed: 48
+	Mutants killed ratio (%): 67.60563
+	Mutants alive: 23

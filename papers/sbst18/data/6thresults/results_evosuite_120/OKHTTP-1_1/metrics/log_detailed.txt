@@ -21,7 +21,7 @@ expecting CLASSPATH or READY
 expecting number
 << 1
 expecting directory or jar file
-<< /home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+<< /home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 << READY
 >> 120
 
@@ -40,21 +40,21 @@ Creating dummy JUnit test file
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases -cp /var/benchmarks/projects/okhttp/okhttp/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/OKHTTP-1_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases -cp /var/benchmarks/projects/okhttp/okhttp/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/OKHTTP-1_1/temp/testcases/bin /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/SBSTDummyForCoverageAndMutationCalculation.java
 
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/okhttp3/Cookie_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/okhttp3/Cookie_ESTest.java
 
 ===
 javac command line:
-/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases -cp /var/benchmarks/projects/okhttp/okhttp/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar -d results_evosuite_120/OKHTTP-1_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/okhttp3/Cookie_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/okhttp3/Cookie_ESTest.java
+/usr/lib/jvm/java-8-oracle/bin/javac -sourcepath /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases -cp /var/benchmarks/projects/okhttp/okhttp/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar -d results_evosuite_120/OKHTTP-1_1/temp/testcases/bin  /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/okhttp3/Cookie_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/okhttp3/Cookie_ESTest.java
 
 Compiled 'okhttp3/Cookie_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
 Running tests with the following classpath: 
-/var/benchmarks/projects/okhttp/okhttp/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar
+/var/benchmarks/projects/okhttp/okhttp/target/classes:/usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/bin:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, okhttp3.Cookie_ESTest]
 Executions terminated
 
@@ -71,7 +71,7 @@ Executions terminated
 === Run Jacoco for Coverage ===
 Number of instrumented file = 193
 Running tests with the following classpath: 
-/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/bin
+/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/classes_instrumented:/usr/local/bin/lib/hamcrest-core-1.3.jar:/usr/local/bin/lib/junit-4.12.jar:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/bin
 Running the tests: [SBSTDummyForCoverageAndMutationCalculation, okhttp3.Cookie_ESTest]
 Executions terminated
 Number of file with coverage information = 193
@@ -81,7 +81,7 @@ Extracted coverage data for the class okhttp3/Cookie
 Generate mutations via PIT
  Running tests against generated Mutants
 Running PITWrapper with the following data:
-> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/okhttp/okhttp/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.5-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/bin
+> CP = /usr/local/bin/lib/junit-4.12.jar:/usr/local/bin/lib/hamcrest-core-1.3.jar:/var/benchmarks/projects/okhttp/okhttp/target/classes:/home/evosuite_6th/lib/evosuite-master-1.0.6-SNAPSHOT.jar:/home/evosuite_6th/results_evosuite_120/OKHTTP-1_1/temp/testcases/bin
 > CUT = okhttp3.Cookie
 > Test cases = [okhttp3.Cookie_ESTest, okhttp3.Cookie_ESTest_scaffolding]
 Matching Jacoco with PIT: find covered mutations
@@ -137,19 +137,19 @@ Executions terminated
 	Benchmark: OKHTTP-1
 	Class Under Test: okhttp3.Cookie
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 82569
-	Test cases execution time (ms): 1959
-	Test case number: 32
+	Tool preparation time (ms): 357
+	Tool test cases generation time (ms): 82465
+	Test cases execution time (ms): 1918
+	Test case number: 29
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 236
-	Lines covered: 37
-	Lines coverage ratio (%): 15.677966
+	Lines covered: 36
+	Lines coverage ratio (%): 15.254237
 	Conditions total: 208
-	Conditions covered: 16
-	Conditions coverage ratio (%): 7.692308
+	Conditions covered: 15
+	Conditions coverage ratio (%): 7.2115383
 	Mutants total: 108
 	Mutants covered: 15
 	Mutants coverage ratio (%): 13.888889
@@ -161,8 +161,8 @@ Executions terminated
 Class okhttp3.Cookie ended.
 Stopping process...
 Tool subprocess is an instance of java.lang.UNIXProcess
-Tool subprocess Id is 3779
-Killing master process 3779
-Executing command kill -9 3779
-Execution of command kill -9 3779 finished.
+Tool subprocess Id is 29644
+Killing master process 29644
+Executing command kill -9 29644
+Execution of command kill -9 29644 finished.
 Process was destroyed

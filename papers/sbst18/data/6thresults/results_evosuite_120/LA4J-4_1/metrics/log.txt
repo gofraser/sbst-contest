@@ -13,7 +13,7 @@
 ---Compilation---
 Compiling with scaffolding tests
 >>  /home/evosuite_6th/results_evosuite_120/LA4J-4_1/temp/testcases/org/la4j/matrix/dense/Basic1DMatrix_ESTest_scaffolding.java /home/evosuite_6th/results_evosuite_120/LA4J-4_1/temp/testcases/org/la4j/matrix/dense/Basic1DMatrix_ESTest.java
-Failed to compile 'org/la4j/matrix/dense/Basic1DMatrix_ESTest.java'!
+Compiled 'org/la4j/matrix/dense/Basic1DMatrix_ESTest.java'
 Compiling with scaffolding tests
 
 ---Timing Information---
@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: LA4J-4
 	Class Under Test: org.la4j.matrix.dense.Basic1DMatrix
 	Run number: 1
-	Tool preparation time (ms): 352
-	Tool test cases generation time (ms): 115458
-	Test cases execution time (ms): 7
-	Test case number: 82
-	Uncompilable Test Classes: 1
+	Tool preparation time (ms): 369
+	Tool test cases generation time (ms): 113718
+	Test cases execution time (ms): 6852
+	Test case number: 79
+	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 116
-	Lines covered: 0
-	Lines coverage ratio (%): 0.0
+	Lines covered: 108
+	Lines coverage ratio (%): 93.10345
 	Conditions total: 66
-	Conditions covered: 0
-	Conditions coverage ratio (%): 0.0
+	Conditions covered: 56
+	Conditions coverage ratio (%): 84.84849
 	Mutants total: 158
-	Mutants covered: 0
-	Mutants coverage ratio (%): 0.0
-	Mutants killed: 0
-	Mutants killed ratio (%): 0.0
-	Mutants alive: 158
+	Mutants covered: 142
+	Mutants coverage ratio (%): 89.87341
+	Mutants killed: 118
+	Mutants killed ratio (%): 74.68355
+	Mutants alive: 40

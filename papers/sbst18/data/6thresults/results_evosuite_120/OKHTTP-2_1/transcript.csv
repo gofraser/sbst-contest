@@ -1,5 +1,5 @@
 tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,OKHTTP-2,okhttp3.internal.platform.AndroidPlatform,1,350,83463,3074,28,0,0,0,88,35,39.772728,30,15,50.0,34,20,58.823532,17,50.0,17,120,2
+evosuite,OKHTTP-2,okhttp3.internal.platform.AndroidPlatform,1,357,83346,4652,27,0,0,0,88,33,37.5,30,15,50.0,34,19,55.88235,15,44.11765,19,120,2
  
  
  

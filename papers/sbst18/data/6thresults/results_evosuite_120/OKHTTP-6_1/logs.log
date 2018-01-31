@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: okhttp3.CacheControl
 * Starting client
-* Connecting to master process on port 6402
+* Connecting to master process on port 19848
 * Analyzing classpath: 
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
   - /var/benchmarks/projects/okhttp/okhttp/target/classes
@@ -26,91 +26,43 @@
   - Method 23
   - MethodNoException 23
   - CBranchFitnessFactory 101
-* Using seed 1516817696027
+* Using seed 1517341412894
 * Starting evolution
-[MASTER] 19:15:38.101 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
-[MASTER] 19:15:39.289 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
-* Search finished after 71s and 210 generations, 123699 statements, best individual has fitness: 28.888888833776242
+[MASTER] 20:44:10.606 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself
+* Search finished after 71s and 248 generations, 137158 statements, best individual has fitness: 70.22564075153848
 * Minimizing test suite
-* Generated 41 tests with total length 329
-* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generated 42 tests with total length 223
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
 * Generating assertions
 * Compiling and checking tests
-[MASTER] 19:16:24.002 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
-[MASTER] 19:16:24.089 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
-[MASTER] 19:16:24.094 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.Response: okio/BufferedSource
-[MASTER] 19:16:24.110 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.CookieJar: okhttp3/CookieJar$1
-[MASTER] 19:16:24.162 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody$1: okio/BufferedSource
-[MASTER] 19:16:24.184 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
-[MASTER] 19:16:27.695 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test07 -> class org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: maxAge < 0: -1
-[MASTER] 19:16:27.696 [logback-1] WARN  JUnitAnalyzer - Failing test:
- CacheControl cacheControl0 = CacheControl.FORCE_CACHE;
-assertFalse(cacheControl0.noCache());
-assertEquals((-1), cacheControl0.sMaxAgeSeconds());
-assertEquals((-1), cacheControl0.maxAgeSeconds());
-assertFalse(cacheControl0.noTransform());
-assertEquals(Integer.MAX_VALUE, cacheControl0.maxStaleSeconds());
-assertEquals((-1), cacheControl0.minFreshSeconds());
-assertFalse(cacheControl0.isPublic());
-assertFalse(cacheControl0.noStore());
-assertTrue(cacheControl0.onlyIfCached());
-assertFalse(cacheControl0.mustRevalidate());
-assertFalse(cacheControl0.isPrivate());
+[MASTER] 20:44:53.762 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class okhttp3.internal.Util
+[MASTER] 20:44:53.840 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.internal.Util: okio/BufferedSource
+[MASTER] 20:44:53.846 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.Response: okio/BufferedSource
+[MASTER] 20:44:53.860 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.CookieJar: okhttp3/CookieJar$1
+[MASTER] 20:44:53.936 [logback-2] ERROR ClassStateSupport - Could not initialize okhttp3.ResponseBody: okio/BufferedSource
+[MASTER] 20:44:54.628 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockNullPointerException: value == null
+[MASTER] 20:44:54.629 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ CacheControl cacheControl0 = CacheControl.FORCE_NETWORK;
 assertNotNull(cacheControl0);
-
-String[] stringArray0 = new String[2];
-String string0 = cacheControl0.FORCE_CACHE.toString();
-assertEquals("max-stale=2147483647, only-if-cached", string0);
-assertFalse(cacheControl0.noCache());
-assertEquals((-1), cacheControl0.sMaxAgeSeconds());
-assertEquals((-1), cacheControl0.maxAgeSeconds());
-assertFalse(cacheControl0.noTransform());
-assertEquals(Integer.MAX_VALUE, cacheControl0.maxStaleSeconds());
-assertEquals((-1), cacheControl0.minFreshSeconds());
-assertFalse(cacheControl0.isPublic());
 assertFalse(cacheControl0.noStore());
-assertTrue(cacheControl0.onlyIfCached());
-assertFalse(cacheControl0.mustRevalidate());
-assertFalse(cacheControl0.isPrivate());
-assertNotNull(string0);
-
-String string1 = "pragma";
-stringArray0[0] = string1;
-String string2 = "3O5 \\C =@z,9IE4Fe&";
-stringArray0[1] = string0;
-int int0 = cacheControl0.sMaxAgeSeconds();
-assertEquals((-1), int0);
-assertFalse(cacheControl0.noCache());
-assertEquals((-1), cacheControl0.sMaxAgeSeconds());
+assertEquals((-1), cacheControl0.maxStaleSeconds());
 assertEquals((-1), cacheControl0.maxAgeSeconds());
-assertFalse(cacheControl0.noTransform());
-assertEquals(Integer.MAX_VALUE, cacheControl0.maxStaleSeconds());
-assertEquals((-1), cacheControl0.minFreshSeconds());
 assertFalse(cacheControl0.isPublic());
-assertFalse(cacheControl0.noStore());
-assertTrue(cacheControl0.onlyIfCached());
-assertFalse(cacheControl0.mustRevalidate());
+assertTrue(cacheControl0.noCache());
+assertEquals((-1), cacheControl0.minFreshSeconds());
+assertFalse(cacheControl0.noTransform());
 assertFalse(cacheControl0.isPrivate());
-
-boolean boolean0 = cacheControl0.onlyIfCached();
-assertTrue(boolean0);
-assertFalse(cacheControl0.noCache());
 assertEquals((-1), cacheControl0.sMaxAgeSeconds());
-assertEquals((-1), cacheControl0.maxAgeSeconds());
-assertFalse(cacheControl0.noTransform());
-assertEquals(Integer.MAX_VALUE, cacheControl0.maxStaleSeconds());
-assertEquals((-1), cacheControl0.minFreshSeconds());
-assertFalse(cacheControl0.isPublic());
-assertFalse(cacheControl0.noStore());
-assertTrue(cacheControl0.onlyIfCached());
+assertFalse(cacheControl0.onlyIfCached());
 assertFalse(cacheControl0.mustRevalidate());
-assertFalse(cacheControl0.isPrivate());
 
-CacheControl.Builder cacheControl_Builder0 = new CacheControl.Builder();
-assertNotNull(cacheControl_Builder0);
+Headers.Builder headers_Builder0 = new Headers.Builder();
+assertNotNull(headers_Builder0);
 
-TimeUnit timeUnit0 = TimeUnit.DAYS;
-cacheControl_Builder0.maxAge(int0, timeUnit0);
+String string0 = "pragma";
+Headers.Builder headers_Builder1 = headers_Builder0.set(string0, cacheControl0.FORCE_CACHE.headerValue);
+Headers headers0 = headers_Builder1.build();
+CacheControl.parse(headers0);
 
 * Writing JUnit test case 'CacheControl_ESTest' to temp/testcases
 * Done!

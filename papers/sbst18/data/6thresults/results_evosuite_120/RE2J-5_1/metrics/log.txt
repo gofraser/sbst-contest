@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: RE2J-5
 	Class Under Test: com.google.re2j.Compiler
 	Run number: 1
-	Tool preparation time (ms): 348
-	Tool test cases generation time (ms): 95139
-	Test cases execution time (ms): 1901
-	Test case number: 25
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 116095
+	Test cases execution time (ms): 1975
+	Test case number: 21
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 117
-	Lines covered: 83
-	Lines coverage ratio (%): 70.94017
+	Lines covered: 77
+	Lines coverage ratio (%): 65.811966
 	Conditions total: 85
-	Conditions covered: 58
-	Conditions coverage ratio (%): 68.2353
+	Conditions covered: 49
+	Conditions coverage ratio (%): 57.64706
 	Mutants total: 103
-	Mutants covered: 75
-	Mutants coverage ratio (%): 72.81553
-	Mutants killed: 43
-	Mutants killed ratio (%): 41.747574
-	Mutants alive: 60
+	Mutants covered: 70
+	Mutants coverage ratio (%): 67.96116
+	Mutants killed: 30
+	Mutants killed ratio (%): 29.126215
+	Mutants alive: 73

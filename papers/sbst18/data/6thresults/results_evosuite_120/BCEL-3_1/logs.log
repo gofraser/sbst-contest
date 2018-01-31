@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.bcel.generic.ConstantPoolGen
 * Starting client
-* Connecting to master process on port 2480
+* Connecting to master process on port 14210
 * Analyzing classpath: 
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
@@ -26,13 +26,58 @@
   - Method 39
   - MethodNoException 39
   - CBranchFitnessFactory 197
-* Using seed 1516819842638
+* Using seed 1517343924869
 * Starting evolution
-[MASTER] 19:51:44.066 [logback-2] ERROR FunctionalMockStatement - Failed to use Mockito on interface java.io.DataInput: java.lang.Byte cannot be cast to java.lang.Short
-[MASTER] 19:51:44.070 [logback-2] ERROR TestCaseExecutor - ExecutionException (this is likely a serious error in the framework)
-java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.EvosuiteError: java.lang.ClassCastException: java.lang.Byte cannot be cast to java.lang.Short
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.get(FutureTask.java:206) [na:1.8.0_121]
+[MASTER] 21:25:36.592 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 21:26:05.537 [logback-2] ERROR FunctionalMockStatement - IAE on <public java.lang.String org.apache.bcel.classfile.ConstantPool.getConstantString(int,byte) throws org.apache.bcel.classfile.ClassFormatException> when called with [0, null]
+[MASTER] 21:26:05.550 [logback-2] ERROR FunctionalMockStatement - Failed to use Mockito on interface org.apache.bcel.classfile.Visitor: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:207)
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:223)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+* Computation finished
+[MASTER] 21:26:05.554 [logback-2] ERROR TestCaseExecutor - ExecutionException (this is likely a serious error in the framework)
+java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.EvosuiteError: org.evosuite.shaded.org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:207)
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:223)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206) [na:1.8.0_161]
 	at org.evosuite.testcase.execution.TimeoutHandler.executeWithTimeout(TimeoutHandler.java:107) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TimeoutHandler.execute(TimeoutHandler.java:96) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -49,12 +94,33 @@ java.util.concurrent.ExecutionException: org.evosuite.testcase.execution.Evosuit
 	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_121]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: org.evosuite.testcase.execution.EvosuiteError: java.lang.ClassCastException: java.lang.Byte cannot be cast to java.lang.Short
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_161]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+Caused by: org.evosuite.testcase.execution.EvosuiteError: org.evosuite.shaded.org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:207)
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:223)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:748) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:607) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
@@ -62,24 +128,84 @@ Caused by: org.evosuite.testcase.execution.EvosuiteError: java.lang.ClassCastExc
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	... 4 common frames omitted
-Caused by: java.lang.ClassCastException: java.lang.Byte cannot be cast to java.lang.Short
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.fixBoxing(FunctionalMockStatement.java:849) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:717) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+Caused by: org.evosuite.shaded.org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:207)
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:223)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:622) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	... 9 common frames omitted
-* Computation finished
-[MASTER] 19:51:44.070 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.bcel.generic.ConstantPoolGen with seed 1516819842638. Configuration id : null
-org.evosuite.testcase.execution.EvosuiteError: java.lang.ClassCastException: java.lang.Byte cannot be cast to java.lang.Short
+[MASTER] 21:26:05.554 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.bcel.generic.ConstantPoolGen with seed 1517343924869. Configuration id : null
+org.evosuite.testcase.execution.EvosuiteError: org.evosuite.shaded.org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:207)
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:223)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
 	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:748) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.statements.FunctionalMockStatement.execute(FunctionalMockStatement.java:607) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.lang.ClassCastException: java.lang.Byte cannot be cast to java.lang.Short
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.fixBoxing(FunctionalMockStatement.java:849) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
-	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:717) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+Caused by: org.evosuite.shaded.org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:207)
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:223)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at org.evosuite.testcase.statements.FunctionalMockStatement$1.execute(FunctionalMockStatement.java:622) ~[evosuite-master-1.0.6-SNAPSHOT.jar:1.0.6-SNAPSHOT]
 	... 9 common frames omitted

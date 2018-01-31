@@ -1,7 +1,7 @@
 * EvoSuite 1.0.6-SNAPSHOT
 * Going to generate test cases for class: org.apache.bcel.generic.InstructionList
 * Starting client
-* Connecting to master process on port 16042
+* Connecting to master process on port 12886
 * Analyzing classpath: 
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
   - /var/benchmarks/projects/bcel-6.0-src/target/classes
@@ -26,24 +26,22 @@
   - Method 60
   - MethodNoException 60
   - CBranchFitnessFactory 268
-* Using seed 1516819906722
+* Using seed 1517343968213
 * Starting evolution
-[MASTER] 19:51:52.960 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
-[MASTER] 19:52:46.915 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
-[MASTER] 19:52:47.254 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Collection<E> : Type points to itself
-[MASTER] 19:52:53.426 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.generic.SWITCH due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.generic.IFNONNULL due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.generic.IF_ACMPNE due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.apache.bcel.generic.InstructionHandle due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
-* Search finished after 72s and 117 generations, 71986 statements, best individual has fitness: 338.5733589087809
+[MASTER] 21:26:26.155 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 21:27:09.075 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 72s and 125 generations, 71519 statements, best individual has fitness: 338.15938997033476
 * Minimizing test suite
-* Generated 154 tests with total length 2483
-[MASTER] 19:53:21.328 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
-* Resulting test suite's coverage: 74% (average coverage for all fitness functions)
+* Generated 156 tests with total length 2488
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+[MASTER] 21:27:42.353 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Generating assertions
-[MASTER] 19:53:21.331 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 4 seconds more than allowed.
+[MASTER] 21:27:42.356 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 3 seconds more than allowed.
 * Compiling and checking tests
 * Permissions denied during test execution: 
   - java.lang.RuntimePermission: 
-         writeFileDescriptor: 173
-[MASTER] 19:53:36.038 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 1 seconds more than allowed.
+         writeFileDescriptor: 1
+[MASTER] 21:27:57.468 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 2 seconds more than allowed.
 * Writing JUnit test case 'InstructionList_ESTest' to temp/testcases
 * Done!
 

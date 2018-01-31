@@ -29,22 +29,22 @@ Compiling with scaffolding tests
 	Benchmark: GSON-8
 	Class Under Test: com.google.gson.internal.bind.JsonTreeReader
 	Run number: 1
-	Tool preparation time (ms): 350
-	Tool test cases generation time (ms): 92514
-	Test cases execution time (ms): 3355
-	Test case number: 76
+	Tool preparation time (ms): 359
+	Tool test cases generation time (ms): 90522
+	Test cases execution time (ms): 4615
+	Test case number: 69
 	Uncompilable Test Classes: 0
 	Broken tests number: 0
 	Failing tests number: 0
 	Lines total: 165
-	Lines covered: 152
-	Lines coverage ratio (%): 92.121216
+	Lines covered: 136
+	Lines coverage ratio (%): 82.42424
 	Conditions total: 86
-	Conditions covered: 78
-	Conditions coverage ratio (%): 90.69768
+	Conditions covered: 74
+	Conditions coverage ratio (%): 86.04651
 	Mutants total: 124
-	Mutants covered: 114
-	Mutants coverage ratio (%): 91.935486
-	Mutants killed: 94
-	Mutants killed ratio (%): 75.80645
-	Mutants alive: 30
+	Mutants covered: 99
+	Mutants coverage ratio (%): 79.838715
+	Mutants killed: 87
+	Mutants killed ratio (%): 70.161285
+	Mutants alive: 37
