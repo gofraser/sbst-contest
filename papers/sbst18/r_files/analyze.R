@@ -5,8 +5,10 @@
 
 library(stringr)
 
-FILE <- "../data/single_transcript.csv"
+FILE <- "../data/6runs_budgets-10-60-120-240_single_transcript-without_ANTLR4_n_DUBBO-1.csv"
 # FILE.MANUAL <- "../data/single_manual_transcript.csv"
+FILE.COMBINED <- "../data/6runs_budgets-10-60-120-240_single_transcript-without_ANTLR4_n_DUBBO-1.csv"
+FILE.MANUAL <- "../data/results_manual_10_single_transcript-without_ANTLR4_n_DUBBO-1.csv"
 
 mainTable <- function(){
 
@@ -16,45 +18,45 @@ mainTable <- function(){
   unlink(TABLE)
   sink(TABLE, append=TRUE, split=TRUE)
 
-  cat("\\begin{tabular}{ l rrrrrrr rrrrrrrr}\\toprule","\n")
-  cat(" Benchmark &  \\multicolumn{7}{c}{Branch Coverage} &  \\multicolumn{7}{c}{Mutation Score}\\\\ \n")
-  cat(" & 10s & 30s & 60s & 120s & 240s & 300s & 480s & 10s & 30s & 60s & 120s & 240s & 300s & 480s \\\\ \n" )
+  cat("\\begin{tabular}{ ll rrrr rrrr}\\toprule","\n")
+  cat(" \\multirow{2}{1in}{Benchmark} & \\multirow{2}{1in}{Java Class} &  \\multicolumn{4}{c}{Branch Coverage} &  \\multicolumn{4}{c}{Mutation Score}\\\\\\cmidrule(lr){3-6}\\cmidrule(lr){7-10} \n")
+  cat(" & & 10s & 60s & 120s & 240s & 10s & 60s & 120s & 240s \\\\ \n" )
   cat("\\midrule","\n")
 
-
-  classes = sort(unique(dt$class))
-  times = sort(unique(dt$timeBudget))
-  benchmarks = sort(unique(dt$benchmark))
+  times <- c(10, 60, 120, 240) # sort(unique(dt$timeBudget))
+  classes <- sort(unique(dt$class))
+  benchmarks <- sort(unique(dt$benchmark))
 
   for(benchmark in benchmarks) {
   #for(class in classes){
 
-    mask = dt$tool=="evosuite" & dt$benchmark==benchmark
+    mask = dt$tool=="evosuite" & dt$benchmark==benchmark & dt$preparationTime != "?"
 
-    cat(benchmark)
+    cat(benchmark, " & ", as.character(unique(dt$class[ dt$benchmark==benchmark ])))
 
     #cat(class)
 
     for(t in times){
-      cov <- dt$conditionsCoverageRatio[mask & dt$timeBudget==t]
-      cat(" & ", getColouredCell(mean(cov)),"\\%",sep="")
-
-      score <- dt$mutantsKillRatio[mask & dt$timeBudget==t]
-      cat(" & ", getColouredCell(mean(score)),"\\%",sep="")
+      cov <-  as.numeric(as.character(dt$conditionsCoverageRatio[mask & dt$timeBudget==t]))
+      cat(" & ", getColouredCell(mean(cov)),sep="")
+    }
+    for(t in times){
+      score <- as.numeric(as.character(dt$mutantsKillRatio[mask & dt$timeBudget==t]))
+      cat(" & ", getColouredCell(mean(score)),sep="")
     }
 
     cat("\\\\ \n")
   }
   cat("\\midrule","\n")
-  cat("Average ")
+  cat("Average & ")
   for(t in times){
-    cov <- dt$conditionsCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t]
-    cat(" & ", paste(formatC(mean(cov),digits=1,format="f"),"\\%",sep=""))
+    cov <- as.numeric(as.character(dt$conditionsCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t]))
+    cat(" & ", getColouredCell(mean(cov, na.rm = TRUE)))
   }
 
   for(t in times){
-    score <- dt$mutantsKillRatio[dt$tool=="evosuite" & dt$timeBudget==t]
-    cat(" & ", paste(formatC(mean(score),digits=1,format="f"),"\\%",sep=""))
+    score <- as.numeric(as.character(dt$mutantsKillRatio[dt$tool=="evosuite" & dt$timeBudget==t]))
+    cat(" & ", getColouredCell(mean(score, na.rm = TRUE)))
   }
 
   cat("\\\\ \n")
@@ -63,6 +65,25 @@ mainTable <- function(){
   cat("\\end{tabular}","\n")
 
   sink()
+}
+t <- function(){
+
+	dt <- read.csv(FILE,sep=",",dec=".",header=T)
+	dt.man <- read.csv(FILE.MANUAL,sep=",",dec=".",header=T)
+	benchmarks <- sort(unique(dt$benchmark))
+	evo.cov <- c()
+	evo.mut <- c()
+	for(benchmark in benchmarks) {
+		if (length(dt.man[dt.man$benchmark==benchmark,"conditionsCoverageRatio"])==0) {
+			cat(benchmark, " does not exist\n")
+			next
+		}
+		cat(benchmark, " exists\n")
+		evo.mask = dt$tool=="evosuite" & dt$benchmark==benchmark
+		evo.cov <- c(mean(dt$conditionsCoverageRatio[evo.mask]), evo.cov)
+		evo.mut <- c(mean(dt$mutantsKillRatio[evo.mask]), evo.mut)
+		cat(evo.cov, "\n")
+	}
 }
 
 MacroFile <- function(){
@@ -75,6 +96,7 @@ MacroFile <- function(){
   classes <- sort(unique(dt$class))
   times <- sort(unique(dt$timeBudget))
   benchmarks <- sort(unique(dt$benchmark))
+
   tools <- sort(unique(dt$tool))
 
   for(benchmark in benchmarks) {
@@ -92,17 +114,17 @@ MacroFile <- function(){
   for(t in times){
     printComment(macro.file, concat(toupper(letters[i]),concat("=",t)))
 
-    cov <- mean(dt$conditionsCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t])
+    cov <- mean(as.numeric(as.character(dt$conditionsCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t])), na.rm = TRUE)
     printMacro(macro.file, concat("AvgCov",toupper(letters[i])), asPercent(cov))
 
-    score <- mean(dt$mutantsKillRatio[dt$tool=="evosuite" & dt$timeBudget==t])
+    score <- mean(as.numeric(as.character(dt$mutantsKillRatio[dt$tool=="evosuite" & dt$timeBudget==t])), na.rm = TRUE)
     printMacro(macro.file, concat("AvgMut",toupper(letters[i])), asPercent(score))
     i <- i+1
   }
   ## Flakiness per tool
   printComment(macro.file, "EvoSuite vs Manual")
   for(t in tools){
-    flaky <- mean(dt$brokenTests[dt$tool==t])
+    flaky <- mean(as.numeric(as.character(dt$brokenTests[dt$tool==t])), na.rm = TRUE)
     printMacro(macro.file, concat("Flaky",toolname(t)), formatC(flaky,digits=1,format="f"))
   }
   ## EvoSuite vs Manual
@@ -111,19 +133,21 @@ MacroFile <- function(){
   evo.cov <- c()
   evo.mut <- c()
 
+  # REDISSON not available for manual
   for(benchmark in benchmarks) {
-    if (dt.man[dt.man$benchmark==benchmark,"conditionsCoverageRatio"] > 0){
-      evo.mask = dt$tool=="evosuite" & dt$benchmark==benchmark
-      evo.cov <- c(mean(dt$conditionsCoverageRatio[evo.mask]), evo.cov)
-      evo.mut <- c(mean(dt$mutantsKillRatio[evo.mask]), evo.mut)
+    if (length(dt.man[dt.man$benchmark==benchmark,"conditionsCoverageRatio"])==0) {
+    	next
     }
+    evo.mask = dt$tool=="evosuite" & dt$benchmark==benchmark
+    evo.cov <- c(mean(as.numeric(as.character(dt$conditionsCoverageRatio[evo.mask])), na.rm = TRUE), evo.cov)
+    evo.mut <- c(mean(as.numeric(as.character(dt$mutantsKillRatio[evo.mask])), na.rm = TRUE), evo.mut)
   }
   man.cov <- dt.man$conditionsCoverageRatio
   man.mut <- dt.man$mutantsKillRatio
-  printMacro(macro.file, "AvgCovEvosuite", asPercent(mean(evo.cov)))
-  printMacro(macro.file, "AvgMutEvosuite", asPercent(mean(evo.mut)))
-  printMacro(macro.file, "AvgCovManual", asPercent(mean(man.cov)))
-  printMacro(macro.file, "AvgMutManual", asPercent(mean(man.mut)))
+  printMacro(macro.file, "AvgCovEvosuite", asPercent(mean(evo.cov, na.rm = TRUE)))
+  printMacro(macro.file, "AvgMutEvosuite", asPercent(mean(evo.mut, na.rm = TRUE)))
+  printMacro(macro.file, "AvgCovManual", asPercent(mean(man.cov, na.rm = TRUE)))
+  printMacro(macro.file, "AvgMutManual", asPercent(mean(man.mut, na.rm = TRUE)))
   covCmp <- measureA(evo.cov, man.cov)
   mutCmp <- measureA(evo.mut, man.mut)
   printMacro(macro.file, "EvoManCovA", covCmp$A)
@@ -174,13 +198,16 @@ getresults <- function(){
   }
  }
 
-getColouredCell <- function( value ) {
-
-  if(value == 0) {
-    cell <- paste("\\cellcolor{light-gray} \\textcolor{black}", "{",formatC(value,digits=1,format="f"),"}",sep="")
-  } else {
-    cell <- formatC(value,digits=1,format="f")
-  }
+getColouredCell <- function( value, suffix = "\\%") {
+	if (is.nan(value) | is.na(value)) {
+		cell <- paste("\\cellcolor{light-gray} \\textcolor{black}", "{-}",sep="")
+	} else {
+  	if(value == 0) {
+    	cell <- paste("\\cellcolor{light-gray} \\textcolor{black}", "{",formatC(value,digits=1,format="f"), suffix, "}",sep="")
+  	} else {
+    	cell <- paste(formatC(value,digits=1,format="f"), suffix, sep="")
+  	}
+	}
   return(cell)
 }
 

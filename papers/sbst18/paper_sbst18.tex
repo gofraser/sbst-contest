@@ -7,8 +7,8 @@
 
 %\documentclass[10pt, conference, compsocconf]{IEEEtran}
 %\documentclass[10pt,conference,compsocconf]{IEEEtran}
-\documentclass[10pt,conference]{IEEEtran} 
-
+%\documentclass[10pt,conference]{IEEEtran} 
+\documentclass[sigconf,table]{acmart}
 
 %\documentclass[times, 10pt,twocolumn]{article} 
 %\usepackage{latex8}
@@ -19,14 +19,14 @@
 \usepackage{listings}
 \usepackage{algorithmic}
 \usepackage{float}
-\usepackage[numbers,sort&compress,square]{natbib}
+%\usepackage[numbers,sort&compress,square]{natbib}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{subfigure}
 %\usepackage{hyperref}
 \usepackage{color}
-\usepackage[usenames,dvipsnames,table]{xcolor}
-\usepackage{soul}
+%\usepackage[usenames,dvipsnames,]{xcolor}
+%\usepackage{soul}
 \usepackage{xspace}
 \usepackage{boxedminipage}
 \usepackage{alltt}
@@ -86,12 +86,13 @@
 \definecolor{rltblue}{rgb}{0,0,0.5}
 \definecolor{ScarletRed}{rgb}{0.80,0.00,0.00}
 
-
+\setcopyright{rightsretained}
 
 % in draft mode we put \remarks into the margins and do other stuff
 % set to \draftfalse for 
 \newif\ifdraft
 \draftfalse
+\drafttrue
 
 \ifdraft
 	\marginparwidth=1.3cm
@@ -99,7 +100,7 @@
 	\newcommand\remark[1]{%
 		\mymarginpar{\raggedright\hbadness=10000\tiny\it #1\par}}
 	% TODO marker
-	\newcommand{\TODO}[1]{\sethlcolor{yellow}\textbf{\textcolor{ScarletRed}{\hl{TODO: #1}}}\xspace}
+	\newcommand{\TODO}[1]{\textbf{\textcolor{ScarletRed}{[TODO: #1]}}\xspace}
 \else
 	\newcommand\remark[1]	{}
 	\newcommand{\TODO}[1]{}
@@ -148,6 +149,8 @@
 \newcommand{\MUTEST}{{\sc $\mu$Test}\xspace}
 \newcommand{\CS}{{\sc SF100}\xspace}
 
+\newcommand{\TOTALPOINTS}{{686.91}\xspace}
+
 
 \DeclareMathSymbol{,}{\mathpunct}{letters}{"3B}
 \DeclareMathSymbol{,}{\mathord}{letters}{"3B}
@@ -166,46 +169,65 @@
 % 
 
 %\title{Unit Testing Tool competition: Results for EvoSuite}
-\title{\EVOSUITE at the SBST 2017 Tool Competition}
+\title{\EVOSUITE at the SBST 2018 Tool Competition}
  
 
-\author{\IEEEauthorblockN{Gordon Fraser\IEEEauthorrefmark{1}, Jos\'e
-    Miguel Rojas\IEEEauthorrefmark{2}, Jos\'e Campos\IEEEauthorrefmark{3}}
-  \IEEEauthorblockA{The University of Sheffield\\Sheffield, United Kingdom\\
-    \{\IEEEauthorrefmark{1}gordon.fraser,
-    \IEEEauthorrefmark{2}j.rojas, \IEEEauthorrefmark{3}jose.campos\}@sheffield.ac.uk} 
-\and
-\IEEEauthorblockN{Andrea Arcuri}
-  \IEEEauthorblockA{Westerdals Oslo ACT, Norway\\and University of Luxembourg, Luxembourg\\arcand@westerdals.no}
+\author{Gordon Fraser}
+\affiliation{%
+  \institution{Chair of Software Engineering II, University of Passau}
+  \city{Passau}
+  \country{Germany}
 }
+\email{gordon.fraser@uni-passau.de}
+
+\author{Jos\'e Miguel Rojas}
+\affiliation{%
+  \institution{Department of Informatics, University of Leicester}
+  \city{Leicester}
+  \country{United Kingdom}
+}
+\email{j.rojas@leicester.ac.uk}
+
+% \affil\IEEEauthorrefmark{1}, \IEEEauthorrefmark{2}, Jos\'e Campos\IEEEauthorrefmark{3}}
+%   \IEEEauthorblockA{The University of Sheffield\\Sheffield, United Kingdom\\
+%     \{\IEEEauthorrefmark{1}gordon.fraser,
+%     \IEEEauthorrefmark{2}j.rojas, \IEEEauthorrefmark{3}jose.campos\}@sheffield.ac.uk} 
+% \and
+% \IEEEauthorblockN{Andrea Arcuri}
+%   \IEEEauthorblockA{Westerdals Oslo ACT, Norway\\and University of Luxembourg, Luxembourg\\arcand@westerdals.no}
+% }
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{B. Trovato et al.}
+
+
+\begin{abstract}
+  \EVOSUITE is a search-based tool that automatically generates
+  executable unit tests for Java code (JUnit tests).  This paper
+  summarises the results and experiences of \EVOSUITE's participation
+  at the sixth unit testing competition at SBST 2018, where \EVOSUITE
+  achieved the highest overall score (\TOTALPOINTS points) for the
+  fifth time in six editions of the competition.
+\end{abstract}
 
 \maketitle
 %\thispagestyle{empty}
 
-\begin{abstract}
-  \EVOSUITE is a search-based tool that automatically generates unit
-  tests for Java code.  This paper summarises the results and
-  experiences of \EVOSUITE's participation at the fifth unit testing
-  competition at SBST 2018, where \EVOSUITE achieved the highest
-  overall score.
-\end{abstract}
-
-
-
 %------------------------------------------------------------------------- 
 \section{Introduction}
 The annual unit test generation competition aims to drive and evaluate
-progress on unit test generation tools. In the 5th instance of the
+progress on unit test generation tools. In the 6th instance of the
 competition at the International Workshop on Search-Based Software
-Testing (SBST) 2017, two tools, \EVOSUITE and \JTEXPERT, competed on a
-set of 69 open-source Java classes. Two other tools, \RANDOOP and \TT,
-and existing open-source test suites were used as baseline. This paper
-describes the results obtained by the \EVOSUITE test generation
-tool~\cite{FrA11c} in this competition. Details about the procedure of
-the competition, the technical framework, and the benchmark classes
-can be found in~\cite{sbst17competition}.  In this competition,
-\EVOSUITE achieved an overall score of 1457, which was the highest
-among the competing and baseline tools.
+Testing (SBST) 2018, two tools, \EVOSUITE and \JTEXPERT\TODO{confirm},
+competed on a set of 59 open-source Java classes. Two other tools,
+\RANDOOP and \TT, and existing open-source test suites were used as
+baseline. This paper describes the results obtained by the \EVOSUITE
+test generation tool~\cite{FrA11c} in this competition. Details about
+the procedure of the competition, the technical framework, and the
+benchmark classes can be found in~\cite{sbst18competition}.  In this
+competition, \EVOSUITE achieved an overall score of \TOTALPOINTS,
+which was the highest among the competing and baseline
+tools\TODO{confirm baseline}.
 
 %------------------------------------------------------------------------- 
 \section{About EvoSuite}
@@ -272,9 +294,10 @@ uses a genetic algorithm to automatically generate test suites for
 Java classes. Given the name of a target class and the full Java
 classpath (i.e., where to find the compiled bytecode of the class
 under test and all its dependencies), \EVOSUITE automatically produces
-a set of JUnit test cases aimed at maximising code
-coverage. \EVOSUITE can be used on the command line, or through
-plugins for popular development tools such as IntelliJ, Eclipse, or Maven~\cite{ICST16_Tool}.
+a set of JUnit test cases aimed at maximising code coverage. \EVOSUITE
+can be used on the command line, or through plugins for popular
+development tools such as IntelliJ, Eclipse, or
+Maven~\cite{ICST16_Tool}.
 
 The underlying genetic algorithm uses test suites as representation
 (chromosomes). Each test suite consists of a variable number of test
@@ -301,16 +324,14 @@ The effectiveness of \EVOSUITE has been evaluated on open source as
 well as industrial software in terms of code
 coverage~\cite{fraser2014large,emse_archive}, fault finding
 effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects
-on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study}.
+on developer
+productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and software
+maintenance~\cite{ICST2018_Maintenance}.
 
-In the first two and the fourth editions of the unit testing tool
-competition, \EVOSUITE ranked
-first~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013,evosuiteAtSbst2016},
-whereas it ranked second in the third one.
-
-
-
-
+\EVOSUITE has a longstanding record of success at the unit testing
+tool competition, having ranked second the third edition of the
+competition~\cite{evosuiteAtSbst2015} and first in all the other
+editions~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013,evosuiteAtSbst2016,evosuiteAtSbst2017}.
 
 
 %To improve performance further, we are investigating several
@@ -329,22 +350,21 @@ its default values, since these have been tuned
 extensively~\cite{arcuri2013parameter}. We used the default set of
 coverage criteria~\cite{rojas2015combining} (e.g., line coverage,
 branch coverage, branch coverage by direct method invocation, weak
-mutation testing, output coverage, exception coverage). The use of an
-archive of solutions~\cite{emse_archive}, which iteratively removes
-covered goals from the fitness function and stores the corresponding
-test cases, is now enabled by default in \EVOSUITE.
-
-A new feature in \EVOSUITE is the use of Mockito mock
-classes~\cite{ICST_Mocking17}. After a certain percentage of the
-search budget has passed, \EVOSUITE starts considering the use of mock
-objects instead of real classes. Only branches that cannot be covered
-without mocks will result in tests with mock objects in the end. We
-further added frequency based weighting to constants for
-seeding~\cite{sakti2015instance}, and included extensions to support
-Java Enterprise Edition features~\cite{arcuri2016java}. Besides these
-changes, several bug fixes were applied since the last instance of the
-competition, in particular in relation to non-determinism and flaky
-tests~\cite{arcuri2014automated}.
+mutation testing, output coverage, exception coverage). \EVOSUITE uses
+an archive of solutions~\cite{emse_archive} to keep the search focused
+on uncovered goals, iteratively discarding covered goals and storing
+the tests that covered them. After a certain percentage of the search
+budget has passed and with a certain probability, \EVOSUITE starts
+using mock objects (relying on Mockito) instead of actual class
+instances~\cite{ICST_Mocking17}; only branches that cannot be covered
+without mocks lead to tests with mock objects. As in the previous
+instance of the competition, we continue to use frequency-based
+weighted constants for seeding~\cite{sakti2015instance} and support
+Java Enterprise Edition features~\cite{arcuri2016java}. \TODO{any
+  other noteworthy change?} \EVOSUITE is being actively developed,
+therefore several improvements and bug fixes were applied since the
+last instance of the competition, in particular in relation to
+non-determinism and flaky tests~\cite{arcuri2014automated}.
 
 Like in previous instances of the competition, we enabled the
 post-processing step of test minimisation---not for efficiency
@@ -355,14 +375,13 @@ analysis~\cite{10.1109/TSE.2011.93}, which is a computationally
 expensive process. The use of all assertions has a negative impact on
 readability, but this is not evaluated as part of the SBST contest.
 
-Like in the 2016 competition, tools were called with different time
-budgets. We used the same strategy as for the previous
-competition~\cite{evosuiteAtSbst2016} to distribute the overall time
+Like in previous editions of the competition, tools were called with
+different time budgets. We used the same strategy used in previous
+competition (e.g.,~\cite{evosuiteAtSbst2016}) to distribute the overall time
 budget onto the different phases of \EVOSUITE (e.g., initialisation,
 search, minimisation, assertion generation, compilation check, removal
 of flaky tests). That is, 50\% of the time was allocated to the
-search, and the rest was distributed equally to the remaining
-phases.
+search, and the rest was distributed equally to the remaining phases.
 
 
 %------------------------------------------------------------------------- 
@@ -398,23 +417,23 @@ Table~\ref{table:results} lists the branch coverage and mutation
 analysis results achieved by \EVOSUITE on all benchmark classes in the
 contest. Coverage is generally in the expected range, with clear
 overall increases for higher time budgets. With the highest time
-budget of $480s$, the
-average branch coverage achieved was \AvgCovG (slightly higher than
-last year's $65.6\%$) and the average mutation score was \AvgMutG
-(considerably higher than last year's $41.0\%$).
+budget of $240s$, the average branch coverage achieved was \AvgCovD,
+lower that last year's 64.6\% for the same time budget, but the
+average mutation score was \AvgMutD, higher than last year's 49.6\%
+for the same time budget.
 
 This year, the contest also included manually written test suites as
-baseline (only for 63 out of the 69 benchmarks). The results indicate
-that there is no significant difference in branch coverage between
+baseline (for 49 out of 59 benchmarks). The results indicate that
+there is no significant difference in branch coverage between
 \EVOSUITE-generated test suites (avg. \AvgCovEvosuite) and manually
 written ones (avg. \AvgCovManual), with Vargha-Delaney's
 $A_{12}=\EvoManCovA$ and $p=\EvoManCovPV$. In terms of mutation
-scores, however, the results show
-that---unsurprisingly---automatically generated assertions are weaker
-than manually written ones: the average \EVOSUITE mutation score for
-these 63 benchmarks is \AvgMutEvosuite, significantly lower than the
-average \AvgMutManual obtained by developer-written test suites, with
-$A_{12}=\EvoManMutA$ and $p\EvoManMutPV$.
+scores, surprisingly, the results show that automatically generated
+assertions are competitive with manually written ones: the average
+\EVOSUITE mutation score for these 49 benchmarks is \AvgMutEvosuite
+and the average mutation score obtained by developer-written test
+suites is \AvgMutManual ($A_{12}=\EvoManMutA$ and
+$p=\EvoManMutPV$).
 
 % Coverage on several
 % of the benchmarks from Closure is low, which matches previous
@@ -441,31 +460,30 @@ file system, system calls like \texttt{System.in} and
 \subsection{Challenges}
 
 % Look at benchmarks that always failed
-\EVOSUITE failed to produce any test suites for benchmarks JXPATH-7 and
-OKHTTP-8, and also struggled often for benchmarks LA4J-3, LA4J-7,
-BCEL-9 (highlighted in Table~\ref{table:results}). All executions of
-\EVOSUITE for JXPATH-7 failed in the instrumentation phase, where
-Java's 64k limit on the size of methods was exceeded. A viable fix
-would be to stop instrumenting before the limit is reached, at the
-price of limited search guidance; a more effective solution would
-involve identifying parts of the code that are worth instrumenting. A
-missing dependency for OKHTTP-8 caused all executions---\emph{for all
-  tools}---to fail. For the other mentioned benchmarks, the failure
-reasons (in some cases related to sandboxing, mocking and timeouts)
-will require further investigation.
+\EVOSUITE failed to produce any test suites for benchmarks DUBBO-2 and
+WEBMAGIC-4, and generally struggled with most REDISSON benchmarks
+(highlighted in grey in Table~\ref{table:results}).\TODO{Investigate}
+
+% All executions of \EVOSUITE for JXPATH-7 failed in the instrumentation
+% phase, where Java's 64k limit on the size of methods was exceeded. A
+% viable fix would be to stop instrumenting before the limit is reached,
+% at the price of limited search guidance; a more effective solution
+% would involve identifying parts of the code that are worth
+% instrumenting. A missing dependency for OKHTTP-8 caused all
+% executions---\emph{for all tools}---to fail. For the other mentioned
+% benchmarks, the failure reasons (in some cases related to sandboxing,
+% mocking and timeouts) will require further investigation.
 
 % Look at benchmarks where coverage decreased with increased budget
 As expected, both branch coverage and mutation score generally
-increased with higher time budgets, although in some cases, especially
-with $budget=300s$, a decrease was observed for some
-benchmarks. Having run only three repetitions of the tool per time
-budget, it is fair to assume the decreases are due to bugs affecting
-executions by chance. A preliminary investigation on the source of
-this loss of coverage revealed that memory management (e.g.,
-out-of-memory errors for OKHTTP-2 and RE2J-7), sandboxing (e.g.,
-affecting all executions for LA4J-3 and LA4J-7), and mocking
-(affecting BCEL-1, BCEL-5 and BCEL-7, for example) are some of the
-aspects that require attention and debugging in \EVOSUITE.
+increased with higher time budgets.
+
+% A preliminary investigation on the source of this loss of coverage
+% revealed that memory management (e.g., out-of-memory errors for
+% OKHTTP-2 and RE2J-7), sandboxing (e.g., affecting all executions for
+% LA4J-3 and LA4J-7), and mocking (affecting BCEL-1, BCEL-5 and BCEL-7,
+% for example) are some of the aspects that require attention and
+% debugging in \EVOSUITE.
 
 % Although coverage generally increased with higher time budgets, there
 % are instances where this expected behaviour was not observed,
@@ -493,23 +511,23 @@ aspects that require attention and debugging in \EVOSUITE.
 % For other benchmarks such for example BCEL-1, BCEL-5, BCEL-7,
 % \EVOSUITE failed due to mocking related issues.
 
-% Look at benchmarks with more flaky tests
-Flaky tests continue to be a challenge for test generation. Benchmarks
-FREEHEP-7 and JXPATH-10 were the ones with the highest number of flaky
-tests in one run (12 and 14, respectively). In both cases, the
-minimisation phase timed out and hence \EVOSUITE reverted the
-resulting test suite to its previous, unminimised version, which as
-mentioned before is more likely to break. A \textit{partial
-  minimisation} approach to select and minimise only a reduced subset
-of tests, or a more efficient minimisation approach based on
-\textit{delta-debugging}~\cite{LOZCM07}, might be worth exploring to
-alleviate this issue.
+\TODO{Look at benchmarks with more flaky tests}
+% Flaky tests continue to be a challenge for test generation. Benchmarks
+% FREEHEP-7 and JXPATH-10 were the ones with the highest number of flaky
+% tests in one run (12 and 14, respectively). In both cases, the
+% minimisation phase timed out and hence \EVOSUITE reverted the
+% resulting test suite to its previous, unminimised version, which as
+% mentioned before is more likely to break. A \textit{partial
+%   minimisation} approach to select and minimise only a reduced subset
+% of tests, or a more efficient minimisation approach based on
+% \textit{delta-debugging}~\cite{LOZCM07}, might be worth exploring to
+% alleviate this issue.
 
 % Mocking
-As mentioned in the previous section, \EVOSUITE now uses private
-API access and functional mocking%  in addition to environment
+As mentioned in the previous section, \EVOSUITE uses private API
+access and functional mocking% in addition to environment
 % mocking
-~\cite{ICST_Mocking17}. In the competition, a total of 20,921
+~\cite{ICST_Mocking17}. In the competition, a total of 20,921\TODO{Update}
 objects were mocked, 1,485 private fields were set and 3,090 private methods
 were invoked using mocked access% , and environment classes were
 % mocked 4,699 times, with \texttt{java.util.Random} and
@@ -570,9 +588,9 @@ competition.
 \section{Conclusions}
 
 This paper reports on the participation of the \EVOSUITE test
-generation tool in the 5th SBST Java Unit Testing Tool Contest. With
-an overall score of 1457, \EVOSUITE achieved the highest score of
-all tools in the competition.
+generation tool in the 6th SBST Java Unit Testing Tool Contest. With
+an overall score of \TOTALPOINTS, \EVOSUITE achieved the highest score
+of all tools in the competition.
 
 
 To learn more about \EVOSUITE, visit our Web site:
@@ -588,7 +606,7 @@ To learn more about \EVOSUITE, visit our Web site:
 \textbf{Acknowledgments:} Many thanks to all the contributors to \EVOSUITE.
 This project has been funded by the EPSRC
 project ``GREATEST'' (EP/N023978/1), and by the National Research
-Fund, Luxembourg (FNR/P10/03).
+Fund, Luxembourg (FNR/P10/03)\TODO{remove?}.
 
 
 %------------------------------------------------------------------------- 
