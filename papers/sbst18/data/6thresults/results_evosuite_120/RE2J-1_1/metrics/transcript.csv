@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,RE2J-1,com.google.re2j.Parser,1,360,111235,2472,45,0,0,0,760,468,61.57895,565,308,54.513275,203,132,65.024635,75,36.945812,128,120,2
- 
- 
- 
-

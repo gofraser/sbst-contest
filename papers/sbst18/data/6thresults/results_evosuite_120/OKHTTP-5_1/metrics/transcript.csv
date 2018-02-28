@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,OKHTTP-5,okhttp3.internal.tls.DistinguishedNameParser,1,382,79204,3466,6,0,0,0,156,22,14.102565,168,5,2.9761906,200,15,7.5000005,8,4.0,192,120,2
- 
- 
- 
-

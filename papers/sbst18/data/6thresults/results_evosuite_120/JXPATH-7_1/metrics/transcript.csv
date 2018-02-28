@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,JXPATH-7,org.apache.commons.jxpath.ri.parser.XPathParserTokenManager,1,362,128586,6682,81,0,0,0,1029,407,39.552963,872,214,24.541285,352,121,34.375,38,10.795455,314,120,2
- 
- 
- 
-

@@ -1,2 +1,0 @@
-genTime=111409
-prepTime=360

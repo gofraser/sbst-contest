@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,OKHTTP-7,okhttp3.internal.tls.OkHostnameVerifier,1,358,80836,4247,16,0,0,0,80,38,47.5,64,30,46.875,63,32,50.793655,17,26.984129,46,120,2
- 
- 
- 
-

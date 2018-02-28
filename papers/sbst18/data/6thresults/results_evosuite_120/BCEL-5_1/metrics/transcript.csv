@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,BCEL-5,org.apache.bcel.verifier.statics.Pass3aVerifier,1,358,110616,5873,13,0,1,0,120,66,55.0,72,27,37.5,69,44,63.76812,44,63.76812,25,120,2
- 
- 
- 
-

@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,LA4J-10,org.la4j.linear.GaussianSolver,1,360,90035,6631,15,0,0,0,37,33,89.189186,22,19,86.36364,53,51,96.22642,36,67.92453,17,120,2
- 
- 
- 
-

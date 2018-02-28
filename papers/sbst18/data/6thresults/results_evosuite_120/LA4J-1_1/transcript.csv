@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,LA4J-1,org.la4j.vector.sparse.CompressedVector,1,361,117104,5957,73,0,3,0,198,174,87.878784,126,95,75.39682,102,83,81.37254,83,81.37254,19,120,2
- 
- 
- 
-

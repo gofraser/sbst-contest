@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,BCEL-6,org.apache.bcel.verifier.structurals.LocalVariables,1,358,119867,3555,20,0,0,0,62,47,75.80645,54,32,59.25926,50,46,92.0,38,76.0,12,120,2
- 
- 
- 
-

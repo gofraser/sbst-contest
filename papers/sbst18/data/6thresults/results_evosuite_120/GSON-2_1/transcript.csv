@@ -1,6 +1,0 @@
-tool,benchmark,class,run,preparationTime,generationTime,executionTime,testcaseNumber,uncompilableNumber,brokenTests,failTests,linesTotal,linesCovered,linesCoverageRatio,conditionsTotal,conditionsCovered,conditionsCoverageRatio,mutantsTotal,mutantsCovered,mutantsCoverageRatio,mutantsKilled,mutantsKillRatio,mutantsAlive,timeBudget,totalTestClasses
-evosuite,GSON-2,com.google.gson.internal.LinkedHashTreeMap,1,367,90872,3722,45,0,0,0,234,118,50.427353,170,57,33.52941,164,94,57.317074,57,34.756096,107,120,2
- 
- 
- 
-
