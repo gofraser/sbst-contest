@@ -149,7 +149,7 @@
 \newcommand{\MUTEST}{{\sc $\mu$Test}\xspace}
 \newcommand{\CS}{{\sc SF100}\xspace}
 
-\newcommand{\TOTALPOINTS}{{686.91}\xspace}
+\newcommand{\TOTALPOINTS}{{687}\xspace}
 
 
 \DeclareMathSymbol{,}{\mathpunct}{letters}{"3B}
@@ -159,7 +159,7 @@
 
 \input{macros}
 
-%------------------------------------------------------------------------- 
+%------------------------------------------------------------------------- g
 % take the % away on next line to produce the final camera-ready version 
 %\pagestyle{empty}
 
@@ -388,9 +388,9 @@ analysis~\cite{10.1109/TSE.2011.93}, which is a computationally
 expensive process. The use of all assertions has a negative impact on
 readability, but this is not evaluated as part of the SBST contest.
 
-Like in previous editions of the competition, tools were called with
-different time budgets. We used the same strategy used in previous
-competition (e.g.,~\cite{evosuiteAtSbst2016}) to distribute the overall time
+Four time budgets were used to call each tool: 10, 60, 120 and 240
+seconds. We used the same strategy used in previous competition
+(e.g.,~\cite{evosuiteAtSbst2016}) to distribute the overall time
 budget onto the different phases of \EVOSUITE (e.g., initialisation,
 search, minimisation, assertion generation, compilation check, removal
 of flaky tests). That is, 50\% of the time was allocated to the
@@ -424,16 +424,18 @@ search, and the rest was distributed equally to the remaining phases.
 % }	
 % \end{table*}
 
-\subsection{Overall Results}
+\paragraph{Overall Results}
 
 Table~\ref{table:results} lists the branch coverage and mutation
 analysis results achieved by \EVOSUITE on all benchmark classes in the
-contest. Coverage is generally in the expected range, with clear
-overall increases for higher time budgets. With the highest time
-budget of $240s$, the average branch coverage achieved was \AvgCovD,
-lower that last year's 64.6\% for the same time budget, but the
-average mutation score was \AvgMutD, higher than last year's 49.6\%
-for the same time budget.
+contest. Coverage and mutation scores are generally in the expected
+ranges, with clear overall increases for higher time budgets. With the
+highest time budget of $240s$, the average branch coverage achieved
+was \AvgCovD, lower that last year's 64.6\% for the same time budget,
+but the average mutation score was \AvgMutD, higher than last year's
+49.6\% for the same time budget.
+
+\paragraph{Manually Written Tests}
 
 This year, the contest also included manually written test suites as
 baseline (for 49 out of 59 benchmarks). The results indicate that
@@ -459,150 +461,74 @@ $p=\EvoManMutPV$).
 % generally worse than those of other projects, both in terms of
 % mutation score and ratio of fault detection.
 
-\EVOSUITE generated \FlakyEvosuite flaky tests per run on average,
+\paragraph{Flaky Tests}
+
+~\EVOSUITE generated \FlakyEvosuite flaky tests per run on average,
 much lower than the number of flaky tests produced by the competing
 and baseline tools (\FlakyTthree by \TT, \FlakyJtexpert by \JTEXPERT,
-and \FlakyRandoop by \RANDOOP). We attribute these results---also
-consistent with previous years' results---to the way \EVOSUITE handles
-execution environments during test generation (e.g., controlling the
-static state of the class under test, mocking interactions with the
-file system, system calls like \texttt{System.in} and
-\texttt{System.currentTimeMillis}, etc.)~\cite{arcuri2014automated}.
+and \FlakyRandoop by \RANDOOP). We attribute these relatively positive 
+results---also consistent with previous years' results---to the way
+\EVOSUITE handles execution environments during test generation (e.g.,
+controlling the static state of the class under test, mocking
+interactions with the file system, system calls like
+\texttt{System.in} and \texttt{System.currentTimeMillis},
+etc.)~\cite{arcuri2014automated}.
 
+Overall, no flaky tests were generated for the vast majority of
+subjects in the competition. Amongst those benchmarks for which
+\EVOSUITE struggled with flakiness, FASTJSON-4 is a notable example:
+in the worst case, 90 flaky tests were generated in one single run. An
+analysis of the execution logs indicates several possible sources for
+this flakiness: a) a non-final static constant that is not properly
+reset in between executions; b) an possibly incorrect handling of enum
+types; and c) global property not being reset in between
+executions. Further investigation will be needed to confirm these
+conjectures and act upon them.
 
-\subsection{Challenges}
+\paragraph{Mocking}
 
-% Look at benchmarks that always failed
-\EVOSUITE failed to produce any test suites for benchmarks DUBBO-2 and
-WEBMAGIC-4, and generally struggled with most REDISSON benchmarks
-(highlighted in grey in Table~\ref{table:results}).\TODO{Investigate}
-
-% All executions of \EVOSUITE for JXPATH-7 failed in the instrumentation
-% phase, where Java's 64k limit on the size of methods was exceeded. A
-% viable fix would be to stop instrumenting before the limit is reached,
-% at the price of limited search guidance; a more effective solution
-% would involve identifying parts of the code that are worth
-% instrumenting. A missing dependency for OKHTTP-8 caused all
-% executions---\emph{for all tools}---to fail. For the other mentioned
-% benchmarks, the failure reasons (in some cases related to sandboxing,
-% mocking and timeouts) will require further investigation.
-
-% Look at benchmarks where coverage decreased with increased budget
-As expected, both branch coverage and mutation score generally
-increased with higher time budgets.
-
-% A preliminary investigation on the source of this loss of coverage
-% revealed that memory management (e.g., out-of-memory errors for
-% OKHTTP-2 and RE2J-7), sandboxing (e.g., affecting all executions for
-% LA4J-3 and LA4J-7), and mocking (affecting BCEL-1, BCEL-5 and BCEL-7,
-% for example) are some of the aspects that require attention and
-% debugging in \EVOSUITE.
-
-% Although coverage generally increased with higher time budgets, there
-% are instances where this expected behaviour was not observed,
-% specially for $budget=300s$, where the average across benchmarks
-% decreased. This is possibly due to crashes or out-of-memory runtime
-% errors. For instance, \EVOSUITE failed to generate any test suite in
-% one out of three runs of OKHTTP-2 and RE2J-7 due to an
-% \textit{out-of-memory error}, and in all executions of LA4J-3 and
-% LA4J-7 due to a \textit{state exception}. In order to evaluate a
-% fitness function, each test case evolved by the underline GA of
-% \EVOSUITE has to be executed. However, its execution could fail due to
-% several reasons: state exception (if a test case tries to re-initialise
-% EvoSuite's sanbox, LA4J-3 and LA4J-7), timeout (OKHTTP-2), etc. In
-% case of a timeout, \EVOSUITE logs the stacktrace of the thread in
-% which each test case is executed, which could cause an out-of-memory
-% error if the stack trace message is to long. RE2J-7: \TODO{I do not
-% understand how a java.lang.OutOfMemoryError could be throw by
-% CBranchSuiteFitness.java:145}.
-% %
-% To avoid low coverage of final classes with private constructors (like
-% the class under test of benchmark OKHTTP-7), \EVOSUITE uses reflection
-% to call the default constructor of the class under test. However,
-% \TODO{EvoSuite tries to access a field of the cut (which is public
-% static final) by using an instance of cut. It's still not clear why}.
-% For other benchmarks such for example BCEL-1, BCEL-5, BCEL-7,
-% \EVOSUITE failed due to mocking related issues.
-
-\TODO{Look at benchmarks with more flaky tests}
-% Flaky tests continue to be a challenge for test generation. Benchmarks
-% FREEHEP-7 and JXPATH-10 were the ones with the highest number of flaky
-% tests in one run (12 and 14, respectively). In both cases, the
-% minimisation phase timed out and hence \EVOSUITE reverted the
-% resulting test suite to its previous, unminimised version, which as
-% mentioned before is more likely to break. A \textit{partial
-%   minimisation} approach to select and minimise only a reduced subset
-% of tests, or a more efficient minimisation approach based on
-% \textit{delta-debugging}~\cite{LOZCM07}, might be worth exploring to
-% alleviate this issue.
-
-% Mocking
 As mentioned in the previous section, \EVOSUITE uses private API
 access and functional mocking% in addition to environment
 % mocking
-~\cite{ICST_Mocking17}. In the competition, a total of 20,921\TODO{Update}
-objects were mocked, 1,485 private fields were set and 3,090 private methods
-were invoked using mocked access% , and environment classes were
-% mocked 4,699 times, with \texttt{java.util.Random} and
-% \texttt{java.io.File} being by far the most frequently mocked
-% environment classes (resp. 1,286 and 1,121 times)
-, adding up to represent only 1.09\% of the total number of lines of
-code in the \EVOSUITE-generated test suites (2,329,361 LOC). Further
-investigation would be needed to assess the impact of these mocking
-features on test generation effectiveness for the benchmarks in the
-competition.
+~\cite{ICST_Mocking17}. In this competition, a total of 2,766 mock
+instances were created, 1,339 private fields were set and 2,409
+private methods were invoked using mocked access. Some of the Java
+classes most frequently used for mocking across benchmarks are
+\texttt{File} (849 instances in total), \texttt{Throwable} (284),
+\texttt{PrintStream} (210) and \texttt{Thread} (114). Mocking was
+particularly useful for \EVOSUITE to generate tests for the FASTJSON
+benchmarks, where multiple calendar systems are necessary (e.g.,
+classes \texttt{HijrahDate}, \texttt{MinguoDate},
+\texttt{JapaneseDate}, \texttt{ThaiBuddhistDate} were mocked 719 times
+altogether).
+
+% . Further
+% investigation would be needed to assess the impact of these mocking
+% features on test generation effectiveness for the benchmarks in the
+% competition.
 
 
+\paragraph{Problematic benchmarks}
 
+~\EVOSUITE failed to produce any test suites for benchmarks DUBBO-2 and
+WEBMAGIC-4, and generally struggled with most REDISSON benchmarks
+(highlighted in grey in Table~\ref{table:results}). The former two
+benchmarks had missing dependencies in the competition
+setup~\cite{sbst18competition}, which explains why \EVOSUITE was
+incapable of generating any test. For the REDISSON benchmarks, most
+executions ended with a timeout; unfortunately, we have not been able
+to reproduce this behaviour locally, hence we can only conjecture that
+the timeouts (reported during the initialisation phase) are due to the
+large number of dependency classes (>7000) that need to be loaded for
+these benchmarks to start off the test generation.
 
-% A few of these flaky tests were introduced by recent changes to
-% \EVOSUITE following experiments on
-% Defects4J~\cite{shamshiri2015automatically}: \EVOSUITE now includes
-% assertions on the source of exceptions, similar to commercial tools
-% like Agitar One. %~\cite{agitarone}.
-% Unfortunately, there were several instances in the competition where
-% these assertions lead to flaky tests. For example, the following is an
-% excerpt from a test for the Defects4J bug Lang-41, generated by
-% \EVOSUITE: \vspace{1em}
-
-% \begin{lstlisting}
-% @Test(timeout = 4000)
-% public void test19()  throws Throwable  {
-%  Class<Double> class0 = Double.class;
-%  String string0 = ClassUtils.getPackageName(class0);
-%  try { 
-%    ClassUtils.getClass(string0);
-%    fail("Expecting exception: ClassNotFoundException"); 
-%  } catch(ClassNotFoundException e) {
-%    assertThrownBy("java.net.URLClassLoader", e);
-%  }
-% }
-% \end{lstlisting}
-
-% While compiling and executing this test with JUnit works without
-% problems, the mutation analysis step of the competition used Ant to
-% run the tests; Ant uses a complex setup of classloaders that
-% eventually leads to the \texttt{assertThrownBy} in the above example
-% to fail, as the source of the exception is a different one.
-
-% There are 15 runs in total where \EVOSUITE did not produce any test
-% suites; these are only for higher time budgets (240s, 480s). The
-% majority of these runs are due to \EVOSUITE not terminating before the
-% hard timeout of the competition infrastructure. This may happen, for
-% example, when test execution on the class under test takes long (e.g.,
-% timeouts), and when resetting the static state of the classes under
-% test takes a long time. However, this number is still lower than the
-% number of erroneous runs compared to other tools, and in the remaining
-% 1617 runs of the competition \EVOSUITE terminated in time and produced
-% at least two tests. In 13 of these, \EVOSUITE produced a test suite
-% with a compilation error.
 
 %------------------------------------------------------------------------- 
 \section{Conclusions}
 
 This paper reports on the participation of the \EVOSUITE test
 generation tool in the 6th SBST Java Unit Testing Tool Contest. With
-an overall score of \TOTALPOINTS, \EVOSUITE achieved the highest score
+an overall score of \TOTALPOINTS points, \EVOSUITE achieved the highest score
 of all tools in the competition.
 
 
