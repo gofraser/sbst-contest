@@ -22,9 +22,9 @@
 
 @string{IST = "Information and Software Technology (IST)"}
 
-@string{SBST = "International Workshop on Search-Based Software Testing (SBST)"}
+@string{SBST = "Int. Workshop on Search-Based Software Testing (SBST)"}
 
-@string{SSBSE = "International Symposium on Search Based Software Engineering (SSBSE)"}
+@string{SSBSE = "Int. Symposium on Search Based Software Engineering (SSBSE)"}
 
 @string{MODELS = "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS)"}
 
@@ -62,8 +62,8 @@
 }
 
 @inproceedings{sbst18competition,
-	title={Unit Testing Tool Competition - Sixth Round},
-	author={Rueda, Urko},
+	title={Java Unit Testing Tool Competition -- Sixth Round},
+	author={Rueda, Urko and Kifetew, Fitsum and Panichella, Annibale},
 	booktitle=SBST,
 	year={2018}
 }
@@ -89,7 +89,7 @@
 @inproceedings{fraser2013does,
   title={Does automated white-box test generation really help software testers?},
   author={Fraser, Gordon and Staats, Matt and McMinn, Phil and Arcuri, Andrea and Padberg, Frank},
-  booktitle={Proceedings of the 2013 International Symposium on Software Testing and Analysis},
+  booktitle=ISSTA,
   pages={291--301},
   year={2013},
   organization={ACM}
@@ -104,12 +104,12 @@
 }
 
 @article{fraser2014large,
-  title={A large-scale evaluation of automated unit test generation using EvoSuite},
+  title={A large-scale evaluation of automated unit test generation using {EvoSuite}},
   author={Fraser, Gordon and Arcuri, Andrea},
   journal={ACM Transactions on Software Engineering and Methodology (TOSEM)},
   volume={24},
   number={2},
-  pages={8},
+  pages = {8:1--8:42},
   year={2014},
   publisher={ACM}
 }
@@ -413,7 +413,7 @@
 @inproceedings{GJG14,
   author={Gopinath, Rahul and Jensen, Carlos and Groce, Alex},
   title={Code Coverage for Suite Evaluation by Developers},
-  booktitle={Proceedings of the International Conference on Software Engineering},
+  booktitle=ICSE,
   year={2014}
 }
 
@@ -500,7 +500,7 @@
   journal=EMSE,
   pages={1-30},
   year={2013},
-  NOTE="DOI: 10.1007/s10664-013-9249-9"
+  doi={DOI: 10.1007/s10664-013-9249-9}
 }
 
 
@@ -508,8 +508,11 @@
   title={{A Detailed Investigation of the Effectiveness of Whole Test Suite Generation}},
   author={Jos\'e Miguel Rojas and Mattia Vivanti and Andrea Arcuri and Gordon Fraser},
   journal=EMSE,
-  year={2016},
-  NOTE={To appear}
+  volume={22},
+  number={2},
+  pages={852--893},
+  doi="10.1007/s10664-015-9424-2",
+  year={2016}
 }
 
 @article{bessey2010few,
@@ -544,7 +547,7 @@
 
 @inproceedings{evosuiteAtSbst2013,
     AUTHOR="Gordon Fraser and Andrea Arcuri",
-    TITLE="EvoSuite at the {SBST} 2013 Tool Competition",
+    TITLE="{EvoSuite} at the {SBST} 2013 Tool Competition",
     booktitle=SBST,
     PAGES="406--409",
     YEAR="2013"
@@ -552,32 +555,37 @@
 
 @inproceedings{evosuiteAtSbst2015,
     AUTHOR="Gordon Fraser and Andrea Arcuri",
-    TITLE="EvoSuite at the {SBST} 2015 Tool Competition",
+    TITLE="{EvoSuite} at the {SBST} 2015 Tool Competition",
     booktitle=SBST,
+    pages = {25--27},
+    publisher = {IEEE Press},
     YEAR={2015}
 }
 
 @inproceedings{evosuiteAtSbst2016,
     AUTHOR="Gordon Fraser and Andrea Arcuri",
-    TITLE="EvoSuite at the {SBST} 2016 Tool Competition",
+    TITLE="{EvoSuite} at the {SBST} 2016 Tool Competition",
     booktitle=SBST,
     pages={33--36},
+    publisher = {ACM},
     YEAR="2016"
 }
 
 @inproceedings{evosuiteAtSbst2017,
-    AUTHOR="Gordon Fraser Jos\'e Miguel Rojas, Jos\'e Campos and Andrea Arcuri",
-    TITLE="EvoSuite at the {SBST} 2017 Tool Competition",
+    AUTHOR="Gordon Fraser, Jos\'e Miguel Rojas, Jos\'e Campos and Andrea Arcuri",
+    TITLE="{EvoSuite} at the {SBST} 2017 Tool Competition",
     booktitle=SBST,
-    pages={33--36},
+    pages={39--41},
+    publisher = {IEEE Press},
     YEAR=2016
 }
 
 @inproceedings{evosuiteAtFittest2013,
     AUTHOR="Gordon Fraser and Andrea Arcuri",
-    TITLE="EvoSuite at the Second Unit Testing Tool Competition. ",
+    TITLE="{EvoSuite} at the Second Unit Testing Tool Competition. ",
     booktitle="Fittest Workshop",
-    PAGES="",
+    pages={95--100},
+    publisher={Springer},
     YEAR="2013"
 }
 
@@ -688,8 +696,8 @@
     AUTHOR="A. Arcuri and G. Fraser and R. Just",
     TITLE={Private API Access and Functional Mocking in Automated Unit Test Generation},
     booktitle=ICST,
-    YEAR="2017",
-    note={To appear}
+    YEAR={2017},
+    pages={126--137}
 }
 
 
@@ -8322,6 +8330,7 @@ address = {Los Alamitos, CA, USA},
   title={Evo{S}uite: On The Challenges of Test Case Generation in the Real World (Tool Paper)},
   author={G. Fraser and A. Arcuri},
   booktitle=ICST,
+  pages={362-369},
   year={2013}
 }
 
@@ -8510,16 +8519,19 @@ address = {Los Alamitos, CA, USA},
 @article{emse13_oracle,
    year={2014},
    journal=EMSE,
-   title={1600 Faults in 100 Projects: Automatically Finding Faults While Achieving High Coverage with EvoSuite},
+   title={1600 Faults in 100 Projects: Automatically Finding Faults While Achieving High Coverage with {EvoSuite}},
    publisher={Springer US},
    author={Fraser, Gordon and Arcuri, Andrea},
    language={English}
 }
 
 @article{emse14_mutation,
-   year={2014},
+   year={2015},
    journal=EMSE,
    title={Achieving Scalable Mutation-based Generation of Whole Test Suites. },
+   volume={20},
+   number={3},
+   pages={783--812},
    publisher={Springer US},
    author={Fraser, Gordon and Arcuri, Andrea},
    language={English}
@@ -8758,7 +8770,7 @@ note = "(To appear)"
 @inproceedings{ICST16_Tool, 
   author={A. Arcuri and J. Campos and G. Fraser}, 
   booktitle={IEEE International Conference on Software Testing, Verification and Validation (ICST)}, 
-  title={Unit Test Generation During Software Development: EvoSuite Plugins for Maven, IntelliJ and Jenkins}, 
+  title={{Unit Test Generation During Software Development: EvoSuite Plugins for Maven, IntelliJ and Jenkins}}, 
   year={2016}, 
   pages={401--408},
   publisher = {IEEE Computer Society},
@@ -8767,8 +8779,7 @@ note = "(To appear)"
 @inproceedings{ISSTA15_Study,
  author = {Jos{\'e} Miguel Rojas and Gordon Fraser and Andrea Arcuri},
  title = {Automated Unit Test Generation during Software Development: A Controlled Experiment and Think-Aloud Observations},
- booktitle = {Proceedings of the 2015 International Symposium on Software Testing and Analysis},
- series = {ISSTA '15},
+ booktitle = ISSTA,
  year = {2015},
  publisher = {ACM},
  pages={338--349},
@@ -8779,7 +8790,7 @@ title = {Does Automated Unit Test Generation Really Help Software Testers? A Con
 journal ={ACM Transactions on Software Engineering and Methodology (TOSEM)},
   volume={24},
   number={4},
-  pages={23},
+  pages = {23:1--23:49},
   year={2015},
   publisher={ACM}
 }
@@ -8797,7 +8808,7 @@ journal ={ACM Transactions on Software Engineering and Methodology (TOSEM)},
 @inproceedings{arcuri2016java,
   title={Java Enterprise Edition Support in Search-Based JUnit Test Generation},
   author={Arcuri, Andrea and Fraser, Gordon},
-  booktitle={International Symposium on Search Based Software Engineering},
+  booktitle={Int. Symposium on Search Based Software Engineering},
   pages={3--17},
   year={2016},
   organization={Springer}
