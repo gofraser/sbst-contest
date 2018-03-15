@@ -312,7 +312,7 @@ Maven~\cite{ICST16_Tool}.
 
 The underlying genetic algorithm uses test suites as representation
 (chromosomes). Each test suite consists of a variable number of test
-cases, each of which is represented as a variable length sequence of
+cases, each of which is represented as a variable-length sequence of
 Java statements (e.g., calls on the class under test). A population of
 randomly generated individuals is evolved using suitable search
 operators (e.g., selection, crossover and mutation), such that
@@ -377,7 +377,7 @@ features~\cite{arcuri2016java}. %\TODO{any other noteworthy change?} No.
 minor improvements have been applied since the last instance of the
 competition, in particular in relation to non-determinism and flaky
 tests~\cite{arcuri2014automated}, as well as new types of test
-assertions (e.g., related to arrays and standard contained classes).
+assertions (e.g., related to arrays and standard container classes).
 
 Like in previous instances of the competition, we enabled the
 post-processing step of test minimisation---not for efficiency
@@ -491,8 +491,8 @@ in the worst case, 90 flaky tests were generated in one single run. An
 analysis of the execution logs indicates several possible sources for
 this flakiness: a) a non-final static constant that is not properly
 reset in between executions; b) an possibly incorrect handling of enum
-types; and c) global property not being reset in between
-executions.Considering that there were still remaining flaky tests, further investigation will be needed to confirm these
+types; and c) a global property not being reset in between
+executions. Considering that there were still remaining flaky tests, further investigation will be needed to confirm these
 conjectures and act upon them.
 
 
