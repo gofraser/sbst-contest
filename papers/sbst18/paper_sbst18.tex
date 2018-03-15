@@ -384,8 +384,8 @@ post-processing step of test minimisation---not for efficiency
 reasons, but because minimised tests are less likely to break. To
 reduce the overall time of test generation we included all assertions
 rather than filtering them with mutation
-analysis~\cite{10.1109/TSE.2011.93}, which is a computationally
-expensive process. The use of all assertions has a negative impact on
+analysis~\cite{10.1109/TSE.2011.93}, which is computationally
+expensive. The use of all assertions has a negative impact on
 readability, but this is not evaluated as part of the SBST contest.
 
 Four time budgets were used to call each tool: 10, 60, 120 and 240
@@ -402,8 +402,10 @@ search, and the rest was distributed equally to the remaining phases.
 
 \begin{table*}[t]
   \centering
-  \caption{\label{table:results}Detailed results of \EVOSUITE on the SBST benchmark classes.}
-\resizebox{0.7\textwidth}{!}{  
+  \caption{\label{table:results}Detailed results of \EVOSUITE on the
+    SBST benchmark classes.}
+\vspace{-1em}
+\resizebox{0.71\textwidth}{!}{  
 \input{mainTable.tex}
 }	
 \end{table*}
@@ -466,41 +468,56 @@ $p=\EvoManMutPV$).
 ~\EVOSUITE generated \FlakyEvosuite flaky tests per run on average,
 much lower than the number of flaky tests produced by the competing
 and baseline tools (\FlakyTthree by \TT, \FlakyJtexpert by \JTEXPERT,
-and \FlakyRandoop by \RANDOOP). We attribute these relatively positive 
+and \FlakyRandoop by \RANDOOP). We attribute these relatively positive
 results---also consistent with previous years' results---to the way
 \EVOSUITE handles execution environments during test generation (e.g.,
 controlling the static state of the class under test, mocking
 interactions with the file system, system calls like
 \texttt{System.in} and \texttt{System.currentTimeMillis},
-etc.)~\cite{arcuri2014automated}.
+etc.)~\cite{arcuri2014automated}.  \EVOSUITE provides deterministic
+replacement classes for many classes with known non-determinism,
+(e.g., those related to date and time), and in particular the FASTJSON
+benchmarks made heavy use of these. For example, multiple calendar
+systems are necessary (e.g., classes \texttt{HijrahDate},
+\texttt{MinguoDate}, \texttt{JapaneseDate},
+\texttt{ThaiBuddhistDate}), and \EVOSUITE instantiated its own
+replacement versions of these classes 719 times altogether, thus
+potentially avoiding many flaky tests. Overall, no flaky tests were
+generated for the vast majority of subjects in the competition.
 
-Overall, no flaky tests were generated for the vast majority of
-subjects in the competition. Amongst those benchmarks for which
+Amongst those benchmarks for which
 \EVOSUITE struggled with flakiness, FASTJSON-4 is a notable example:
 in the worst case, 90 flaky tests were generated in one single run. An
 analysis of the execution logs indicates several possible sources for
 this flakiness: a) a non-final static constant that is not properly
 reset in between executions; b) an possibly incorrect handling of enum
 types; and c) global property not being reset in between
-executions. Further investigation will be needed to confirm these
+executions.Considering that there were still remaining flaky tests, further investigation will be needed to confirm these
 conjectures and act upon them.
+
 
 \paragraph{Mocking}
 
 As mentioned in the previous section, \EVOSUITE uses private API
 access and functional mocking% in addition to environment
 % mocking
-~\cite{ICST_Mocking17}. In this competition, a total of 2,766 mock
-instances were created, 1,339 private fields were set and 2,409
-private methods were invoked using mocked access. Some of the Java
-classes most frequently used for mocking across benchmarks are
-\texttt{File} (849 instances in total), \texttt{Throwable} (284),
-\texttt{PrintStream} (210) and \texttt{Thread} (114). Mocking was
-particularly useful for \EVOSUITE to generate tests for the FASTJSON
-benchmarks, where multiple calendar systems are necessary (e.g.,
-classes \texttt{HijrahDate}, \texttt{MinguoDate},
-\texttt{JapaneseDate}, \texttt{ThaiBuddhistDate} were mocked 719 times
-altogether).
+~\cite{ICST_Mocking17}. Overall, in all tests generated in this
+competition, 1,339 private fields were set and 2,409
+private methods were invoked using reflection, and 15,369 Mockito mock
+instances were created and configured using another 9,553 statements
+(e.g., using the \text{doReturn} method). Considering the 1,804,932 overall test
+statements, this means that only 1.4\% of the tests were devoted to
+mocking. Amongst the 331 distinct classes for which mocks were
+generated at least once there are some classes for which EvoSuite can
+instantiate regular objects (e.g., \texttt{List}). This suggests that
+EvoSuite sometimes struggles to generate and set up complex objects
+correctly, and there is potential for future improvements.
+
+%a total of 2,766 mock
+%instances were created, using mocked access. Some of the Java
+%classes most frequently used for mocking across benchmarks are
+%\texttt{File} (849 instances in total), \texttt{Throwable} (284),
+%\texttt{PrintStream} (210) and \texttt{Thread} (114). 
 
 % . Further
 % investigation would be needed to assess the impact of these mocking
@@ -515,7 +532,15 @@ WEBMAGIC-4, and generally struggled with most REDISSON benchmarks
 (highlighted in grey in Table~\ref{table:results}). The former two
 benchmarks had missing dependencies in the competition
 setup~\cite{sbst18competition}, which explains why \EVOSUITE was
-incapable of generating any test. For the REDISSON benchmarks, most
+incapable of generating any test: When a dependency of the class under
+test is missing, then \EVOSUITE intentionally aborts with an error to
+inform the user of the configuration error. While this is desirable
+behavior during regular usage, arguably in the scope of the
+competition \EVOSUITE could try to ignore such errors and try to
+generate tests nevertheless, as it might still be possible to cover
+code even with some missing dependencies. 
+
+For the REDISSON benchmarks, most
 executions ended with a timeout; unfortunately, we have not been able
 to reproduce this behaviour locally, hence we can only conjecture that
 the timeouts (reported during the initialisation phase) are due to the
