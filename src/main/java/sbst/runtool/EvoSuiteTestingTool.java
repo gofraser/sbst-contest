@@ -15,7 +15,7 @@ public class EvoSuiteTestingTool implements ITestingTool {
 	
 	public List<File> getExtraClassPath() {
         List<File> extra = new ArrayList<File>();
-		File evoJar = new File("lib"+File.separator+"evosuite-master-1.0.6-SNAPSHOT.jar");
+		File evoJar = new File("lib"+File.separator+"evosuite-master-1.0.7-SNAPSHOT.jar");
 		if(!evoJar.exists()){
 			System.err.println("Wrong EvoSuite jar setting, jar is not at: "+evoJar.getAbsolutePath());
 		} else {
@@ -99,6 +99,8 @@ public class EvoSuiteTestingTool implements ITestingTool {
 
         List<String> commands = new ArrayList<String>();
 		commands.addAll(Arrays.asList(
+				"-generateMOSuite",
+		        "-Dalgorithm=DynaMOSA",
 		        "-class",
 		        cName,
 		        "-Duse_deprecated=true",
