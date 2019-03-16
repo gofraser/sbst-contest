@@ -80,8 +80,7 @@ public class EvoSuiteTestingTool implements ITestingTool {
 			write = MINOR_DELTA;
 		}
 
-		long search = timeBudget - (initialization + minimization + assertions
-				 + junit + write);
+		long search = timeBudget - (initialization + minimization + assertions + junit + write);
 
         // extra += (int)Math.floor(timeBudget/10.0);
 		extra = timeBudget; // According to JP we have that much time
