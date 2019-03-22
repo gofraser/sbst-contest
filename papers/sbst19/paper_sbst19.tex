@@ -425,7 +425,7 @@ search, and the rest was distributed equally to the remaining phases.
 
 \begin{table*}[t]
   \centering
-  \caption{\label{table:results}Detailed results of \TT on the
+  \caption{\label{table:t3_results}Detailed results of \TT on the
     SBST benchmark classes.}
 \vspace{-1em}
 \resizebox{\textwidth}{!}{  
@@ -554,38 +554,52 @@ search, and the rest was distributed equally to the remaining phases.
 
 \paragraph{Problematic benchmarks}
 
-\TODO{why did we get 0\% coverage on most AUTHZFORCE benchmarks? and SPOON-169,
-SPOON-25?}
+\EVOSUITE failed to produce any test suites for benchmarks DUBBO-2, SPOON-169,
+SPOON-25, and WEBMAGIC-4, and generally struggled with most AUTHZFORCE
+benchmarks (highlighted in grey in Table~\ref{table:results}).
 
-\TODO{why did we get 0\% coverage on DUBBO-2 and WEBMAGIC-4? classpath was
-incorrect.}
+The benchmarks DUBBO-2 and WEBMAGIC-4 had missing dependencies in the
+competition setup~\cite{sbst19competition} (something we reported last
+year~\cite{evosuiteAtSbst2018}), which explains why \EVOSUITE was incapable of
+generating any test: When a dependency of the class under test is missing, then
+\EVOSUITE intentionally aborts with an error to inform the user of the
+configuration error. While this is desirable behavior during regular usage,
+arguably in the scope of the competition \EVOSUITE could try to ignore such
+errors and try to generate tests nevertheless, as it might still be possible to
+cover code even with some missing dependencies. For the benchmark FASTJSON-3 and
+a 10s time budget, \EVOSUITE generated some test suites but due to a bug in the
+competition infrastructure, no data was collected. % FileNotFoundException in the infrastructure
 
-\TODO{what did we get 0\% coverage on SPOON-253, SPOON-20, SPOON-16, SPOON-155
-for larger search budgets?}
+For the benchmarks SPOON-169 and SPOON-25, \EVOSUITE either failed to generated
+a compilable test suite or crashed due to a bug in DynaMOSA. Although \EVOSUITE's
+minimization could help at reducing the number of uncompilable / flaky test cases,
+for SPOON-169 all minimizations attempts ran out of time.
+% SPOON-169
+% Minimization timeout. Roll back to original test suite
+% and therefore the test suite 
 
-\TODO{why did not we get data for FASTJSON-1, FASTJSON-3, FESCAR-41, FESCAR-42,
-SPOON-105 for a search budget of 10 seconds?}
+For the AUTHZFORCE benchmarks, although \EVOSUITE managed to generate some test
+suites, most executions ended with a failure, unfortunately, we have not been
+able to reproduce this behaviour locally, hence we cannot conjecture the reason
+of such failures. \TODO{exact the same happened for SPOON-253 (120s and 240s).
+Some sort of java.lang.SecurityException: Security manager blocks ("java.lang.RuntimePermission" "setSecurityManager").}
 
+For a 10 seconds time budget, Table~\ref{table:results} reports ``-'' for
+benchmarks FASTJSON-1, FASTJSON-3, FESCAR-41, FESCAR-42, and SPOON-105.
+% last message in the log files was * Initial Number of Goals in DynMOSA = 942 / 10337
+\TODO{either infinite loop, took much time to start evolving, or DynaMOSA can't
+be used in this benchmarks with a time budget of 10s.}
+%
+On the other hand, and surprisingly, for benchmarks SPOON-155, SPOON-16,
+SPOON-20, and SPOON-211, \EVOSUITE successfully generated test suites for small
+time budgets but it failed to do it for large time budgets. For all, \EVOSUITE
+crashed due to a bug in the DynaMOSA algorithm.
+%% SPOON-155 (240s), SPOON-16 (120s), SPOON-20 (120s and 240s), SPOON-211 (120s)
+%java.lang.NullPointerException: null
+%	at org.evosuite.ga.operators.ranking.RankBasedPreferenceSorting.getNumberOfSubfronts(RankBasedPreferenceSorting.java:158) ~[evosuite-master-1.0.7-SNAPSHOT.jar:1.0.7-SNAPSHOT]
+%	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:152) ~[evosuite-master-1.0.7-SNAPSHOT.jar:1.0.7-SNAPSHOT]
+%	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:115) ~[evosuite-master-1.0.7-SNAPSHOT.jar:1.0.7-SNAPSHOT]
 
-%~\EVOSUITE failed to produce any test suites for benchmarks DUBBO-2 and
-%WEBMAGIC-4, and generally struggled with most REDISSON benchmarks
-%(highlighted in grey in Table~\ref{table:results}). The former two
-%benchmarks had missing dependencies in the competition
-%setup~\cite{sbst18competition}, which explains why \EVOSUITE was
-%incapable of generating any test: When a dependency of the class under
-%test is missing, then \EVOSUITE intentionally aborts with an error to
-%inform the user of the configuration error. While this is desirable
-%behavior during regular usage, arguably in the scope of the
-%competition \EVOSUITE could try to ignore such errors and try to
-%generate tests nevertheless, as it might still be possible to cover
-%code even with some missing dependencies. 
-
-%For the REDISSON benchmarks, most
-%executions ended with a timeout; unfortunately, we have not been able
-%to reproduce this behaviour locally, hence we can only conjecture that
-%the timeouts (reported during the initialisation phase) are due to the
-%large number of dependency classes (>7000) that need to be loaded for
-%these benchmarks to start off the test generation.
 
 
 %------------------------------------------------------------------------- 
