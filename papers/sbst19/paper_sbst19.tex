@@ -578,11 +578,22 @@ for SPOON-169 all minimizations attempts ran out of time.
 % Minimization timeout. Roll back to original test suite
 % and therefore the test suite 
 
-For the AUTHZFORCE benchmarks, although \EVOSUITE managed to generate some test
-suites, most executions ended with a failure, unfortunately, we have not been
-able to reproduce this behaviour locally, hence we cannot conjecture the reason
-of such failures. \TODO{exact the same happened for SPOON-253 (120s and 240s).
-Some sort of java.lang.SecurityException: Security manager blocks ("java.lang.RuntimePermission" "setSecurityManager").}
+For the AUTHZFORCE benchmarks, although \EVOSUITE managed to generate
+some test suites, most executions for data collection ended with a
+failure. Specifically, for these classes an exception was raised for
+test execution for \emph{all} tools in the competition. However,
+while this exception was not problematic for other tools, it caused
+an inconsistent state of the JVM which led to the \texttt{@Before}
+setup methods of \EVOSUITE to fail (the \texttt{@Before} method was
+not able to configure \EVOSUITE's custom security manager because it
+was never correctly removed). As a consequence, all test executions
+failed. We were not able to reproduce the error in the competition
+infrastructure, and thus cannot conjecture about the causes. The same
+problem also occurred for SPOON-253. While in principle it would be
+possible to extend \EVOSUITE to try to ignore such errors and keep on
+executing tests, as explained it is \EVOSUITE's philosophy that the
+user should be made aware of configuration errors, and hence such an
+extension would only serve to tune \EVOSUITE for the competition.
 
 For a 10 seconds time budget, Table~\ref{table:results} reports ``-'' for
 benchmarks FASTJSON-1, FASTJSON-3, FESCAR-41, FESCAR-42, and SPOON-105.
@@ -623,7 +634,7 @@ To learn more about \EVOSUITE, visit our Web site:
 %\noindent
 \textbf{Acknowledgments:} Many thanks to all the contributors to
 \EVOSUITE.  This project has been funded by the EPSRC project
-``GREATEST'' (EP/N023978/1), and by the National Research Fund,
+``GREATEST'' (EP/N023978/2), and by the National Research Fund,
 Luxembourg (FNR/P10/03). \TODO{update}
 
 
