@@ -322,35 +322,18 @@ can be used on the command line, or through plugins for popular
 development tools such as IntelliJ, Eclipse, or
 Maven~\cite{ICST16_Tool}.
 
-\TODO{introduce DynaMOSA}
-The underlying genetic algorithm uses test suites as representation
-(chromosomes). Each test suite consists of a variable number of test
-cases, each of which is represented as a variable-length sequence of
-Java statements (e.g., calls on the class under test). A population of
-randomly generated individuals is evolved using suitable search
-operators (e.g., selection, crossover and mutation), such that
-iteratively better solutions with respect to the optimisation target
-are produced. The optimisation target is to maximise code coverage. To
-achieve this, the fitness function uses standard heuristics such as
-the branch distance; see~\cite{GoA_TSE12} for more details. \EVOSUITE
-can be configured to optimise for multiple coverage criteria at the
-same time, and the default configuration combines branch coverage with
+For this edition of the competition, \EVOSUITE was configured with \textit{Dynamic Many-Objective Sorting Algorithm} (DynaMOSA) as a search algorithm. DynMOSA~\cite{dynamosa, panichella:ssbse2018} is a recently developed many-objective algorithm that incrementally optimizes multiple coverage criteria at the same time. More specifically, different testing coverage requirements (e.g., branches) are treated as distinct, contrasting search objectives in a many-objective paradigm. Search objectives are computed using standard heuristics for code coverage, such as the branch distance and the approach level (see~\cite{GoA_TSE12} for more details). Coverage requirements are prioritized during the search according to their structural dependencies in the control dependency graph. The search is initialized with the coverage requirements (e.g., branches) positioned higher in the hierarchy; then, the remaining requirements are incrementally inserted in later generations when their dominator requirements are covered.
+
+DynaMOSA evolves test cases~\cite{dynamosa}, which correspond to the chromosomes for the search. Each test case consists of variable-length sequences of Java statements (e.g., primitive statements and calls on the class under test). A population of randomly generated test cases is evolved using search operators (e.g., selection, crossover and mutation) to iteratively produce test cases that are closer to satisfy the target coverage requirements. The final test suite is formed by the shorter test cases encountered during the search, and that satisfy the coverage requirements. These tests are stored in an external data structure, called \textit{archive}~\cite{mosa,dynamosa}.
+
+\EVOSUITE can be configured to satisfy for multiple coverage criteria at the same time, and the default configuration combines branch coverage with
 mutation testing~\cite{emse14_mutation} and other basic
-criteria~\cite{rojas2015combining}. Once the search is completed,
-\EVOSUITE applies various optimisations to improve the readability of
-the generated tests. For example, tests are minimised, and a
-minimised set of effective test assertions is selected using mutation
-analysis~\cite{10.1109/TSE.2011.93}. For more details on the tool and
-its abilities we refer to~\cite{FrA11c,FrA13a}.
+criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE applies various post-search optimizations aimed to improve the readability of
+the generated tests. For example, tests are minimised and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimization we refer to~\cite{FrA11c,FrA13a}.
 
 
-The effectiveness of \EVOSUITE has been evaluated on open source as
-well as industrial software in terms of code
-coverage~\cite{fraser2014large,emse_archive,ea_evaluation}, fault finding
-effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects
-on developer
-productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and software
-maintenance~\cite{ICST2018_Maintenance}.
+The effectiveness of \EVOSUITE has been evaluated on open source as well as industrial software in terms of code coverage~\cite{fraser2014large,emse_archive,ea_evaluation,dynamosa}, fault finding
+effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and software maintenance~\cite{ICST2018_Maintenance}.
 
 \EVOSUITE has a longstanding record of success at the unit testing
 tool competition, having ranked second in the third edition of the
