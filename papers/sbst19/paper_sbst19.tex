@@ -329,7 +329,7 @@ DynaMOSA evolves test cases~\cite{dynamosa}, which correspond to the chromosomes
 \EVOSUITE can be configured to satisfy for multiple coverage criteria at the same time, and the default configuration combines branch coverage with
 mutation testing~\cite{emse14_mutation} and other basic
 criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE applies various post-search optimizations aimed to improve the readability of
-the generated tests. For example, tests are minimised and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimization we refer to~\cite{FrA11c,FrA13a}.
+the generated tests. For example, tests are minimized and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimization we refer to~\cite{FrA11c,FrA13a}.
 
 
 In the past, the effectiveness of \EVOSUITE has been evaluated on open
@@ -381,8 +381,8 @@ tests~\cite{arcuri2014automated}, as well as new types of test
 assertions (e.g., related to arrays and standard container classes).
 
 Like in previous instances of the competition, we enabled the
-post-processing step of test minimisation---not for efficiency
-reasons, but because minimised tests are less likely to break. To
+post-processing step of test minimization---not for efficiency
+reasons, but because minimized tests are less likely to break. To
 reduce the overall time of test generation we included all assertions
 rather than filtering them with mutation
 analysis~\cite{10.1109/TSE.2011.93}, which is computationally
@@ -393,7 +393,7 @@ Four time budgets were used to call each tool: 10, 60, 120 and 240
 seconds. We used the same strategy used in previous competition
 (e.g.,~\cite{evosuiteAtSbst2016}) to distribute the overall time
 budget onto the different phases of \EVOSUITE (e.g., initialisation,
-search, minimisation, assertion generation, compilation check, removal
+search, minimization, assertion generation, compilation check, removal
 of flaky tests). That is, 50\% of the time was allocated to the
 search, and the rest was distributed equally to the remaining phases.
 
