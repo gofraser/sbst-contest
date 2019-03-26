@@ -332,9 +332,14 @@ criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE appl
 the generated tests. For example, tests are minimised and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimization we refer to~\cite{FrA11c,FrA13a}.
 
 
-The effectiveness of \EVOSUITE has been evaluated on open source as well as industrial software in terms of code coverage~\cite{fraser2014large,emse_archive,ea_evaluation,dynamosa}, fault finding
-effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and software maintenance~\cite{ICST2018_Maintenance}.
-
+In the past, the effectiveness of \EVOSUITE has been evaluated on open
+source as well as industrial software in terms of code
+coverage~\cite{fraser2014large,emse_archive,ea_evaluation,dynamosa},
+fault finding
+effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects
+on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and
+software maintenance~\cite{ICST2018_Maintenance}.
+%
 \EVOSUITE has a longstanding record of success at the unit testing
 tool competition, having ranked second in the third edition of the
 competition~\cite{evosuiteAtSbst2015} and first in all the other
@@ -406,15 +411,15 @@ search, and the rest was distributed equally to the remaining phases.
 }	
 \end{table*}
 
-\begin{table*}[t]
-  \centering
-  \caption{\label{table:t3_results}Detailed results of \TT on the
-    SBST benchmark classes.}
-\vspace{-1em}
-\resizebox{\textwidth}{!}{  
-\input{mainTable-t3.tex}
-}	
-\end{table*}
+%\begin{table*}[t]
+%  \centering
+%  \caption{\label{table:t3_results}Detailed results of \TT on the
+%    SBST benchmark classes.}
+%\vspace{-1em}
+%\resizebox{\textwidth}{!}{  
+%\input{mainTable-t3.tex}
+%}	
+%\end{table*}
 
 % \begin{table*}[t]
 %   \centering
@@ -432,9 +437,8 @@ search, and the rest was distributed equally to the remaining phases.
 % }	
 % \end{table*}
 
-\paragraph{Overall Results}
+%\paragraph{Overall Results}
 
-\TODO{}
 
 %Table~\ref{table:results} lists the branch coverage and mutation
 %analysis results achieved by \EVOSUITE on all benchmark classes in the
@@ -471,9 +475,6 @@ search, and the rest was distributed equally to the remaining phases.
 % generally worse than those of other projects, both in terms of
 % mutation score and ratio of fault detection.
 
-\paragraph{Flaky Tests}
-
-\TODO{}
 
 %~\EVOSUITE generated \FlakyEvosuite flaky tests per run on average,
 %much lower than the number of flaky tests produced by the competing
@@ -534,23 +535,26 @@ search, and the rest was distributed equally to the remaining phases.
 %% features on test generation effectiveness for the benchmarks in the
 %% competition.
 
+On the whole, the performance of \EVOSUITE was in line with previous
+results, although \EVOSUITE seemed to fail on a notably large number
+of classes. In particular, \EVOSUITE failed to produce any test
+suites for benchmarks DUBBO-2, SPOON-169, SPOON-25, and WEBMAGIC-4,
+and generally struggled with most AUTHZFORCE benchmarks (highlighted
+in grey in Table~\ref{table:results}).
 
-\paragraph{Problematic benchmarks}
-
-\EVOSUITE failed to produce any test suites for benchmarks DUBBO-2, SPOON-169,
-SPOON-25, and WEBMAGIC-4, and generally struggled with most AUTHZFORCE
-benchmarks (highlighted in grey in Table~\ref{table:results}).
-
-The benchmarks DUBBO-2 and WEBMAGIC-4 had missing dependencies in the
-competition setup~\cite{sbst19competition} (something we reported last
-year~\cite{evosuiteAtSbst2018}), which explains why \EVOSUITE was incapable of
-generating any test: When a dependency of the class under test is missing, then
-\EVOSUITE intentionally aborts with an error to inform the user of the
-configuration error. While this is desirable behavior during regular usage,
-arguably in the scope of the competition \EVOSUITE could try to ignore such
-errors and try to generate tests nevertheless, as it might still be possible to
-cover code even with some missing dependencies. For the benchmark FASTJSON-3 and
-a 10s time budget, \EVOSUITE generated some test suites but due to a bug in the
+A closer look at the benchmarks DUBBO-2 and WEBMAGIC-4 reveals that
+there were missing dependencies in the competition
+setup~\cite{sbst19competition} (similar to cases in previous
+years~\cite{evosuiteAtSbst2018}), which explains why \EVOSUITE was
+incapable of generating any test: When a dependency of the class
+under test is missing, then \EVOSUITE intentionally aborts with an
+error to inform the user of the configuration error. While this is
+desirable behavior during regular usage, arguably in the scope of the
+competition \EVOSUITE could try to ignore such errors and try to
+generate tests nevertheless, as it might still be possible to cover
+code even with some missing dependencies. For the benchmark
+FASTJSON-3 and a 10s time budget, \EVOSUITE generated some test
+suites but due to a bug in the
 competition infrastructure, no data was collected. % FileNotFoundException in the infrastructure
 
 For the benchmarks SPOON-169 and SPOON-25, \EVOSUITE either failed to generated
@@ -578,16 +582,24 @@ executing tests, as explained it is \EVOSUITE's philosophy that the
 user should be made aware of configuration errors, and hence such an
 extension would only serve to tune \EVOSUITE for the competition.
 
-For a 10 seconds time budget, Table~\ref{table:results} reports ``-'' for
-benchmarks FASTJSON-1, FASTJSON-3, FESCAR-41, FESCAR-42, and SPOON-105.
+In general, \EVOSUITE often struggles with a time budget as low as 10
+seonds. For example, Table~\ref{table:results} reports ``-'' for
+benchmarks FASTJSON-1, FASTJSON-3, FESCAR-41, FESCAR-42, and
+SPOON-105.
 % last message in the log files was * Initial Number of Goals in DynMOSA = 942 / 10337
-\TODO{either infinite loop, took much time to start evolving, or DynaMOSA can't
-be used in this benchmarks with a time budget of 10s.}
+%\TODO{either infinite loop, took much time to start evolving, or DynaMOSA can't
+%be used in this benchmarks with a time budget of 10s.}
 %
-On the other hand, and surprisingly, for benchmarks SPOON-155, SPOON-16,
-SPOON-20, and SPOON-211, \EVOSUITE successfully generated test suites for small
-time budgets but it failed to do it for large time budgets. For all, \EVOSUITE
-crashed due to a bug in the DynaMOSA algorithm.
+Surprisingly, for benchmarks SPOON-155, SPOON-16, SPOON-20, and
+SPOON-211, \EVOSUITE successfully generated test suites for small
+time budgets but it failed to do it for large time budgets. For all,
+\EVOSUITE crashed due to a bug in the DynaMOSA algorithm which had
+not been revealed by our previous experiments. Consequently, even
+though DynaMOSA is known to increase the coverage \EVOSUITE achieves
+subtantially in general, this increase was countered with some
+missing datapoints. As always, the competition was helpful in
+improving the robustness of the tool, by revealing this and other
+bugs.
 %% SPOON-155 (240s), SPOON-16 (120s), SPOON-20 (120s and 240s), SPOON-211 (120s)
 %java.lang.NullPointerException: null
 %	at org.evosuite.ga.operators.ranking.RankBasedPreferenceSorting.getNumberOfSubfronts(RankBasedPreferenceSorting.java:158) ~[evosuite-master-1.0.7-SNAPSHOT.jar:1.0.7-SNAPSHOT]
@@ -601,8 +613,8 @@ crashed due to a bug in the DynaMOSA algorithm.
 
 This paper reports on the participation of the \EVOSUITE test
 generation tool in the 7th SBST Java Unit Testing Tool Contest. With
-an overall score of \TOTALPOINTS points, \EVOSUITE achieved the highest score
-of all tools in the competition.
+an overall score of \TOTALPOINTS points, \EVOSUITE achieved the
+highest score of all tools in the competition.
 
 
 To learn more about \EVOSUITE, visit our Web site:
@@ -618,7 +630,7 @@ To learn more about \EVOSUITE, visit our Web site:
 \textbf{Acknowledgments:} Many thanks to all the contributors to
 \EVOSUITE.  This project has been funded by the EPSRC project
 ``GREATEST'' (EP/N023978/2), and by the National Research Fund,
-Luxembourg (FNR/P10/03). \TODO{update}
+Luxembourg (FNR/P10/03).
 
 
 %------------------------------------------------------------------------- 
