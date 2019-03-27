@@ -328,8 +328,8 @@ DynaMOSA evolves test cases~\cite{dynamosa}, which correspond to the chromosomes
 
 \EVOSUITE can be configured to satisfy for multiple coverage criteria at the same time, and the default configuration combines branch coverage with
 mutation testing~\cite{emse14_mutation} and other basic
-criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE applies various post-search optimizations aimed to improve the readability of
-the generated tests. For example, tests are minimized and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimization we refer to~\cite{FrA11c,FrA13a}.
+criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE applies various post-search optimisations aimed to improve the readability of
+the generated tests. For example, tests are minimised and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimisation we refer to~\cite{FrA11c,FrA13a}.
 
 
 In the past, the effectiveness of \EVOSUITE has been evaluated on open
@@ -358,10 +358,10 @@ editions~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013,evosuiteAtSbst2016,evosu
 \section{Competition Setup}
 
 The configuration of \EVOSUITE for the 2019 competition is largely
-based on its default values, since these have been tuned
+based on its default values since these have been tuned
 extensively~\cite{arcuri2013parameter}. We used the default set of
 coverage criteria~\cite{rojas2015combining} (e.g., line coverage,
-branch coverage, branch coverage by direct method invocation, weak
+branch coverage, branch coverage by direct method invocations, weak
 mutation testing, output coverage, exception coverage). \EVOSUITE uses
 an archive of solutions~\cite{emse_archive} to keep the search focused
 on uncovered goals, iteratively discarding covered goals and storing
@@ -376,7 +376,7 @@ seeding~\cite{sakti2015instance} and support Java Enterprise Edition
 features~\cite{arcuri2016java}. %\TODO{any other noteworthy change?} No.
 \EVOSUITE is actively maintained, therefore several bug fixes and
 minor improvements have been applied since the last instance of the
-competition, in particular in relation to non-determinism and flaky
+competition, in particular regarging non-determinism and flaky
 tests~\cite{arcuri2014automated}, as well as new types of test
 assertions (e.g., related to arrays and standard container classes).
 
@@ -550,14 +550,14 @@ incapable of generating any test: When a dependency of the class
 under test is missing, then \EVOSUITE intentionally aborts with an
 error to inform the user of the configuration error. While this is
 desirable behavior during regular usage, arguably in the scope of the
-competition \EVOSUITE could try to ignore such errors and try to
+competition, \EVOSUITE could try to ignore such errors and try to
 generate tests nevertheless, as it might still be possible to cover
 code even with some missing dependencies. For the benchmark
 FASTJSON-3 and a 10s time budget, \EVOSUITE generated some test
-suites but due to a bug in the
+suites, but due to a bug in the
 competition infrastructure, no data was collected. % FileNotFoundException in the infrastructure
 
-For the benchmarks SPOON-169 and SPOON-25, \EVOSUITE either failed to generated
+For the benchmarks SPOON-169 and SPOON-25, \EVOSUITE either failed to generate
 a compilable test suite or crashed due to a bug in DynaMOSA. Although \EVOSUITE's
 minimization could help at reducing the number of uncompilable / flaky test cases,
 for SPOON-169 all minimizations attempts ran out of time.
@@ -567,7 +567,7 @@ for SPOON-169 all minimizations attempts ran out of time.
 
 For the AUTHZFORCE benchmarks, although \EVOSUITE managed to generate
 some test suites, most executions for data collection ended with a
-failure. Specifically, for these classes an exception was raised for
+failure. Specifically, for these classes, an exception was raised for
 test execution for \emph{all} tools in the competition. However,
 while this exception was not problematic for other tools, it caused
 an inconsistent state of the JVM which led to the \texttt{@Before}
@@ -591,12 +591,12 @@ SPOON-105.
 %be used in this benchmarks with a time budget of 10s.}
 %
 Surprisingly, for benchmarks SPOON-155, SPOON-16, SPOON-20, and
-SPOON-211, \EVOSUITE successfully generated test suites for small
-time budgets but it failed to do it for large time budgets. For all,
+SPOON-211, \EVOSUITE successfully generated test suites for small-time 
+budgets, but it failed to do it for large time budgets. For all,
 \EVOSUITE crashed due to a bug in the DynaMOSA algorithm which had
 not been revealed by our previous experiments. Consequently, even
-though DynaMOSA is known to increase the coverage \EVOSUITE achieves
-subtantially in general, this increase was countered with some
+though DynaMOSA is known to increase the coverage, \EVOSUITE achieves
+substantially in general, this increase was countered with some
 missing datapoints. As always, the competition was helpful in
 improving the robustness of the tool, by revealing this and other
 bugs.
