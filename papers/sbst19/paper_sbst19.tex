@@ -183,6 +183,13 @@
 %\title{Unit Testing Tool competition: Results for EvoSuite}
 \title{\EVOSUITE at the SBST 2019 Tool Competition}
  
+\author{Jos\'e Campos}
+\affiliation{%
+  \institution{University of Washington}
+  \city{Seattle}
+  \country{USA}
+}
+\email{jmcampos@uw.edu}
 \author{Annibale Panichella}
 \affiliation{%
   \institution{Delft University of Technology}
@@ -191,13 +198,6 @@
 }
 \email{a.panichella@tudelft.nl}
 
-\author{Jos\'e Campos}
-\affiliation{%
-  \institution{University of Washington}
-  \city{Seattle}
-  \country{USA}
-}
-\email{jmcampos@uw.edu}
 
 \author{Gordon Fraser}
 \affiliation{%
@@ -317,7 +317,7 @@ uses a genetic algorithm to automatically generate test suites for
 Java classes. Given the name of a target class and the full Java
 classpath (i.e., where to find the compiled bytecode of the class
 under test and all its dependencies), \EVOSUITE automatically produces
-a set of JUnit test cases aimed at maximising code coverage. \EVOSUITE
+a set of JUnit test cases aimed at maximizing code coverage. \EVOSUITE
 can be used on the command line, or through plugins for popular
 development tools such as IntelliJ, Eclipse, or
 Maven~\cite{ICST16_Tool}.
@@ -328,8 +328,8 @@ DynaMOSA evolves test cases~\cite{dynamosa}, which correspond to the chromosomes
 
 \EVOSUITE can be configured to satisfy for multiple coverage criteria at the same time, and the default configuration combines branch coverage with
 mutation testing~\cite{emse14_mutation} and other basic
-criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE applies various post-search optimisations aimed to improve the readability of
-the generated tests. For example, tests are minimised and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimisation we refer to~\cite{FrA11c,FrA13a}.
+criteria~\cite{rojas2015combining}. Once the search is completed, \EVOSUITE applies various post-search optimizations aimed to improve the readability of
+the generated tests. For example, tests are minimized and test assertions are selected using mutation analysis~\cite{10.1109/TSE.2011.93}. For more details on post-process optimization we refer to~\cite{FrA11c,FrA13a}.
 
 
 In the past, the effectiveness of \EVOSUITE has been evaluated on open
