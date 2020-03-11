@@ -1,0 +1,161 @@
+\documentclass[sigconf]{acmart}
+\usepackage{amsfonts}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{algorithmic}
+\usepackage{float}
+%\usepackage[numbers,sort&compress,square]{natbib}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subfigure}
+%\usepackage{hyperref}
+\usepackage{color}
+%\usepackage[usenames,dvipsnames,]{xcolor}
+%\usepackage{soul}
+\usepackage{xspace}
+\usepackage{boxedminipage}
+\usepackage{alltt}
+\usepackage{multirow}
+\usepackage{paralist}
+\usepackage{amsmath}
+\usepackage{balance}
+\definecolor{light-gray}{gray}{0.90}
+
+
+\newcommand{\EVOSUITE}{{\sc EvoSuite}\xspace}
+\newcommand{\RANDOOP}{{\sc Randoop}\xspace}
+\newcommand{\MUTEST}{{\sc $\mu$Test}\xspace}
+\newcommand{\CS}{{\sc SF100}\xspace}
+\newcommand{\TOTALPOINTS}{{255.43}\xspace}
+
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmcopyright}
+\copyrightyear{2018}
+\acmYear{2018}
+\acmDOI{10.1145/1122445.1122456}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[SBST '20]{SBST'20: IEEE/ACM 13th International Workshop on Search-Based Software Testing}{October 2020}{Seoul, South Korea}
+\acmBooktitle{SBST'20: IEEE/ACM 13th International Workshop on Search-Based Software Testing,
+  October 2020, Seoul, South Korea}
+\acmPrice{15.00}
+\acmISBN{978-1-4503-9999-9/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{\EVOSUITE at the SBST 2020 Tool Competition}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Annibale Panichella}
+%\orcid{0000-0002-5385-7695}
+%\author{G.K.M. Tobin}
+%\authornotemark[1]
+%\email{webmaster@marysville-ohio.com}
+\affiliation{%
+  \institution{Delft University of Technology}
+  \state{The Netherlands}
+}
+\email{a.panichella@tudelft.nl}
+
+\author{Jose Campos}
+%\email{a.panichella@tudelft.nl}
+%\orcid{0000-0002-5385-7695}
+%\author{G.K.M. Tobin}
+%\authornotemark[1]
+\affiliation{%
+  \institution{LASIGE, Faculdade de Ci\^encias \\ Universidade de Lisboa}
+  \state{Portugal}
+}
+%\email{webmaster@marysville-ohio.com}
+
+\author{Gordon Fraser}
+\affiliation{%
+  \institution{Chair of Software Engineering II, University of Passau}
+  \city{Passau}
+  \country{Germany}
+}
+\email{gordon.fraser@uni-passau.de}
+
+%\begin{teaserfigure}
+
+%\end{teaserfigure}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+%\renewcommand{\shortauthors}{Anonymous et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+TBD
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+\section{\EVOSUITE}
+
+\section{Tool Setup}
+
+\section{Benchmark Results}
+
+\section{Conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{papers}
+
+
+
+
+
+
+\end{document}
