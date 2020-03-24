@@ -1,0 +1,78 @@
+\begin{tabular}{ ll rr rr}\toprule 
+ \multirow{2}{1in}{Benchmark} & \multirow{2}{1in}{Java Class} &  \multicolumn{2}{c}{Branch Coverage} &  \multicolumn{2}{c}{Mutation Score}\\\cmidrule(lr){3-4}\cmidrule(lr){5-6} 
+ & & 60s & 180s & 60s & 180s \\ 
+\midrule 
+FESCAR-10  &  com.alibaba.fescar.core.model.BranchType & 80.0\% & 90.0\% & 80.0\% & 90.0\%\\ 
+FESCAR-12  &  com.alibaba.fescar.core.rpc.netty.RpcServerHandler & 87.5\% & 87.5\% & 100.0\% & 100.0\%\\ 
+FESCAR-13  &  com.alibaba.fescar.core.exception.TransactionExceptionCode & 100.0\% & 100.0\% & 100.0\% & 100.0\%\\ 
+FESCAR-15  &  com.alibaba.fescar.core.rpc.netty.RpcServer & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+FESCAR-17  &  com.alibaba.fescar.core.protocol.transaction.GlobalBeginResponse & 100.0\% & 100.0\% & 90.0\% & 90.0\%\\ 
+FESCAR-2  &  com.alibaba.fescar.core.service.ServiceManagerStaticConfigImpl & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+FESCAR-23  &  com.alibaba.fescar.core.protocol.MergeResultMessage & 76.4\% & 50.0\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+FESCAR-25  &  com.alibaba.fescar.core.rpc.netty.RmMessageListener & 62.5\% & 48.8\% & 22.2\% & 17.8\%\\ 
+FESCAR-28  &  com.alibaba.fescar.core.rpc.ClientType & 90.0\% & 100.0\% & 90.0\% & 100.0\%\\ 
+FESCAR-32  &  com.alibaba.fescar.core.protocol.transaction.BranchRegisterRequest & 94.4\% & 87.5\% & 95.2\% & 78.3\%\\ 
+FESCAR-33  &  com.alibaba.fescar.core.model.GlobalStatus & 100.0\% & 100.0\% & 100.0\% & 100.0\%\\ 
+FESCAR-34  &  com.alibaba.fescar.core.protocol.ResultCode & 90.0\% & 100.0\% & 90.0\% & 100.0\%\\ 
+FESCAR-37  &  com.alibaba.fescar.core.rpc.RpcContext & 86.8\% & 91.2\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+FESCAR-41  &  com.alibaba.fescar.core.rpc.netty.RmRpcClient & 2.0\% & 2.0\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 2.4\%\\ 
+FESCAR-42  &  com.alibaba.fescar.core.rpc.DefaultServerMessageListenerImpl & 11.8\% & 27.1\% & 12.1\% & 25.4\%\\ 
+FESCAR-5  &  com.alibaba.fescar.core.protocol.MessageFuture & 96.0\% & 98.0\% & 99.2\% & 100.0\%\\ 
+FESCAR-6  &  com.alibaba.fescar.core.rpc.netty.TmRpcClient & 2.7\% & 2.7\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 2.7\%\\ 
+FESCAR-7  &  com.alibaba.fescar.core.rpc.netty.MessageCodecHandler & 73.3\% & 77.2\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+FESCAR-8  &  com.alibaba.fescar.core.rpc.netty.NettyPoolableFactory & 50.8\% & 57.5\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+FESCAR-9  &  com.alibaba.fescar.core.protocol.transaction.GlobalBeginRequest & 100.0\% & 100.0\% & 99.1\% & 98.2\%\\ 
+GUAVA-102  &  com.google.common.collect.LinkedListMultimap & 12.9\% & 11.6\% & 19.2\% & 14.8\%\\ 
+GUAVA-110  &  com.google.common.collect.LexicographicalOrdering & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 7.5\% & 0.6\% & 15.0\%\\ 
+GUAVA-128  &  com.google.common.base.Throwables & 75.8\% & 25.3\% & 81.0\% & 26.8\%\\ 
+GUAVA-129  &  com.google.common.collect.SparseImmutableTable & 37.5\% & 42.5\% & 35.0\% & 43.8\%\\ 
+GUAVA-159  &  com.google.common.primitives.ParseRequest & 100.0\% & 100.0\% & 50.0\% & 50.0\%\\ 
+GUAVA-169  &  com.google.common.math.LongMath & 94.2\% & 85.3\% & 99.2\% & 89.3\%\\ 
+GUAVA-177  &  com.google.common.primitives.Doubles & 99.3\% & 99.3\% & 100.0\% & 100.0\%\\ 
+GUAVA-181  &  com.google.common.primitives.SignedBytes & 100.0\% & 100.0\% & 100.0\% & 100.0\%\\ 
+GUAVA-184  &  com.google.thirdparty.publicsuffix.PublicSuffixType & 100.0\% & 100.0\% & 100.0\% & 100.0\%\\ 
+GUAVA-196  &  com.google.common.io.Closeables & 77.5\% & 75.0\% & 88.0\% & 88.0\%\\ 
+GUAVA-2  &  com.google.common.collect.MinMaxPriorityQueue & 6.4\% & 11.1\% & 16.5\% & 19.2\%\\ 
+GUAVA-206  &  com.google.common.collect.ImmutableEnumSet & 23.6\% & 24.5\% & 7.1\% & 7.6\%\\ 
+GUAVA-212  &  com.google.common.net.MediaType & 77.6\% & 83.0\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+GUAVA-22  &  com.google.common.graph.Graphs & 51.8\% & 47.3\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+GUAVA-224  &  com.google.common.primitives.UnsignedLongs & 100.0\% & 90.0\% & 100.0\% & 90.0\%\\ 
+GUAVA-240  &  com.google.common.collect.FilteredMultimapValues & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 5.0\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+GUAVA-39  &  com.google.common.collect.TreeMultiset & 18.6\% & 27.9\% & 19.5\% & 31.3\%\\ 
+GUAVA-47  &  com.google.common.collect.FilteredEntryMultimap & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 0.7\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 0.4\%\\ 
+GUAVA-90  &  com.google.common.io.FileBackedOutputStream & 98.1\% & 90.0\% & 98.0\% & 89.3\%\\ 
+GUAVA-95  &  com.google.common.collect.ComparatorOrdering & 12.5\% & 30.0\% & 18.8\% & 31.2\%\\ 
+PDFBOX-117  &  org.apache.pdfbox.filter.Predictor & 83.9\% & 91.0\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 28.6\%\\ 
+PDFBOX-127  &  org.apache.pdfbox.pdfparser.PDFObjectStreamParser & 37.1\% & 43.6\% & 44.4\% & 50.6\%\\ 
+PDFBOX-130  &  org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner & 1.7\% & 1.7\% & 1.5\% & 2.5\%\\ 
+PDFBOX-157  &  org.apache.pdfbox.pdmodel.font.PDType1Font & 0.4\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-198  &  org.apache.pdfbox.pdmodel.fdf.FDFAnnotationLine & 32.4\% & 32.7\% & 5.5\% & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-214  &  org.apache.pdfbox.pdfparser.EndstreamOutputStream & 99.2\% & 90.0\% & 48.0\% & 40.0\%\\ 
+PDFBOX-22  &  org.apache.pdfbox.pdmodel.fdf.FDFAnnotationCaret & 64.3\% & 64.3\% & 10.5\% & 31.4\%\\ 
+PDFBOX-220  &  org.apache.pdfbox.filter.JPXFilter & 7.7\% & 7.3\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-229  &  org.apache.pdfbox.util.XMLUtil & 52.5\% & 60.0\% & 10.7\% & 13.6\%\\ 
+PDFBOX-234  &  org.apache.pdfbox.pdmodel.interactive.action.PDActionSound & 88.9\% & 87.8\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 20.0\%\\ 
+PDFBOX-235  &  org.apache.pdfbox.pdmodel.font.PDTrueTypeFontEmbedder & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-26  &  org.apache.pdfbox.pdmodel.encryption.SecurityProvider & 100.0\% & 100.0\% & 100.0\% & 90.0\%\\ 
+PDFBOX-265  &  org.apache.pdfbox.pdmodel.font.PDType3Font & 42.3\% & 52.0\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-278  &  org.apache.pdfbox.pdfwriter.ContentStreamWriter & 96.7\% & 96.3\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-285  &  org.apache.pdfbox.pdmodel.interactive.digitalsignature.PDSignature & 89.5\% & 95.5\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-40  &  org.apache.pdfbox.pdmodel.font.PDCIDFontType2 & 45.1\% & 46.6\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-62  &  org.apache.pdfbox.rendering.PageDrawer & 1.2\% & 4.2\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+PDFBOX-8  &  org.apache.pdfbox.pdmodel.font.FileSystemFontProvider & 34.2\% & 35.8\% & 41.9\% & 52.2\%\\ 
+PDFBOX-83  &  org.apache.pdfbox.contentstream.operator.text.SetTextRenderingMode & 92.5\% & 100.0\% & 82.5\% & 87.5\%\\ 
+PDFBOX-91  &  org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDArtifactMarkedContent & 71.2\% & 92.5\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+SPOON-105  &  spoon.support.compiler.jdt.PositionBuilder & 7.8\% & 3.9\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+SPOON-155  &  spoon.reflect.visitor.filter.AllMethodsSameSignatureFunction & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 1.2\% & 0.7\% & 3.2\%\\ 
+SPOON-16  &  spoon.reflect.path.CtElementPathBuilder & 8.0\% & 9.0\% & 10.3\% & 6.4\%\\ 
+SPOON-169  &  spoon.reflect.visitor.ImportScannerImpl & 0.1\% & 4.7\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & 1.3\%\\ 
+SPOON-20  &  spoon.support.reflect.reference.CtLocalVariableReferenceImpl & 14.0\% & 18.0\% & 3.3\% & 13.3\%\\ 
+SPOON-211  &  spoon.reflect.path.impl.CtRolePathElement & 6.2\% & 10.3\% & 6.2\% & 11.2\%\\ 
+SPOON-25  &  spoon.pattern.internal.ValueConvertorImpl & 1.2\% & 3.1\% & 0.7\% & 4.3\%\\ 
+SPOON-253  &  spoon.pattern.internal.parameter.MapParameterInfo & 72.5\% & 73.8\% & \cellcolor{light-gray} \textcolor{black}{0.0\%} & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+SPOON-32  &  spoon.MavenLauncher & 11.2\% & 12.5\% & 6.0\% & 6.7\%\\ 
+SPOON-65  &  spoon.support.DefaultCoreFactory & 5.9\% & 8.9\% & 0.1\% & \cellcolor{light-gray} \textcolor{black}{0.0\%}\\ 
+\midrule 
+Average &  &  50.8\% &  51.7\% &  32.6\% &  33.8\%\\ 
+\bottomrule 
+\end{tabular} 

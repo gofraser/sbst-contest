@@ -10,15 +10,15 @@
 \usepackage{booktabs}
 \usepackage{subfigure}
 %\usepackage{hyperref}
-\usepackage{color}
+\usepackage{xspace}
+\usepackage{xcolor,colortbl}
 %\usepackage[usenames,dvipsnames,]{xcolor}
 %\usepackage{soul}
-\usepackage{xspace}
-\usepackage{boxedminipage}
-\usepackage{alltt}
+%\usepackage{boxedminipage}
+%\usepackage{alltt}
 \usepackage{multirow}
-\usepackage{paralist}
-\usepackage{amsmath}
+%\usepackage{paralist}
+%\usepackage{amsmath}
 \usepackage{balance}
 \definecolor{light-gray}{gray}{0.90}
 
@@ -145,11 +145,79 @@ TBD
 
 \section{\EVOSUITE}
 
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\caption{Classification of the \EVOSUITE unit test generation
+  tool}\label{tool-description}
+\resizebox{1.0\columnwidth}{!}{  
+\begin{tabular}{|l|p{5cm}|}
+  \hline
+  \multicolumn{2}{|l|}{Prerequisites} \\
+  \hline
+  Static or dynamic &  Dynamic testing at the Java class level\\
+  Software Type &  Java classes\\
+  Lifecycle phase&  Unit testing for Java programs\\
+  Environment&  All Java development environments \\
+  Knowledge required & JUnit unit testing for Java\\
+  Experience required &  Basic unit testing knowledge\\
+ \hline
+  \multicolumn{2}{|l|}{Input and Output of the tool} \\
+  \hline
+ Input & Bytecode of the target class and dependencies \\
+\hline
+Output&  JUnit 4 test cases\\
+ 
+  \hline
+  \multicolumn{2}{|l|}{Operation} \\
+  \hline
+  Interaction &  Through the command line, and plugins for IntelliJ, Maven and Eclipse\\
+  User guidance &  Manual verification of assertions for functional faults\\
+  Source of information &  http://www.evosuite.org \\
+  Maturity&  Mature research prototype, under development\\
+  Technology behind the tool & Search-based testing / many-objective optimization \\
+\hline
+  \multicolumn{2}{|l|}{Obtaining the tool and information} \\
+  \hline
+License & Lesser GPL V.3\\
+Cost & Open source\\
+Support & None \\
+\hline
+\hline
+  \multicolumn{2}{|l|}{Does there exist empirical evidence about} \\
+  \hline
+  Effectiveness and Scalability & See~\cite{GoA_TSE12,fraser2014large} \\
+%Completeness & \\
+%Effectiveness & \\
+%Efficiency & \\
+%Defect types & \\
+%Scalability & \\
+%Comprehensibility & \\
+%Learnability & \\
+%Subjective satisfaction & \\
+%Other & \\
+\hline
+\end{tabular}\vspace{-1em}
+}
+\end{table}
+
+
 \section{Tool Setup}
 
 \section{Benchmark Results}
 
-\section{Conclusion}
+
+\begin{table*}[t]
+  \centering
+  \caption{\label{table:results}Detailed results of \EVOSUITE on the
+    SBST benchmark classes.}
+\vspace{-1em}
+\resizebox{0.8\textwidth}{!}{  
+\input{mainTable.tex}
+}	
+\end{table*}
+
+
+\section{Conclusions}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{papers}
