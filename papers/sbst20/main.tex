@@ -216,6 +216,54 @@ Support & None \\
 }	
 \end{table*}
 
+%% FESCAR-15 0% coverage 0% mutation score
+
+\subsubsection*{FESCAR-15} According to the \texttt{transcript.csv} file, it
+seems that the generated test cases do cover some lines of code but no
+branches/conditions.  Looking at the \texttt{logs.log}, \EVOSUITE also reported
+0\% coverage, however there are not any issues in any log file.
+
+%% FESCAR-2 0% coverage 0% mutation score
+
+\subsubsection*{FESCAR-2} No clue.  \EVOSUITE does report some coverage at the
+end of the \texttt{logs.log} file, but somehow (and according to JaCoCo) the
+generated test suite does not cover any branch.
+
+%% FESCAR-37 86.8% coverage 0% mutation score
+
+\subsubsection*{FESCAR-37} The classpath is incomplete as there is a
+\texttt{java.lang.ClassNotFoundException: io.netty.channel.Channel}.
+
+%% GUAVA-110 0% coverage 0.6% mutation score
+
+\subsubsection*{GUAVA-110} No clue.
+
+%% FESCAR-7 73.3% coverage 0% mutation score
+%% GUAVA-212 77.6% coverage 0% mutation score
+%% GUAVA-22 51.8% coverage 0% mutation score
+%% PDFBOX-265 51.8% coverage 0% mutation score
+
+\subsubsection*{GUAVA-212, GUAVA-22, PDFBOX-265, PDFBOX-278, PDFBOX-285,
+PDFBOX-40, PDFBOX-91} The mutation analysis failed due to a
+\texttt{java.util.concurrent.ExecutionException} thrown by the experimental
+infrastructure.
+
+%% PDFBOX-62 1.2% coverage 0% mutation score
+
+\subsubsection*{PDFBOX-62} \EVOSUITE crashed due to some Mocking stuff.
+
+%% SPOON
+
+\subsubsection*{SPOON} There is no \texttt{logs.log} file to check \EVOSUITE's
+log messages.  There is any test suite for any SPOON
+class.  The reason might be due to
+\texttt{java.io.IOException: Not a valid directory name: /var/benchmarks/projects/spoon-core-7.2.0/src/main/java}.
+in the \texttt{log\_detailed.txt} file.  Also, all \texttt{transcript.csv} are
+empty.  Thus, it seems the experimental infrastructure do not even attempt to
+generate test cases for any SPOON class.  Question: how did \EVOSUITE achieved
+a 72.5\% coverage for, e.g., SPOON-253 if there is no test suite or even a valid
+attempt?
+
 
 \section{Conclusions}
 
