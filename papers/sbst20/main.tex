@@ -244,25 +244,14 @@ generated test suite does not cover any branch.
 %% PDFBOX-265 51.8% coverage 0% mutation score
 
 \subsubsection*{GUAVA-212, GUAVA-22, PDFBOX-265, PDFBOX-278, PDFBOX-285,
-PDFBOX-40, PDFBOX-91, PDFBOX-62} The mutation analysis failed due to a
-\texttt{java.util.concurrent.ExecutionException} thrown by the experimental
-infrastructure.
+PDFBOX-40, PDFBOX-91, PDFBOX-62, SPOON-105, SPOON-253} The mutation analysis
+failed due to a \texttt{java.util.concurrent.ExecutionException} thrown by the
+experimental infrastructure.
 
 %% PDFBOX-235 0% coverage 0% mutation score
+%% SPOON-155 0% coverage 0% mutation score
 
-\subsubsection*{PDFBOX-235} \EVOSUITE crashed due to some Mocking stuff.
-
-%% SPOON
-
-\subsubsection*{SPOON} There is no \texttt{logs.log} file to check \EVOSUITE's
-log messages.  There is any test suite for any SPOON
-class.  The reason might be due to
-\texttt{java.io.IOException: Not a valid directory name: /var/benchmarks/projects/spoon-core-7.2.0/src/main/java}.
-in the \texttt{log\_detailed.txt} file.  Also, all \texttt{transcript.csv} are
-empty.  Thus, it seems the experimental infrastructure do not even attempt to
-generate test cases for any SPOON class.  Question: how did \EVOSUITE achieved
-a 72.5\% coverage for, e.g., SPOON-253 if there is no test suite or even a valid
-attempt?
+\subsubsection*{PDFBOX-235, SPOON-105} \EVOSUITE crashed due to some Mocking stuff.
 
 
 \section{Conclusions}
