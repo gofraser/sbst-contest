@@ -220,34 +220,38 @@ Support & None \\
 
 \subsubsection*{FESCAR-15} According to the \texttt{transcript.csv} file, it
 seems that the generated test cases do cover some lines of code but no
-branches/conditions.  Looking at the \texttt{logs.log}, \EVOSUITE also reported
-0\% coverage and we could not find any issues in any log file. 
-For further investigation, we ran \EVOSUITE as stand-alone tool (i.e., wot using the benchmark infrastructure but it was still not capable of covering any line. Through manual investigation, we notice that the CUT manage objects of the class \texttt{ScheduledExecutorService} and \textit{threads}. Generating tests for CUTs that produce or manage threads is challenging and a well-known open problem in the literature~\cite{FrA13a}.
+branches/conditions.  
+%Looking at the \texttt{logs.log}, \EVOSUITE also reported
+%0\% coverage and we could not find any issues in any %log file. 
+For further investigation, we ran \EVOSUITE as stand-alone tool (i.e., wot using the benchmark infrastructure but it was still not capable of covering any line. Through manual investigation, we notice that the CUT manages objects of the class \texttt{ScheduledExecutorService} and \textit{threads}. Generating tests for CUTs that produce or manage threads is challenging and a well-known open problem in the literature~\cite{FrA13a}.
 \textcolor{red}{Annibale: does EvoSuite allow to generate threads within the scope of the generated tests? If I am not mistaken, it does not for security reasons. Should we mention it?
 }
 
 %% FESCAR-2 0% coverage 0% mutation score
 
-\subsubsection*{FESCAR-2} No clue.  \EVOSUITE does report some coverage at the
-end of the \texttt{logs.log} file, but somehow (and according to JaCoCo) the
-generated test suite does not cover any branch.
+\subsubsection*{FESCAR-2} This CUT contains only a few branches (i.e., 14) and lines (i.e., 19). \EVOSUITE could generate test cases that could cover around 20\%-25\% of lines but 0\% of condition coverage. The generated tests cover branchless methods and the root branch of the method \texttt{lookup}, which is the only method with some conditions. It is worth noticing that \EVOSUITE could not complete a single generation, even with a search budget of 180s. The CUT is particularly expensive, and each generated test requires seconds for its execution. Low search budgets are thus not feasible nor recommended for this CUT.
+
+\subsubsection*{FESCAR-41, FESCAR-6} \EVOSUITE reached a very low line and branch coverage for these two CUTs, independently from the search budget. These CUT also manage threads, and more precisely objects of the classes \texttt{ThreadPoolExecutor} and \texttt{NamedThreadFactory}.
 
 %% FESCAR-37 86.8% coverage 0% mutation score
-
-\subsubsection*{FESCAR-37} The classpath is incomplete as there is a
-\texttt{java.lang.ClassNotFoundException: io.netty.channel.Channel}.
+%% Annibale: from the logs, I see a \texttt{java.util.concurrent.ExecutionException}.
+%% \subsubsection*{FESCAR-37} The classpath is incomplete as there is a
+%% \texttt{java.lang.}-\texttt{ClassNotFoundException:  io.netty.channel.Channel}.
 
 %% GUAVA-110 0% coverage 0.6% mutation score
 
-\subsubsection*{GUAVA-110} No clue.
+\subsubsection*{GUAVA-110, GUAVA-240} Both classes make use of the annotation \texttt{@Nullable}. GUAVA-110 uses the annotation for the input parameter of the method \texttt{equals(...)}, while GUAVA-240 uses it for the methods \texttt{contains(...)} and \texttt{remove(...)}. The static analyzer implemented in \EVOSUITE does not handle the annotation \texttt{@Nullable} and triggers the error \textit{``Cannot find symbol''}. 
+
+\subsubsection*{GUAVA-47} For this class, \EVOSUITE reached very low coverage (both line and branch) and mutation score. To have a better understanding of the underlying issue, we ran \EVOSUITE stand-alone. We notice that our tool could not generate any single test cases, never completing the initialization process (and the generation of the initial population, in particular) even with a search budget of 180s. A more in-depth analysis is needed to discover the root cause of the issue.  
+
+\subsubsection*{PDFBOX-157} \EVOSUITE crashed in 9 out ten times with a search budget of 60s, and in 10 out of 10 runs for larger budgets. 
 
 %% FESCAR-7 73.3% coverage 0% mutation score
 %% GUAVA-212 77.6% coverage 0% mutation score
 %% GUAVA-22 51.8% coverage 0% mutation score
 %% PDFBOX-265 51.8% coverage 0% mutation score
 
-\subsubsection*{GUAVA-212, GUAVA-22, PDFBOX-265, PDFBOX-278, PDFBOX-285,
-PDFBOX-40, PDFBOX-91, PDFBOX-62, SPOON-105, SPOON-253} The mutation analysis
+\subsubsection*{FESCAR-23, FESCAR-37, FESCAR-7, FESCAR-8, GUAVA-212, GUAVA-22, PDFBOX-265, PDFBOX-278, PDFBOX-285, PDFBOX-40, PDFBOX-91, PDFBOX-62, SPOON-105, SPOON-253} The mutation analysis
 failed due to a \texttt{java.util.concurrent.ExecutionException} thrown by the
 experimental infrastructure.
 
