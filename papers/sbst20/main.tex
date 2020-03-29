@@ -221,7 +221,10 @@ Support & None \\
 \subsubsection*{FESCAR-15} According to the \texttt{transcript.csv} file, it
 seems that the generated test cases do cover some lines of code but no
 branches/conditions.  Looking at the \texttt{logs.log}, \EVOSUITE also reported
-0\% coverage, however there are not any issues in any log file.
+0\% coverage and we could not find any issues in any log file. 
+For further investigation, we ran \EVOSUITE as stand-alone tool (i.e., wot using the benchmark infrastructure but it was still not capable of covering any line. Through manual investigation, we notice that the CUT manage objects of the class \texttt{ScheduledExecutorService} and \textit{threads}. Generating tests for CUTs that produce or manage threads is challenging and a well-known open problem in the literature~\cite{FrA13a}.
+\textcolor{red}{Annibale: does EvoSuite allow to generate threads within the scope of the generated tests? If I am not mistaken, it does not for security reasons. Should we mention it?
+}
 
 %% FESCAR-2 0% coverage 0% mutation score
 
