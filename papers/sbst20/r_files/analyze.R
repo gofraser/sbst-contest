@@ -17,9 +17,9 @@ mainTable <- function(){
   unlink(TABLE)
   sink(TABLE, append=TRUE, split=TRUE)
 
-  cat("\\begin{tabular}{ ll rr rr}\\toprule","\n")
-  cat(" \\multirow{2}{1in}{Benchmark} & \\multirow{2}{1in}{Java Class} &  \\multicolumn{2}{c}{Branch Coverage} &  \\multicolumn{2}{c}{Mutation Score}\\\\\\cmidrule(lr){3-4}\\cmidrule(lr){5-6} \n")
-  cat(" & & 60s & 180s & 60s & 180s \\\\ \n" )
+  cat("\\begin{tabular}{ ll rr rr rr}\\toprule","\n")
+  cat(" \\multirow{2}{1in}{Benchmark} & \\multirow{2}{1in}{Java Class} &  \\multicolumn{2}{c}{Line Coverage} &  \\multicolumn{2}{c}{Branch Coverage} &  \\multicolumn{2}{c}{Mutation Score}\\\\\\cmidrule(lr){3-4}\\cmidrule(lr){5-6} \n")
+  cat(" & & 60s & 180s & 60s & 180s & 60s & 180s \\\\ \n" )
   cat("\\midrule","\n")
 
   times <- c(60, 180) # sort(unique(dt$timeBudget))
@@ -35,6 +35,11 @@ mainTable <- function(){
     #cat(class)
 
     for(t in times){
+      cov <-  as.numeric(as.character(dt$linesCoverageRatio[mask & dt$timeBudget==t]))
+      cat(" & ", getColouredCell(mean(cov)),sep="")
+    }
+    
+    for(t in times){
       cov <-  as.numeric(as.character(dt$conditionsCoverageRatio[mask & dt$timeBudget==t]))
       cat(" & ", getColouredCell(mean(cov)),sep="")
     }
@@ -47,6 +52,11 @@ mainTable <- function(){
   }
   cat("\\midrule","\n")
   cat("Average & ")
+  for(t in times){
+    cov <- as.numeric(as.character(dt$linesCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t]))
+    cat(" & ", getColouredCell(mean(cov, na.rm = TRUE)))
+  }
+  
   for(t in times){
     cov <- as.numeric(as.character(dt$conditionsCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t]))
     cat(" & ", getColouredCell(mean(cov, na.rm = TRUE)))
@@ -110,6 +120,9 @@ MacroFile <- function(){
   for(t in times){
     printComment(macro.file, concat(toupper(letters[i]),concat("=",t)))
 
+    cov <- mean(as.numeric(as.character(dt$linesCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t])), na.rm = TRUE)
+    printMacro(macro.file, concat("AvgCov",toupper(letters[i])), asPercent(cov))
+    
     cov <- mean(as.numeric(as.character(dt$conditionsCoverageRatio[dt$tool=="evosuite" & dt$timeBudget==t])), na.rm = TRUE)
     printMacro(macro.file, concat("AvgCov",toupper(letters[i])), asPercent(cov))
 
