@@ -136,12 +136,35 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-TBD
+%
+  \EVOSUITE is a search-based tool that automatically generates
+  executable unit tests for Java code (JUnit tests).  This paper
+  summarizes the results and experiences of \EVOSUITE's participation
+  at the eighth unit testing competition at SBST 2020, where \EVOSUITE
+  achieved the highest overall score (\TOTALPOINTS points) for the
+  seventh time in eight editions of the competition.
+  %
 \end{abstract}
 
 \maketitle
 
 \section{Introduction}
+
+
+Automated unit test generation can support developers and testers, produce
+regression test suites, and is an enabler for dynamic program analyses. The
+annual unit test generation aims to foster research and development of
+automated unit test generators. This paper describes the results obtained by
+the \EVOSUITE test generation tool~\cite{FrA11c} in this competition. \EVOSUITE
+uses meta-heuristic search in order to evolve unit test suites with high
+coverage, and automatically produces regression oracles in the form of test
+assertions. In the 8th instance of the competition at the International
+Workshop on Search-Based Software Testing (SBST) 2020, \EVOSUITE achieved an
+overall score of \TOTALPOINTS, which was the highest among the competing and
+baseline tools. This paper describes the results obtained by the \EVOSUITE test
+generation tool in this competition.
+
+
 
 \section{\EVOSUITE}
 
@@ -201,7 +224,102 @@ Support & None \\
 \end{table}
 
 
+\EVOSUITE~\cite{FrA11c} is a search-based unit test generation
+tool~\cite{GoA_TSE12}. Table~\ref{tool-description} summarizes the features of
+\EVOSUITE in the standard format of the SBST unit testing competition: Given
+just the Java classpath containing all compiled dependencies and the name of a
+class under test, \EVOSUITE automatically generates a set of JUnit test cases
+aimed at maximinizing code coverage. \EVOSUITE can be used on the command line,
+as a Maven plugin, or using plugins for the Eclipse and IntelliJ development
+environments~\cite{ICST16_Tool}.
+
+Over the course of its development, several different search algorithms have
+been evaluated, starting with a basic genetic algorithm. \EVOSUITE's encoding of test cases for the evolutionary search (i.e., its chromosomes) consists of variable-length sequences of Java statements (e.g., primitive statements and calls on the class under test). The usual search operators used in evolutionary search (e.g., selection, crossover, mutation) are adapted for this particular representation. 
+%
+In the original approach, individuals of the genetic algorithm were whole test
+suites, with the optimization goal of finding a test suite that maximizes code
+coverage. This was later improved by adding an archive of
+solutions~\cite{emse_archive} to keep the search focused on uncovered goals,
+iteratively discarding covered goals and storing the tests that covered them.
+
+Recently, the \textit{Dynamic Many-Objective Sorting Algorithm} (DynaMOSA) search algorithm~\cite{dynamosa, panichella:ssbse2018}  has been shown to be the most effective approach of all the algorithms evaluated so far. DynaMOSA is a many-objective algorithm, where individuals of the search population are test cases, rather than test suites, and the optimization is driven by a collection of individual fitness functions, one for each coverage objective (e.g., line or branch).
+
+The fitness functions in \EVOSUITE are based on traditional heuristics for code
+coverage, such as the branch distance and the approach level
+(see~\cite{GoA_TSE12} for more details).
+%
+\EVOSUITE supports multiple different coverage criteria, which can be optimized
+for at the same time. The default configuration combines branch coverage with
+mutation testing~\cite{emse14_mutation} and other basic
+criteria~\cite{rojas2015combining}.
+%
+In order to cope with the potentially large number of coverage objectives,
+DynaMOSA prioritizes them during the search according to their structural
+dependencies in the control dependency graph. Initially the search focuses on
+coverage objectives positioned higher in the hierarchy, and the remaining
+objectives are incrementally inserted in later generations when their dominator
+requirements are covered.
+
+After the search has used up the available search budget (or alternatively, has
+achieved 100\% coverage of all coverage objectives), \EVOSUITE applies various
+post-search optimizations aimed to improve the readability of the generated
+tests~\cite{FrA11c,FrA13a}, such as minimization and addition of test assertions using mutation
+analysis~\cite{10.1109/TSE.2011.93}. It also checks all generated tests for compile errors (which may be the result of bugs in \EVOSUITE) or flakiness caused by non-determinism in the class under test, not covered by \EVOSUITE's extensive instrumentation.
+
+
+\EVOSUITE has been evaluated on open
+source as well as industrial software in terms of code
+coverage~\cite{fraser2014large,emse_archive,ea_evaluation,dynamosa},
+fault finding
+effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects
+on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and
+software maintenance~\cite{ICST2018_Maintenance}.
+%
+\EVOSUITE has a longstanding record of success at the unit testing tool
+competition, having ranked second in the third edition of the
+competition~\cite{evosuiteAtSbst2015} and first in all the other
+editions~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013,evosuiteAtSbst2016,evosuiteAtSbst2017,evosuiteAtSbst2018}. In the 2019 SBST contest, \EVOSUITE
+achieved the highest overall score of all participating tools~\cite{evosuiteAtSbst2019}, although the
+performance was inhibited by some bugs.
+
+
+
 \section{Tool Setup}
+
+
+Similar to the previous years, the configuration of \EVOSUITE for the 2020
+competition is largely based on its default values since these have been tuned
+extensively~\cite{arcuri2013parameter}. 
+%
+The search algorithm used was DynaMOSA~\cite{dynamosa}, optimizing for the
+default set of coverage criteria~\cite{rojas2015combining} (i.e., line
+coverage, branch coverage, branch coverage by direct method invocations, weak
+mutation testing, output coverage, exception coverage).
+%
+Other features enabled by default include the use of frequency-based weighted
+constants for seeding~\cite{sakti2015instance} as well as support for Java
+Enterprise Edition features~\cite{arcuri2016java}. In the case of difficult dependencies and branches that cannot be covered, \EVOSUITE can start using mock objectes once a certain percentage of the search
+budget has passed~\cite{ICST_Mocking17} . 
+
+No major new features have been introduced in \EVOSUITE since the 2019 competition, but several bugs that affected \EVOSUITE's performance during the previous competition have been fixed. In particular, there were several problematic cases when \EVOSUITE was run using very small search budgets.
+
+The test minimization step used by \EVOSUITE is computationally expensive and
+sometimes omitted for empirical studies; in the competition we always enable
+the post-processing step of test minimization, because minimized tests are less
+likely to break or expose flakiness. However, we aimed to reduce the
+post-processing time by including all regression assertions rather than
+filtering them with mutation analysis~\cite{10.1109/TSE.2011.93}. While this
+makes test cases less readable and potentially more brittle with respect to
+future changes in the software under test, neither of these aspects is
+evaluated as part of the SBST contest.
+
+\EVOSUITE uses different phases (e.g., initialisation, search, minimization,
+assertion generation, compilation check, removal of flaky tests). Like in
+previous competitions (e.g.,~\cite{evosuiteAtSbst2016}) we allocated 50\% of
+the overall time set by the competition organisers for the search, and
+distributed the other 50\% equally to the remaining phases.
+
+
 
 \section{Benchmark Results}
 
@@ -263,6 +381,7 @@ experimental infrastructure.
 
 \section{Conclusions}
 
+\balance
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{papers}
 
