@@ -156,7 +156,7 @@ regression test suites, and is an enabler for dynamic program analyses. The
 annual unit test generation aims to foster research and development of
 automated unit test generators. This paper describes the results obtained by
 the \EVOSUITE test generation tool~\cite{FrA11c} in this competition. \EVOSUITE
-uses meta-heuristic search in order to evolve unit test suites with high
+uses meta-heuristic search to evolve unit test suites with high
 coverage, and automatically produces regression oracles in the form of test
 assertions. In the 8th instance of the competition at the International
 Workshop on Search-Based Software Testing (SBST) 2020, \EVOSUITE achieved an
@@ -229,11 +229,11 @@ tool~\cite{GoA_TSE12}. Table~\ref{tool-description} summarizes the features of
 \EVOSUITE in the standard format of the SBST unit testing competition: Given
 just the Java classpath containing all compiled dependencies and the name of a
 class under test, \EVOSUITE automatically generates a set of JUnit test cases
-aimed at maximinizing code coverage. \EVOSUITE can be used on the command line,
+aimed at maximizing code coverage. \EVOSUITE can be used on the command line,
 as a Maven plugin, or using plugins for the Eclipse and IntelliJ development
 environments~\cite{ICST16_Tool}.
 
-Over the course of its development, several different search algorithms have
+Throughout its development, several different search algorithms have
 been evaluated, starting with a basic genetic algorithm. \EVOSUITE's encoding of test cases for the evolutionary search (i.e., its chromosomes) consists of variable-length sequences of Java statements (e.g., primitive statements and calls on the class under test). The usual search operators used in evolutionary search (e.g., selection, crossover, mutation) are adapted for this particular representation. 
 %
 In the original approach, individuals of the genetic algorithm were whole test
@@ -242,20 +242,20 @@ coverage. This was later improved by adding an archive of
 solutions~\cite{emse_archive} to keep the search focused on uncovered goals,
 iteratively discarding covered goals and storing the tests that covered them.
 
-Recently, the \textit{Dynamic Many-Objective Sorting Algorithm} (DynaMOSA) search algorithm~\cite{dynamosa, panichella:ssbse2018}  has been shown to be the most effective approach of all the algorithms evaluated so far. DynaMOSA is a many-objective algorithm, where individuals of the search population are test cases, rather than test suites, and the optimization is driven by a collection of individual fitness functions, one for each coverage objective (e.g., line or branch).
+Recently, the \textit{Dynamic Many-Objective Sorting Algorithm} (DynaMOSA) search algorithm~\cite{dynamosa, panichella:ssbse2018, panichella2018large}  has been shown to be the most effective approach of all the algorithms evaluated so far. DynaMOSA is a many-objective algorithm, where individuals of the search population are test cases, rather than test suites, and the optimization is driven by a collection of individual fitness functions, one for each coverage objective (e.g., line or branch).
 
 The fitness functions in \EVOSUITE are based on traditional heuristics for code
 coverage, such as the branch distance and the approach level
 (see~\cite{GoA_TSE12} for more details).
 %
 \EVOSUITE supports multiple different coverage criteria, which can be optimized
-for at the same time. The default configuration combines branch coverage with
+at the same time. The default configuration combines branch coverage with
 mutation testing~\cite{emse14_mutation} and other basic
 criteria~\cite{rojas2015combining}.
 %
-In order to cope with the potentially large number of coverage objectives,
+To cope with the potentially large number of coverage objectives,
 DynaMOSA prioritizes them during the search according to their structural
-dependencies in the control dependency graph. Initially the search focuses on
+dependencies in the control dependency graph. Initially, the search focuses on
 coverage objectives positioned higher in the hierarchy, and the remaining
 objectives are incrementally inserted in later generations when their dominator
 requirements are covered.
@@ -270,7 +270,7 @@ analysis~\cite{10.1109/TSE.2011.93}. It also checks all generated tests for comp
 \EVOSUITE has been evaluated on open
 source as well as industrial software in terms of code
 coverage~\cite{fraser2014large,emse_archive,ea_evaluation,dynamosa},
-fault finding
+fault-finding
 effectiveness~\cite{shamshiri2015automatically,moein2017}, and effects
 on developer productivity~\cite{TOSEM_userstudy,ISSTA15_Study} and
 software maintenance~\cite{ICST2018_Maintenance}.
@@ -279,9 +279,8 @@ software maintenance~\cite{ICST2018_Maintenance}.
 competition, having ranked second in the third edition of the
 competition~\cite{evosuiteAtSbst2015} and first in all the other
 editions~\cite{evosuiteAtSbst2013,evosuiteAtFittest2013,evosuiteAtSbst2016,evosuiteAtSbst2017,evosuiteAtSbst2018}. In the 2019 SBST contest, \EVOSUITE
-achieved the highest overall score of all participating tools~\cite{evosuiteAtSbst2019}, although the
-performance was inhibited by some bugs.
-
+achieved the highest overall score of all participating tools~\cite{evosuiteAtSbst2019}, 
+although some bugs inhibited its performance.
 
 
 \section{Tool Setup}
@@ -298,13 +297,13 @@ mutation testing, output coverage, exception coverage).
 %
 Other features enabled by default include the use of frequency-based weighted
 constants for seeding~\cite{sakti2015instance} as well as support for Java
-Enterprise Edition features~\cite{arcuri2016java}. In the case of difficult dependencies and branches that cannot be covered, \EVOSUITE can start using mock objectes once a certain percentage of the search
+Enterprise Edition features~\cite{arcuri2016java}. In the case of difficult dependencies and branches that cannot be covered, \EVOSUITE can start using mock objects once a certain percentage of the search
 budget has passed~\cite{ICST_Mocking17} . 
 
 No major new features have been introduced in \EVOSUITE since the 2019 competition, but several bugs that affected \EVOSUITE's performance during the previous competition have been fixed. In particular, there were several problematic cases when \EVOSUITE was run using very small search budgets.
 
 The test minimization step used by \EVOSUITE is computationally expensive and
-sometimes omitted for empirical studies; in the competition we always enable
+sometimes omitted for empirical studies; in the competition, we always enable
 the post-processing step of test minimization, because minimized tests are less
 likely to break or expose flakiness. However, we aimed to reduce the
 post-processing time by including all regression assertions rather than
@@ -313,10 +312,10 @@ makes test cases less readable and potentially more brittle with respect to
 future changes in the software under test, neither of these aspects is
 evaluated as part of the SBST contest.
 
-\EVOSUITE uses different phases (e.g., initialisation, search, minimization,
+\EVOSUITE uses different phases (e.g., initialization, search, minimization,
 assertion generation, compilation check, removal of flaky tests). Like in
-previous competitions (e.g.,~\cite{evosuiteAtSbst2016}) we allocated 50\% of
-the overall time set by the competition organisers for the search, and
+previous competitions (e.g.,~\cite{evosuiteAtSbst2016}), we allocated 50\% of
+the overall time set by the competition organizers for the search, and
 distributed the other 50\% equally to the remaining phases.
 
 
@@ -335,7 +334,7 @@ distributed the other 50\% equally to the remaining phases.
 \end{table*}
 
 Table~\ref{table:results} summarizes the results achieved by \EVOSUITE on the competition classes and search budgets. In general, the performance of \EVOSUITE was in line with previous
-results. As usual, there are some noteable cases where \EVOSUITE did not perform well. In the following, we discuss these cases, such that future work can address open problems in automated unit test generation.
+results. As usual, there are some notable cases where \EVOSUITE did not perform well. In the following, we discuss these cases, such that future work can address open problems in automated unit test generation.
 
 
 %% FESCAR-15 0% coverage 0% mutation score
@@ -345,7 +344,7 @@ organizers, it seems that the generated test cases do cover some lines of code
 but no branches/conditions.
 %Looking at the \texttt{logs.log}, \EVOSUITE also reported
 %0\% coverage and we could not find any issues in any %log file. 
-For further investigation, we ran \EVOSUITE as stand-alone tool (i.e., not using the benchmark infrastructure but it was still not capable of covering any line. Through manual investigation, we notice that the CUT manages objects of the class \texttt{ScheduledExecutorService} and \textit{threads}. Generating tests for CUTs that produce or manage threads is challenging and a well-known open problem in the literature~\cite{FrA13a}. \EVOSUITE does not prevent the CUT to spawn new threads, but it (1) forces the use of a wrapper class that leads to deterministic stack traces and thread names, and (2) any spawned threads are joined and removed after a test execution to ensure a clean state for successive test executions, which may consume a substantial amount of time.
+For further investigation, we ran \EVOSUITE as a stand-alone tool (i.e., not using the benchmark infrastructure) but it was still not capable of covering any line. Through manual investigation, we notice that the CUT manages objects of the class \texttt{ScheduledExecutorService} and \textit{threads}. Generating tests for CUTs that produce or manage threads is challenging and a well-known open problem in the literature~\cite{FrA13a}. \EVOSUITE does not prevent the CUT from spawning new threads, but it (1) forces the use of a wrapper class that leads to deterministic stack traces and thread names, and (2) any spawned threads are joined and removed after a test execution to ensure a clean state for successive test executions, which may consume a substantial amount of time.
 
 %% FESCAR-2 0% coverage 0% mutation score
 
